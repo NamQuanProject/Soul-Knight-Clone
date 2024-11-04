@@ -2,6 +2,7 @@
 #include <iostream>
 
 SoundManager::SoundManager() : currentMusic(nullptr) {
+    loadAllMusic();
 }
 
 SoundManager::~SoundManager() {

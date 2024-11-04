@@ -1,6 +1,6 @@
 #include "playState.h"
 
-void PlayState::handleEvent(const sf::Event& event) {
+void PlayState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     // Handle gameplay events
 }
 

@@ -11,7 +11,7 @@ public:
     MenuState();  
     ~MenuState(); 
 
-    void handleEvent(const sf::Event& event) override;
+    void handleEvent(const sf::Event& event, sf::RenderWindow& window) override;
     void update() override;
     void render(sf::RenderWindow& window) override;
 
@@ -19,11 +19,15 @@ private:
     // Add private members for menu components
     sf::Font font;
     sf::Text title;
-    sf::Text playButton;
-    sf::Text exitButton;
 
     sf::Texture backgroundTexture;  
-    sf::Sprite backgroundSprite;     
+    sf::Sprite backgroundSprite;   
+
+    sf::Texture playButtonTexture;       
+    sf::Texture exitButtonTexture;      
+    sf::RectangleShape playButton;       
+    sf::RectangleShape exitButton; 
+
     SoundManager soundManager; 
 };
 

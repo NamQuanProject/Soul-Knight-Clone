@@ -5,7 +5,7 @@
 
 class PlayState : public State {
 public:
-    void handleEvent(const sf::Event& event) override;
+    void handleEvent(const sf::Event& event, sf::RenderWindow& window) override;
     void update() override;
     void render(sf::RenderWindow& window) override;
 

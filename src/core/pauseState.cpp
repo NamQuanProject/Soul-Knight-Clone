@@ -1,6 +1,6 @@
 #include "pauseState.h"
 
-void PauseState::handleEvent(const sf::Event& event) {
+void PauseState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     // Handle pause events (e.g., resume or quit)
 }
 

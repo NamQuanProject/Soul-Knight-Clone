@@ -7,56 +7,59 @@
 static SoundManager soundManager;
 
 MenuState::MenuState() {
-    // Load the font
     if (!font.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/arial/ARIAL.TTF")) {
         std::cerr << "Error loading font" << std::endl;
     }
-
-    // Load the background texture
     if (!backgroundTexture.loadFromFile("../resources/start/first_page.bmp")) {
         std::cerr << "Error loading background image" << std::endl;
     } else {
         backgroundSprite.setTexture(backgroundTexture);
-        backgroundSprite.setPosition(0, 0); // Ensure the background is positioned correctly
+
+        const float windowWidth = 1100;
+        const float windowHeight = 800; 
+
+       
+        backgroundSprite.setScale(
+            windowWidth / backgroundTexture.getSize().x,
+            windowHeight / backgroundTexture.getSize().y
+        );
+
+        backgroundSprite.setPosition(0, 0);
+    }
+    soundManager.playMusic("background");
+
+    if (!playButtonTexture.loadFromFile("../resources/start/begin.png")) {
+        std::cerr << "Error loading play button texture" << std::endl;
+    }
+    if (!exitButtonTexture.loadFromFile("../resources/start/exit.png")) {
+        std::cerr << "Error loading exit button texture" << std::endl;
     }
 
-    soundManager.playMusic("background"); 
+    playButton.setSize(sf::Vector2f(150, 50)); 
+    playButton.setTexture(&playButtonTexture); 
+    playButton.setPosition(50, 700);
 
+    // Set up exit button rectangle
+    exitButton.setSize(sf::Vector2f(150, 50)); // Set the size of the exit button
+    exitButton.setTexture(&exitButtonTexture); // Apply the texture
+    exitButton.setPosition(300, 700); // Position the button
 
-    playButton.setFont(font);
-    playButton.setString("Play");
-    playButton.setCharacterSize(30);
-    playButton.setPosition(300, 250);
-    playButton.setFillColor(sf::Color::Green); // Set play button color
-
-    // Set up the exit button text
-    exitButton.setFont(font);
-    exitButton.setString("Exit");
-    exitButton.setCharacterSize(30);
-    exitButton.setPosition(300, 350);
-    exitButton.setFillColor(sf::Color::Red); // Set exit button color
 }
 
 MenuState::~MenuState() {
     soundManager.stopMusic(); // Ensure music stops when exiting
 }
 
-void MenuState::handleEvent(const sf::Event& event) {
+void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     // Handle input (e.g., mouse clicks or key presses)
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
-            // Check if play button is clicked
             if (playButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y)) {
-                // Start the game or change to the game state
                 std::cout << "Play button clicked." << std::endl;
-                // TODO: Implement game state change here
             }
-            // Check if exit button is clicked
             else if (exitButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y)) {
-                // Exit the application
-                std::cout << "Exit button clicked." << std::endl;
-                // You might want to call a function to exit the game
-                // For example: window.close();
+                std::cout << "Exit button clicked. Exiting the program." << std::endl;
+                window.close();
             }
         }
     }

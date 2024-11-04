@@ -3,7 +3,7 @@
 #include <memory>
 
 Application::Application()
-    : window(sf::VideoMode(800, 600), "Soul Knight"), currentState(std::make_unique<MenuState>()) {
+    : window(sf::VideoMode(1100, 800), "Soul Knight"), currentState(std::make_unique<MenuState>()) {
 }
 
 void Application::run() {
@@ -19,7 +19,7 @@ void Application::processEvents() {
     while (window.pollEvent(event)) {
         if (event.type == sf::Event::Closed)
             window.close();
-        currentState->handleEvent(event);
+        currentState->handleEvent(event, window);
     }
 }
 
