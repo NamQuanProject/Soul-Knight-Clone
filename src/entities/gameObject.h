@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Vec.h" 
+#include "../utils/vec.h" 
 
 class GameObject {
 public:
@@ -22,9 +22,5 @@ public:
     void SetActive(bool active);        
 protected:
     Vec position;                         
-    bool active = true;             
-
-private:
-    int id;                             
-    static int nextId;                   
+    bool active = true;                              
 };

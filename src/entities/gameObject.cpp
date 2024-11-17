@@ -1,8 +1,7 @@
-#include "GameObject.h"
+#include "gameObject.h"
 
-int GameObject::nextId = 0;
 
-GameObject::GameObject() : id(nextId++) {
+GameObject::GameObject() {
     position = Vec(0, 0); // Default position
 }
 
