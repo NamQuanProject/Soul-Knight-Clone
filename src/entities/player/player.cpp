@@ -6,7 +6,7 @@ Player::Player()
 
 
 
-void Player::Update() {
+void Player::Update(float deltaTime) {
     CheckState();
     CheckFace();
 }
@@ -14,6 +14,11 @@ void Player::Update() {
 void Player::Collision(GameObject* gameObject) {
     // Handle collision with other game objects (e.g., take damage, pick up items)
 }
+
+void Player::Render(sf::RenderWindow& window) {
+    
+}
+
 
 double Player::GetHP() const {
     return hp;

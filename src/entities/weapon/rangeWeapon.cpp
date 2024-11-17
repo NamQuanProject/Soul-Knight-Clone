@@ -14,8 +14,6 @@ void RangeWeapon::Use() {
         Vec bulletPosition = GetBulletPosition();
 
         // Create a bullet with the current weapon direction
-        Bullet* bullet = new Bullet(damage, 5.0, weaponDirection, this);
-        bullet->SetPosition(bulletPosition);  // Set the bullet's spawn position
 
         // Decrease ammo after firing
         ammo--;

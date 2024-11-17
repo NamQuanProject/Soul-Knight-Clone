@@ -8,7 +8,7 @@ public:
     Bullet(double damage, double speed, Vec direction, GameObject* owner);
     virtual ~Bullet() = default;
     
-    void Update() override;            // Update the bullet's state
+    void Update(float deltaTime) override;            // Update the bullet's state
     void Collision(GameObject* gameObject) override; // Handle collision
           // Start method to be implemented by derived classes
     

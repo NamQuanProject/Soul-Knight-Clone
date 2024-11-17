@@ -6,7 +6,7 @@ Bullet::Bullet(double damage, double speed, Vec direction, GameObject* owner)
     // Initialization of bullet properties
 }
 
-void Bullet::Update() {
+void Bullet::Update(float deltaTime) {
     // Update the bullet's position based on its speed and direction
     // For example, you can move it in the direction it's pointing at
     

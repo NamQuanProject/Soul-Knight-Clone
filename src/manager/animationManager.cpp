@@ -1,41 +1,33 @@
 #include "animationManager.h"
 
-AnimationManager::AnimationManager() {}
+// Constructor: Initializes the current animation to an empty string
+AnimationManager::AnimationManager() : currentAnimationName("") {}
 
+// Adds an animation to the manager with the given name
 void AnimationManager::addAnimation(const std::string& name, const Animation& animation) {
-    animations[name] = animation;  // Add an animation by its name
+    animations[name] = animation;  // Store the animation in the map
 }
 
-void AnimationManager::setAnimation(const std::string& name, const Animation& animation) {
-    animations[name] = animation;  // Update the animation for a specific name
+// Sets the current animation by name and updates the sprite accordingly
+void AnimationManager::setAnimation(const std::string& name) {
+    // Check if the animation exists in the map
+    auto it = animations.find(name);
+    if (it != animations.end()) {
+        currentAnimationName = name;  // Set the current animation
+        currentSprite.setTexture(it->second.getTexture());  // Set the sprite texture from the animation
+    }
 }
 
-std::map<std::string, Animation>& AnimationManager::getAllAnimations() {
-    return animations;  // Return all animations
-}
-
+// Updates the current animation (called every frame)
 void AnimationManager::update(float deltaTime) {
-    for (auto& pair : animations) {
-        pair.second.update(deltaTime);  // Update all animations
+    if (!currentAnimationName.empty()) {
+        animations[currentAnimationName].update(deltaTime);
+        const sf::IntRect& frame = animations[currentAnimationName].getCurrentFrame();
+        currentSprite.setTextureRect(frame);  // Set the texture rectangle to the current frame
     }
 }
 
-const sf::IntRect& AnimationManager::getCurrentFrame(const std::string& name) const {
-    auto it = animations.find(name);
-    if (it != animations.end()) {
-        return it->second.getCurrentFrame();  // Return the current frame of the animation
-    }
-    static sf::IntRect emptyFrame;  // Return an empty frame if the animation doesn't exist
-    return emptyFrame;
-}
-
-bool AnimationManager::isAnimationSet(const std::string& name) const {
-    return animations.find(name) != animations.end();  // Check if the animation is set
-}
-
-void AnimationManager::resetAnimation(const std::string& name) {
-    auto it = animations.find(name);
-    if (it != animations.end()) {
-        it->second.reset();  // Reset the animation to its first frame
-    }
+// Returns the current sprite for rendering
+const sf::Sprite& AnimationManager::getCurrentSprite() const {
+    return currentSprite;
 }

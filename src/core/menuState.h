@@ -28,6 +28,9 @@ private:
     sf::RectangleShape exitButton; 
 
     SoundManager soundManager; 
+
+    Player* player;
+    sf::Clock animationClock;  
 };
 
 #endif // MENUSTATE_H

@@ -1,5 +1,8 @@
 #include "menuState.h"
+#include "../utils/vec.h"
 #include "../manager/soundManager.h" // Include the SoundManager
+#include "../manager/animationManager.h"
+#include "../entities/player/heroes/knight.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
@@ -43,7 +46,9 @@ MenuState::MenuState() {
     exitButton.setSize(sf::Vector2f(150, 50)); // Set the size of the exit button
     exitButton.setTexture(&exitButtonTexture); // Apply the texture
     exitButton.setPosition(300, 700); // Position the button
-
+    
+    Knight knight;
+    knight.SetPosition(Vec(100, 200));
 }
 
 MenuState::~MenuState() {
@@ -66,15 +71,13 @@ void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
 }
 
 void MenuState::update() {
-    // Update logic if necessary
+    
 }
 
 void MenuState::render(sf::RenderWindow& window) {
-    // Draw the background
     window.draw(backgroundSprite);
-
-    // Draw the text elements
     window.draw(title);
     window.draw(playButton);
     window.draw(exitButton);
+
 }
