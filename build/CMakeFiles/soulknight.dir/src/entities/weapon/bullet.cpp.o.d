@@ -1,7 +1,6 @@
-CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o: \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/meleeWeapon.cpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/meleeWeapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
+CMakeFiles/soulknight.dir/src/entities/weapon/bullet.cpp.o: \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.cpp \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../../utils/vec.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cmath \

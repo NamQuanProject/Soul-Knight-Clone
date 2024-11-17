@@ -9,16 +9,16 @@ Knife::Knife() {
 }
 
 void Knife::Use() {
-    if (durability > 0) {
-        std::cout << "Stabbing with knife for " << damage << " damage!" << std::endl;
-        durability--;  // Decreases durability with each use
-        // Optionally, you can add sharpness degradation logic over time
-        if (sharpness > 0) {
-            sharpness--;
-        }
-    } else {
-        std::cout << "Knife is broken! Durability is zero." << std::endl;
-    }
+    // if (durability > 0) {
+    //     std::cout << "Stabbing with knife for " << damage << " damage!" << std::endl;
+    //     durability--;  // Decreases durability with each use
+    //     // Optionally, you can add sharpness degradation logic over time
+    //     if (sharpness > 0) {
+    //         sharpness--;
+    //     }
+    // } else {
+    //     std::cout << "Knife is broken! Durability is zero." << std::endl;
+    // }
 }
 
 void Knife::SetSharpness(int sharpness) {

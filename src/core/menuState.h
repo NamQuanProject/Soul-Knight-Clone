@@ -4,7 +4,7 @@
 #include "state.h"
 #include <SFML/Graphics.hpp>
 #include "../manager/soundManager.h" 
-
+#include "../entities/player/player.h" 
 
 class MenuState : public State {
 public:
@@ -16,7 +16,6 @@ public:
     void render(sf::RenderWindow& window) override;
 
 private:
-    // Add private members for menu components
     sf::Font font;
     sf::Text title;
 

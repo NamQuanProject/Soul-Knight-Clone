@@ -1,9 +1,10 @@
-CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o: \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/meleeWeapon.cpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/meleeWeapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../../utils/vec.h \
+CMakeFiles/soulknight.dir/src/entities/weapon/melee/knife.cpp.o: \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/melee/knife.cpp \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/melee/knife.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/melee/../meleeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/melee/../weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/melee/../../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/melee/../../../utils/vec.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config \

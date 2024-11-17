@@ -6,9 +6,7 @@ class GameObject {
 public:
     GameObject();                        
     virtual ~GameObject() = default;      
-
-    
-    virtual void Start() = 0;            
+     
     virtual void Update() = 0;         
     virtual void Collision(GameObject* gameObject) = 0; 
 

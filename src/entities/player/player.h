@@ -2,7 +2,8 @@
 
 #include "../gameObject.h"
 #include "../../utils/vec.h"
-// #include "Weapon.h"
+#include "../weapon/weapon.h"
+#include "../../utils/vec.h"
 // #include "PoisonedIcon.h"
 
 class Player : public GameObject {
@@ -10,7 +11,6 @@ public:
     Player();
     virtual ~Player() = default;
 
-    void Start() override;
     void Update() override;
     void Collision(GameObject* gameObject) override;
 
@@ -21,8 +21,11 @@ public:
     void Poisoned(double poisonDamage);
 
 protected:
+    Vec vision;
+    double hp;          // Current health points
+    double maxHp;       // Maximum health points
 
-    // Weapon* weapon1;
+    Weapon* weapon1;
     double weaponOffsetX;
     double weaponOffsetY;
 
@@ -30,13 +33,6 @@ protected:
     enum State { IDLE, RUN, DEAD, READY } state;
 
 private:
-    struct Poison {
-        double damage;
-        int counter;
-        int damageRemainingTimes;
-        const int damageInterval = 50;
-    } poison;
-
     // PoisonedIcon* poisonedIcon;
 
     virtual void CheckState();

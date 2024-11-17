@@ -973,5 +973,11 @@ CMakeFiles/soulknight.dir/src/core/menuState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileFactory.inl \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileReader.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileWriter.hpp \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../weapon/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../weapon/../../utils/vec.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream

@@ -7,12 +7,12 @@ MeleeWeapon::MeleeWeapon() : durability(100) {
 }
 
 void MeleeWeapon::Use() {
-    if (durability > 0) {
-        std::cout << "Swinging melee weapon for " << damage << " damage!" << std::endl;
-        durability--;
-    } else {
-        std::cout << "Weapon is broken! Durability is zero." << std::endl;
-    }
+    // if (durability > 0) {
+    //     std::cout << "Swinging melee weapon for " << damage << " damage!" << std::endl;
+    //     durability--;
+    // } else {
+    //     std::cout << "Weapon is broken! Durability is zero." << std::endl;
+    // }
 }
 
 void MeleeWeapon::SetDurability(int durability) {

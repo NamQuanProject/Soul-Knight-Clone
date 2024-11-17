@@ -489,6 +489,30 @@ src/entities/player/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/player/player.cpp.s
 .PHONY : src/entities/player/player.cpp.s
 
+src/entities/weapon/bullet.o: src/entities/weapon/bullet.cpp.o
+.PHONY : src/entities/weapon/bullet.o
+
+# target to build an object file
+src/entities/weapon/bullet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/bullet.cpp.o
+.PHONY : src/entities/weapon/bullet.cpp.o
+
+src/entities/weapon/bullet.i: src/entities/weapon/bullet.cpp.i
+.PHONY : src/entities/weapon/bullet.i
+
+# target to preprocess a source file
+src/entities/weapon/bullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/bullet.cpp.i
+.PHONY : src/entities/weapon/bullet.cpp.i
+
+src/entities/weapon/bullet.s: src/entities/weapon/bullet.cpp.s
+.PHONY : src/entities/weapon/bullet.s
+
+# target to generate assembly for a file
+src/entities/weapon/bullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/bullet.cpp.s
+.PHONY : src/entities/weapon/bullet.cpp.s
+
 src/entities/weapon/gun/badPistol.o: src/entities/weapon/gun/badPistol.cpp.o
 .PHONY : src/entities/weapon/gun/badPistol.o
 
@@ -927,6 +951,9 @@ help:
 	@echo "... src/entities/player/player.o"
 	@echo "... src/entities/player/player.i"
 	@echo "... src/entities/player/player.s"
+	@echo "... src/entities/weapon/bullet.o"
+	@echo "... src/entities/weapon/bullet.i"
+	@echo "... src/entities/weapon/bullet.s"
 	@echo "... src/entities/weapon/gun/badPistol.o"
 	@echo "... src/entities/weapon/gun/badPistol.i"
 	@echo "... src/entities/weapon/gun/badPistol.s"

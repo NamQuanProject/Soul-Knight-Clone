@@ -1,35 +1,18 @@
 #include "player.h"
 
 Player::Player()
-    : hp(0), maxHp(0), weapon1(nullptr), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE), poisonedIcon(nullptr) {
-    poison = {0.0, 0, 0};
+    : hp(100), maxHp(100), weapon1(nullptr), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE) {
 }
 
-void Player::Start() {
-    // Initialize player-specific logic
-}
+
 
 void Player::Update() {
     CheckState();
     CheckFace();
-    // if (poison.damageRemainingTimes > 0) {
-    //     poison.counter++;
-    //     if (poison.counter >= poison.damageInterval) {
-    //         poison.counter = 0;
-    //         hp -= poison.damage;
-    //         poison.damageRemainingTimes--;
-    //         if (poisonedIcon) {
-    //             // Update poisoned UI
-    //         }
-    //         if (hp <= 0) {
-    //             state = DEAD;
-    //         }
-    //     }
-    // }
 }
 
 void Player::Collision(GameObject* gameObject) {
-    // Handle collision with other game objects
+    // Handle collision with other game objects (e.g., take damage, pick up items)
 }
 
 double Player::GetHP() const {
@@ -41,18 +24,14 @@ double Player::GetMaxHP() const {
 }
 
 void Player::Attack() {
-    // if (weapon1) {
-    //     // Perform attack using weapon1
-    // }
+    if (weapon1) {
+        // Perform attack using weapon1
+        weapon1->Use();
+    }
 }
 
 void Player::Poisoned(double poisonDamage) {
-    // poison.damage = poisonDamage;
-    // poison.damageRemainingTimes = 5; // Example: Apply poison 5 times
-    // poison.counter = 0;
-    // if (!poisonedIcon) {
-    //     // Initialize poisoned UI
-    // }
+   
 }
 
 void Player::CheckState() {

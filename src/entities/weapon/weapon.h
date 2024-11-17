@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../gameObject.h"
+#include "../../utils/vec.h"
 
 class Weapon : public GameObject {
 public:

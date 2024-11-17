@@ -1,4 +1,4 @@
-#include "Weapon.h"
+#include "weapon.h"
 
 Weapon::Weapon() : damage(0), range(0), owner(nullptr) {
 }
