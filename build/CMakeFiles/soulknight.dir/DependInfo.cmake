@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/collectables/collectableItem.cpp" "CMakeFiles/soulknight.dir/src/entities/collectables/collectableItem.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/collectables/collectableItem.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/collectables/healthPack.cpp" "CMakeFiles/soulknight.dir/src/entities/collectables/healthPack.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/collectables/healthPack.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/collectables/manaPack.cpp" "CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.o.d"
+  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/gameObject.cpp" "CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/player/hero.cpp" "CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/player/heroes/archer.cpp" "CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/player/heroes/knight.cpp" "CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o.d"
@@ -35,8 +36,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/soundManager.cpp" "CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/config.cpp" "CMakeFiles/soulknight.dir/src/utils/config.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/config.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/logger.cpp" "CMakeFiles/soulknight.dir/src/utils/logger.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/logger.cpp.o.d"
-  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/math.cpp" "CMakeFiles/soulknight.dir/src/utils/math.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/math.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/random.cpp" "CMakeFiles/soulknight.dir/src/utils/random.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/random.cpp.o.d"
+  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/vec.cpp" "CMakeFiles/soulknight.dir/src/utils/vec.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/vec.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

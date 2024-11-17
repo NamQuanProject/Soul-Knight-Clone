@@ -223,10 +223,24 @@ CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/collectables/manaPack.cpp" -o CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.s
 
+CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.cpp
+CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/gameObject.cpp"
+
+CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/gameObject.cpp" > CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.i
+
+CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/gameObject.cpp" -o CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.s
+
 CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/hero.cpp
 CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/player/hero.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/archer.cpp
 CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/player/heroes/archer.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.cpp
 CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/player/heroes/knight.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/player.cpp
 CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/player/player.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/player/player.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/soulknight.dir/src/entities/player/player.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badpistol.cpp
 CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/weapon/gun/badpistol.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/meleeWeapon.cpp
 CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/weapon/meleeWeapon.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/soulknight.dir/src/entities/weapon/meleeWeapon.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.cpp
 CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/weapon/rangeWeapon.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.cpp
 CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o -MF CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o.d -o CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/weapon/weapon.cpp"
 
 CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/animationManager.cpp
 CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o -MF CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o.d -o CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/animationManager.cpp"
 
 CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/collisionManager.cpp
 CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o -MF CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o.d -o CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/collisionManager.cpp"
 
 CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/eventManager.cpp
 CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o -MF CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o.d -o CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/eventManager.cpp"
 
 CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/gameManager.cpp
 CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o -MF CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o.d -o CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/gameManager.cpp"
 
 CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/keyboardManager.cpp
 CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o -MF CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o.d -o CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/keyboardManager.cpp"
 
 CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/soundManager.cpp
 CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o -MF CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o.d -o CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/soundManager.cpp"
 
 CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/utils/config.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/config.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/config.cpp
 CMakeFiles/soulknight.dir/src/utils/config.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/soulknight.dir/src/utils/config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/soulknight.dir/src/utils/config.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/config.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/config.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/config.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/config.cpp"
 
 CMakeFiles/soulknight.dir/src/utils/config.cpp.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/soulknight.dir/src/utils/config.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/utils/logger.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/logger.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/logger.cpp
 CMakeFiles/soulknight.dir/src/utils/logger.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/soulknight.dir/src/utils/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/soulknight.dir/src/utils/logger.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/logger.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/logger.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/logger.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/logger.cpp"
 
 CMakeFiles/soulknight.dir/src/utils/logger.cpp.i: cmake_force
@@ -446,20 +460,6 @@ CMakeFiles/soulknight.dir/src/utils/logger.cpp.i: cmake_force
 CMakeFiles/soulknight.dir/src/utils/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/utils/logger.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/logger.cpp" -o CMakeFiles/soulknight.dir/src/utils/logger.cpp.s
-
-CMakeFiles/soulknight.dir/src/utils/math.cpp.o: CMakeFiles/soulknight.dir/flags.make
-CMakeFiles/soulknight.dir/src/utils/math.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/math.cpp
-CMakeFiles/soulknight.dir/src/utils/math.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/soulknight.dir/src/utils/math.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/math.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/math.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/math.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/math.cpp"
-
-CMakeFiles/soulknight.dir/src/utils/math.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/utils/math.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/math.cpp" > CMakeFiles/soulknight.dir/src/utils/math.cpp.i
-
-CMakeFiles/soulknight.dir/src/utils/math.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/utils/math.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/math.cpp" -o CMakeFiles/soulknight.dir/src/utils/math.cpp.s
 
 CMakeFiles/soulknight.dir/src/utils/random.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/random.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/random.cpp
@@ -475,6 +475,20 @@ CMakeFiles/soulknight.dir/src/utils/random.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/utils/random.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/random.cpp" -o CMakeFiles/soulknight.dir/src/utils/random.cpp.s
 
+CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.cpp
+CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/soulknight.dir/src/utils/vec.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/vec.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/vec.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/vec.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/vec.cpp"
+
+CMakeFiles/soulknight.dir/src/utils/vec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/utils/vec.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/vec.cpp" > CMakeFiles/soulknight.dir/src/utils/vec.cpp.i
+
+CMakeFiles/soulknight.dir/src/utils/vec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/utils/vec.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/vec.cpp" -o CMakeFiles/soulknight.dir/src/utils/vec.cpp.s
+
 # Object files for target soulknight
 soulknight_OBJECTS = \
 "CMakeFiles/soulknight.dir/src/main.cpp.o" \
@@ -488,6 +502,7 @@ soulknight_OBJECTS = \
 "CMakeFiles/soulknight.dir/src/entities/collectables/collectableItem.cpp.o" \
 "CMakeFiles/soulknight.dir/src/entities/collectables/healthPack.cpp.o" \
 "CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.o" \
+"CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o" \
 "CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o" \
 "CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o" \
 "CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o" \
@@ -504,8 +519,8 @@ soulknight_OBJECTS = \
 "CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/config.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/logger.cpp.o" \
-"CMakeFiles/soulknight.dir/src/utils/math.cpp.o" \
-"CMakeFiles/soulknight.dir/src/utils/random.cpp.o"
+"CMakeFiles/soulknight.dir/src/utils/random.cpp.o" \
+"CMakeFiles/soulknight.dir/src/utils/vec.cpp.o"
 
 # External object files for target soulknight
 soulknight_EXTERNAL_OBJECTS =
@@ -521,6 +536,7 @@ soulknight: CMakeFiles/soulknight.dir/src/core/playState.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/entities/collectables/collectableItem.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/entities/collectables/healthPack.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o
@@ -537,8 +553,8 @@ soulknight: CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/config.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/logger.cpp.o
-soulknight: CMakeFiles/soulknight.dir/src/utils/math.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/random.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/utils/vec.cpp.o
 soulknight: CMakeFiles/soulknight.dir/build.make
 soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-graphics.2.6.1.dylib
 soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-network.2.6.1.dylib
@@ -546,7 +562,7 @@ soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/li
 soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-window.2.6.1.dylib
 soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-system.2.6.1.dylib
 soulknight: CMakeFiles/soulknight.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable soulknight"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable soulknight"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/soulknight.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

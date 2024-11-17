@@ -369,6 +369,30 @@ src/entities/collectables/manaPack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.s
 .PHONY : src/entities/collectables/manaPack.cpp.s
 
+src/entities/gameObject.o: src/entities/gameObject.cpp.o
+.PHONY : src/entities/gameObject.o
+
+# target to build an object file
+src/entities/gameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o
+.PHONY : src/entities/gameObject.cpp.o
+
+src/entities/gameObject.i: src/entities/gameObject.cpp.i
+.PHONY : src/entities/gameObject.i
+
+# target to preprocess a source file
+src/entities/gameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.i
+.PHONY : src/entities/gameObject.cpp.i
+
+src/entities/gameObject.s: src/entities/gameObject.cpp.s
+.PHONY : src/entities/gameObject.s
+
+# target to generate assembly for a file
+src/entities/gameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.s
+.PHONY : src/entities/gameObject.cpp.s
+
 src/entities/player/hero.o: src/entities/player/hero.cpp.o
 .PHONY : src/entities/player/hero.o
 
@@ -777,30 +801,6 @@ src/utils/logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/logger.cpp.s
 .PHONY : src/utils/logger.cpp.s
 
-src/utils/math.o: src/utils/math.cpp.o
-.PHONY : src/utils/math.o
-
-# target to build an object file
-src/utils/math.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/math.cpp.o
-.PHONY : src/utils/math.cpp.o
-
-src/utils/math.i: src/utils/math.cpp.i
-.PHONY : src/utils/math.i
-
-# target to preprocess a source file
-src/utils/math.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/math.cpp.i
-.PHONY : src/utils/math.cpp.i
-
-src/utils/math.s: src/utils/math.cpp.s
-.PHONY : src/utils/math.s
-
-# target to generate assembly for a file
-src/utils/math.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/math.cpp.s
-.PHONY : src/utils/math.cpp.s
-
 src/utils/random.o: src/utils/random.cpp.o
 .PHONY : src/utils/random.o
 
@@ -824,6 +824,30 @@ src/utils/random.s: src/utils/random.cpp.s
 src/utils/random.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/random.cpp.s
 .PHONY : src/utils/random.cpp.s
+
+src/utils/vec.o: src/utils/vec.cpp.o
+.PHONY : src/utils/vec.o
+
+# target to build an object file
+src/utils/vec.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/vec.cpp.o
+.PHONY : src/utils/vec.cpp.o
+
+src/utils/vec.i: src/utils/vec.cpp.i
+.PHONY : src/utils/vec.i
+
+# target to preprocess a source file
+src/utils/vec.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/vec.cpp.i
+.PHONY : src/utils/vec.cpp.i
+
+src/utils/vec.s: src/utils/vec.cpp.s
+.PHONY : src/utils/vec.s
+
+# target to generate assembly for a file
+src/utils/vec.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/vec.cpp.s
+.PHONY : src/utils/vec.cpp.s
 
 # Help Target
 help:
@@ -864,6 +888,9 @@ help:
 	@echo "... src/entities/collectables/manaPack.o"
 	@echo "... src/entities/collectables/manaPack.i"
 	@echo "... src/entities/collectables/manaPack.s"
+	@echo "... src/entities/gameObject.o"
+	@echo "... src/entities/gameObject.i"
+	@echo "... src/entities/gameObject.s"
 	@echo "... src/entities/player/hero.o"
 	@echo "... src/entities/player/hero.i"
 	@echo "... src/entities/player/hero.s"
@@ -915,12 +942,12 @@ help:
 	@echo "... src/utils/logger.o"
 	@echo "... src/utils/logger.i"
 	@echo "... src/utils/logger.s"
-	@echo "... src/utils/math.o"
-	@echo "... src/utils/math.i"
-	@echo "... src/utils/math.s"
 	@echo "... src/utils/random.o"
 	@echo "... src/utils/random.i"
 	@echo "... src/utils/random.s"
+	@echo "... src/utils/vec.o"
+	@echo "... src/utils/vec.i"
+	@echo "... src/utils/vec.s"
 .PHONY : help
 
 
