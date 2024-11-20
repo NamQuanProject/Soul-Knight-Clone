@@ -18,7 +18,6 @@ public:
     bool IsKeyPressed(int key) const;     // Check if a key was pressed in the current frame
     bool IsKeyReleased(int key) const;    // Check if a key was released in the current frame
     bool IsKeyHeld(int key) const;        // Check if a key is being held down
-
     void SetKeyState(int key, KeyState state);  // Set the state of a key
 
 private:

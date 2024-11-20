@@ -10,9 +10,9 @@ public:
     virtual void Update(float deltaTime) = 0;         
     virtual void Collision(GameObject* gameObject) = 0; 
     virtual void Render(sf::RenderWindow& window) = 0;
-  
+    virtual void SetPosition(const Vec& position); 
     Vec GetPosition() const;              
-    void SetPosition(const Vec& position); 
+    
     void Translate(const Vec& delta);     
 
     

@@ -1,21 +1,18 @@
 #include "knight.h"
+#include <iostream>
 
 // Constructor
 Knight::Knight() : Player() {
     loadKnightAnimations();
-    animationManager.setAnimation("idle_right");
+    animationManager.setAnimation("idle_right");  // Default animation
+    
 }
 
+// Update the knight animation
 void Knight::Update(float deltaTime) {
-    animationManager.update(deltaTime);
+    animationManager.update(deltaTime);  // Update the current animation
 }
 
-// // Render method (overridden)
-// void Knight::Render(sf::RenderWindow& window) {
-//     Player::Render(window);
-// }
-
-// Method to load knight-specific animations
 void Knight::loadKnightAnimations() {
     Animation rightStandAnimation;
     std::vector<std::string> framePaths1 = {
@@ -25,9 +22,8 @@ void Knight::loadKnightAnimations() {
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/idle/4.bmp"
     };
     rightStandAnimation.loadAnimation(framePaths1);  // Load the idle animation
-    animationManager.addAnimation("idle_right", rightStandAnimation);  // Add it to the manager
+    animationManager.addAnimation("idle_right", rightStandAnimation);  // Add to animation manager
 
-    // Idle animation (flip)
     Animation leftStandAnimation;
     std::vector<std::string> framePaths2 = {
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/idle/flip_1.bmp",
@@ -35,10 +31,10 @@ void Knight::loadKnightAnimations() {
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/idle/flip_3.bmp",
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/idle/flip_4.bmp"
     };
-    leftStandAnimation.loadAnimation(framePaths2);  // Load the flip idle animation
-    animationManager.addAnimation("idle_left", leftStandAnimation);  // Add to manager
-
-    // Running animation
+    leftStandAnimation.loadAnimation(framePaths2);  
+    animationManager.addAnimation("idle_left", leftStandAnimation);  
+    
+    // Right Running Animation
     Animation rightRunAnimation;
     std::vector<std::string> framePaths3 = {
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/run/1.bmp",
@@ -47,8 +43,9 @@ void Knight::loadKnightAnimations() {
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/run/4.bmp"
     };
     rightRunAnimation.loadAnimation(framePaths3);  // Load the running animation
-    animationManager.addAnimation("run_right", rightRunAnimation);  // Add to manager
+    animationManager.addAnimation("run_right", rightRunAnimation);  // Add to animation manager
 
+    // Left Running Animation (flipped)
     Animation leftRunAnimation;
     std::vector<std::string> framePaths4 = {
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/run/flip_1.bmp",
@@ -56,30 +53,32 @@ void Knight::loadKnightAnimations() {
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/run/flip_3.bmp",
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/run/flip_4.bmp"
     };
-    leftRunAnimation.loadAnimation(framePaths4);  
-    animationManager.addAnimation("run_left", leftRunAnimation);  
+    leftRunAnimation.loadAnimation(framePaths4);  // Load the flipped running animation
+    animationManager.addAnimation("run_left", leftRunAnimation);  // Add to animation manager
 }
 
+// Render the knight (called every frame)
 void Knight::Render(sf::RenderWindow& window) {
-    window.draw(animationManager.getCurrentSprite());
+    window.draw(animationManager.getCurrentSprite());  // Draw the current animation sprite
 }
 
 
 void Knight::runRight() {
-    animationManager.setAnimation("run_right");
+    animationManager.setAnimation("run_right");  // Switch to running right animation
 }
 
 void Knight::runLeft() {
-    animationManager.setAnimation("run_left");
+    animationManager.setAnimation("run_left");  // Switch to running left animation
 }
 
 void Knight::standRight() {
-    animationManager.setAnimation("idle_right");
+    animationManager.setAnimation("idle_right");  // Switch to idle right animation
 }
-
+ 
 void Knight::standLeft() {
-    animationManager.setAnimation("idle_left");
+    animationManager.setAnimation("idle_left");  // Switch to idle left animation
 }
-void Knight::Attack() {
 
+void Knight::SetPosition(const Vec& position)  {
+    animationManager.getCurrentSprite().setPosition(position.x, position.y);
 }

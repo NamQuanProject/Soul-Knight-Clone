@@ -27,7 +27,6 @@ set(SOURCES ${MAIN_FILE} ${SOURCES_CPP} ${SOURCES_H})
 
 # Add executable target
 add_executable(${PROJECT_NAME} ${SOURCES})
-
 # Link libraries
 target_link_libraries(${PROJECT_NAME} 
     sfml-system 

@@ -7,26 +7,49 @@
 
 class Animation {
 public:
-    Animation();  
-    void addFrame(const sf::IntRect& frameRect);  // Add frame rect
-    void setFrameTime(float time);  // Set time per frame
-    void update(float deltaTime);  // Update the animation based on deltaTime
-    void reset();  // Reset the animation to the first frame
-    sf::IntRect getCurrentFrame() const;  // Get the current frame as an sf::IntRect
-    bool isLooping() const;  // Check if the animation is looping
-    bool isFinished() const;  // Check if the animation has finished
-    void setLooping(bool loop);  // Set looping behavior
-    void setFrameSpeed(float speed);  // Set the frame speed
+    // Constructor
+    Animation();
+
+    // Add a new frame to the animation
+    void addFrame(const sf::Texture& texture);
+
+    // Set the time between frames
+    void setSpeed(float time);
+
+    // Update the animation based on deltaTime
+    void update(float deltaTime);
+
+    // Reset the animation to the first frame
+    void reset();
+
+    // Check if the animation is looping
+    bool isLooping() const;
+
+    // Check if the animation has finished
+    bool isFinished() const;
+
+    // Set the looping behavior of the animation
+    void setLooping(bool loop);
+
+    // Set the frame speed (time per frame)
+    void setFrameSpeed(float speed);
+
+    // Get the texture of the current frame
     sf::Texture& getTexture();
-    bool loadAnimation(const std::vector<std::string>& framePaths);  // Load the animation frames from file paths
+
+    // Load animation frames from file paths
+    bool loadAnimation(const std::vector<std::string>& framePaths);
+
+    // Make a texture transparent by changing a specified color to transparent
+    sf::Texture makeTransparent(const sf::Texture& texture, const sf::Color& transparentColor);
 
 private:
-    std::vector<sf::IntRect> frames;  // Stores the frames for the animation
-    float frameTime;  // Time to display each frame
-    float elapsedTime;  // Accumulated time for frame switching
-    int currentFrame;  // The current frame index
-    bool loop;  // Whether the animation loops
-    sf::Texture currentTexture;  // Texture for the current frame
+    std::vector<sf::Texture> frames;   // Stores the animation frames
+    float frameTime;                   // Time per frame (speed of animation)
+    float elapsedTime;                 // Total time passed
+    int currentFrame;                  // The index of the current frame
+    bool loop;                         // Whether the animation loops
+    sf::Texture currentTexture;        // The current frame's texture
 };
 
 #endif // ANIMATION_H

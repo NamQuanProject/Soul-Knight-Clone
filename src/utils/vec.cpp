@@ -1,4 +1,4 @@
-#include "Vec.h"
+#include "vec.h"
 
 // Addition
 Vec Vec::operator+(const Vec& other) const {

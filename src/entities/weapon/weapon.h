@@ -8,12 +8,13 @@ public:
     Weapon();
     virtual ~Weapon() = default;
 
-    virtual void Use();          // Perform the weapon's primary action
-    virtual double GetDamage() const; // Get the damage dealt by the weapon
-    void SetOwner(GameObject* owner); // Set the weapon's owner
+    virtual void Use() = 0;  
+    virtual double GetDamage() = 0; 
+    void SetOwner(GameObject* owner); 
+    virtual Vec GetPosition();
 
 protected:
-    double damage;               // Damage dealt by the weapon
-    double range;                // Weapon's effective range
-    GameObject* owner;           // Owner of the weapon
+    double damage;              
+    double range;               
+    GameObject* owner;           
 };

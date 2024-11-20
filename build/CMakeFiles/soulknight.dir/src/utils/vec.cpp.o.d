@@ -1,6 +1,6 @@
 CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.cpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/Vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config \

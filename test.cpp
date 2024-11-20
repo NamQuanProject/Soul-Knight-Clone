@@ -19,7 +19,6 @@ sf::Texture makeTransparent(const sf::Texture& texture, const sf::Color& transpa
         }
     }
 
-    // Create a new texture from the modified image
     sf::Texture newTexture;
     newTexture.loadFromImage(image);
     return newTexture;

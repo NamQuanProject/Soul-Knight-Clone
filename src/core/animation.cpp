@@ -4,66 +4,77 @@
 Animation::Animation()
     : frameTime(0.1f), elapsedTime(0.f), currentFrame(0), loop(true) {}
 
-void Animation::addFrame(const sf::IntRect& frameRect) {
-    frames.push_back(frameRect);
+void Animation::addFrame(const sf::Texture& texture) {
+    frames.push_back(texture);  // Add the texture as a frame to the animation
 }
 
-void Animation::setFrameTime(float time) {
-    frameTime = time;
+void Animation::setSpeed(float time) {
+    frameTime = time;  // Set the time per frame (frame speed)
 }
 
 void Animation::update(float deltaTime) {
-    elapsedTime += deltaTime;  // Add the time that has passed to the total elapsed time
-
-    if (elapsedTime >= frameTime && !frames.empty()) {  // If enough time has passed to move to the next frame
-        elapsedTime -= frameTime;  // Subtract the frame time from elapsed time
-
-        // Move to the next frame
-        currentFrame = (currentFrame + 1) % frames.size();  // Cycle through frames, wrap around if necessary
-
-        // If the animation doesn't loop, stop at the last frame
-        if (!loop && currentFrame == 0) {
-            currentFrame = frames.size() - 1;  // Stop at the last frame if not looping
-        }
-    }
+    currentFrame = (currentFrame + 1) % frames.size(); 
+   
+    currentTexture = frames[currentFrame];  // Set the current texture/frame
 }
 
-sf::Texture& Animation::getTexture() {
-    return currentTexture;
+void Animation::reset() {
+    currentFrame = 0;  // Reset animation to the first frame
+    elapsedTime = 0.f;  // Reset elapsed time
 }
 
-sf::IntRect Animation::getCurrentFrame() const {
-    if (frames.empty()) {
-        return sf::IntRect();  // Return an empty rectangle if no frames
-    }
-    return frames[currentFrame];  // Return the current frame as an IntRect
+bool Animation::isLooping() const {
+    return loop;  // Return whether the animation loops
 }
 
 bool Animation::isFinished() const {
     return !loop && currentFrame == frames.size() - 1;  // Check if the animation has finished (non-looping)
 }
 
+void Animation::setLooping(bool shouldLoop) {
+    loop = shouldLoop;  // Set whether the animation should loop
+}
+
 void Animation::setFrameSpeed(float speed) {
-    frameTime = speed;
+    frameTime = speed;  // Set the frame speed (time per frame)
+}
+
+sf::Texture& Animation::getTexture() {
+    return frames[currentFrame];  // Return the current texture for the frame
 }
 
 bool Animation::loadAnimation(const std::vector<std::string>& framePaths) {
-    frames.clear();
+    frames.clear();  // Clear any existing frames
     
     for (const std::string& path : framePaths) {
         sf::Texture texture;
         if (!texture.loadFromFile(path)) {
-            std::cerr << "Failed to load texture from " << path << std::endl;
-            return false;
+            std::cout << "Failed to load texture from " << path << std::endl;
+            return false;  // If a texture fails to load, return false
         }
-
-
-        sf::IntRect frameRect(0, 0, texture.getSize().x, texture.getSize().y);  // Define the frame as an IntRect
-        frames.push_back(frameRect);  // Add the frame to the frames vector
+        addFrame(makeTransparent(texture, sf::Color::White));  // Make transparent and add to frames
     }
-    return true;
+
+    return true;  // Return true if all frames are successfully loaded
 }
 
-void Animation::reset() {
-    
+sf::Texture Animation::makeTransparent(const sf::Texture& texture, const sf::Color& transparentColor) {
+    sf::Image image = texture.copyToImage();  // Copy texture to image for manipulation
+
+    // Loop through each pixel and change the transparentColor to transparent
+    unsigned int width = image.getSize().x;
+    unsigned int height = image.getSize().y;
+
+    for (unsigned int x = 0; x < width; ++x) {
+        for (unsigned int y = 0; y < height; ++y) {
+            if (image.getPixel(x, y) == transparentColor) {
+                image.setPixel(x, y, sf::Color(0, 0, 0, 0));  // Set the transparent color to fully transparent
+            }
+        }
+    }
+
+    // Create a new texture from the modified image and return it
+    sf::Texture newTexture;
+    newTexture.loadFromImage(image);
+    return newTexture;
 }

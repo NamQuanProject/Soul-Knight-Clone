@@ -11,12 +11,11 @@ public:
     Knight();                    // Constructor
     void Update(float deltaTime) override;  // Update method
     void Render(sf::RenderWindow& window) override;  // Render method
-    void Attack() override;               // Method to attack
-    void runRight();             // Run right animation
-    void runLeft();              // Run left animation
-    void standRight();           // Stand right animation
-    void standLeft();            // Stand left animation
-
+    void runRight();            
+    void runLeft();             
+    void standRight();           
+    void standLeft();     
+    void SetPosition(const Vec& position) override;      
 private:
     void loadKnightAnimations();       // Load knight-specific animations
     AnimationManager animationManager;  // Animation manager for handling animations

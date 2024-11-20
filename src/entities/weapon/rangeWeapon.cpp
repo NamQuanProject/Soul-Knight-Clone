@@ -25,14 +25,6 @@ void RangeWeapon::Use() {
     }
 }
 
-void RangeWeapon::Reload() {
-    // Reload weapon (reset ammo)
-    ammo = 10;  // Full ammo reload
-}
-
-void RangeWeapon::SetAmmo(int ammoCount) {
-    ammo = ammoCount;
-}
 
 int RangeWeapon::GetAmmo() const {
     return ammo;
@@ -47,6 +39,17 @@ Vec RangeWeapon::GetBulletPosition() const {
 Vec RangeWeapon::GetWeaponDirection() const {
     return weaponDirection;  // Return the current direction the weapon is pointing
 }
+
+
+void RangeWeapon::Reload() {
+    // Reload weapon (reset ammo)
+    ammo = 10;  // Full ammo reload
+}
+
+void RangeWeapon::SetAmmo(int ammoCount) {
+    ammo = ammoCount;
+}
+
 
 void RangeWeapon::SetWeaponDirection(const Vec& direction) {
     weaponDirection = direction;  // Set the new direction for the weapon

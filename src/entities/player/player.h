@@ -10,22 +10,16 @@
 class Player : public GameObject {
 public:
     Player();
+    
     virtual ~Player() = default;
-
+    virtual void Render(sf::RenderWindow& window) override;
     void Update(float deltaTime) override;
     double GetHP() const;
     double GetMaxHP() const;
     virtual void Attack();
     void Poisoned(double poisonDamage);
     void Collision(GameObject* gameObject) override;
-
-
-    virtual void Render(sf::RenderWindow& window) override;
-
-
-
-
-
+    
 
 protected:
     
