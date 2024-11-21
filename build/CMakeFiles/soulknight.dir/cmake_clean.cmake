@@ -45,6 +45,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/soulknight.dir/src/main.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o"
   "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o.d"
+  "CMakeFiles/soulknight.dir/src/manager/camera.cpp.o"
+  "CMakeFiles/soulknight.dir/src/manager/camera.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o"
   "CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o"

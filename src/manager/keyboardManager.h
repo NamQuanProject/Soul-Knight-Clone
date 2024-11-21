@@ -14,13 +14,25 @@ public:
     KeyboardManager();
     ~KeyboardManager();
 
-    void Update();                       // Update key states (must be called every frame)
-    bool IsKeyPressed(int key) const;     // Check if a key was pressed in the current frame
-    bool IsKeyReleased(int key) const;    // Check if a key was released in the current frame
-    bool IsKeyHeld(int key) const;        // Check if a key is being held down
-    void SetKeyState(int key, KeyState state);  // Set the state of a key
+    // Update key states (must be called every frame)
+    void Update();
+
+    // Check if a key was pressed in the current frame
+    bool IsKeyPressed(int key) const;
+
+    // Check if a key was released in the current frame
+    bool IsKeyReleased(int key) const;
+
+    // Check if a key is being held down
+    bool IsKeyHeld(int key) const;
+
+    // Set the state of a key
+    void SetKeyState(int key, KeyState state);
 
 private:
-    std::unordered_map<int, KeyState> keyStates;   // Map of key codes to their states
-    std::unordered_map<int, KeyState> prevKeyStates;  // Map of previous key states (for detecting key up/down)
+    // Map of key codes to their current states
+    std::unordered_map<int, KeyState> keyStates;
+
+    // Map of key codes to their previous states (for detecting key changes)
+    std::unordered_map<int, KeyState> prevKeyStates;
 };

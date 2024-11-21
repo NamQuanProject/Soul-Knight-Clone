@@ -31,6 +31,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/entities/weapon/weapon.cpp" "CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/main.cpp" "CMakeFiles/soulknight.dir/src/main.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/main.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/animationManager.cpp" "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o.d"
+  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/camera.cpp" "CMakeFiles/soulknight.dir/src/manager/camera.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/camera.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/collisionManager.cpp" "CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/eventManager.cpp" "CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/gameManager.cpp" "CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o.d"

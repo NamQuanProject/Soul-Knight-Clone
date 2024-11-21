@@ -681,6 +681,30 @@ src/manager/animationManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.s
 .PHONY : src/manager/animationManager.cpp.s
 
+src/manager/camera.o: src/manager/camera.cpp.o
+.PHONY : src/manager/camera.o
+
+# target to build an object file
+src/manager/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/camera.cpp.o
+.PHONY : src/manager/camera.cpp.o
+
+src/manager/camera.i: src/manager/camera.cpp.i
+.PHONY : src/manager/camera.i
+
+# target to preprocess a source file
+src/manager/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/camera.cpp.i
+.PHONY : src/manager/camera.cpp.i
+
+src/manager/camera.s: src/manager/camera.cpp.s
+.PHONY : src/manager/camera.s
+
+# target to generate assembly for a file
+src/manager/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/camera.cpp.s
+.PHONY : src/manager/camera.cpp.s
+
 src/manager/collisionManager.o: src/manager/collisionManager.cpp.o
 .PHONY : src/manager/collisionManager.o
 
@@ -975,6 +999,9 @@ help:
 	@echo "... src/manager/animationManager.o"
 	@echo "... src/manager/animationManager.i"
 	@echo "... src/manager/animationManager.s"
+	@echo "... src/manager/camera.o"
+	@echo "... src/manager/camera.i"
+	@echo "... src/manager/camera.s"
 	@echo "... src/manager/collisionManager.o"
 	@echo "... src/manager/collisionManager.i"
 	@echo "... src/manager/collisionManager.s"
