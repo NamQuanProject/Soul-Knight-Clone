@@ -47,10 +47,6 @@ void Player::CheckState() {
     }
 }
 
-void Player::CheckFace() {
-    if (vision.x >= 0) {
-        face = RIGHT;
-    } else {
-        face = LEFT;
-    }
+Player::Face Player::CheckFace() {
+    return face;
 }

@@ -38,8 +38,6 @@ protected:
     Vec vision;
 
 private:
-    // PoisonedIcon* poisonedIcon;
-    
     virtual void CheckState();
-    void CheckFace();
+    Face CheckFace();
 };
