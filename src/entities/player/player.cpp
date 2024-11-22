@@ -12,7 +12,7 @@ void Player::Update(float deltaTime) {
 }
 
 void Player::Collision(GameObject* gameObject) {
-    // Handle collision with other game objects (e.g., take damage, pick up items)
+    
 }
 
 void Player::Render(sf::RenderWindow& window) {
