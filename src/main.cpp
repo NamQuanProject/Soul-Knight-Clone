@@ -60,18 +60,34 @@ int main() {
                     knightPosition.x += 75 * 0.1f;
                     knight1.runRight();
                 } else if (event.key.code == sf::Keyboard::Up) {
+                    if (knight1.CheckFace() == Knight::RIGHT) {
+                        knight1.runRight();
+                    }
+                    else {
+                        knight1.runLeft();
+                    }
                     knightPosition.y -= 75 * 0.1f;
                 } else if (event.key.code == sf::Keyboard::Down) {
+                    if (knight1.CheckFace() == Knight::RIGHT) {
+                        knight1.runRight();
+                    }
+                    else {
+                        knight1.runLeft();
+                    }
                     knightPosition.y += 75 * 0.1f;
                 } else {
                     knight1.standRight();
                 }
             } else if (sf::Event::KeyReleased) {
-                knight1.standRight();
+                if (knight1.CheckFace() == Knight::RIGHT) {
+                    knight1.standRight();
+                }
+                else {
+                    knight1.standLeft();
+                }
             }
         }
 
-        // Enforce room boundaries
         if (knightPosition.x < roomLeft + 5) {
             knightPosition.x = roomLeft + 5;
         }

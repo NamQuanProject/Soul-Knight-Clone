@@ -8,11 +8,10 @@ Player::Player()
 
 void Player::Update(float deltaTime) {
     CheckState();
-    CheckFace();
 }
 
 void Player::Collision(GameObject* gameObject) {
-    
+
 }
 
 void Player::Render(sf::RenderWindow& window) {
@@ -39,12 +38,13 @@ void Player::Poisoned(double poisonDamage) {
    
 }
 
-void Player::CheckState() {
+Player::State Player::CheckState() {
     if (hp <= 0) {
         state = DEAD;
     } else if (state == DEAD && hp > 0) {
         state = IDLE;
     }
+    return state;
 }
 
 Player::Face Player::CheckFace() {

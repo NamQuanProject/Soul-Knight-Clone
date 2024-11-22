@@ -21,6 +21,10 @@ public:
     void Collision(GameObject* gameObject) override;
     
 
+    enum Face { RIGHT, LEFT } face;
+    enum State { IDLE, RUN, DEAD, READY } state;
+    State CheckState();
+    Face CheckFace();
 protected:
     
     double hp;
@@ -33,11 +37,7 @@ protected:
 
     
 
-    enum Face { RIGHT, LEFT } face;
-    enum State { IDLE, RUN, DEAD, READY } state;
-    Vec vision;
+    
 
-private:
-    virtual void CheckState();
-    Face CheckFace();
+
 };

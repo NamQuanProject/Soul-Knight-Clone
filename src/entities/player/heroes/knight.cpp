@@ -67,10 +67,14 @@ void Knight::Render(sf::RenderWindow& window) {
 
 
 void Knight::runRight() {
+    state = RUN;
+    face = RIGHT;
     animationManager.setAnimation("run_right");  // Switch to running right animation
 }
 
 void Knight::runLeft() {
+    state = RUN;
+    face = LEFT;
     animationManager.setAnimation("run_left");  // Switch to running left animation
 }
 
