@@ -1,84 +1,109 @@
 #include "core/application.h"
 #include "entities/player/heroes/knight.h"
 #include "utils/vec.h"
+#include "manager/soundManager.h"
+#include "manager/camera.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
 int main() {
-    // Create an SFML window with size 800x600 and title "Knight Test"
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Knight Test");
+    sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
+    
+    sf::Image image;
+    if (!image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/map/1-1.bmp")) {
+        std::cerr << "Error: Could not load background image!" << std::endl;
+        return -1;
+    }
 
-    // Create a Knight object
+    sf::Color transparentColor(255, 255, 255);
+    image.createMaskFromColor(transparentColor);
+
+    sf::Texture backgroundTexture;
+    if (!backgroundTexture.loadFromImage(image)) {
+        std::cerr << "Error: Could not load texture from image!" << std::endl;
+        return -1;
+    }
+
+    sf::Sprite backgroundSprite;
+    backgroundSprite.setTexture(backgroundTexture);
+    backgroundSprite.setPosition(0, 0);
+
+    sf::FloatRect worldBounds(0, 0, backgroundTexture.getSize().x, backgroundTexture.getSize().y);
+
+    Camera camera(1000, 700);
+    camera.setZoom(1);
+    camera.setWorldBounds(worldBounds);
+
     Knight knight1;
 
-    // Clock to track the time between frames
     sf::Clock clock;
+    Vec knightPosition(105, 183);
 
-    // Initial position of the knight
-    Vec knightPosition(400, 300);
-
-
-
-    
-    // Main loop that runs as long as the window is open
+    // Room bounds (x, y, width, height)
+    float roomLeft = 16;
+    float roomTop = 98;
+    float roomRight = 192;
+    float roomBottom = 273;
+    SoundManager soundManager;
+    soundManager.playMusic("background");
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
-            // Check if the close event is triggered (e.g., window close button clicked)
             if (event.type == sf::Event::Closed) {
-                window.close();  // Close the window
+                window.close();
             }
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Left) {
-                    knightPosition.x -= 75 * 0.1f; // Adjusting position for left movement
-                    knight1.runLeft();            // Animation for left movement
-                    std::cout << "Moving left to position: " << knightPosition.x << ", " << knightPosition.y << std::endl;
-                }
-                
-                else if (event.key.code == sf::Keyboard::Right) {
-                    knightPosition.x += 75 * 0.1f; // Adjusting position for right movement
-                    knight1.runRight();            // Animation for right movement
-                    std::cout << "Moving right to position: " << knightPosition.x << ", " << knightPosition.y << std::endl;
-                }
-                
-                else if (event.key.code == sf::Keyboard::Up) {
-                    knightPosition.y -= 75 * 0.1f; // Adjusting position for upward movement          // Animation for upward movement
-                    std::cout << "Moving up to position: " << knightPosition.x << ", " << knightPosition.y << std::endl;
-                }
-                
-                else if (event.key.code == sf::Keyboard::Down) {
-                    knightPosition.y += 75 * 0.1f; // Adjusting position for downward movement           // Animation for downward movement
-                    std::cout << "Moving down to position: " << knightPosition.x << ", " << knightPosition.y << std::endl;
-                }
-                else {
+                    knightPosition.x -= 75 * 0.1f;
+                    knight1.runLeft();
+                } else if (event.key.code == sf::Keyboard::Right) {
+                    knightPosition.x += 75 * 0.1f;
+                    knight1.runRight();
+                } else if (event.key.code == sf::Keyboard::Up) {
+                    knightPosition.y -= 75 * 0.1f;
+                } else if (event.key.code == sf::Keyboard::Down) {
+                    knightPosition.y += 75 * 0.1f;
+                } else {
                     knight1.standRight();
                 }
+            } else if (sf::Event::KeyReleased) {
+                knight1.standRight();
             }
-
         }
 
-        // Handle keyboard inputs for movement
-        
+        // Enforce room boundaries
+        if (knightPosition.x < roomLeft + 5) {
+            knightPosition.x = roomLeft + 5;
+        }
+        if (knightPosition.x > roomRight - 5) {
+            if ((knightPosition.y >= 151 && knightPosition.y <= 219) == false) {
+                knightPosition.x = roomRight - 5;
+            }
+            
+        }
+        if (knightPosition.y < roomTop + 5) {
+            knightPosition.y = roomTop + 5 ;
+        }
+        if (knightPosition.y > roomBottom - 5) {
+            knightPosition.y = roomBottom - 5 ;
+        }
 
-        // Set the knight's position
-        knight1.SetPosition(knightPosition);
+        sf::Vector2f knightPos(knightPosition.x, knightPosition.y);
+        camera.update(knightPos);
 
-        // Clear the window with a blue background
-        window.clear(sf::Color::Blue);
+        window.clear();
+        camera.applyView(window);
+        window.draw(backgroundSprite);
 
-        // Update and render the knight
         float deltaTime = clock.getElapsedTime().asSeconds();
-        if (clock.getElapsedTime().asSeconds() > 0.1f) {
+        if (deltaTime > 0.1f) {
             knight1.Update(deltaTime);
-            clock.restart();  
-        }  // Update knight with deltaTime
-        knight1.Render(window);  // Render knight at updated position
+            clock.restart();
+        }
+        knight1.SetPosition(knightPosition);
+        knight1.Render(window);
 
-        // Display the updated window content
         window.display();
-
-        // Debug output
-        
     }
 
     return 0;

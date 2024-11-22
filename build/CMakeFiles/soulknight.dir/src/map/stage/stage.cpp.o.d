@@ -1,6 +1,6 @@
-CMakeFiles/soulknight.dir/src/main.cpp.o: \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/main.cpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/application.h \
+CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o: \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/stage.cpp \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/stage.h \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System.hpp \
@@ -953,37 +953,6 @@ CMakeFiles/soulknight.dir/src/main.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/state.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../core/animation.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../core/animation.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/soundManager.h \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/InputSoundFile.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Export.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Listener.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Music.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundStream.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundSource.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/AlResource.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/OutputSoundFile.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Sound.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundBuffer.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/set \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundBufferRecorder.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundRecorder.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileFactory.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileFactory.inl \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileReader.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileWriter.hpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/camera.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/monsterRoom.h

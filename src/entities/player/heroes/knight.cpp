@@ -59,7 +59,10 @@ void Knight::loadKnightAnimations() {
 
 // Render the knight (called every frame)
 void Knight::Render(sf::RenderWindow& window) {
-    window.draw(animationManager.getCurrentSprite());  // Draw the current animation sprite
+    sf::Sprite sprite = animationManager.getCurrentSprite();
+    sf::FloatRect bounds = sprite.getLocalBounds();
+    sprite.setOrigin(bounds.width / 2, bounds.height / 2);
+    window.draw(sprite);  // Draw the current animation sprite
 }
 
 

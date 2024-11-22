@@ -201,30 +201,6 @@ src/core/game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/game.cpp.s
 .PHONY : src/core/game.cpp.s
 
-src/core/map.o: src/core/map.cpp.o
-.PHONY : src/core/map.o
-
-# target to build an object file
-src/core/map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/map.cpp.o
-.PHONY : src/core/map.cpp.o
-
-src/core/map.i: src/core/map.cpp.i
-.PHONY : src/core/map.i
-
-# target to preprocess a source file
-src/core/map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/map.cpp.i
-.PHONY : src/core/map.cpp.i
-
-src/core/map.s: src/core/map.cpp.s
-.PHONY : src/core/map.s
-
-# target to generate assembly for a file
-src/core/map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/map.cpp.s
-.PHONY : src/core/map.cpp.s
-
 src/core/menuState.o: src/core/menuState.cpp.o
 .PHONY : src/core/menuState.o
 
@@ -825,6 +801,126 @@ src/manager/soundManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.s
 .PHONY : src/manager/soundManager.cpp.s
 
+src/map/map.o: src/map/map.cpp.o
+.PHONY : src/map/map.o
+
+# target to build an object file
+src/map/map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/map.cpp.o
+.PHONY : src/map/map.cpp.o
+
+src/map/map.i: src/map/map.cpp.i
+.PHONY : src/map/map.i
+
+# target to preprocess a source file
+src/map/map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/map.cpp.i
+.PHONY : src/map/map.cpp.i
+
+src/map/map.s: src/map/map.cpp.s
+.PHONY : src/map/map.s
+
+# target to generate assembly for a file
+src/map/map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/map.cpp.s
+.PHONY : src/map/map.cpp.s
+
+src/map/room/monsterRoom.o: src/map/room/monsterRoom.cpp.o
+.PHONY : src/map/room/monsterRoom.o
+
+# target to build an object file
+src/map/room/monsterRoom.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o
+.PHONY : src/map/room/monsterRoom.cpp.o
+
+src/map/room/monsterRoom.i: src/map/room/monsterRoom.cpp.i
+.PHONY : src/map/room/monsterRoom.i
+
+# target to preprocess a source file
+src/map/room/monsterRoom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.i
+.PHONY : src/map/room/monsterRoom.cpp.i
+
+src/map/room/monsterRoom.s: src/map/room/monsterRoom.cpp.s
+.PHONY : src/map/room/monsterRoom.s
+
+# target to generate assembly for a file
+src/map/room/monsterRoom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.s
+.PHONY : src/map/room/monsterRoom.cpp.s
+
+src/map/room/room.o: src/map/room/room.cpp.o
+.PHONY : src/map/room/room.o
+
+# target to build an object file
+src/map/room/room.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/room.cpp.o
+.PHONY : src/map/room/room.cpp.o
+
+src/map/room/room.i: src/map/room/room.cpp.i
+.PHONY : src/map/room/room.i
+
+# target to preprocess a source file
+src/map/room/room.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/room.cpp.i
+.PHONY : src/map/room/room.cpp.i
+
+src/map/room/room.s: src/map/room/room.cpp.s
+.PHONY : src/map/room/room.s
+
+# target to generate assembly for a file
+src/map/room/room.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/room.cpp.s
+.PHONY : src/map/room/room.cpp.s
+
+src/map/room/treasureRoom.o: src/map/room/treasureRoom.cpp.o
+.PHONY : src/map/room/treasureRoom.o
+
+# target to build an object file
+src/map/room/treasureRoom.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.o
+.PHONY : src/map/room/treasureRoom.cpp.o
+
+src/map/room/treasureRoom.i: src/map/room/treasureRoom.cpp.i
+.PHONY : src/map/room/treasureRoom.i
+
+# target to preprocess a source file
+src/map/room/treasureRoom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.i
+.PHONY : src/map/room/treasureRoom.cpp.i
+
+src/map/room/treasureRoom.s: src/map/room/treasureRoom.cpp.s
+.PHONY : src/map/room/treasureRoom.s
+
+# target to generate assembly for a file
+src/map/room/treasureRoom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.s
+.PHONY : src/map/room/treasureRoom.cpp.s
+
+src/map/stage/stage.o: src/map/stage/stage.cpp.o
+.PHONY : src/map/stage/stage.o
+
+# target to build an object file
+src/map/stage/stage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o
+.PHONY : src/map/stage/stage.cpp.o
+
+src/map/stage/stage.i: src/map/stage/stage.cpp.i
+.PHONY : src/map/stage/stage.i
+
+# target to preprocess a source file
+src/map/stage/stage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.i
+.PHONY : src/map/stage/stage.cpp.i
+
+src/map/stage/stage.s: src/map/stage/stage.cpp.s
+.PHONY : src/map/stage/stage.s
+
+# target to generate assembly for a file
+src/map/stage/stage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s
+.PHONY : src/map/stage/stage.cpp.s
+
 src/utils/config.o: src/utils/config.cpp.o
 .PHONY : src/utils/config.o
 
@@ -872,6 +968,30 @@ src/utils/logger.s: src/utils/logger.cpp.s
 src/utils/logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/logger.cpp.s
 .PHONY : src/utils/logger.cpp.s
+
+src/utils/point.o: src/utils/point.cpp.o
+.PHONY : src/utils/point.o
+
+# target to build an object file
+src/utils/point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/point.cpp.o
+.PHONY : src/utils/point.cpp.o
+
+src/utils/point.i: src/utils/point.cpp.i
+.PHONY : src/utils/point.i
+
+# target to preprocess a source file
+src/utils/point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/point.cpp.i
+.PHONY : src/utils/point.cpp.i
+
+src/utils/point.s: src/utils/point.cpp.s
+.PHONY : src/utils/point.s
+
+# target to generate assembly for a file
+src/utils/point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/point.cpp.s
+.PHONY : src/utils/point.cpp.s
 
 src/utils/random.o: src/utils/random.cpp.o
 .PHONY : src/utils/random.o
@@ -939,9 +1059,6 @@ help:
 	@echo "... src/core/game.o"
 	@echo "... src/core/game.i"
 	@echo "... src/core/game.s"
-	@echo "... src/core/map.o"
-	@echo "... src/core/map.i"
-	@echo "... src/core/map.s"
 	@echo "... src/core/menuState.o"
 	@echo "... src/core/menuState.i"
 	@echo "... src/core/menuState.s"
@@ -1017,12 +1134,30 @@ help:
 	@echo "... src/manager/soundManager.o"
 	@echo "... src/manager/soundManager.i"
 	@echo "... src/manager/soundManager.s"
+	@echo "... src/map/map.o"
+	@echo "... src/map/map.i"
+	@echo "... src/map/map.s"
+	@echo "... src/map/room/monsterRoom.o"
+	@echo "... src/map/room/monsterRoom.i"
+	@echo "... src/map/room/monsterRoom.s"
+	@echo "... src/map/room/room.o"
+	@echo "... src/map/room/room.i"
+	@echo "... src/map/room/room.s"
+	@echo "... src/map/room/treasureRoom.o"
+	@echo "... src/map/room/treasureRoom.i"
+	@echo "... src/map/room/treasureRoom.s"
+	@echo "... src/map/stage/stage.o"
+	@echo "... src/map/stage/stage.i"
+	@echo "... src/map/stage/stage.s"
 	@echo "... src/utils/config.o"
 	@echo "... src/utils/config.i"
 	@echo "... src/utils/config.s"
 	@echo "... src/utils/logger.o"
 	@echo "... src/utils/logger.i"
 	@echo "... src/utils/logger.s"
+	@echo "... src/utils/point.o"
+	@echo "... src/utils/point.i"
+	@echo "... src/utils/point.s"
 	@echo "... src/utils/random.o"
 	@echo "... src/utils/random.i"
 	@echo "... src/utils/random.s"

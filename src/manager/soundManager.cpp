@@ -29,7 +29,7 @@ void SoundManager::playMusic(const std::string& name) {
         }
         currentMusic = musicTracks[name].get(); // Get the raw pointer to the music
         currentMusic->setLoop(true); 
-        currentMusic->setVolume(1);
+ 
         currentMusic->play();
     } else {
         std::cerr << "Music not found: " << name << std::endl;
