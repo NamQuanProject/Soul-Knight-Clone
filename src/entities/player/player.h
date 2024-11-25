@@ -10,7 +10,6 @@
 class Player : public GameObject {
 public:
     Player();
-    
     virtual ~Player() = default;
     virtual void Render(sf::RenderWindow& window) override;
     void Update(float deltaTime) override;
@@ -30,7 +29,6 @@ protected:
     double hp;
     double maxHp;       
     AnimationManager animationManager;
-    Weapon* weapon1;
     double weaponOffsetX;
     double weaponOffsetY;
 

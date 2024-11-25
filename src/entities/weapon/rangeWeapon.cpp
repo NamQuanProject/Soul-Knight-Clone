@@ -1,10 +1,9 @@
 #include "rangeWeapon.h"
-#include "bullet.h"
+
 
 RangeWeapon::RangeWeapon()
     : ammo(10), fireRate(0.5), muzzleOffset(10.0), timeSinceLastFire(0) {
-    // Default constructor values
-    weaponDirection = Vec(1.0, 0.0);  // Default direction to the right (or however your default direction is)
+    weaponDirection = Vec(1.0, 0.0);  
 }
 
 void RangeWeapon::Use() {
@@ -61,14 +60,14 @@ void RangeWeapon::Update(float deltaTime) {
 }
 
 Vec RangeWeapon::PointAtEnemy(const Vec& enemyPosition) {
-    // Calculate the direction vector from the weapon's position to the enemy's position
-    Vec directionToEnemy = enemyPosition - owner->GetPosition();
-    
-    // Normalize the direction to get a unit vector (direction only, no magnitude)
+    Vec directionToEnemy = enemyPosition - owner->GetPosition();   
     directionToEnemy.Normalize();
-    
-    // Set the weapon's direction to the calculated direction
     SetWeaponDirection(directionToEnemy);
-    
     return directionToEnemy;
 }
+
+double GetDamage() {
+    
+}
+
+

@@ -985,6 +985,10 @@ CMakeFiles/soulknight.dir/src/core/menuState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/knight.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/badPistol.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../manager/animationManager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \

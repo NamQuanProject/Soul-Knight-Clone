@@ -7,10 +7,10 @@ public:
     MeleeWeapon();
     virtual ~MeleeWeapon() = default;
 
-    void Use();              // Perform melee attack (swing, thrust, etc.)
-    void SetDurability(int durability); // Set the durability of the weapon
-    int GetDurability() const;        // Get the current durability of the weapon
+    void Use();             
+    void SetDurability(int durability); 
+    int GetDurability() const;        
 
 protected:
-    int durability;                   // Durability of the melee weapon (how many hits before breaking)
+    int durability;                   
 };

@@ -4,8 +4,17 @@
 // Constructor
 Knight::Knight() : Player() {
     loadKnightAnimations();
+    weapon1 = new BadPistol();
     animationManager.setAnimation("idle_right");  // Default animation
     
+    
+}
+Knight::~Knight() {
+    // Clean up dynamically allocated weapon
+    if (weapon1) {
+        delete weapon1;
+        weapon1 = nullptr;
+    }
 }
 
 // Update the knight animation
@@ -62,6 +71,9 @@ void Knight::Render(sf::RenderWindow& window) {
     sf::Sprite sprite = animationManager.getCurrentSprite();
     sf::FloatRect bounds = sprite.getLocalBounds();
     sprite.setOrigin(bounds.width / 2, bounds.height / 2);
+    
+    weapon1->Render(window);
+
     window.draw(sprite);  // Draw the current animation sprite
 }
 
@@ -86,6 +98,17 @@ void Knight::standLeft() {
     animationManager.setAnimation("idle_left");  // Switch to idle left animation
 }
 
-void Knight::SetPosition(const Vec& position)  {
+void Knight::SetPosition(const Vec& position) {
+    // Convert Vec to sf::Vector2f for weapon position
+    sf::Vector2f web_position(position.x, position.y);
+    
+    // Ensure weapon1 is valid and of the correct type
+    if (weapon1) {
+        weapon1->setPlayerPosition(web_position);  // Update weapon position
+    } else {
+        std::cout << "Weapon is not initialized!" << std::endl;
+    }
+    
+    // Set the knight's animation sprite position
     animationManager.getCurrentSprite().setPosition(position.x, position.y);
 }

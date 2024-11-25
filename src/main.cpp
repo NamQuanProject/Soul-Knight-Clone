@@ -31,7 +31,7 @@ int main() {
     sf::FloatRect worldBounds(0, 0, backgroundTexture.getSize().x, backgroundTexture.getSize().y);
 
     Camera camera(1000, 700);
-    camera.setZoom(1);
+    // camera.setZoom(1);
     camera.setWorldBounds(worldBounds);
 
     Knight knight1;

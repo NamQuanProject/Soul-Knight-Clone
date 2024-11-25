@@ -1,11 +1,8 @@
 #include "player.h"
 
 Player::Player()
-    : hp(100), maxHp(100), weapon1(nullptr), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE) {
+    : hp(100), maxHp(100), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE) {
 }
-
-
-
 void Player::Update(float deltaTime) {
     CheckState();
 }
@@ -28,10 +25,7 @@ double Player::GetMaxHP() const {
 }
 
 void Player::Attack() {
-    if (weapon1) {
-        // Perform attack using weapon1
-        weapon1->Use();
-    }
+
 }
 
 void Player::Poisoned(double poisonDamage) {

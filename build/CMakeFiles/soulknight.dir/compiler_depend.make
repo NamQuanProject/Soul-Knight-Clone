@@ -2925,6 +2925,10 @@ CMakeFiles/soulknight.dir/src/core/menuState.cpp.o: /Users/quannguyennam/Documen
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badPistol.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/player.h \
@@ -6775,6 +6779,10 @@ CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: /Users/quanng
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badPistol.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.h
@@ -7741,7 +7749,7 @@ CMakeFiles/soulknight.dir/src/entities/player/player.cpp.o: /Users/quannguyennam
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/player.h
 
-CMakeFiles/soulknight.dir/src/entities/weapon/bullet.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.cpp \
+CMakeFiles/soulknight.dir/src/entities/projectile/bullet.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -8453,8 +8461,6 @@ CMakeFiles/soulknight.dir/src/entities/weapon/bullet.cpp.o: /Users/quannguyennam
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/initializer_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ios \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iosfwd \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iterator \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/limits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/limits.h \
@@ -8698,7 +8704,13 @@ CMakeFiles/soulknight.dir/src/entities/weapon/bullet.cpp.o: /Users/quannguyennam
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectileType.h
+
+CMakeFiles/soulknight.dir/src/entities/projectile/projectile.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.cpp \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectileType.h
 
 CMakeFiles/soulknight.dir/src/entities/weapon/gun/badPistol.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badPistol.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/Availability.h \
@@ -9657,7 +9669,6 @@ CMakeFiles/soulknight.dir/src/entities/weapon/gun/badPistol.cpp.o: /Users/quanng
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badPistol.h
@@ -12538,7 +12549,6 @@ CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o: /Users/quannguy
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h
 
@@ -14481,6 +14491,10 @@ CMakeFiles/soulknight.dir/src/main.cpp.o: /Users/quannguyennam/Documents/Project
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badPistol.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.h \
@@ -20494,11 +20508,9 @@ CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Pr
 
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/melee/knife.cpp:
 
-/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badPistol.h:
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.cpp:
 
-/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.h:
-
-/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.h:
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet.cpp:
 
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.cpp:
 
@@ -20509,6 +20521,10 @@ CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Pr
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/playState.h:
 
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.h:
+
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/gun/badPistol.h:
+
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/rangeWeapon.h:
 
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/game.cpp:
 
@@ -20705,6 +20721,8 @@ CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Pr
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ino_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ino64_t.h:
+
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectileType.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_in_port_t.h:
 
@@ -21238,6 +21256,8 @@ CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Pr
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h:
 
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/is_valid.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_const.h:
@@ -21461,8 +21481,6 @@ CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Pr
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_any_of.h:
-
-/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/bullet.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
 
@@ -22091,6 +22109,8 @@ CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Pr
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/formatter_output.h:
 
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/animationManager.cpp:
+
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h:
 
