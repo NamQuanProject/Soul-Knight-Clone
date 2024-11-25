@@ -489,6 +489,30 @@ src/entities/projectile/bullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet.cpp.s
 .PHONY : src/entities/projectile/bullet.cpp.s
 
+src/entities/projectile/bullet/badPistolBullet.o: src/entities/projectile/bullet/badPistolBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/badPistolBullet.o
+
+# target to build an object file
+src/entities/projectile/bullet/badPistolBullet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/badPistolBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/badPistolBullet.cpp.o
+
+src/entities/projectile/bullet/badPistolBullet.i: src/entities/projectile/bullet/badPistolBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/badPistolBullet.i
+
+# target to preprocess a source file
+src/entities/projectile/bullet/badPistolBullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/badPistolBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/badPistolBullet.cpp.i
+
+src/entities/projectile/bullet/badPistolBullet.s: src/entities/projectile/bullet/badPistolBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/badPistolBullet.s
+
+# target to generate assembly for a file
+src/entities/projectile/bullet/badPistolBullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/badPistolBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/badPistolBullet.cpp.s
+
 src/entities/projectile/projectile.o: src/entities/projectile/projectile.cpp.o
 .PHONY : src/entities/projectile/projectile.o
 
@@ -512,6 +536,30 @@ src/entities/projectile/projectile.s: src/entities/projectile/projectile.cpp.s
 src/entities/projectile/projectile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/projectile.cpp.s
 .PHONY : src/entities/projectile/projectile.cpp.s
+
+src/entities/projectile/projectileFactory.o: src/entities/projectile/projectileFactory.cpp.o
+.PHONY : src/entities/projectile/projectileFactory.o
+
+# target to build an object file
+src/entities/projectile/projectileFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.o
+.PHONY : src/entities/projectile/projectileFactory.cpp.o
+
+src/entities/projectile/projectileFactory.i: src/entities/projectile/projectileFactory.cpp.i
+.PHONY : src/entities/projectile/projectileFactory.i
+
+# target to preprocess a source file
+src/entities/projectile/projectileFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.i
+.PHONY : src/entities/projectile/projectileFactory.cpp.i
+
+src/entities/projectile/projectileFactory.s: src/entities/projectile/projectileFactory.cpp.s
+.PHONY : src/entities/projectile/projectileFactory.s
+
+# target to generate assembly for a file
+src/entities/projectile/projectileFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.s
+.PHONY : src/entities/projectile/projectileFactory.cpp.s
 
 src/entities/weapon/gun/badPistol.o: src/entities/weapon/gun/badPistol.cpp.o
 .PHONY : src/entities/weapon/gun/badPistol.o
@@ -1119,9 +1167,15 @@ help:
 	@echo "... src/entities/projectile/bullet.o"
 	@echo "... src/entities/projectile/bullet.i"
 	@echo "... src/entities/projectile/bullet.s"
+	@echo "... src/entities/projectile/bullet/badPistolBullet.o"
+	@echo "... src/entities/projectile/bullet/badPistolBullet.i"
+	@echo "... src/entities/projectile/bullet/badPistolBullet.s"
 	@echo "... src/entities/projectile/projectile.o"
 	@echo "... src/entities/projectile/projectile.i"
 	@echo "... src/entities/projectile/projectile.s"
+	@echo "... src/entities/projectile/projectileFactory.o"
+	@echo "... src/entities/projectile/projectileFactory.i"
+	@echo "... src/entities/projectile/projectileFactory.s"
 	@echo "... src/entities/weapon/gun/badPistol.o"
 	@echo "... src/entities/weapon/gun/badPistol.i"
 	@echo "... src/entities/weapon/gun/badPistol.s"

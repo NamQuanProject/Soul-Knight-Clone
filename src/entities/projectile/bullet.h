@@ -8,8 +8,9 @@
 class Bullet : public Projectile {
 public:
     Bullet();
-    void Start();
-    void Update();
-    void Collision(GameObject* gameObject);
-    void UpdateTag(GameObject* gameObject);
+    virtual void Start() = 0;
+    virtual void Update() = 0;
+    virtual void Collision(GameObject* gameObject);
+    virtual void UpdateTag(GameObject* gameObject);
+    virtual void LoadResources() = 0;
 };

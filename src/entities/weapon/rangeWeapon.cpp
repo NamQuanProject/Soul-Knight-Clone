@@ -67,7 +67,7 @@ Vec RangeWeapon::PointAtEnemy(const Vec& enemyPosition) {
 }
 
 double GetDamage() {
-    
+    return 0;
 }
 
 
