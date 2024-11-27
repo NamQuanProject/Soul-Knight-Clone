@@ -12,13 +12,10 @@ enum class MonsterType {
 class Monster : public GameObject {
 public:
     Monster(double level, bool isMeleeAttackMonster = false);
-
-    // Core lifecycle methods
     void Update(float deltaTime) override;
     void Collision(GameObject* gameObject) override;
     void Render(sf::RenderWindow& window) override;
 
-    // Monster-specific functionality
     virtual void OnDead();
     virtual void AutoMationMove();
     virtual void AutoMation() = 0;

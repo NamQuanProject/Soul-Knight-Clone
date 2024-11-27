@@ -369,6 +369,54 @@ src/entities/gameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.s
 .PHONY : src/entities/gameObject.cpp.s
 
+src/entities/monster/floor_1/goblin_giant/GoblinGiant.o: src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.o
+
+# target to build an object file
+src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o
+
+src/entities/monster/floor_1/goblin_giant/GoblinGiant.i: src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.i
+
+# target to preprocess a source file
+src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i
+
+src/entities/monster/floor_1/goblin_giant/GoblinGiant.s: src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.s
+
+# target to generate assembly for a file
+src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s
+
+src/entities/monster/floor_1/goblin_shaman/GoblinShaman.o: src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.o
+
+# target to build an object file
+src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o
+
+src/entities/monster/floor_1/goblin_shaman/GoblinShaman.i: src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.i
+
+# target to preprocess a source file
+src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i
+
+src/entities/monster/floor_1/goblin_shaman/GoblinShaman.s: src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.s
+
+# target to generate assembly for a file
+src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s
+
 src/entities/monster/monster.o: src/entities/monster/monster.cpp.o
 .PHONY : src/entities/monster/monster.o
 
@@ -1176,6 +1224,12 @@ help:
 	@echo "... src/entities/gameObject.o"
 	@echo "... src/entities/gameObject.i"
 	@echo "... src/entities/gameObject.s"
+	@echo "... src/entities/monster/floor_1/goblin_giant/GoblinGiant.o"
+	@echo "... src/entities/monster/floor_1/goblin_giant/GoblinGiant.i"
+	@echo "... src/entities/monster/floor_1/goblin_giant/GoblinGiant.s"
+	@echo "... src/entities/monster/floor_1/goblin_shaman/GoblinShaman.o"
+	@echo "... src/entities/monster/floor_1/goblin_shaman/GoblinShaman.i"
+	@echo "... src/entities/monster/floor_1/goblin_shaman/GoblinShaman.s"
 	@echo "... src/entities/monster/monster.o"
 	@echo "... src/entities/monster/monster.i"
 	@echo "... src/entities/monster/monster.s"
