@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o"
   "CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o.d"
+  "CMakeFiles/soulknight.dir/src/entities/monster/monster.cpp.o"
+  "CMakeFiles/soulknight.dir/src/entities/monster/monster.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o"
   "CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o"

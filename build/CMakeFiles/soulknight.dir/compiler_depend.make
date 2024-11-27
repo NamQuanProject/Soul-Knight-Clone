@@ -5813,6 +5813,8 @@ CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.o: /Users/quannguyennam/Do
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h
 
+CMakeFiles/soulknight.dir/src/entities/monster/monster.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/monster.cpp
+
 CMakeFiles/soulknight.dir/src/entities/player/hero.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/hero.cpp
 
 CMakeFiles/soulknight.dir/src/entities/player/heroes/archer.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/archer.cpp
@@ -16421,6 +16423,11 @@ CMakeFiles/soulknight.dir/src/main.cpp.o: /Users/quannguyennam/Documents/Project
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectileType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/badPistolBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/camera.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/soundManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h
@@ -22440,6 +22447,8 @@ CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Pr
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/knight.cpp:
 
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/hero.cpp:
+
+/Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/monster.cpp:
 
 /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectables/collectableItem.cpp:
 

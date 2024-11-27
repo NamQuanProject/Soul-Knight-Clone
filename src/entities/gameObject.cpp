@@ -1,8 +1,7 @@
 #include "gameObject.h"
 
-
-GameObject::GameObject() {
-    position = Vec(0, 0); // Default position
+GameObject::GameObject() : position(0, 0), active(true) {
+    position = Vec(0, 0);
 }
 
 Vec GameObject::GetPosition() const {
@@ -25,3 +24,11 @@ bool GameObject::IsActive() const {
 void GameObject::SetActive(bool active) {
     this->active = active;
 }
+
+void GameObject::Collision(GameObject* other) {
+    return;
+}
+
+// void GameObject::Debug() const {
+//     std::cout << "Position: (" << position.x << ", " << position.y << "), Active: " << active << "\n";
+// }

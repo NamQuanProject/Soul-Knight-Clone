@@ -11,7 +11,7 @@ void Bullet::Start() {
     // SetHitBoxByRatio(0.3, 0.3);
 }
 
-void Bullet::Update() {
+void Bullet::Update(float deltaTime) {
     // RotatableObject::Update();
 }
 
