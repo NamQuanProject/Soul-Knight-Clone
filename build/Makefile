@@ -1113,6 +1113,198 @@ src/map/wall/door.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/door.cpp.s
 .PHONY : src/map/wall/door.cpp.s
 
+src/map/wall/horizontalDoor1.o: src/map/wall/horizontalDoor1.cpp.o
+.PHONY : src/map/wall/horizontalDoor1.o
+
+# target to build an object file
+src/map/wall/horizontalDoor1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o
+.PHONY : src/map/wall/horizontalDoor1.cpp.o
+
+src/map/wall/horizontalDoor1.i: src/map/wall/horizontalDoor1.cpp.i
+.PHONY : src/map/wall/horizontalDoor1.i
+
+# target to preprocess a source file
+src/map/wall/horizontalDoor1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.i
+.PHONY : src/map/wall/horizontalDoor1.cpp.i
+
+src/map/wall/horizontalDoor1.s: src/map/wall/horizontalDoor1.cpp.s
+.PHONY : src/map/wall/horizontalDoor1.s
+
+# target to generate assembly for a file
+src/map/wall/horizontalDoor1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.s
+.PHONY : src/map/wall/horizontalDoor1.cpp.s
+
+src/map/wall/horizontalDoor2.o: src/map/wall/horizontalDoor2.cpp.o
+.PHONY : src/map/wall/horizontalDoor2.o
+
+# target to build an object file
+src/map/wall/horizontalDoor2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o
+.PHONY : src/map/wall/horizontalDoor2.cpp.o
+
+src/map/wall/horizontalDoor2.i: src/map/wall/horizontalDoor2.cpp.i
+.PHONY : src/map/wall/horizontalDoor2.i
+
+# target to preprocess a source file
+src/map/wall/horizontalDoor2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.i
+.PHONY : src/map/wall/horizontalDoor2.cpp.i
+
+src/map/wall/horizontalDoor2.s: src/map/wall/horizontalDoor2.cpp.s
+.PHONY : src/map/wall/horizontalDoor2.s
+
+# target to generate assembly for a file
+src/map/wall/horizontalDoor2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.s
+.PHONY : src/map/wall/horizontalDoor2.cpp.s
+
+src/map/wall/horizontalDoor3.o: src/map/wall/horizontalDoor3.cpp.o
+.PHONY : src/map/wall/horizontalDoor3.o
+
+# target to build an object file
+src/map/wall/horizontalDoor3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o
+.PHONY : src/map/wall/horizontalDoor3.cpp.o
+
+src/map/wall/horizontalDoor3.i: src/map/wall/horizontalDoor3.cpp.i
+.PHONY : src/map/wall/horizontalDoor3.i
+
+# target to preprocess a source file
+src/map/wall/horizontalDoor3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.i
+.PHONY : src/map/wall/horizontalDoor3.cpp.i
+
+src/map/wall/horizontalDoor3.s: src/map/wall/horizontalDoor3.cpp.s
+.PHONY : src/map/wall/horizontalDoor3.s
+
+# target to generate assembly for a file
+src/map/wall/horizontalDoor3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.s
+.PHONY : src/map/wall/horizontalDoor3.cpp.s
+
+src/map/wall/horizontalDoor4.o: src/map/wall/horizontalDoor4.cpp.o
+.PHONY : src/map/wall/horizontalDoor4.o
+
+# target to build an object file
+src/map/wall/horizontalDoor4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o
+.PHONY : src/map/wall/horizontalDoor4.cpp.o
+
+src/map/wall/horizontalDoor4.i: src/map/wall/horizontalDoor4.cpp.i
+.PHONY : src/map/wall/horizontalDoor4.i
+
+# target to preprocess a source file
+src/map/wall/horizontalDoor4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.i
+.PHONY : src/map/wall/horizontalDoor4.cpp.i
+
+src/map/wall/horizontalDoor4.s: src/map/wall/horizontalDoor4.cpp.s
+.PHONY : src/map/wall/horizontalDoor4.s
+
+# target to generate assembly for a file
+src/map/wall/horizontalDoor4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.s
+.PHONY : src/map/wall/horizontalDoor4.cpp.s
+
+src/map/wall/verticalDoor1.o: src/map/wall/verticalDoor1.cpp.o
+.PHONY : src/map/wall/verticalDoor1.o
+
+# target to build an object file
+src/map/wall/verticalDoor1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o
+.PHONY : src/map/wall/verticalDoor1.cpp.o
+
+src/map/wall/verticalDoor1.i: src/map/wall/verticalDoor1.cpp.i
+.PHONY : src/map/wall/verticalDoor1.i
+
+# target to preprocess a source file
+src/map/wall/verticalDoor1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.i
+.PHONY : src/map/wall/verticalDoor1.cpp.i
+
+src/map/wall/verticalDoor1.s: src/map/wall/verticalDoor1.cpp.s
+.PHONY : src/map/wall/verticalDoor1.s
+
+# target to generate assembly for a file
+src/map/wall/verticalDoor1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.s
+.PHONY : src/map/wall/verticalDoor1.cpp.s
+
+src/map/wall/verticalDoor2.o: src/map/wall/verticalDoor2.cpp.o
+.PHONY : src/map/wall/verticalDoor2.o
+
+# target to build an object file
+src/map/wall/verticalDoor2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o
+.PHONY : src/map/wall/verticalDoor2.cpp.o
+
+src/map/wall/verticalDoor2.i: src/map/wall/verticalDoor2.cpp.i
+.PHONY : src/map/wall/verticalDoor2.i
+
+# target to preprocess a source file
+src/map/wall/verticalDoor2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.i
+.PHONY : src/map/wall/verticalDoor2.cpp.i
+
+src/map/wall/verticalDoor2.s: src/map/wall/verticalDoor2.cpp.s
+.PHONY : src/map/wall/verticalDoor2.s
+
+# target to generate assembly for a file
+src/map/wall/verticalDoor2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.s
+.PHONY : src/map/wall/verticalDoor2.cpp.s
+
+src/map/wall/verticalDoor3.o: src/map/wall/verticalDoor3.cpp.o
+.PHONY : src/map/wall/verticalDoor3.o
+
+# target to build an object file
+src/map/wall/verticalDoor3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o
+.PHONY : src/map/wall/verticalDoor3.cpp.o
+
+src/map/wall/verticalDoor3.i: src/map/wall/verticalDoor3.cpp.i
+.PHONY : src/map/wall/verticalDoor3.i
+
+# target to preprocess a source file
+src/map/wall/verticalDoor3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.i
+.PHONY : src/map/wall/verticalDoor3.cpp.i
+
+src/map/wall/verticalDoor3.s: src/map/wall/verticalDoor3.cpp.s
+.PHONY : src/map/wall/verticalDoor3.s
+
+# target to generate assembly for a file
+src/map/wall/verticalDoor3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.s
+.PHONY : src/map/wall/verticalDoor3.cpp.s
+
+src/map/wall/verticalDoor4.o: src/map/wall/verticalDoor4.cpp.o
+.PHONY : src/map/wall/verticalDoor4.o
+
+# target to build an object file
+src/map/wall/verticalDoor4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o
+.PHONY : src/map/wall/verticalDoor4.cpp.o
+
+src/map/wall/verticalDoor4.i: src/map/wall/verticalDoor4.cpp.i
+.PHONY : src/map/wall/verticalDoor4.i
+
+# target to preprocess a source file
+src/map/wall/verticalDoor4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.i
+.PHONY : src/map/wall/verticalDoor4.cpp.i
+
+src/map/wall/verticalDoor4.s: src/map/wall/verticalDoor4.cpp.s
+.PHONY : src/map/wall/verticalDoor4.s
+
+# target to generate assembly for a file
+src/map/wall/verticalDoor4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.s
+.PHONY : src/map/wall/verticalDoor4.cpp.s
+
 src/map/wall/wall.o: src/map/wall/wall.cpp.o
 .PHONY : src/map/wall/wall.o
 
@@ -1389,6 +1581,30 @@ help:
 	@echo "... src/map/wall/door.o"
 	@echo "... src/map/wall/door.i"
 	@echo "... src/map/wall/door.s"
+	@echo "... src/map/wall/horizontalDoor1.o"
+	@echo "... src/map/wall/horizontalDoor1.i"
+	@echo "... src/map/wall/horizontalDoor1.s"
+	@echo "... src/map/wall/horizontalDoor2.o"
+	@echo "... src/map/wall/horizontalDoor2.i"
+	@echo "... src/map/wall/horizontalDoor2.s"
+	@echo "... src/map/wall/horizontalDoor3.o"
+	@echo "... src/map/wall/horizontalDoor3.i"
+	@echo "... src/map/wall/horizontalDoor3.s"
+	@echo "... src/map/wall/horizontalDoor4.o"
+	@echo "... src/map/wall/horizontalDoor4.i"
+	@echo "... src/map/wall/horizontalDoor4.s"
+	@echo "... src/map/wall/verticalDoor1.o"
+	@echo "... src/map/wall/verticalDoor1.i"
+	@echo "... src/map/wall/verticalDoor1.s"
+	@echo "... src/map/wall/verticalDoor2.o"
+	@echo "... src/map/wall/verticalDoor2.i"
+	@echo "... src/map/wall/verticalDoor2.s"
+	@echo "... src/map/wall/verticalDoor3.o"
+	@echo "... src/map/wall/verticalDoor3.i"
+	@echo "... src/map/wall/verticalDoor3.s"
+	@echo "... src/map/wall/verticalDoor4.o"
+	@echo "... src/map/wall/verticalDoor4.i"
+	@echo "... src/map/wall/verticalDoor4.s"
 	@echo "... src/map/wall/wall.o"
 	@echo "... src/map/wall/wall.i"
 	@echo "... src/map/wall/wall.s"

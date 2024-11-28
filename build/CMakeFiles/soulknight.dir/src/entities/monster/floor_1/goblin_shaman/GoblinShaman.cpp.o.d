@@ -1,5 +1,5 @@
-CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o: \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp \
+CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.o: \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/goblinShaman.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../monster.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../gameObject.h \

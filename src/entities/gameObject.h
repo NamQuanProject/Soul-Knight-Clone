@@ -30,9 +30,9 @@ public:
     std::string GetTag() const;
 
 protected:
-    Vec position;       // Position of the object in 2D space
-    Vec size;           // Dimensions (width, height) of the object
-    float rotation = 0; // Rotation in degrees
-    bool active = true; // Is the object active?
-    std::string tag;    // Identifier or tag for the object
+    Vec position;       
+    Vec size;           
+    float rotation = 0; 
+    bool active = true; 
+    std::string tag;  
 };

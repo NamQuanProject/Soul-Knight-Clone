@@ -643,10 +643,122 @@ CMakeFiles/soulknight.dir/src/map/wall/door.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/door.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/door.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/door.cpp.s
 
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/horizontalDoor1.cpp
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor1.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor1.cpp" > CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor1.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.s
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/horizontalDoor2.cpp
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor2.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor2.cpp" > CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor2.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.s
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/horizontalDoor3.cpp
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor3.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor3.cpp" > CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor3.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.s
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/horizontalDoor4.cpp
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor4.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor4.cpp" > CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor4.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.s
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/verticalDoor1.cpp
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor1.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor1.cpp" > CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor1.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.s
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/verticalDoor2.cpp
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor2.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor2.cpp" > CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor2.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.s
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/verticalDoor3.cpp
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor3.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor3.cpp" > CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor3.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.s
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/verticalDoor4.cpp
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor4.cpp"
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor4.cpp" > CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.i
+
+CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/verticalDoor4.cpp" -o CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.s
+
 CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/wall.cpp
 CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o -MF CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/wall.cpp"
 
 CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.i: cmake_force
@@ -660,7 +772,7 @@ CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/utils/config.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/config.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/config.cpp
 CMakeFiles/soulknight.dir/src/utils/config.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/soulknight.dir/src/utils/config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/soulknight.dir/src/utils/config.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/config.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/config.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/config.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/config.cpp"
 
 CMakeFiles/soulknight.dir/src/utils/config.cpp.i: cmake_force
@@ -674,7 +786,7 @@ CMakeFiles/soulknight.dir/src/utils/config.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/generalObject.cpp
 CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/generalObject.cpp"
 
 CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.i: cmake_force
@@ -688,7 +800,7 @@ CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/utils/point.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/point.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/point.cpp
 CMakeFiles/soulknight.dir/src/utils/point.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/soulknight.dir/src/utils/point.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/soulknight.dir/src/utils/point.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/point.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/point.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/point.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/point.cpp"
 
 CMakeFiles/soulknight.dir/src/utils/point.cpp.i: cmake_force
@@ -702,7 +814,7 @@ CMakeFiles/soulknight.dir/src/utils/point.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/utils/random.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/random.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/random.cpp
 CMakeFiles/soulknight.dir/src/utils/random.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/soulknight.dir/src/utils/random.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/soulknight.dir/src/utils/random.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/random.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/random.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/random.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/random.cpp"
 
 CMakeFiles/soulknight.dir/src/utils/random.cpp.i: cmake_force
@@ -716,7 +828,7 @@ CMakeFiles/soulknight.dir/src/utils/random.cpp.s: cmake_force
 CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.cpp
 CMakeFiles/soulknight.dir/src/utils/vec.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/soulknight.dir/src/utils/vec.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/soulknight.dir/src/utils/vec.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/vec.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/vec.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/vec.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/vec.cpp"
 
 CMakeFiles/soulknight.dir/src/utils/vec.cpp.i: cmake_force
@@ -770,6 +882,14 @@ soulknight_OBJECTS = \
 "CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/config.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o" \
@@ -821,6 +941,14 @@ soulknight: CMakeFiles/soulknight.dir/src/map/room/room.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor3.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor4.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/verticalDoor1.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/verticalDoor2.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/verticalDoor3.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/config.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o
@@ -834,7 +962,7 @@ soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/li
 soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-window.2.6.1.dylib
 soulknight: /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build/lib/libsfml-system.2.6.1.dylib
 soulknight: CMakeFiles/soulknight.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable soulknight"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Linking CXX executable soulknight"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/soulknight.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
