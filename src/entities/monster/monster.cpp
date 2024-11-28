@@ -8,7 +8,8 @@ Monster::Monster(double level, bool isMeleeAttackMonster)
       isInitializeWeapon(false),
       isOnDeadTrigger(false),
       player(nullptr),
-      collideOnObstacle(false)
+      collideOnObstacle(false),
+       face(RIGHT), state(IDLE)
     {
     SetMonsterType(isMeleeAttackMonster ? MonsterType::Melee : MonsterType::Ranged);
 }
@@ -72,5 +73,20 @@ void Monster::Reset() {
     level = 1;
     isOnDeadTrigger = false;
 }
+
+
+Monster::State Monster::CheckState() {
+    if (hp <= 0) {
+        state = DEAD;
+    } else if (state == DEAD && hp > 0) {
+        state = IDLE;
+    }
+    return state;
+}
+
+Monster::Face Monster::CheckFace() {
+    return face;
+}
+
 
 

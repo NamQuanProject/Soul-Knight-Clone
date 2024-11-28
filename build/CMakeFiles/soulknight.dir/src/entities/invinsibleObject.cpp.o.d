@@ -1,9 +1,8 @@
-CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o: \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/goblinGiant.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../monster.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../utils/vec.h \
+CMakeFiles/soulknight.dir/src/entities/invinsibleObject.cpp.o: \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/invinsibleObject.cpp \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/invinsibleObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/../utils/vec.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config \
@@ -955,11 +954,4 @@ CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Glsl.inl \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
-  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../weapon/weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../weapon/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../weapon/../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../core/animation.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp

@@ -369,53 +369,77 @@ src/entities/gameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/gameObject.cpp.s
 .PHONY : src/entities/gameObject.cpp.s
 
-src/entities/monster/floor_1/goblin_giant/GoblinGiant.o: src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o
-.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.o
+src/entities/invinsibleObject.o: src/entities/invinsibleObject.cpp.o
+.PHONY : src/entities/invinsibleObject.o
 
 # target to build an object file
-src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o
-.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.o
+src/entities/invinsibleObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/invinsibleObject.cpp.o
+.PHONY : src/entities/invinsibleObject.cpp.o
 
-src/entities/monster/floor_1/goblin_giant/GoblinGiant.i: src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i
-.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.i
+src/entities/invinsibleObject.i: src/entities/invinsibleObject.cpp.i
+.PHONY : src/entities/invinsibleObject.i
 
 # target to preprocess a source file
-src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i
-.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.i
+src/entities/invinsibleObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/invinsibleObject.cpp.i
+.PHONY : src/entities/invinsibleObject.cpp.i
 
-src/entities/monster/floor_1/goblin_giant/GoblinGiant.s: src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s
-.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.s
+src/entities/invinsibleObject.s: src/entities/invinsibleObject.cpp.s
+.PHONY : src/entities/invinsibleObject.s
 
 # target to generate assembly for a file
-src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s
-.PHONY : src/entities/monster/floor_1/goblin_giant/GoblinGiant.cpp.s
+src/entities/invinsibleObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/invinsibleObject.cpp.s
+.PHONY : src/entities/invinsibleObject.cpp.s
 
-src/entities/monster/floor_1/goblin_shaman/GoblinShaman.o: src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o
-.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.o
+src/entities/monster/floor_1/goblin_giant/goblinGiant.o: src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_giant/goblinGiant.o
 
 # target to build an object file
-src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o
-.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.o
+src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.o
 
-src/entities/monster/floor_1/goblin_shaman/GoblinShaman.i: src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i
-.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.i
+src/entities/monster/floor_1/goblin_giant/goblinGiant.i: src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_giant/goblinGiant.i
 
 # target to preprocess a source file
-src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i
-.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.i
+src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.i
 
-src/entities/monster/floor_1/goblin_shaman/GoblinShaman.s: src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s
-.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.s
+src/entities/monster/floor_1/goblin_giant/goblinGiant.s: src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_giant/goblinGiant.s
 
 # target to generate assembly for a file
-src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s
-.PHONY : src/entities/monster/floor_1/goblin_shaman/GoblinShaman.cpp.s
+src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.s
+
+src/entities/monster/floor_1/goblin_shaman/goblinShaman.o: src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_shaman/goblinShaman.o
+
+# target to build an object file
+src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.o
+.PHONY : src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.o
+
+src/entities/monster/floor_1/goblin_shaman/goblinShaman.i: src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_shaman/goblinShaman.i
+
+# target to preprocess a source file
+src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.i
+.PHONY : src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.i
+
+src/entities/monster/floor_1/goblin_shaman/goblinShaman.s: src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_shaman/goblinShaman.s
+
+# target to generate assembly for a file
+src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.s
+.PHONY : src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.s
 
 src/entities/monster/monster.o: src/entities/monster/monster.cpp.o
 .PHONY : src/entities/monster/monster.o
@@ -1065,6 +1089,54 @@ src/map/stage/stage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s
 .PHONY : src/map/stage/stage.cpp.s
 
+src/map/wall/door.o: src/map/wall/door.cpp.o
+.PHONY : src/map/wall/door.o
+
+# target to build an object file
+src/map/wall/door.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o
+.PHONY : src/map/wall/door.cpp.o
+
+src/map/wall/door.i: src/map/wall/door.cpp.i
+.PHONY : src/map/wall/door.i
+
+# target to preprocess a source file
+src/map/wall/door.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/door.cpp.i
+.PHONY : src/map/wall/door.cpp.i
+
+src/map/wall/door.s: src/map/wall/door.cpp.s
+.PHONY : src/map/wall/door.s
+
+# target to generate assembly for a file
+src/map/wall/door.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/door.cpp.s
+.PHONY : src/map/wall/door.cpp.s
+
+src/map/wall/wall.o: src/map/wall/wall.cpp.o
+.PHONY : src/map/wall/wall.o
+
+# target to build an object file
+src/map/wall/wall.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o
+.PHONY : src/map/wall/wall.cpp.o
+
+src/map/wall/wall.i: src/map/wall/wall.cpp.i
+.PHONY : src/map/wall/wall.i
+
+# target to preprocess a source file
+src/map/wall/wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.i
+.PHONY : src/map/wall/wall.cpp.i
+
+src/map/wall/wall.s: src/map/wall/wall.cpp.s
+.PHONY : src/map/wall/wall.s
+
+# target to generate assembly for a file
+src/map/wall/wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.s
+.PHONY : src/map/wall/wall.cpp.s
+
 src/utils/config.o: src/utils/config.cpp.o
 .PHONY : src/utils/config.o
 
@@ -1089,29 +1161,29 @@ src/utils/config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/config.cpp.s
 .PHONY : src/utils/config.cpp.s
 
-src/utils/logger.o: src/utils/logger.cpp.o
-.PHONY : src/utils/logger.o
+src/utils/generalObject.o: src/utils/generalObject.cpp.o
+.PHONY : src/utils/generalObject.o
 
 # target to build an object file
-src/utils/logger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/logger.cpp.o
-.PHONY : src/utils/logger.cpp.o
+src/utils/generalObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o
+.PHONY : src/utils/generalObject.cpp.o
 
-src/utils/logger.i: src/utils/logger.cpp.i
-.PHONY : src/utils/logger.i
+src/utils/generalObject.i: src/utils/generalObject.cpp.i
+.PHONY : src/utils/generalObject.i
 
 # target to preprocess a source file
-src/utils/logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/logger.cpp.i
-.PHONY : src/utils/logger.cpp.i
+src/utils/generalObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.i
+.PHONY : src/utils/generalObject.cpp.i
 
-src/utils/logger.s: src/utils/logger.cpp.s
-.PHONY : src/utils/logger.s
+src/utils/generalObject.s: src/utils/generalObject.cpp.s
+.PHONY : src/utils/generalObject.s
 
 # target to generate assembly for a file
-src/utils/logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/logger.cpp.s
-.PHONY : src/utils/logger.cpp.s
+src/utils/generalObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.s
+.PHONY : src/utils/generalObject.cpp.s
 
 src/utils/point.o: src/utils/point.cpp.o
 .PHONY : src/utils/point.o
@@ -1224,12 +1296,15 @@ help:
 	@echo "... src/entities/gameObject.o"
 	@echo "... src/entities/gameObject.i"
 	@echo "... src/entities/gameObject.s"
-	@echo "... src/entities/monster/floor_1/goblin_giant/GoblinGiant.o"
-	@echo "... src/entities/monster/floor_1/goblin_giant/GoblinGiant.i"
-	@echo "... src/entities/monster/floor_1/goblin_giant/GoblinGiant.s"
-	@echo "... src/entities/monster/floor_1/goblin_shaman/GoblinShaman.o"
-	@echo "... src/entities/monster/floor_1/goblin_shaman/GoblinShaman.i"
-	@echo "... src/entities/monster/floor_1/goblin_shaman/GoblinShaman.s"
+	@echo "... src/entities/invinsibleObject.o"
+	@echo "... src/entities/invinsibleObject.i"
+	@echo "... src/entities/invinsibleObject.s"
+	@echo "... src/entities/monster/floor_1/goblin_giant/goblinGiant.o"
+	@echo "... src/entities/monster/floor_1/goblin_giant/goblinGiant.i"
+	@echo "... src/entities/monster/floor_1/goblin_giant/goblinGiant.s"
+	@echo "... src/entities/monster/floor_1/goblin_shaman/goblinShaman.o"
+	@echo "... src/entities/monster/floor_1/goblin_shaman/goblinShaman.i"
+	@echo "... src/entities/monster/floor_1/goblin_shaman/goblinShaman.s"
 	@echo "... src/entities/monster/monster.o"
 	@echo "... src/entities/monster/monster.i"
 	@echo "... src/entities/monster/monster.s"
@@ -1311,12 +1386,18 @@ help:
 	@echo "... src/map/stage/stage.o"
 	@echo "... src/map/stage/stage.i"
 	@echo "... src/map/stage/stage.s"
+	@echo "... src/map/wall/door.o"
+	@echo "... src/map/wall/door.i"
+	@echo "... src/map/wall/door.s"
+	@echo "... src/map/wall/wall.o"
+	@echo "... src/map/wall/wall.i"
+	@echo "... src/map/wall/wall.s"
 	@echo "... src/utils/config.o"
 	@echo "... src/utils/config.i"
 	@echo "... src/utils/config.s"
-	@echo "... src/utils/logger.o"
-	@echo "... src/utils/logger.i"
-	@echo "... src/utils/logger.s"
+	@echo "... src/utils/generalObject.o"
+	@echo "... src/utils/generalObject.i"
+	@echo "... src/utils/generalObject.s"
 	@echo "... src/utils/point.o"
 	@echo "... src/utils/point.i"
 	@echo "... src/utils/point.s"

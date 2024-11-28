@@ -29,6 +29,12 @@ public:
     void Injuried(double damage);
     void Reset();
 
+
+    enum Face { RIGHT, LEFT } face;
+    enum State { IDLE, RUN, DEAD, READY } state;
+    State CheckState();
+    Face CheckFace();
+
 protected:
     // Monster attributes
     double maxSpeed;
@@ -36,6 +42,8 @@ protected:
     MonsterType monsterType;
     bool isMeleeAttackMonster;
     bool collideOnObstacle;
+    double hp;
+    double maxHp;
 
     void SetMonsterType(MonsterType type);
     void SetOnDeadTrigger(bool isOnDeadTrigger);
@@ -44,7 +52,7 @@ private:
     // Internal states
     bool isInitializeWeapon;
     bool isOnDeadTrigger;
-
+    
     // Player reference
     GameObject* player;
 };

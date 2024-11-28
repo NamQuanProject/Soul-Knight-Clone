@@ -5,10 +5,17 @@
 #include "manager/camera.h"
 #include <SFML/Graphics.hpp>
 #include "entities/projectile/bullet/badPistolBullet.h"
+#include "entities/monster/floor_1/goblin_shaman/goblinShaman.h"
 #include <iostream>
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
+
+
+    GoblinShaman goblin_shaman1;
+    goblin_shaman1.SetPosition(Vec(200,200));
+
+    
 
     sf::Image image;
     if (!image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/map/1-1.bmp")) {
@@ -141,12 +148,13 @@ while (window.isOpen()) {
     }
     if (deltaTime > 0.1f) {
         knight1.Update(deltaTime);
-
+        goblin_shaman1.Update(deltaTime);
         clock.restart();
     }
 
     knight1.SetPosition(knightPosition);
     knight1.Render(window);
+    goblin_shaman1.Render(window);
 
     // Render bullet only if it's active
     if (bulletActive) {
