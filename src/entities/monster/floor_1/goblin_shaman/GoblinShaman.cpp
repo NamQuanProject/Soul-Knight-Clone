@@ -3,7 +3,6 @@
 
 GoblinShaman::GoblinShaman(double level)
     : Monster(level, false) { // Passes level and isMeleeAttackMonster = false to the base class
-    SetMonsterType(MonsterType::Ranged);
     LoadResources();
     animationManager.setAnimation("idle_right");  // Default animation
 }

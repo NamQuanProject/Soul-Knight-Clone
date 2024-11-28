@@ -465,6 +465,30 @@ src/entities/monster/monster.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/monster.cpp.s
 .PHONY : src/entities/monster/monster.cpp.s
 
+src/entities/monster/monsterFactory.o: src/entities/monster/monsterFactory.cpp.o
+.PHONY : src/entities/monster/monsterFactory.o
+
+# target to build an object file
+src/entities/monster/monsterFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/monsterFactory.cpp.o
+.PHONY : src/entities/monster/monsterFactory.cpp.o
+
+src/entities/monster/monsterFactory.i: src/entities/monster/monsterFactory.cpp.i
+.PHONY : src/entities/monster/monsterFactory.i
+
+# target to preprocess a source file
+src/entities/monster/monsterFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/monsterFactory.cpp.i
+.PHONY : src/entities/monster/monsterFactory.cpp.i
+
+src/entities/monster/monsterFactory.s: src/entities/monster/monsterFactory.cpp.s
+.PHONY : src/entities/monster/monsterFactory.s
+
+# target to generate assembly for a file
+src/entities/monster/monsterFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/monsterFactory.cpp.s
+.PHONY : src/entities/monster/monsterFactory.cpp.s
+
 src/entities/player/hero.o: src/entities/player/hero.cpp.o
 .PHONY : src/entities/player/hero.o
 
@@ -1500,6 +1524,9 @@ help:
 	@echo "... src/entities/monster/monster.o"
 	@echo "... src/entities/monster/monster.i"
 	@echo "... src/entities/monster/monster.s"
+	@echo "... src/entities/monster/monsterFactory.o"
+	@echo "... src/entities/monster/monsterFactory.i"
+	@echo "... src/entities/monster/monsterFactory.s"
 	@echo "... src/entities/player/hero.o"
 	@echo "... src/entities/player/hero.i"
 	@echo "... src/entities/player/hero.s"

@@ -1,13 +1,8 @@
 #pragma once
 
 #include "../gameObject.h"
+#include "monsterType.h"
 #include "../weapon/weapon.h"
-
-enum class MonsterType {
-    Melee,
-    Ranged,
-    Boss
-};
 
 class Monster : public GameObject {
 public:
@@ -24,7 +19,7 @@ public:
     // Setter and getter methods
     void SetWeapon(Weapon* weapon);
     void SetLevel(double level);
-    MonsterType GetMonsterType() const;
+    
 
     void Injuried(double damage);
     void Reset();
@@ -32,6 +27,7 @@ public:
 
     enum Face { RIGHT, LEFT } face;
     enum State { IDLE, RUN, DEAD, READY } state;
+    MonsterType GetMonsterType() const;
     State CheckState();
     Face CheckFace();
 

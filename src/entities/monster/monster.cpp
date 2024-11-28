@@ -11,7 +11,7 @@ Monster::Monster(double level, bool isMeleeAttackMonster)
       collideOnObstacle(false),
        face(RIGHT), state(IDLE)
     {
-    SetMonsterType(isMeleeAttackMonster ? MonsterType::Melee : MonsterType::Ranged);
+    
 }
 
 void Monster::Update(float deltaTime) {
