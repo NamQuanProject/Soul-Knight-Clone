@@ -1,6 +1,6 @@
 #pragma once
 #include "roomSize.h"
-#include "../../utils/Point.h"
+#include "../../utils/point.h"
 
 class Room {
 public:

@@ -101,6 +101,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/soulknight.dir/src/map/wall/verticalDoor4.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o"
   "CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o.d"
+  "CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o"
+  "CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/utils/config.cpp.o"
   "CMakeFiles/soulknight.dir/src/utils/config.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o"

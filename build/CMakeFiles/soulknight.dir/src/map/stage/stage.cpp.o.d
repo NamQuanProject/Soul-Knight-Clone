@@ -955,4 +955,8 @@ CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/monsterRoom.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/monsterRoom.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/room.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/roomSize.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/../../entities/monster/monsterType.h

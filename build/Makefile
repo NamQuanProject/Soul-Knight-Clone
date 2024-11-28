@@ -1353,6 +1353,30 @@ src/map/wall/wall.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.s
 .PHONY : src/map/wall/wall.cpp.s
 
+src/pool/monsterPool.o: src/pool/monsterPool.cpp.o
+.PHONY : src/pool/monsterPool.o
+
+# target to build an object file
+src/pool/monsterPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o
+.PHONY : src/pool/monsterPool.cpp.o
+
+src/pool/monsterPool.i: src/pool/monsterPool.cpp.i
+.PHONY : src/pool/monsterPool.i
+
+# target to preprocess a source file
+src/pool/monsterPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.i
+.PHONY : src/pool/monsterPool.cpp.i
+
+src/pool/monsterPool.s: src/pool/monsterPool.cpp.s
+.PHONY : src/pool/monsterPool.s
+
+# target to generate assembly for a file
+src/pool/monsterPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.s
+.PHONY : src/pool/monsterPool.cpp.s
+
 src/utils/config.o: src/utils/config.cpp.o
 .PHONY : src/utils/config.o
 
@@ -1635,6 +1659,9 @@ help:
 	@echo "... src/map/wall/wall.o"
 	@echo "... src/map/wall/wall.i"
 	@echo "... src/map/wall/wall.s"
+	@echo "... src/pool/monsterPool.o"
+	@echo "... src/pool/monsterPool.i"
+	@echo "... src/pool/monsterPool.s"
 	@echo "... src/utils/config.o"
 	@echo "... src/utils/config.i"
 	@echo "... src/utils/config.s"
