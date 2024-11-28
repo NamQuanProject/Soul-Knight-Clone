@@ -3,6 +3,5 @@
 
 class Door : public InvisibleObject {
 public:
-    void Update(float deltaTime) override;
-    void LoadResources();
+    virtual void LoadResources() = 0;
 };
