@@ -33,7 +33,6 @@ Vec RangeWeapon::GetBulletPosition() {
     double x = owner->GetPosition().GetX();
     double y = owner->GetPosition().GetY();
 
-    // Calculate the bullet position with the muzzle offset in the weapon's direction
     Vec bulletPosition(x + weaponDirection.GetX() * muzzleOffset, 
                        y + weaponDirection.GetY() * muzzleOffset);
 
@@ -41,13 +40,12 @@ Vec RangeWeapon::GetBulletPosition() {
 }
 
 Vec RangeWeapon::GetWeaponDirection() {
-    return weaponDirection;  // Return the current direction the weapon is pointing
+    return weaponDirection; 
 }
 
 
 void RangeWeapon::Reload() {
-    // Reload weapon (reset ammo)
-    ammo = 10;  // Full ammo reload
+    ammo = 10;
 }
 
 void RangeWeapon::SetAmmo(int ammoCount) {

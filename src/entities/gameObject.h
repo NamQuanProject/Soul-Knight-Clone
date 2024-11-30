@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../utils/vec.h"
+#include "../utils/hitBox.h"
 #include <SFML/Graphics.hpp>
 
 class GameObject {
@@ -25,7 +26,8 @@ public:
 
     void SetRotation(float angle);
     float GetRotation() const;
-
+    void SetHitBox(const HitBox& hitbox); 
+    HitBox* GetHitBox();
     void SetTag(const std::string& tag);
     std::string GetTag() const;
 
@@ -35,4 +37,5 @@ protected:
     float rotation = 0; 
     bool active = true; 
     std::string tag;  
+    HitBox* hitbox = nullptr; 
 };

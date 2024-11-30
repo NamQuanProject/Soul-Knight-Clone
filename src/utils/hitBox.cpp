@@ -54,3 +54,10 @@ void HitBox::Show(Point screenPositoin) {
     // }
     isCollisionInThisFrame = false;
 }
+Point HitBox::GetPosition() {
+    return authorPoint;  // Return the position of the author point
+}
+
+void HitBox::SetPosition(const Point& newPoint) {
+    authorPoint = newPoint;  // Update the position of the hitbox
+}

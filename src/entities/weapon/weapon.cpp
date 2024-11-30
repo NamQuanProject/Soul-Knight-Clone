@@ -15,7 +15,6 @@ Vec Weapon::GetPosition() {
         pos = pos + temp;
         return pos;
     }
-
-    return Vec(0.0, 0.0); // Default position if no owner
+    return Vec(0.0, 0.0);
 }
 

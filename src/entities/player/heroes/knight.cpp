@@ -7,19 +7,38 @@ Knight::Knight() : Player() {
     weapon1 = new BadPistol();
     animationManager.setAnimation("idle_right");  // Default animation
     
+    // Get current position of the knight's sprite
+    sf::Vector2f position = animationManager.getCurrentSprite().getPosition();
     
+    // Initialize the hitbox with the knight's position (converted to Point)
+    Point author = Point(position.x, position.y);
+    hitbox = new HitBox(author); 
+    
+    // Set the width and height of the hitbox based on the knight's size
+    hitbox->SetWidth(size.GetX());  // Assuming size.GetX() gives the width
+    hitbox->SetHeight(size.GetY()); // Assuming size.GetY() gives the height
 }
+
 Knight::~Knight() {
     // Clean up dynamically allocated weapon
     if (weapon1) {
         delete weapon1;
         weapon1 = nullptr;
     }
+    if (hitbox) {
+        delete hitbox;
+        hitbox = nullptr;
+    }
+    
 }
 
 // Update the knight animation
 void Knight::Update(float deltaTime) {
     animationManager.update(deltaTime);  // Update the current animation
+    
+    // Update the position of the hitbox to match the knight's position
+    sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
+    hitbox->SetPosition(Point(knightPosition.x, knightPosition.y)); // Update hitbox position
 }
 
 void Knight::loadKnightAnimations() {
@@ -71,10 +90,41 @@ void Knight::Render(sf::RenderWindow& window) {
     sf::Sprite sprite = animationManager.getCurrentSprite();
     sf::FloatRect bounds = sprite.getLocalBounds();
     sprite.setOrigin(bounds.width / 2, bounds.height / 2);
-    
-    weapon1->Render(window);
 
-    window.draw(sprite);  // Draw the current animation sprite
+    // Update weapon rendering
+    weapon1->Render(window);
+    
+    // Draw the knight's sprite
+    window.draw(sprite);
+
+    // Render the hitbox (red rectangle)
+    if (hitbox) {
+        // Get the current sprite from the animation manager
+        sf::Sprite sprite = animationManager.getCurrentSprite();
+
+        // Get the local bounds of the sprite (the frame size)
+        sf::FloatRect bounds = sprite.getLocalBounds();
+
+        // Set the width and height of the hitbox based on the sprite's frame size
+        hitbox->SetWidth(bounds.width);  // Use the width from the sprite's bounds
+        hitbox->SetHeight(bounds.height); // Use the height from the sprite's bounds
+
+        // Create the hitbox rectangle using the sprite's frame size
+        sf::RectangleShape hitboxRect(sf::Vector2f(bounds.width, bounds.height));
+
+        // Set transparency and outline color for the hitbox rectangle
+        hitboxRect.setFillColor(sf::Color::Transparent);
+        hitboxRect.setOutlineColor(sf::Color::Red);
+        hitboxRect.setOutlineThickness(2);
+
+        // Adjust the position of the hitbox (top-left corner of the sprite)
+        sf::Vector2f hitboxPosition = sprite.getPosition();
+        hitboxRect.setPosition(hitboxPosition.x - bounds.width / 2, hitboxPosition.y - bounds.height / 2);
+
+        // Draw the hitbox on the window
+        window.draw(hitboxRect); 
+    }
+
 }
 
 

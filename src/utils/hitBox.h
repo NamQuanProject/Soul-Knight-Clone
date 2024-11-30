@@ -10,6 +10,8 @@ public:
     double GetHalfWidth();
     bool IsCollision(HitBox* otherHitBox);
     void Show(Point screenPositoin); 
+    Point GetPosition();
+    void SetPosition(const Point& newPoint);
 private:
     Point& authorPoint;
     double halfWidth;

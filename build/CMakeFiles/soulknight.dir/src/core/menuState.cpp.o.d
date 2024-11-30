@@ -976,6 +976,8 @@ CMakeFiles/soulknight.dir/src/core/menuState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../../utils/hitBox.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../weapon/../../utils/vec.h \
@@ -991,5 +993,6 @@ CMakeFiles/soulknight.dir/src/core/menuState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../utils/point.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream

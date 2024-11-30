@@ -5,6 +5,7 @@
 #include "../../weapon/gun/badPistol.h"
 #include "../../../core/animation.h"
 #include "../../../manager/animationManager.h"
+#include "../../../utils/point.h"
 #include <SFML/Graphics.hpp>
 
 

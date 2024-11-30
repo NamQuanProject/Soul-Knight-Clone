@@ -8,26 +8,22 @@ public:
     RangeWeapon();
     virtual ~RangeWeapon() = default;
 
-    // Abstract methods that derived classes must implement
-    virtual void Fire() = 0;                    // Abstract method to fire a bullet
-    virtual void Reload() = 0;                  // Abstract method for reloading
+    virtual void Fire() = 0;                 
+    virtual void Reload() = 0;                 
 
-    // Common methods for all ranged weapons
-    void SetAmmo(int ammoCount);                // Set the ammo count
-    int GetAmmo();                        // Get the ammo count
-    void SetWeaponDirection(Vec& direction); // Set the direction of the weapon
-    Vec GetWeaponDirection();             // Get the current direction of the weapon
-    Vec PointAtEnemy(Vec& enemyPosition); // Helper function to point the weapon at an enemy
-    Vec GetBulletPosition();              // Get the bullet spawn position
-
-    // Override from Weapon
-    void Use() override;                        // Default implementation to fire
-    void Update(float deltaTime) override;      // Update weapon state (e.g., timing)
+    void SetAmmo(int ammoCount);               
+    int GetAmmo();                        
+    void SetWeaponDirection(Vec& direction);
+    Vec GetWeaponDirection();             
+    Vec PointAtEnemy(Vec& enemyPosition); 
+    Vec GetBulletPosition();              
+    void Use() override;                       
+    void Update(float deltaTime) override;      
     
 protected:
-    int ammo;                                   // Ammo count
-    double fireRate;                            // Fire rate (shots per second)
-    double muzzleOffset;                        // Offset to spawn bullets slightly ahead
-    double timeSinceLastFire;                   // Time elapsed since the last shot
-    Vec weaponDirection;                        // Current direction of the weapon
+    int ammo;                                  
+    double fireRate;                           
+    double muzzleOffset;                        
+    double timeSinceLastFire;                  
+    Vec weaponDirection;                        
 };
