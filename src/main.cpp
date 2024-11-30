@@ -65,49 +65,42 @@ int main() {
         }
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            // Both Up and Right are pressed, move diagonally up-right
-            knightPosition.x += 0.5 * 0.1f;  // Move right
-            knightPosition.y -= 0.5 * 0.1f;  // Move up
-            knight1.runRight();            // Running animation for right
+            knightPosition.x += 0.5 * 0.1f;  
+            knightPosition.y -= 0.5 * 0.1f; 
+            knight1.runRight();           
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            // Both Up and Left are pressed, move diagonally up-left
-            knightPosition.x -= 1 * 0.1f;  // Move left
-            knightPosition.y -= 1 * 0.1f;  // Move up
-            knight1.runLeft();             // Running animation for left
+            
+            knightPosition.x -= 1 * 0.1f;  
+            knightPosition.y -= 1 * 0.1f; 
+            knight1.runLeft();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            // Both Down and Right are pressed, move diagonally down-right
-            knightPosition.x += 1 * 0.1f;  // Move right
-            knightPosition.y += 1 * 0.1f;  // Move down
-            knight1.runRight();            // Running animation for right
+            knightPosition.x += 1 * 0.1f;  
+            knightPosition.y += 1 * 0.1f; 
+            knight1.runRight();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            // Both Down and Left are pressed, move diagonally down-left
-            knightPosition.x -= 1 * 0.1f;  // Move left
-            knightPosition.y += 1 * 0.1f;  // Move down
-            knight1.runLeft();             // Running animation for left
+            knightPosition.x -= 1 * 0.1f;
+            knightPosition.y += 1 * 0.1f;  
+            knight1.runLeft();
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-            // Only Up is pressed
-            knightPosition.y -= 1 * 0.1f;  // Move up
+            knightPosition.y -= 1 * 0.1f; 
             if (knight1.CheckFace() == Knight::RIGHT) {
-                knight1.runRight();        // Running animation for right
+                knight1.runRight();        
             } else {
-                knight1.runLeft();         // Running animation for left
+                knight1.runLeft();         
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-            // Only Down is pressed
-            knightPosition.y += 1 * 0.1f;  // Move down
+            knightPosition.y += 1 * 0.1f;  
             if (knight1.CheckFace() == Knight::RIGHT) {
-                knight1.runRight();        // Running animation for right
+                knight1.runRight();        
             } else {
-                knight1.runLeft();         // Running animation for left
+                knight1.runLeft();        
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            // Only Left is pressed
-            knightPosition.x -= 1 * 0.1f;  // Move left
-            knight1.runLeft();             // Running animation for left
+            knightPosition.x -= 1 * 0.1f; 
+            knight1.runLeft();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            // Only Right is pressed
-            knightPosition.x += 1 * 0.1f;  // Move right
-            knight1.runRight();            // Running animation for right
+            knightPosition.x += 1 * 0.1f;  
+            knight1.runRight();            
         }
         else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
             if (!bulletActive) {
@@ -117,7 +110,6 @@ int main() {
                 bulletActive = true;
             }
         } else {
-            // Idle state for knight
             if (knight1.CheckFace() == Knight::RIGHT) {
                 knight1.standRight();
             } else {
@@ -139,7 +131,7 @@ int main() {
             if (bulletActive) {
                 bullet.Update(deltaTime);
 
-                // Deactivate bullet if it travels too far
+                
                 sf::Vector2f bulletPos = bullet.GetPosition();
                 float distanceTraveled = std::sqrt(
                     std::pow(bulletPos.x - bulletInitialPosition.x, 2) +
