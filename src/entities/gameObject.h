@@ -11,9 +11,9 @@ public:
     virtual void Update(float deltaTime) = 0;
     virtual void Collision(GameObject* gameObject);
     virtual void Render(sf::RenderWindow& window) = 0;
-    virtual void SetPosition(const Vec& position);
+    virtual void SetPosition(Vec& position);
     
-    Vec GetPosition() const;
+    Vec GetPosition();
 
     void Translate(const Vec& delta);
     

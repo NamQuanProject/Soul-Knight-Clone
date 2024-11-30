@@ -1,5 +1,5 @@
-CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o: \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/hitbox.cpp \
+CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o: \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/hitBox.cpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/vec.h \

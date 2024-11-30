@@ -32,7 +32,6 @@ public:
     Face CheckFace();
 
 protected:
-    // Monster attributes
     double maxSpeed;
     double level;
     MonsterType monsterType;
@@ -45,7 +44,6 @@ protected:
     void SetOnDeadTrigger(bool isOnDeadTrigger);
 
 private:
-    // Internal states
     bool isInitializeWeapon;
     bool isOnDeadTrigger;
     

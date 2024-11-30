@@ -1,9 +1,11 @@
 
 #include "vec.h"
-
 #include <cmath>
 #include <complex>
 #include <valarray>
+
+#define PI 3.14
+
 
 Vec::Vec(double x, double y): x(x), y(y) {
 }

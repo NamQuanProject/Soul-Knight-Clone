@@ -13,7 +13,8 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
 
     GoblinShaman goblin_shaman1;
-    goblin_shaman1.SetPosition(Vec(200, 200));
+    Vec mons_position = Vec(200.0, 200.0);
+    goblin_shaman1.SetPosition(mons_position);
 
     sf::Image image;
     if (!image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/map/1-1.bmp")) {
@@ -65,51 +66,50 @@ int main() {
         }
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            knightPosition.x += 0.5 * 0.1f;  
-            knightPosition.y -= 0.5 * 0.1f; 
+            knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);
+            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  // Corrected to use SetY()
             knight1.runRight();           
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            
-            knightPosition.x -= 1 * 0.1f;  
-            knightPosition.y -= 1 * 0.1f; 
+            knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);  // Corrected to use SetX()
+            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  // Corrected to use SetY()
             knight1.runLeft();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            knightPosition.x += 1 * 0.1f;  
-            knightPosition.y += 1 * 0.1f; 
+            knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);  
+            knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
             knight1.runRight();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            knightPosition.x -= 1 * 0.1f;
-            knightPosition.y += 1 * 0.1f;  
+            knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);
+            knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
             knight1.runLeft();
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-            knightPosition.y -= 1 * 0.1f; 
+            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  // Corrected to use SetY()
             if (knight1.CheckFace() == Knight::RIGHT) {
                 knight1.runRight();        
             } else {
                 knight1.runLeft();         
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-            knightPosition.y += 1 * 0.1f;  
+            knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  // Corrected to use SetY()
             if (knight1.CheckFace() == Knight::RIGHT) {
                 knight1.runRight();        
             } else {
                 knight1.runLeft();        
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            knightPosition.x -= 1 * 0.1f; 
+            knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);  // Corrected to use SetX()
             knight1.runLeft();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            knightPosition.x += 1 * 0.1f;  
+            knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);  
             knight1.runRight();            
-        }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+        } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
             if (!bulletActive) {
-                bullet.SetPosition(sf::Vector2f(knightPosition.x, knightPosition.y));
+                bullet.SetPosition(sf::Vector2f(knightPosition.GetX(), knightPosition.GetY()));  // Corrected to GetX() and GetY()
                 bullet.SetSpeed(sf::Vector2f(25.f, 0.f));
                 bulletInitialPosition = bullet.GetPosition();
                 bulletActive = true;
             }
         } else {
+            // If no keys are pressed, make the knight stand still
             if (knight1.CheckFace() == Knight::RIGHT) {
                 knight1.standRight();
             } else {
@@ -119,7 +119,8 @@ int main() {
 
 
 
-        sf::Vector2f knightPos(knightPosition.x, knightPosition.y);
+
+        sf::Vector2f knightPos(knightPosition.GetX(), knightPosition.GetY());
         camera.update(knightPos);
 
         window.clear();

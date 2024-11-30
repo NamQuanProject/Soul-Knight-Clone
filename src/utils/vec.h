@@ -1,3 +1,4 @@
+#pragma once
 class Vec {
 public:
     Vec(double x, double y);

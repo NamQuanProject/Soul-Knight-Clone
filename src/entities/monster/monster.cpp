@@ -26,10 +26,7 @@ void Monster::Collision(GameObject* gameObject) {
 }
 
 void Monster::Render(sf::RenderWindow& window) {
-    sf::CircleShape monsterShape(20);
-    monsterShape.setFillColor(isMeleeAttackMonster ? sf::Color::Red : sf::Color::Blue);
-    monsterShape.setPosition(static_cast<float>(GetPosition().x), static_cast<float>(GetPosition().y));
-    window.draw(monsterShape);
+    return ;
 }
 
 void Monster::OnDead() {

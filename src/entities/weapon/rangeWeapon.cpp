@@ -25,17 +25,22 @@ void RangeWeapon::Use() {
 }
 
 
-int RangeWeapon::GetAmmo() const {
+int RangeWeapon::GetAmmo() {
     return ammo;
 }
 
-Vec RangeWeapon::GetBulletPosition() const {
-    // Calculate a small offset in the direction the gun is pointing (muzzle offset)
-    Vec bulletPosition = owner->GetPosition() + weaponDirection * muzzleOffset;
+Vec RangeWeapon::GetBulletPosition() {
+    double x = owner->GetPosition().GetX();
+    double y = owner->GetPosition().GetY();
+
+    // Calculate the bullet position with the muzzle offset in the weapon's direction
+    Vec bulletPosition(x + weaponDirection.GetX() * muzzleOffset, 
+                       y + weaponDirection.GetY() * muzzleOffset);
+
     return bulletPosition;
 }
 
-Vec RangeWeapon::GetWeaponDirection() const {
+Vec RangeWeapon::GetWeaponDirection() {
     return weaponDirection;  // Return the current direction the weapon is pointing
 }
 
@@ -50,7 +55,7 @@ void RangeWeapon::SetAmmo(int ammoCount) {
 }
 
 
-void RangeWeapon::SetWeaponDirection(const Vec& direction) {
+void RangeWeapon::SetWeaponDirection(Vec& direction) {
     weaponDirection = direction;  // Set the new direction for the weapon
 }
 
@@ -59,11 +64,11 @@ void RangeWeapon::Update(float deltaTime) {
     timeSinceLastFire += deltaTime;
 }
 
-Vec RangeWeapon::PointAtEnemy(const Vec& enemyPosition) {
-    Vec directionToEnemy = enemyPosition - owner->GetPosition();   
-    directionToEnemy.Normalize();
-    SetWeaponDirection(directionToEnemy);
-    return directionToEnemy;
+Vec RangeWeapon::PointAtEnemy(Vec& enemyPosition) {
+    // Vec directionToEnemy = enemyPosition - owner->GetPosition();   
+    // SetWeaponDirection(directionToEnemy);
+    // return directionToEnemy;
+    return Vec(0.0, 0.0);
 }
 
 double GetDamage() {

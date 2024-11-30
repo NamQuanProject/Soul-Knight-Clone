@@ -73,7 +73,9 @@ void GoblinShaman::Render(sf::RenderWindow& window) {
     
 }
 
-void GoblinShaman::SetPosition(const Vec& position) {
-    sf::Vector2f web_position(position.x, position.y);
-    animationManager.getCurrentSprite().setPosition(position.x, position.y);
+void GoblinShaman::SetPosition(Vec& position) {
+    double x = position.GetX();
+    double y = position.GetY();
+    sf::Vector2f web_position(x, y);
+    animationManager.getCurrentSprite().setPosition(position.GetX(), position.GetY());
 }

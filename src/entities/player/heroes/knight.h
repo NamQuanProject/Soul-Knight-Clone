@@ -18,7 +18,7 @@ public:
     void runLeft();             
     void standRight();           
     void standLeft();     
-    void SetPosition(const Vec& position) override;      
+    void SetPosition(Vec& position) override;      
 private:
     void loadKnightAnimations();       // Load knight-specific animations
     Weapon* weapon1;

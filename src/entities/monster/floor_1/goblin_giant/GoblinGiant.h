@@ -11,7 +11,7 @@ public:
     void LoadResources();
     void AutoMation() override;
     void InitializeWeapon() override;
-    void SetPosition(const Vec& position) override;   
+    void SetPosition(Vec& position) override;   
     void Render(sf::RenderWindow& window) override;
 
 private:

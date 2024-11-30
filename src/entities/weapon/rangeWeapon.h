@@ -14,11 +14,11 @@ public:
 
     // Common methods for all ranged weapons
     void SetAmmo(int ammoCount);                // Set the ammo count
-    int GetAmmo() const;                        // Get the ammo count
-    void SetWeaponDirection(const Vec& direction); // Set the direction of the weapon
-    Vec GetWeaponDirection() const;             // Get the current direction of the weapon
-    Vec PointAtEnemy(const Vec& enemyPosition); // Helper function to point the weapon at an enemy
-    Vec GetBulletPosition() const;              // Get the bullet spawn position
+    int GetAmmo();                        // Get the ammo count
+    void SetWeaponDirection(Vec& direction); // Set the direction of the weapon
+    Vec GetWeaponDirection();             // Get the current direction of the weapon
+    Vec PointAtEnemy(Vec& enemyPosition); // Helper function to point the weapon at an enemy
+    Vec GetBulletPosition();              // Get the bullet spawn position
 
     // Override from Weapon
     void Use() override;                        // Default implementation to fire

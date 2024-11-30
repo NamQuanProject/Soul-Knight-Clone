@@ -1,3 +1,4 @@
+#include <cmath>  // Include this for sqrt and pow
 #include "point.h"
 
 Point::Point(double x, double y): x(x), y(y) {
@@ -34,7 +35,7 @@ void Point::SetPoint(double x, double y) {
 }
 
 double Point::Distance(Point& point) {
-    return sqrt(pow(x - point.x, 2) + pow(y - point.y, 2));
+    return sqrt(pow(x - point.x, 2) + pow(y - point.y, 2));  // Using sqrt and pow
 }
 
 Point Point::operator +(Point& point) const {
@@ -46,9 +47,9 @@ Vec Point::operator -(Point& point) const {
 }
 
 Point Point::operator +(Vec& vec) const {
-    return Point{x + vec.x, y + vec.y};
+    return Point{x + vec.GetX(), y + vec.GetY()};
 }
 
 Point Point::operator -(Vec& vec) const {
-    return Point{x - vec.x, y - vec.y};
+    return Point{x - vec.GetX(), y - vec.GetY()};
 }

@@ -1,20 +1,19 @@
 #include "gameObject.h"
 
-GameObject::GameObject() : position(0, 0), active(true) {
-    position = Vec(0, 0);
+GameObject::GameObject() : position(0.0, 0.0), active(true) {
+    position = Vec(0.0, 0.0);
 }
 
-Vec GameObject::GetPosition() const {
+Vec GameObject::GetPosition() {
     return position;
 }
 
-void GameObject::SetPosition(const Vec& position) {
+void GameObject::SetPosition(Vec& position) {
     this->position = position;
 }
 
 void GameObject::Translate(const Vec& delta) {
-    position.x += delta.x;
-    position.y += delta.y;
+    return ;
 }
 
 bool GameObject::IsActive() const {

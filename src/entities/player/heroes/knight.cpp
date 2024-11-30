@@ -98,9 +98,10 @@ void Knight::standLeft() {
     animationManager.setAnimation("idle_left");  // Switch to idle left animation
 }
 
-void Knight::SetPosition(const Vec& position) {
-    // Convert Vec to sf::Vector2f for weapon position
-    sf::Vector2f web_position(position.x, position.y);
+void Knight::SetPosition(Vec& position) {
+    double x = position.GetX();
+    double y = position.GetY();
+    sf::Vector2f web_position(x, y);
     
     // Ensure weapon1 is valid and of the correct type
     if (weapon1) {
@@ -110,5 +111,5 @@ void Knight::SetPosition(const Vec& position) {
     }
     
     // Set the knight's animation sprite position
-    animationManager.getCurrentSprite().setPosition(position.x, position.y);
+    animationManager.getCurrentSprite().setPosition(x, y);
 }

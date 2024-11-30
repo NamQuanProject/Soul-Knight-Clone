@@ -48,7 +48,8 @@ MenuState::MenuState() {
     exitButton.setPosition(300, 700); // Position the button
     
     Knight knight;
-    knight.SetPosition(Vec(100, 200));
+    Vec player_pos = Vec(100.0, 200.0);
+    knight.SetPosition(player_pos);
 }
 
 MenuState::~MenuState() {

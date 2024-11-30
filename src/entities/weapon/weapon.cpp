@@ -10,8 +10,12 @@ void Weapon::SetOwner(GameObject* newOwner) {
 
 Vec Weapon::GetPosition() {
     if (owner) {
-        return owner->GetPosition() + Vec(1.0, 0.0); // Example: Offset to the right
+        Vec pos =  owner->GetPosition();
+        Vec temp = Vec(1.0, 0.0);
+        pos = pos + temp;
+        return pos;
     }
-    return Vec(0, 0); // Default position if no owner
+
+    return Vec(0.0, 0.0); // Default position if no owner
 }
 

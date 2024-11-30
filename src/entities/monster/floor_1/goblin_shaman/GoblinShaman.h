@@ -11,7 +11,7 @@ public:
     void AutoMation() override;
     void InitializeWeapon() override;
     void Render(sf::RenderWindow& window) override;
-    void SetPosition(const Vec& position) override;   
+    void SetPosition(Vec& position) override;   
 private:
     AnimationManager animationManager;
 };
