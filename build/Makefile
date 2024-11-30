@@ -1425,6 +1425,30 @@ src/utils/generalObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.s
 .PHONY : src/utils/generalObject.cpp.s
 
+src/utils/hitbox.o: src/utils/hitbox.cpp.o
+.PHONY : src/utils/hitbox.o
+
+# target to build an object file
+src/utils/hitbox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o
+.PHONY : src/utils/hitbox.cpp.o
+
+src/utils/hitbox.i: src/utils/hitbox.cpp.i
+.PHONY : src/utils/hitbox.i
+
+# target to preprocess a source file
+src/utils/hitbox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.i
+.PHONY : src/utils/hitbox.cpp.i
+
+src/utils/hitbox.s: src/utils/hitbox.cpp.s
+.PHONY : src/utils/hitbox.s
+
+# target to generate assembly for a file
+src/utils/hitbox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.s
+.PHONY : src/utils/hitbox.cpp.s
+
 src/utils/point.o: src/utils/point.cpp.o
 .PHONY : src/utils/point.o
 
@@ -1668,6 +1692,9 @@ help:
 	@echo "... src/utils/generalObject.o"
 	@echo "... src/utils/generalObject.i"
 	@echo "... src/utils/generalObject.s"
+	@echo "... src/utils/hitbox.o"
+	@echo "... src/utils/hitbox.i"
+	@echo "... src/utils/hitbox.s"
 	@echo "... src/utils/point.o"
 	@echo "... src/utils/point.i"
 	@echo "... src/utils/point.s"

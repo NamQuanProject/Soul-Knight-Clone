@@ -62,6 +62,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/pool/monsterPool.cpp" "CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/config.cpp" "CMakeFiles/soulknight.dir/src/utils/config.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/config.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/generalObject.cpp" "CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o.d"
+  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/hitbox.cpp" "CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/point.cpp" "CMakeFiles/soulknight.dir/src/utils/point.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/point.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/random.cpp" "CMakeFiles/soulknight.dir/src/utils/random.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/random.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/vec.cpp" "CMakeFiles/soulknight.dir/src/utils/vec.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/vec.cpp.o.d"
