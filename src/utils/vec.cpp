@@ -1,70 +1,110 @@
+
 #include "vec.h"
 
-// Addition
-Vec Vec::operator+(const Vec& other) const {
-    return Vec(x + other.x, y + other.y);
+#include <cmath>
+#include <complex>
+#include <valarray>
+
+Vec::Vec(double x, double y): x(x), y(y) {
 }
 
-// Subtraction
-Vec Vec::operator-(const Vec& other) const {
-    return Vec(x - other.x, y - other.y);
+Vec::Vec(Vec* vec, double val) {
+    double length = vec->GetLength();
+    if (length != 0.0) {
+        double ratio = val / length;
+        x = vec->x * ratio;
+        y = vec->y * ratio;
+    }
 }
 
-// Scalar multiplication
-Vec Vec::operator*(double scalar) const {
-    return Vec(x * scalar, y * scalar);
+Vec::Vec(Vec* vec): x(vec->x), y(vec->y) {
 }
 
-// Scalar division
-Vec Vec::operator/(double scalar) const {
-    return Vec(x / scalar, y / scalar);
+Vec::Vec() {
+    x = 0;
+    y = 0;
 }
 
-// Compound addition
-Vec& Vec::operator+=(const Vec& other) {
-    x += other.x;
-    y += other.y;
-    return *this;
+Vec::~Vec() {
 }
 
-// Compound subtraction
-Vec& Vec::operator-=(const Vec& other) {
-    x -= other.x;
-    y -= other.y;
-    return *this;
+double Vec::GetX() {
+    return x;
 }
 
-// Compound multiplication
-Vec& Vec::operator*=(double scalar) {
-    x *= scalar;
-    y *= scalar;
-    return *this;
+double Vec::GetY() {
+    return y;
 }
 
-// Compound division
-Vec& Vec::operator/=(double scalar) {
-    x /= scalar;
-    y /= scalar;
-    return *this;
+double Vec::GetLength() {
+    return sqrt(x * x + y * y);
 }
 
-// Magnitude of the vector
-double Vec::Magnitude() const {
-    return std::sqrt(x * x + y * y);
+double Vec::GetRadian() {
+    double length = GetLength();
+    if (length == 0.0) {
+        return 0.0;
+    }
+    else {
+        return (x < 0 ? std::acos(y / length) : std::acos(-y / length) + PI);
+    }
 }
 
-// Normalize the vector (unit vector)
-Vec Vec::Normalize() const {
-    double mag = Magnitude();
-    return mag > 0 ? Vec(x / mag, y / mag) : Vec(0, 0);
+double Vec::Angle(Vec* vec) {
+    return vec->GetRadian() - this->GetRadian();
 }
 
-// Dot product
-double Vec::Dot(const Vec& other) const {
-    return x * other.x + y * other.y;
+void Vec::Rotate(double radian) {
+    double cosRadian = cos(radian);
+    double sinRadian = sin(radian);
+    double newX = x * cosRadian - y * sinRadian;
+    double newY = x * sinRadian + y * cosRadian;
+    x = newX;
+    y = newY;
 }
 
-// Distance between two vectors
-double Vec::Distance(const Vec& other) const {
-    return std::sqrt(std::pow(x - other.x, 2) + std::pow(y - other.y, 2));
+
+void Vec::SetX(double x) {
+    this->x = x;
+}
+
+void Vec::SetY(double y) {
+    this->y = y;
+}
+
+void Vec::SetVec(double x, double y) {
+    this->x = x;
+    this->y = y;
+}
+
+void Vec::SetVec(Vec* vec, double val) {
+    double ratio = val / vec->GetLength();
+    x = vec->x * ratio;
+    y = vec->y * ratio;
+}
+
+void Vec::SetVec(Vec* vec) {
+    x = vec->x;
+    y = vec->y;
+}
+
+void Vec::SetLength(double length) {
+    double selfLength = this->GetLength();
+    if (selfLength != 0.0) {
+        double ratio = length / selfLength;
+        x = this->x * ratio;
+        y = this->y * ratio;
+    }
+}
+
+Vec Vec::operator+(Vec& vec) const {
+    return Vec{x + vec.x, y + vec.y};
+}
+
+Vec Vec::operator -(Vec& vec) const {
+    return Vec{x - vec.x, y - vec.y};
+}
+
+Vec Vec::operator*(double ratio) const {
+    return Vec{x * ratio, y * ratio};
 }

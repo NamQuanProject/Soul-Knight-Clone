@@ -9,7 +9,7 @@ public:
     ~Point();
     double GetX();
     double GetY();
-
+    
     void SetX(double x);
     void SetY(double y);
     void SetPoint(double x, double y);
