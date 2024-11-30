@@ -969,6 +969,30 @@ src/manager/keyboardManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.s
 .PHONY : src/manager/keyboardManager.cpp.s
 
+src/manager/objectManager.o: src/manager/objectManager.cpp.o
+.PHONY : src/manager/objectManager.o
+
+# target to build an object file
+src/manager/objectManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/objectManager.cpp.o
+.PHONY : src/manager/objectManager.cpp.o
+
+src/manager/objectManager.i: src/manager/objectManager.cpp.i
+.PHONY : src/manager/objectManager.i
+
+# target to preprocess a source file
+src/manager/objectManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/objectManager.cpp.i
+.PHONY : src/manager/objectManager.cpp.i
+
+src/manager/objectManager.s: src/manager/objectManager.cpp.s
+.PHONY : src/manager/objectManager.s
+
+# target to generate assembly for a file
+src/manager/objectManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/objectManager.cpp.s
+.PHONY : src/manager/objectManager.cpp.s
+
 src/manager/soundManager.o: src/manager/soundManager.cpp.o
 .PHONY : src/manager/soundManager.o
 
@@ -1112,6 +1136,30 @@ src/map/stage/stage.s: src/map/stage/stage.cpp.s
 src/map/stage/stage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s
 .PHONY : src/map/stage/stage.cpp.s
+
+src/map/stage/stageOneOne.o: src/map/stage/stageOneOne.cpp.o
+.PHONY : src/map/stage/stageOneOne.o
+
+# target to build an object file
+src/map/stage/stageOneOne.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o
+.PHONY : src/map/stage/stageOneOne.cpp.o
+
+src/map/stage/stageOneOne.i: src/map/stage/stageOneOne.cpp.i
+.PHONY : src/map/stage/stageOneOne.i
+
+# target to preprocess a source file
+src/map/stage/stageOneOne.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.i
+.PHONY : src/map/stage/stageOneOne.cpp.i
+
+src/map/stage/stageOneOne.s: src/map/stage/stageOneOne.cpp.s
+.PHONY : src/map/stage/stageOneOne.s
+
+# target to generate assembly for a file
+src/map/stage/stageOneOne.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.s
+.PHONY : src/map/stage/stageOneOne.cpp.s
 
 src/map/wall/door.o: src/map/wall/door.cpp.o
 .PHONY : src/map/wall/door.o
@@ -1635,6 +1683,9 @@ help:
 	@echo "... src/manager/keyboardManager.o"
 	@echo "... src/manager/keyboardManager.i"
 	@echo "... src/manager/keyboardManager.s"
+	@echo "... src/manager/objectManager.o"
+	@echo "... src/manager/objectManager.i"
+	@echo "... src/manager/objectManager.s"
 	@echo "... src/manager/soundManager.o"
 	@echo "... src/manager/soundManager.i"
 	@echo "... src/manager/soundManager.s"
@@ -1653,6 +1704,9 @@ help:
 	@echo "... src/map/stage/stage.o"
 	@echo "... src/map/stage/stage.i"
 	@echo "... src/map/stage/stage.s"
+	@echo "... src/map/stage/stageOneOne.o"
+	@echo "... src/map/stage/stageOneOne.i"
+	@echo "... src/map/stage/stageOneOne.s"
 	@echo "... src/map/wall/door.o"
 	@echo "... src/map/wall/door.i"
 	@echo "... src/map/wall/door.s"

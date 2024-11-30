@@ -3,14 +3,11 @@ cmake_minimum_required(VERSION 3.17 FATAL_ERROR)
 project(soulknight)
 
 # Set paths for OpenCV, SFML, and matplotlib-cpp
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(SFML_ROOT "/Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/build")
 
 # Find required packages
 find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)
-
-# Python dependencies (assuming Python3 is installed and properly set up)
-find_package(Python3 COMPONENTS Development REQUIRED)
 
 # Include directories
 include_directories(${SFML_INCLUDE_DIR})
@@ -34,6 +31,9 @@ target_link_libraries(${PROJECT_NAME}
     sfml-graphics 
     sfml-network 
     sfml-audio 
+    "-framework Cocoa" 
+    "-framework IOKit" 
+    "-framework CoreFoundation"
 )
 
 # Set C++ standard to C++17
