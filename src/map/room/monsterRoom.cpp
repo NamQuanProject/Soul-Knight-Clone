@@ -1,4 +1,3 @@
-// #include "stdafx.h"
 // #include "MonsterRoom.h"
 
 // #include <iostream>

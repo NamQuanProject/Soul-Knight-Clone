@@ -9,11 +9,10 @@ public:
     double GetHalfHeight();
     double GetHalfWidth();
     bool IsCollision(HitBox* otherHitBox);
-    void Show(Point screenPositoin); // TODO: Test function for HitBox location
-
+    void Show(Point screenPositoin); 
 private:
     Point& authorPoint;
     double halfWidth;
     double halfHeight;
-    bool isCollisionInThisFrame; // TODO: Test code for HitBox collision visualization
+    bool isCollisionInThisFrame;
 };

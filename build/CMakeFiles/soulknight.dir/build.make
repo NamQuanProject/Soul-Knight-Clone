@@ -825,19 +825,19 @@ CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/generalObject.cpp" -o CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.s
 
-CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o: CMakeFiles/soulknight.dir/flags.make
-CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/hitbox.cpp
-CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/hitbox.cpp"
+CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/hitBox.cpp
+CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o -MF CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o.d -o CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/hitBox.cpp"
 
-CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/hitbox.cpp" > CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.i
+CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/hitBox.cpp" > CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.i
 
-CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/hitbox.cpp" -o CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.s
+CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/hitBox.cpp" -o CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.s
 
 CMakeFiles/soulknight.dir/src/utils/point.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/utils/point.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/utils/point.cpp
@@ -937,7 +937,7 @@ soulknight_OBJECTS = \
 "CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/config.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o" \
-"CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o" \
+"CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/point.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/random.cpp.o" \
 "CMakeFiles/soulknight.dir/src/utils/vec.cpp.o"
@@ -999,7 +999,7 @@ soulknight: CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/config.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/generalObject.cpp.o
-soulknight: CMakeFiles/soulknight.dir/src/utils/hitbox.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/point.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/random.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/utils/vec.cpp.o
