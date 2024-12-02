@@ -41,19 +41,29 @@ bool HitBox::IsCollision(HitBox* otherHitBox) {
     }
 }
 
-void HitBox::Show(Point screenPositoin) {
-    double screenX = this->authorPoint.GetX() - screenPositoin.GetX();
-    double screenY = this->authorPoint.GetY() - screenPositoin.GetY();
-    // if (screenX > 0 && screenX < SIZE_X && screenY > 0 && screenY < SIZE_Y) {
-    //     // game_framework::Draw::Instance()->EmptyRectangle(
-    //     //     Point(screenX - halfWidth, screenY - halfHeight),
-    //     //     Point(screenX + halfWidth, screenY + halfHeight),
-    //     //     (isCollisionInThisFrame ? RGB(235, 16, 0) : RGB(8, 249, 24))
-    //     // );
-    //     return ;
-    // }
-    isCollisionInThisFrame = false;
+
+void HitBox::Render(Point screenPosition, sf::RenderWindow& window) {
+    // Calculate screen position of the hitbox
+    double screenX = this->authorPoint.GetX() - screenPosition.GetX();
+    double screenY = this->authorPoint.GetY() - screenPosition.GetY();
+
+    // Check if the hitbox is within the screen bounds
+    if (screenX > 0 && screenX < 5000 && screenY > 0 && screenY < 5000) {
+
+        sf::RectangleShape hitboxRect(sf::Vector2f(halfWidth * 2, halfHeight * 2));
+        hitboxRect.setPosition(screenX - halfWidth, screenY - halfHeight);
+        hitboxRect.setFillColor(sf::Color::Transparent);
+        hitboxRect.setOutlineThickness(2);
+        hitboxRect.setOutlineColor(isCollisionInThisFrame ? sf::Color(235, 16, 0) : sf::Color(8, 249, 24));
+
+
+        window.draw(hitboxRect);
+
+
+        isCollisionInThisFrame = false;
+    }
 }
+
 Point HitBox::GetPosition() {
     return authorPoint;  // Return the position of the author point
 }

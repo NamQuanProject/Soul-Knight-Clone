@@ -1,4 +1,5 @@
 #pragma once
+#include <SFML/Graphics.hpp>
 #include "point.h"
 
 class HitBox {
@@ -9,7 +10,7 @@ public:
     double GetHalfHeight();
     double GetHalfWidth();
     bool IsCollision(HitBox* otherHitBox);
-    void Show(Point screenPositoin); 
+    void Render(Point screenPositoin, sf::RenderWindow& window); 
     Point GetPosition();
     void SetPosition(const Point& newPoint);
 private:

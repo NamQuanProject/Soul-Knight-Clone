@@ -18,8 +18,8 @@ public:
     void setVolume(float volume);
 
 private:
-    std::map<std::string, std::unique_ptr<sf::Music>> musicTracks; // Use unique_ptr for music tracks
-    sf::Music* currentMusic; // Pointer to currently playing music
+    std::map<std::string, std::unique_ptr<sf::Music>> musicTracks; 
+    sf::Music* currentMusic; 
 };
 
 #endif // SOUNDMANAGER_H

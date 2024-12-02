@@ -6,7 +6,6 @@
 #include "../utils/vec.h"
 
 // Forward declaration of Knight class if needed
-class Knight;
 
 class Map {
 public:

@@ -17,7 +17,6 @@ Map::Map(const std::string& backgroundTexturePath, float screenWidth, float scre
 }
 
 void Map::initialize() {
-    // Place objects (obstacles, items) on the map
     placeObjects();
 }
 

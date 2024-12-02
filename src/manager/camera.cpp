@@ -8,7 +8,6 @@ Camera::Camera(float screenWidth, float screenHeight)
 void Camera::update(const sf::Vector2f& playerPosition) {
     view.setCenter(playerPosition);
 
-    // Apply boundaries if worldBounds are set
     if (worldBounds.width > 0 && worldBounds.height > 0) {
         float leftBound = worldBounds.left + screenWidth / 2;
         float rightBound = worldBounds.left + worldBounds.width - screenWidth / 2;

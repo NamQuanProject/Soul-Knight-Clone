@@ -11,7 +11,7 @@
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
-
+    window.setFramerateLimit(10000);  
     GoblinShaman goblin_shaman1;
     Vec mons_position = Vec(200.0, 200.0);
     goblin_shaman1.SetPosition(mons_position);
