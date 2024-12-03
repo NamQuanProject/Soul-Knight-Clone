@@ -657,19 +657,19 @@ CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stage.cpp" -o CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s
 
-CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o: CMakeFiles/soulknight.dir/flags.make
-CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/stageOneOne.cpp
-CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o -MF CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stageOneOne.cpp"
+CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o: CMakeFiles/soulknight.dir/flags.make
+CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/stage_1_1.cpp
+CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o: CMakeFiles/soulknight.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/quannguyennam/Documents/Projects/Soul Knight Clone/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o -MF CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o.d -o CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o -c "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stage_1_1.cpp"
 
-CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stageOneOne.cpp" > CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.i
+CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stage_1_1.cpp" > CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.i
 
-CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stageOneOne.cpp" -o CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.s
+CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stage_1_1.cpp" -o CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.s
 
 CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o: CMakeFiles/soulknight.dir/flags.make
 CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o: /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/door.cpp
@@ -953,7 +953,7 @@ soulknight_OBJECTS = \
 "CMakeFiles/soulknight.dir/src/map/room/room.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o" \
-"CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o" \
+"CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o" \
 "CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o" \
@@ -1017,7 +1017,7 @@ soulknight: CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/room/room.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o
-soulknight: CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o
+soulknight: CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o
 soulknight: CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o

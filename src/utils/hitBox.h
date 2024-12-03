@@ -10,7 +10,7 @@ public:
     double GetHalfHeight();
     double GetHalfWidth();
     bool IsCollision(HitBox* otherHitBox);
-    void Render(Point screenPositoin, sf::RenderWindow& window); 
+    void Render(sf::RenderWindow& window); 
     Point GetPosition();
     void SetPosition(const Point& newPoint);
 private:

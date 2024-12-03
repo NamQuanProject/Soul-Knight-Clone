@@ -1137,29 +1137,29 @@ src/map/stage/stage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s
 .PHONY : src/map/stage/stage.cpp.s
 
-src/map/stage/stageOneOne.o: src/map/stage/stageOneOne.cpp.o
-.PHONY : src/map/stage/stageOneOne.o
+src/map/stage/stage_1_1.o: src/map/stage/stage_1_1.cpp.o
+.PHONY : src/map/stage/stage_1_1.o
 
 # target to build an object file
-src/map/stage/stageOneOne.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.o
-.PHONY : src/map/stage/stageOneOne.cpp.o
+src/map/stage/stage_1_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o
+.PHONY : src/map/stage/stage_1_1.cpp.o
 
-src/map/stage/stageOneOne.i: src/map/stage/stageOneOne.cpp.i
-.PHONY : src/map/stage/stageOneOne.i
+src/map/stage/stage_1_1.i: src/map/stage/stage_1_1.cpp.i
+.PHONY : src/map/stage/stage_1_1.i
 
 # target to preprocess a source file
-src/map/stage/stageOneOne.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.i
-.PHONY : src/map/stage/stageOneOne.cpp.i
+src/map/stage/stage_1_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.i
+.PHONY : src/map/stage/stage_1_1.cpp.i
 
-src/map/stage/stageOneOne.s: src/map/stage/stageOneOne.cpp.s
-.PHONY : src/map/stage/stageOneOne.s
+src/map/stage/stage_1_1.s: src/map/stage/stage_1_1.cpp.s
+.PHONY : src/map/stage/stage_1_1.s
 
 # target to generate assembly for a file
-src/map/stage/stageOneOne.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageOneOne.cpp.s
-.PHONY : src/map/stage/stageOneOne.cpp.s
+src/map/stage/stage_1_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.s
+.PHONY : src/map/stage/stage_1_1.cpp.s
 
 src/map/wall/door.o: src/map/wall/door.cpp.o
 .PHONY : src/map/wall/door.o
@@ -1704,9 +1704,9 @@ help:
 	@echo "... src/map/stage/stage.o"
 	@echo "... src/map/stage/stage.i"
 	@echo "... src/map/stage/stage.s"
-	@echo "... src/map/stage/stageOneOne.o"
-	@echo "... src/map/stage/stageOneOne.i"
-	@echo "... src/map/stage/stageOneOne.s"
+	@echo "... src/map/stage/stage_1_1.o"
+	@echo "... src/map/stage/stage_1_1.i"
+	@echo "... src/map/stage/stage_1_1.s"
 	@echo "... src/map/wall/door.o"
 	@echo "... src/map/wall/door.i"
 	@echo "... src/map/wall/door.s"

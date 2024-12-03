@@ -6,11 +6,14 @@
 #include <SFML/Graphics.hpp>
 #include "entities/projectile/bullet/badPistolBullet.h"
 #include "entities/monster/floor_1/goblin_shaman/goblinShaman.h"
+#include "map/stage/stage_1_1.h"
 #include <iostream>
 #include <cmath>
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
+    Stage_1_1 stage;
+    
     window.setFramerateLimit(10000);  
     GoblinShaman goblin_shaman1;
     Vec mons_position = Vec(200.0, 200.0);
@@ -148,7 +151,7 @@ int main() {
             goblin_shaman1.Update(deltaTime);
             clock.restart();
         }
-
+        stage.Render(window);
         knight1.SetPosition(knightPosition);
         knight1.Render(window);
         goblin_shaman1.Render(window);

@@ -95,7 +95,7 @@ void Knight::Render(sf::RenderWindow& window) {
         sf::Sprite sprite = animationManager.getCurrentSprite();
         sf::FloatRect bounds = sprite.getLocalBounds();
 
-        hitbox->SetWidth(bounds.width);
+        hitbox->SetWidth(bounds.width - 9.f);
         hitbox->SetHeight(bounds.height);
 
         // Update the hitbox position to match the sprite
@@ -103,7 +103,7 @@ void Knight::Render(sf::RenderWindow& window) {
         hitbox->SetPosition(Point(hitboxPosition.x, hitboxPosition.y));
 
         // Render the hitbox
-        hitbox->Render(Point(0, 0), window); // Assuming Point(0,0) as the screen's top-left corner
+        hitbox->Render(window); // Assuming Point(0,0) as the screen's top-left corner
     }
 
 

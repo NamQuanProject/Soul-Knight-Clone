@@ -1,18 +1,18 @@
 #include <SFML/Graphics.hpp>
 #include "../../utils/point.h"
+#include "../wall/wall.h"
 #include "../room/monsterRoom.h"
 
 
 
-class Monster;
-class Wall;
-class VendingMachine;
+
 
 class Stage {
 public:
     Stage();
     virtual ~Stage();
-    sf::Sprite GetBackground();
+
+    virtual void setBackground() = 0;
     void Initialize();
     void Show(Point screenPositoin);
     void AddWall(Point point1, Point point2);
@@ -20,14 +20,17 @@ public:
     void IsRoomCleared();
 
 protected:
-    sf::Sprite background;
+    sf::Sprite backgroundSprite;
+    sf::Texture backgroundTexture;
     Vec centerOffset;
-    virtual void GenerateWall() = 0;
-    virtual void SetPlayerPosition() = 0;
-    virtual void SetTransferGate() = 0;
-    virtual void GenerateObstacle() = 0;
+    std::vector<Wall*> walls;
+
+    // virtual void GenerateWall() = 0;
+    // virtual void SetPlayerPosition() = 0;
+    // virtual void SetTransferGate() = 0;
+    // virtual void GenerateObstacle() = 0;
     // std::vector<MonsterRoom*> monsterRooms;
     // TreasureRoom* treasureRoom;
-    std::vector<Wall*> walls;
-    VendingMachine* vendingMachine;
+    
+    // VendingMachine* vendingMachine;
 };

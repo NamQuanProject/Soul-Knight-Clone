@@ -42,24 +42,19 @@ bool HitBox::IsCollision(HitBox* otherHitBox) {
 }
 
 
-void HitBox::Render(Point screenPosition, sf::RenderWindow& window) {
+void HitBox::Render(sf::RenderWindow& window) {
     // Calculate screen position of the hitbox
-    double screenX = this->authorPoint.GetX() - screenPosition.GetX();
-    double screenY = this->authorPoint.GetY() - screenPosition.GetY();
+    double screenX = this->authorPoint.GetX();
+    double screenY = this->authorPoint.GetY(); 
 
     // Check if the hitbox is within the screen bounds
-    if (screenX > 0 && screenX < 5000 && screenY > 0 && screenY < 5000) {
-
+    if (screenX > 0 && screenX < 2000 && screenY > 0 && screenY < 2000) {
         sf::RectangleShape hitboxRect(sf::Vector2f(halfWidth * 2, halfHeight * 2));
         hitboxRect.setPosition(screenX - halfWidth, screenY - halfHeight);
         hitboxRect.setFillColor(sf::Color::Transparent);
         hitboxRect.setOutlineThickness(2);
         hitboxRect.setOutlineColor(isCollisionInThisFrame ? sf::Color(235, 16, 0) : sf::Color(8, 249, 24));
-
-
         window.draw(hitboxRect);
-
-
         isCollisionInThisFrame = false;
     }
 }
