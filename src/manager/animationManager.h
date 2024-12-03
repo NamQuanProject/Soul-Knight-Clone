@@ -14,6 +14,7 @@ public:
     void update(float deltaTime);  
     sf::Sprite& getCurrentSprite();  
     std::string getCurrentAnimationName() const;
+    void setOrigin();
 
 private:
     std::unordered_map<std::string, Animation> animations;

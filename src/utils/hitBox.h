@@ -14,7 +14,8 @@ public:
     Point GetPosition();
     void SetPosition(const Point& newPoint);
 private:
-    Point& authorPoint;
+    Point authorPoint;
+    sf::RectangleShape hitboxRect;
     double halfWidth;
     double halfHeight;
     bool isCollisionInThisFrame;

@@ -28,6 +28,10 @@ void GameObject::Collision(GameObject* other) {
     return;
 }
 
+
+HitBox* GameObject::GetHitBox() {
+    return hitbox;
+}
 // void GameObject::Debug() const {
 //     std::cout << "Position: (" << position.x << ", " << position.y << "), Active: " << active << "\n";
 // }

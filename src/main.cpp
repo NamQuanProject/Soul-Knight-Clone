@@ -14,7 +14,8 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
     Stage_1_1 stage;
     
-    window.setFramerateLimit(10000);  
+    window.setFramerateLimit(1000);  // Set a reasonable framerate limit
+    
     GoblinShaman goblin_shaman1;
     Vec mons_position = Vec(200.0, 200.0);
     goblin_shaman1.SetPosition(mons_position);
@@ -43,7 +44,7 @@ int main() {
     Camera camera(1000, 700);
     camera.setWorldBounds(worldBounds);
 
-    Knight knight1;
+    Knight* knight1 = new Knight();  // Initialize knight1 as a new instance
 
     sf::Clock clock;
     Vec knightPosition(105, 183);
@@ -70,58 +71,55 @@ int main() {
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);
-            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  // Corrected to use SetY()
-            knight1.runRight();           
+            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);
+            knight1->runRight();           
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);  // Corrected to use SetX()
-            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  // Corrected to use SetY()
-            knight1.runLeft();            
+            knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);
+            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);
+            knight1->runLeft();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);  
             knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
-            knight1.runRight();            
+            knight1->runRight();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);
             knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
-            knight1.runLeft();
+            knight1->runLeft();
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  // Corrected to use SetY()
-            if (knight1.CheckFace() == Knight::RIGHT) {
-                knight1.runRight();        
+            knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  
+            if (knight1->CheckFace() == Knight::RIGHT) {
+                knight1->runRight();        
             } else {
-                knight1.runLeft();         
+                knight1->runLeft();         
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-            knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  // Corrected to use SetY()
-            if (knight1.CheckFace() == Knight::RIGHT) {
-                knight1.runRight();        
+            knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
+            if (knight1->CheckFace() == Knight::RIGHT) {
+                knight1->runRight();        
             } else {
-                knight1.runLeft();        
+                knight1->runLeft();        
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);  // Corrected to use SetX()
-            knight1.runLeft();            
+            knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);
+            knight1->runLeft();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);  
-            knight1.runRight();            
+            knight1->runRight();            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
             if (!bulletActive) {
-                bullet.SetPosition(sf::Vector2f(knightPosition.GetX(), knightPosition.GetY()));  // Corrected to GetX() and GetY()
+                bullet.SetPosition(sf::Vector2f(knightPosition.GetX(), knightPosition.GetY()));
                 bullet.SetSpeed(sf::Vector2f(25.f, 0.f));
                 bulletInitialPosition = bullet.GetPosition();
                 bulletActive = true;
             }
         } else {
-            // If no keys are pressed, make the knight stand still
-            if (knight1.CheckFace() == Knight::RIGHT) {
-                knight1.standRight();
+            // Make the knight stand still if no keys are pressed
+            if (knight1->CheckFace() == Knight::RIGHT) {
+                knight1->standRight();
             } else {
-                knight1.standLeft();
+                knight1->standLeft();
             }
         }
-
-
-
 
         sf::Vector2f knightPos(knightPosition.GetX(), knightPosition.GetY());
         camera.update(knightPos);
@@ -129,12 +127,11 @@ int main() {
         window.clear();
         camera.applyView(window);
         window.draw(backgroundSprite);
-
+        
         float deltaTime = clock.getElapsedTime().asSeconds();
         if (deltaTime > 0.09f) {
             if (bulletActive) {
                 bullet.Update(deltaTime);
-
                 
                 sf::Vector2f bulletPos = bullet.GetPosition();
                 float distanceTraveled = std::sqrt(
@@ -147,13 +144,15 @@ int main() {
             }
         }
         if (deltaTime > 0.1f) {
-            knight1.Update(deltaTime);
+            
+            knight1->Update(deltaTime);
+            stage.Collision(knight1);
             goblin_shaman1.Update(deltaTime);
             clock.restart();
         }
         stage.Render(window);
-        knight1.SetPosition(knightPosition);
-        knight1.Render(window);
+        knight1->SetPosition(knightPosition);
+        knight1->Render(window);
         goblin_shaman1.Render(window);
 
         if (bulletActive) {
@@ -162,4 +161,6 @@ int main() {
 
         window.display();
     }
+    
+    delete knight1;  // Properly delete knight1 after usage
 }

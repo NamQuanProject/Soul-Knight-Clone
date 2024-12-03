@@ -1009,6 +1009,7 @@ CMakeFiles/soulknight.dir/src/main.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/wall.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../utils/hitBox.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/invinsibleObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/monsterRoom.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/room.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/roomSize.h \

@@ -6,8 +6,8 @@ public:
     void Update(float deltaTime) override;
     void LoadResources();
     void Render(sf::RenderWindow& window) override;
-
-    void SetHitBoxByRatio(double heightRatio, double widthRatio);
+    void SetHitBoxByRatio(double heightRatio, double widthRatio);  
+    
 
 protected:
     bool invinsible = true;

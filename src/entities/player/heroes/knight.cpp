@@ -6,7 +6,7 @@ Knight::Knight() : Player() {
     loadKnightAnimations();
     weapon1 = new BadPistol();
     animationManager.setAnimation("idle_right"); 
-    
+    animationManager.setOrigin();
     sf::Vector2f position = animationManager.getCurrentSprite().getPosition();
     
     Point author = Point(position.x, position.y);
@@ -29,8 +29,19 @@ Knight::~Knight() {
 // Update the knight animation
 void Knight::Update(float deltaTime) {
     animationManager.update(deltaTime); 
-    // sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
-    // hitbox->SetPosition(Point(knightPosition.x, knightPosition.y)); // Update hitbox position
+
+
+
+    sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
+    sf::Sprite sprite = animationManager.getCurrentSprite();
+    sf::FloatRect bounds = sprite.getLocalBounds();
+
+    hitbox->SetWidth(bounds.width - 9.f);
+    hitbox->SetHeight(bounds.height - 1.f);
+
+    // Update the hitbox position to match the sprite
+    sf::Vector2f hitboxPosition = sprite.getPosition();
+    hitbox->SetPosition(Point(hitboxPosition.x, hitboxPosition.y));
 }
 
 void Knight::loadKnightAnimations() {
@@ -80,33 +91,18 @@ void Knight::loadKnightAnimations() {
 // Render the knight (called every frame)
 void Knight::Render(sf::RenderWindow& window) {
     sf::Sprite sprite = animationManager.getCurrentSprite();
-    sf::FloatRect bounds = sprite.getLocalBounds();
-    sprite.setOrigin(bounds.width / 2, bounds.height / 2);
+    
 
     // Update weapon rendering
     weapon1->Render(window);
-    
+
     // Draw the knight's sprite
     window.draw(sprite);
 
     // Render the hitbox (red rectangle)
     if (hitbox) {
-    // Update the hitbox dimensions
-        sf::Sprite sprite = animationManager.getCurrentSprite();
-        sf::FloatRect bounds = sprite.getLocalBounds();
-
-        hitbox->SetWidth(bounds.width - 9.f);
-        hitbox->SetHeight(bounds.height);
-
-        // Update the hitbox position to match the sprite
-        sf::Vector2f hitboxPosition = sprite.getPosition();
-        hitbox->SetPosition(Point(hitboxPosition.x, hitboxPosition.y));
-
-        // Render the hitbox
-        hitbox->Render(window); // Assuming Point(0,0) as the screen's top-left corner
+        hitbox->Render(window); // Render the hitbox
     }
-
-
 }
 
 

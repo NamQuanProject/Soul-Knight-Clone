@@ -2,13 +2,14 @@
 #include <SFML/Graphics.hpp>
 #include "../../utils/point.h"
 #include "../../utils/hitBox.h"
+#include "../../entities/invinsibleObject.h"
 
-class Wall {
+class Wall: public InvisibleObject{
 public:
     Wall(Point start, Point end);
     void Draw(sf::RenderWindow& window);
-    HitBox* GetHitbox();  // Return a pointer to the hitbox
-
+    void Collision(GameObject* gameObject) override;
+    bool CheckCollision(GameObject* gameObject);
 private:
     sf::RectangleShape wallShape;
     HitBox hitbox;

@@ -89,6 +89,13 @@ void Stage_1_1::Render(sf::RenderWindow& window) {
     }
 
 }
+
+
+void Stage_1_1::Collision(GameObject* gameObject) {
+    for (Wall* wall : walls) {
+        wall->Collision(gameObject);  // Check if the player collides with each wall
+    }
+}
 // void Stage_1_1::SetPlayerPosition() {
 //     // ObjectManager::Instance()->SetPlayerPosition(Point(345, 300));
 // }

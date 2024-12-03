@@ -9,6 +9,10 @@ void AnimationManager::addAnimation(const std::string& name, const Animation& an
     animations[name] = animation;  // Store the animation in the map
 }
 
+void AnimationManager::setOrigin() {
+    sf::FloatRect bounds = currentSprite.getLocalBounds();
+    currentSprite.setOrigin(bounds.width / 2, bounds.height / 2);
+}
 // Sets the current animation by name and updates the sprite accordingly
 void AnimationManager::setAnimation(const std::string& name) {
     auto it = animations.find(name);

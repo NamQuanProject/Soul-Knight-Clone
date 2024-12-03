@@ -959,6 +959,10 @@ CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/wall.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../utils/hitBox.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/invinsibleObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/monsterRoom.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/room.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/roomSize.h \
@@ -969,8 +973,6 @@ CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/playerType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/projectile/bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/projectile/projectileType.h \

@@ -8,6 +8,7 @@ public:
 
 
     void Render(sf::RenderWindow& window);
+    void Collision(GameObject* gameObject);
 protected:
     void setBackground() override;
     void AddWallsToMap();

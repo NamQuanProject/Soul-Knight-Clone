@@ -1,17 +1,21 @@
-
 #include "hitBox.h"
 #include <cmath>
 
-HitBox::HitBox(Point& authorPoint) : authorPoint(authorPoint), halfWidth(0), halfHeight(0),
-                                     isCollisionInThisFrame(false) {
+HitBox::HitBox(Point& authorPoint)
+    : authorPoint(authorPoint), halfWidth(0), halfHeight(0),
+      isCollisionInThisFrame(false) {
+    hitboxRect.setFillColor(sf::Color::Transparent); // Default to transparent
+    hitboxRect.setOutlineThickness(2); // Default outline thickness
 }
 
 void HitBox::SetWidth(double width) {
     this->halfWidth = width / 2;
+    hitboxRect.setSize(sf::Vector2f(width, hitboxRect.getSize().y));
 }
 
 void HitBox::SetHeight(double height) {
     this->halfHeight = height / 2;
+    hitboxRect.setSize(sf::Vector2f(hitboxRect.getSize().x, height));
 }
 
 double HitBox::GetHalfWidth() {
@@ -23,46 +27,56 @@ double HitBox::GetHalfHeight() {
 }
 
 bool HitBox::IsCollision(HitBox* otherHitBox) {
-    bool XOverLap = false;
-    bool YOverLap = false;
-    if (abs(this->authorPoint.GetX() - otherHitBox->authorPoint.GetX()) < this->halfWidth + otherHitBox->halfWidth) {
-        XOverLap = true;
+    // Get the bounds of the current hitbox (top-left)
+    double x1Min = authorPoint.GetX();
+    double x1Max = authorPoint.GetX() + 2 * halfWidth;  // Full width from top-left
+    double y1Min = authorPoint.GetY();
+    double y1Max = authorPoint.GetY() + 2 * halfHeight;  // Full height from top-left
+
+    // Get the bounds of the other hitbox (centered position)
+    // Adjust the other hitbox so that its position is its top-left corner
+    double x2Min = otherHitBox->authorPoint.GetX() - otherHitBox->GetHalfWidth();
+    double x2Max = otherHitBox->authorPoint.GetX() + otherHitBox->GetHalfWidth();
+    double y2Min = otherHitBox->authorPoint.GetY() - otherHitBox->GetHalfHeight();
+    double y2Max = otherHitBox->authorPoint.GetY() + otherHitBox->GetHalfHeight();
+
+    // Check if there is no horizontal overlap (boxes are separated on x-axis)
+    if (x1Max <= x2Min || x1Min >= x2Max) {
+        return false; // No horizontal overlap, so no collision
     }
-    if (abs(this->authorPoint.GetY() - otherHitBox->authorPoint.GetY()) < this->halfHeight + otherHitBox->halfHeight) {
-        YOverLap = true;
+
+    // Check if there is no vertical overlap (boxes are separated on y-axis)
+    if (y1Max <= y2Min || y1Min >= y2Max) {
+        return false; // No vertical overlap, so no collision
     }
-    if (XOverLap && YOverLap) {
-        isCollisionInThisFrame = true; // TODO: Test code for HitBox collision visualization
-        otherHitBox->isCollisionInThisFrame = true;
-        return true;
-    }
-    else {
-        return false;
-    }
+
+    // If there is overlap in both x and y directions, it is a collision
+    isCollisionInThisFrame = true;
+    otherHitBox->isCollisionInThisFrame = true;
+    return true;  // Collision detected
 }
+
+
+
 
 
 void HitBox::Render(sf::RenderWindow& window) {
-    // Calculate screen position of the hitbox
-    double screenX = this->authorPoint.GetX();
-    double screenY = this->authorPoint.GetY(); 
+    // Update hitbox position and dimensions
+    hitboxRect.setPosition(authorPoint.GetX() - halfWidth,
+                           authorPoint.GetY() - halfHeight);
 
-    // Check if the hitbox is within the screen bounds
-    if (screenX > 0 && screenX < 2000 && screenY > 0 && screenY < 2000) {
-        sf::RectangleShape hitboxRect(sf::Vector2f(halfWidth * 2, halfHeight * 2));
-        hitboxRect.setPosition(screenX - halfWidth, screenY - halfHeight);
-        hitboxRect.setFillColor(sf::Color::Transparent);
-        hitboxRect.setOutlineThickness(2);
-        hitboxRect.setOutlineColor(isCollisionInThisFrame ? sf::Color(235, 16, 0) : sf::Color(8, 249, 24));
-        window.draw(hitboxRect);
-        isCollisionInThisFrame = false;
-    }
+    // Set outline color based on collision state
+    hitboxRect.setOutlineColor(
+        isCollisionInThisFrame ? sf::Color(235, 16, 0) : sf::Color(8, 249, 24));
+
+    // Draw the hitbox
+    window.draw(hitboxRect);
 }
 
 Point HitBox::GetPosition() {
-    return authorPoint;  // Return the position of the author point
+    return authorPoint;
 }
 
 void HitBox::SetPosition(const Point& newPoint) {
-    authorPoint = newPoint;  // Update the position of the hitbox
+    authorPoint = newPoint; // Update the position of the hitbox
 }
