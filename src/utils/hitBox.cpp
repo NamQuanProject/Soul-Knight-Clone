@@ -4,8 +4,8 @@
 HitBox::HitBox(Point& authorPoint)
     : authorPoint(authorPoint), halfWidth(0), halfHeight(0),
       isCollisionInThisFrame(false) {
-    hitboxRect.setFillColor(sf::Color::Transparent); // Default to transparent
-    hitboxRect.setOutlineThickness(2); // Default outline thickness
+    hitboxRect.setFillColor(sf::Color::Transparent);
+    hitboxRect.setOutlineThickness(2);
 }
 
 void HitBox::SetWidth(double width) {
@@ -27,32 +27,30 @@ double HitBox::GetHalfHeight() {
 }
 
 bool HitBox::IsCollision(HitBox* otherHitBox) {
-    // Get the bounds of the current hitbox (centered at authorPoint)
     double x1Min = authorPoint.GetX() - halfWidth;
-    double x1Max = authorPoint.GetX() + halfWidth;  // Full width from center
+    double x1Max = authorPoint.GetX() + halfWidth; 
     double y1Min = authorPoint.GetY() - halfHeight;
-    double y1Max = authorPoint.GetY() + halfHeight;  // Full height from center
+    double y1Max = authorPoint.GetY() + halfHeight;  
 
-    // Get the bounds of the other hitbox (centered at authorPoint of otherHitBox)
+
     double x2Min = otherHitBox->authorPoint.GetX() - otherHitBox->GetHalfWidth();
     double x2Max = otherHitBox->authorPoint.GetX() + otherHitBox->GetHalfWidth();
     double y2Min = otherHitBox->authorPoint.GetY() - otherHitBox->GetHalfHeight();
     double y2Max = otherHitBox->authorPoint.GetY() + otherHitBox->GetHalfHeight();
 
-    // Check if there is no horizontal overlap (boxes are separated on x-axis)
+
     if (x1Max <= x2Min || x1Min >= x2Max) {
-        return false; // No horizontal overlap, so no collision
+        return false; 
     }
 
-    // Check if there is no vertical overlap (boxes are separated on y-axis)
     if (y1Max <= y2Min || y1Min >= y2Max) {
-        return false; // No vertical overlap, so no collision
+        return false;
     }
 
-    // If there is overlap in both x and y directions, it is a collision
+    
     isCollisionInThisFrame = true;
     otherHitBox->isCollisionInThisFrame = true;
-    return true;  // Collision detected
+    return true;
 }
 
 
@@ -62,14 +60,12 @@ bool HitBox::IsCollision(HitBox* otherHitBox) {
 
 void HitBox::Render(sf::RenderWindow& window) {
     // Update hitbox position and dimensions
-    hitboxRect.setPosition(authorPoint.GetX() - halfWidth,
-                           authorPoint.GetY() - halfHeight);
+    hitboxRect.setPosition(authorPoint.GetX(),
+                           authorPoint.GetY());
 
-    // Set outline color based on collision state
     hitboxRect.setOutlineColor(
         isCollisionInThisFrame ? sf::Color(235, 16, 0) : sf::Color(8, 249, 24));
 
-    // Draw the hitbox
     window.draw(hitboxRect);
 }
 
@@ -78,5 +74,5 @@ Point HitBox::GetPosition() {
 }
 
 void HitBox::SetPosition(const Point& newPoint) {
-    authorPoint = newPoint; // Update the position of the hitbox
+    authorPoint = newPoint; 
 }

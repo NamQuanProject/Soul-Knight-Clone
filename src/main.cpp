@@ -14,7 +14,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
     Stage_1_1 stage;
     
-    window.setFramerateLimit(5000);
+    window.setFramerateLimit(3000);
     
     GoblinShaman goblin_shaman1;
     Vec mons_position = Vec(200.0, 200.0);
