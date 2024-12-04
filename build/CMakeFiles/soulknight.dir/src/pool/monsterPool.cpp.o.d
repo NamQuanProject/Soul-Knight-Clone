@@ -958,6 +958,7 @@ CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/monsterType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../gameObject.h \

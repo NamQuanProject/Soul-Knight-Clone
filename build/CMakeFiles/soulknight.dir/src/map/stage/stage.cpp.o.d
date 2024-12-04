@@ -962,6 +962,7 @@ CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/../utils/hitBox.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../wall/../../entities/../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/monsterRoom.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/room.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/roomSize.h \

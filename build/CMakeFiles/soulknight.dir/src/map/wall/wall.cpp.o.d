@@ -960,6 +960,7 @@ CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/../utils/hitBox.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/player/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/player/../../utils/vec.h \

@@ -958,4 +958,5 @@ CMakeFiles/soulknight.dir/src/entities/projectile/bullet.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/point.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/tag.h

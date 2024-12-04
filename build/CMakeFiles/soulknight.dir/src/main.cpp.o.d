@@ -960,6 +960,7 @@ CMakeFiles/soulknight.dir/src/main.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/../../utils/vec.h \

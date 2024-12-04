@@ -962,4 +962,5 @@ CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor2.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/wall/../../entities/../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/graphics.hpp

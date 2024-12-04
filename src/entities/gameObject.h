@@ -2,6 +2,7 @@
 
 #include "../utils/vec.h"
 #include "../utils/hitBox.h"
+#include "../utils/tag.h"
 #include <SFML/Graphics.hpp>
 
 class GameObject {
@@ -38,4 +39,5 @@ protected:
     bool active = true; 
     std::string tag;  
     HitBox* hitbox = nullptr; 
+    std::bitset<static_cast<int>(Tag::Count)> tags;
 };
