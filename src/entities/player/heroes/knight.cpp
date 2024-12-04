@@ -101,9 +101,9 @@ void Knight::Render(sf::RenderWindow& window) {
     window.draw(sprite);
 
     // Render the hitbox (red rectangle)
-    // if (hitbox) {
-    //     hitbox->Render(window); // Render the hitbox
-    // }
+    if (hitbox) {
+        hitbox->Render(window); // Render the hitbox
+    }
 }
 
 

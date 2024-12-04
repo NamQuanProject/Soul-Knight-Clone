@@ -5,10 +5,38 @@ GoblinGiant::GoblinGiant(double level)
     : Monster(level, false) { // Passes level and isMeleeAttackMonster = false to the base class
     LoadResources();
     animationManager.setAnimation("idle_right");  // Default animation
+    animationManager.setOrigin();
+    sf::Vector2f position = animationManager.getCurrentSprite().getPosition();
+    
+    Point author = Point(position.x, position.y);
+    
+    hitbox = new HitBox(author); 
+    tag = Tag::MONSTER;
+}
+
+
+GoblinGiant::~GoblinGiant() {
+    if (hitbox) {
+        delete hitbox;
+        hitbox = nullptr;
+    }
+    
 }
 
 void GoblinGiant::Update(float deltaTime) {
     animationManager.update(deltaTime); 
+
+    sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
+    sf::Sprite sprite = animationManager.getCurrentSprite();
+    sf::FloatRect bounds = sprite.getLocalBounds();
+
+    hitbox->SetWidth(bounds.width - 9.f);
+    hitbox->SetHeight(bounds.height - 1.f);
+
+    // Update the hitbox position to match the sprite
+    sf::Vector2f hitboxPosition = sprite.getPosition();
+    hitbox->SetPosition(Point(hitboxPosition.x, hitboxPosition.y));
+    
     AutoMation();
 }
 
@@ -65,11 +93,12 @@ void GoblinGiant::InitializeWeapon() {
 
 void GoblinGiant::Render(sf::RenderWindow& window) {
     sf::Sprite sprite = animationManager.getCurrentSprite();
-    sf::FloatRect bounds = sprite.getLocalBounds();
-    sprite.setOrigin(bounds.width / 2, bounds.height / 2);
-    
-
     window.draw(sprite);  
+
+
+    if (hitbox) {
+        hitbox->Render(window); // Render the hitbox
+    }
     
 }
 

@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include "entities/projectile/bullet/badPistolBullet.h"
 #include "entities/monster/floor_1/goblin_shaman/goblinShaman.h"
+#include "entities/monster/floor_1/goblin_giant/goblinGiant.h"
 #include "map/stage/stage_1_1.h"
 #include <iostream>
 #include <cmath>
@@ -16,7 +17,7 @@ int main() {
     
     window.setFramerateLimit(3000);
     
-    GoblinShaman goblin_shaman1;
+    GoblinGiant goblin_shaman1;
     Vec mons_position = Vec(200.0, 200.0);
     goblin_shaman1.SetPosition(mons_position);
 

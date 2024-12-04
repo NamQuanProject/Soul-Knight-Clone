@@ -5,7 +5,8 @@
 
 class GoblinGiant : public Monster {
 public:
-    GoblinGiant(double level);
+    GoblinGiant(double level = 1);
+    ~GoblinGiant();
     void Start();
     void Update(float deltaTime) override;
     void LoadResources();

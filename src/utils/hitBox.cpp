@@ -60,8 +60,8 @@ bool HitBox::IsCollision(HitBox* otherHitBox) {
 
 void HitBox::Render(sf::RenderWindow& window) {
     // Update hitbox position and dimensions
-    hitboxRect.setPosition(authorPoint.GetX(),
-                           authorPoint.GetY());
+    hitboxRect.setPosition(authorPoint.GetX() - halfWidth,
+                           authorPoint.GetY() - halfHeight);
 
     hitboxRect.setOutlineColor(
         isCollisionInThisFrame ? sf::Color(235, 16, 0) : sf::Color(8, 249, 24));

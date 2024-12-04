@@ -3,13 +3,13 @@
 #include <map>
 
 #include "room.h"
+#include "../wall/wall.h"
+#include "../wall/door.h"
+#include "../../entities/monster/monster.h"
 #include "../../entities/monster/monsterType.h"
 #include "../../utils/point.h"
 
-class Door;
-enum class RoomSize;
-class Wall;
-class Monster;
+
 
 class MonsterRoom : public Room {
 public:
@@ -25,7 +25,7 @@ private:
     bool isBossRoom = false;
     bool isInside = false;
     bool isCleared = false;
-    std::vector<Wall*> invisibleDoors;
+    std::vector<Wall*> walls;
     std::vector<Door*> doors;
     std::map<MonsterType, int> monsterMap;
     std::vector<Monster*> monsters;

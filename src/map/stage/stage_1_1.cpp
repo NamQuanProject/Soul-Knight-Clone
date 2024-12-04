@@ -1,6 +1,5 @@
 #include "stage_1_1.h"
 #include "../../manager/objectManager.h"
-// #include "../../manager/stageManager.h"
 #include "../room/roomSize.h"
 
 Stage_1_1::Stage_1_1() {
@@ -15,7 +14,6 @@ Stage_1_1::~Stage_1_1() {
 }
 
 void Stage_1_1::AddWallsToMap() {
-    // Add walls using the AddWall method
     AddWall(Point(4, 82), Point(207, 97));
     AddWall(Point(0, 97), Point(16, 272));
     AddWall(Point(0, 273), Point(207, 286));
@@ -83,9 +81,9 @@ void Stage_1_1::setBackground() {
 
 void Stage_1_1::Render(sf::RenderWindow& window) {
 
-    // for (Wall* wall : walls) {
-    //     wall->Draw(window); 
-    // }
+    for (Wall* wall : walls) {
+        wall->Draw(window); 
+    }
 
 }
 
