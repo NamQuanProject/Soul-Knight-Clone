@@ -83,9 +83,9 @@ void Stage_1_1::setBackground() {
 
 void Stage_1_1::Render(sf::RenderWindow& window) {
 
-    for (Wall* wall : walls) {
-        wall->Draw(window); 
-    }
+    // for (Wall* wall : walls) {
+    //     wall->Draw(window); 
+    // }
 
 }
 
