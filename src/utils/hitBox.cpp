@@ -27,14 +27,13 @@ double HitBox::GetHalfHeight() {
 }
 
 bool HitBox::IsCollision(HitBox* otherHitBox) {
-    // Get the bounds of the current hitbox (top-left)
-    double x1Min = authorPoint.GetX();
-    double x1Max = authorPoint.GetX() + 2 * halfWidth;  // Full width from top-left
-    double y1Min = authorPoint.GetY();
-    double y1Max = authorPoint.GetY() + 2 * halfHeight;  // Full height from top-left
+    // Get the bounds of the current hitbox (centered at authorPoint)
+    double x1Min = authorPoint.GetX() - halfWidth;
+    double x1Max = authorPoint.GetX() + halfWidth;  // Full width from center
+    double y1Min = authorPoint.GetY() - halfHeight;
+    double y1Max = authorPoint.GetY() + halfHeight;  // Full height from center
 
-    // Get the bounds of the other hitbox (centered position)
-    // Adjust the other hitbox so that its position is its top-left corner
+    // Get the bounds of the other hitbox (centered at authorPoint of otherHitBox)
     double x2Min = otherHitBox->authorPoint.GetX() - otherHitBox->GetHalfWidth();
     double x2Max = otherHitBox->authorPoint.GetX() + otherHitBox->GetHalfWidth();
     double y2Min = otherHitBox->authorPoint.GetY() - otherHitBox->GetHalfHeight();
@@ -55,6 +54,7 @@ bool HitBox::IsCollision(HitBox* otherHitBox) {
     otherHitBox->isCollisionInThisFrame = true;
     return true;  // Collision detected
 }
+
 
 
 

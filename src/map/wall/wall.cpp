@@ -13,10 +13,17 @@ Wall::Wall(Point start, Point end)
     wallShape.setSize(sf::Vector2f(width, height));
     wallShape.setPosition(static_cast<float>(start.GetX()), static_cast<float>(start.GetY()));
 
+
+    float hitboxCenterX = start.GetX() + width / 2;
+    float hitboxCenterY = start.GetY() + height / 2;
     wallShape.setFillColor(sf::Color::Green);
     wallShape.setOutlineThickness(2);
     hitbox.SetWidth(width);
     hitbox.SetHeight(height);
+    hitbox.SetPosition(Point(hitboxCenterX, hitboxCenterY));
+
+
+
     tag = Tag::WALL;
 }
 

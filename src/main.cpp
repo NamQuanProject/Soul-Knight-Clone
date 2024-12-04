@@ -14,7 +14,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 1024), "Knight Test");
     Stage_1_1 stage;
     
-    window.setFramerateLimit(1000);  // Set a reasonable framerate limit
+    window.setFramerateLimit(5000);
     
     GoblinShaman goblin_shaman1;
     Vec mons_position = Vec(200.0, 200.0);
@@ -73,21 +73,36 @@ int main() {
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);
             knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);
-            knight1->runRight();           
+            knight1->runRight();  
+            knight1->setSpeed(Vec(0.05, -0.05));
+
+
+
+                     
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);
             knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);
             knight1->runLeft();            
+            knight1->setSpeed(Vec(-0.05, -0.05));
+
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);  
             knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
-            knight1->runRight();            
+            knight1->runRight();          
+
+
+            knight1->setSpeed(Vec(0.05, 0.05));  
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);
             knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
             knight1->runLeft();
+
+            knight1->setSpeed(Vec(-0.05, 0.05));
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
             knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);  
+
+
+            knight1->setSpeed(Vec(0.0, -0.05));
             if (knight1->CheckFace() == Knight::RIGHT) {
                 knight1->runRight();        
             } else {
@@ -95,6 +110,7 @@ int main() {
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
             knightPosition.SetY(knightPosition.GetY() + 0.5f * 0.1f);  
+            knight1->setSpeed(Vec(0.0, 0.05));
             if (knight1->CheckFace() == Knight::RIGHT) {
                 knight1->runRight();        
             } else {
@@ -102,20 +118,23 @@ int main() {
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             knightPosition.SetX(knightPosition.GetX() - 0.5f * 0.1f);
-            knight1->runLeft();            
+            knight1->runLeft();    
+            knight1->setSpeed(Vec(-0.05, 0.0));        
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);  
-            knight1->runRight();            
+            knight1->runRight();    
+            knight1->setSpeed(Vec(0.05, 0.0));            
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
             if (!bulletActive) {
                 bullet.SetPosition(sf::Vector2f(knightPosition.GetX(), knightPosition.GetY()));
-                bullet.SetSpeed(sf::Vector2f(25.f, 0.f));
+                bullet.SetSpeed(sf::Vector2f(5.f, 0.f));
                 bulletInitialPosition = bullet.GetPosition();
                 bulletActive = true;
             }
         } else {
             // Make the knight stand still if no keys are pressed
             if (knight1->CheckFace() == Knight::RIGHT) {
+                knight1->setSpeed(Vec(0.0, 0.0));        
                 knight1->standRight();
             } else {
                 knight1->standLeft();
@@ -123,6 +142,7 @@ int main() {
         }
 
         sf::Vector2f knightPos(knightPosition.GetX(), knightPosition.GetY());
+        knight1->SetPosition(knightPosition);
         camera.update(knightPos);
 
         window.clear();
@@ -146,8 +166,10 @@ int main() {
         
         knight1->Update(deltaTime);
         goblin_shaman1.Update(deltaTime);
-        knight1->SetPosition(knightPosition);
+        
         stage.Collision(knight1);
+
+
         knightPosition = knight1->GetPosition();
 
         knight1->SetPosition(knightPosition);

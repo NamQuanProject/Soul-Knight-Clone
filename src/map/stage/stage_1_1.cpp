@@ -84,9 +84,9 @@ void Stage_1_1::setBackground() {
 void Stage_1_1::Render(sf::RenderWindow& window) {
 
     // Draw all walls
-    for (Wall* wall : walls) {
-        wall->Draw(window);  // Assuming the Wall class has a Draw method that draws wallShape
-    }
+    // for (Wall* wall : walls) {
+    //     wall->Draw(window);  // Assuming the Wall class has a Draw method that draws wallShape
+    // }
 
 }
 

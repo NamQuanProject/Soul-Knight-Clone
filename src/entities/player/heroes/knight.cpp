@@ -101,9 +101,9 @@ void Knight::Render(sf::RenderWindow& window) {
     window.draw(sprite);
 
     // Render the hitbox (red rectangle)
-    if (hitbox) {
-        hitbox->Render(window); // Render the hitbox
-    }
+    // if (hitbox) {
+    //     hitbox->Render(window); // Render the hitbox
+    // }
 }
 
 
@@ -129,18 +129,18 @@ void Knight::standLeft() {
 
 void Knight::Collision(GameObject* gameObject) {
     if (gameObject->GetTag() == Tag::WALL) {
-        // Vec collision = Vec(0.01, 0.01);
-        // speed = speed + collision;
+        Vec current = GetPosition();
+        current = current - speed;
 
 
-        SetPosition(speed);
+        SetPosition(current);
     }
 }
 
 
 
 void Knight::SetBeforePosition(Vec a) {
-    speed = a;
+    
 }
 
 void Knight::SetPosition(Vec& newPosition) {
