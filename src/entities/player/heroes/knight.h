@@ -20,6 +20,8 @@ public:
     void standRight();           
     void standLeft();     
     void SetPosition(Vec& position) override;      
+    void Collision(GameObject* gameObject) override;
+    void SetBeforePosition(Vec before);
 private:
     void loadKnightAnimations();       // Load knight-specific animations
     Weapon* weapon1;

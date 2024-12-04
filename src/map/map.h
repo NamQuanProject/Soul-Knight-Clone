@@ -11,7 +11,6 @@ class Map {
 public:
     Map(const std::string& backgroundTexturePath, float screenWidth, float screenHeight);
 
-    // Method to initialize the map with the background texture
     void initialize();
 
     // Method to handle object placements (e.g., obstacles, items)

@@ -68,7 +68,8 @@ int main() {
                 window.close();
             }
         }
-
+        Vec before = knightPosition;
+        knight1->SetBeforePosition(before);
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             knightPosition.SetX(knightPosition.GetX() + 0.5f * 0.1f);
             knightPosition.SetY(knightPosition.GetY() - 0.5f * 0.1f);
@@ -129,32 +130,36 @@ int main() {
         window.draw(backgroundSprite);
         
         float deltaTime = clock.getElapsedTime().asSeconds();
-        if (deltaTime > 0.09f) {
-            if (bulletActive) {
-                bullet.Update(deltaTime);
-                
-                sf::Vector2f bulletPos = bullet.GetPosition();
-                float distanceTraveled = std::sqrt(
-                    std::pow(bulletPos.x - bulletInitialPosition.x, 2) +
-                    std::pow(bulletPos.y - bulletInitialPosition.y, 2)
-                );
-                if (distanceTraveled > bulletMaxDistance) {
-                    bulletActive = false;
-                }
+        if (bulletActive) {
+            bullet.Update(deltaTime);
+            
+            sf::Vector2f bulletPos = bullet.GetPosition();
+            float distanceTraveled = std::sqrt(
+                std::pow(bulletPos.x - bulletInitialPosition.x, 2) +
+                std::pow(bulletPos.y - bulletInitialPosition.y, 2)
+            );
+            if (distanceTraveled > bulletMaxDistance) {
+                bulletActive = false;
             }
         }
-        if (deltaTime > 0.1f) {
-            
-            knight1->Update(deltaTime);
-            stage.Collision(knight1);
-            goblin_shaman1.Update(deltaTime);
-            clock.restart();
-        }
-        stage.Render(window);
+
+        
+        knight1->Update(deltaTime);
+        goblin_shaman1.Update(deltaTime);
         knight1->SetPosition(knightPosition);
+        stage.Collision(knight1);
+        knightPosition = knight1->GetPosition();
+
+        knight1->SetPosition(knightPosition);
+        stage.Render(window);
+        
         knight1->Render(window);
         goblin_shaman1.Render(window);
 
+
+        if (deltaTime > 0.1f) {
+            clock.restart();
+        }
         if (bulletActive) {
             bullet.Render(window);
         }
@@ -162,5 +167,5 @@ int main() {
         window.display();
     }
     
-    delete knight1;  // Properly delete knight1 after usage
+    delete knight1; 
 }

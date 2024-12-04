@@ -1,8 +1,10 @@
 #pragma once
 
 enum class Tag {
+    NONE,
     PLAYER,
     MONSTER,
+    WALL,
     PROJECTILE,
     DROP,
     

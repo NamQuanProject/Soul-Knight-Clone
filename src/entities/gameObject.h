@@ -29,15 +29,16 @@ public:
     float GetRotation() const;
     void SetHitBox(const HitBox& hitbox); 
     HitBox* GetHitBox();
-    void SetTag(const std::string& tag);
-    std::string GetTag() const;
+
+    /* TAG */
+    void SetTag(Tag newTag);
+    Tag GetTag();
 
 protected:
     Vec position;       
     Vec size;           
     float rotation = 0; 
     bool active = true; 
-    std::string tag;  
     HitBox* hitbox = nullptr; 
-    std::bitset<static_cast<int>(Tag::Count)> tags;
+    Tag tag;
 };

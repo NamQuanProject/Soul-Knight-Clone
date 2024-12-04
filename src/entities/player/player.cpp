@@ -1,4 +1,5 @@
 #include "player.h"
+#include <iostream>
 
 Player::Player()
     : hp(100), maxHp(100), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE) {
@@ -8,8 +9,13 @@ void Player::Update(float deltaTime) {
 }
 
 void Player::Collision(GameObject* gameObject) {
-
+    
 }
+
+void Player::setSpeed(Vec newSpeed) {
+    speed = newSpeed;
+}
+
 
 void Player::Render(sf::RenderWindow& window) {
     

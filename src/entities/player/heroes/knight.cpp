@@ -11,6 +11,7 @@ Knight::Knight() : Player() {
     
     Point author = Point(position.x, position.y);
     hitbox = new HitBox(author); 
+    tag = Tag::PLAYER;
     
 }
 
@@ -126,9 +127,26 @@ void Knight::standLeft() {
     animationManager.setAnimation("idle_left");  // Switch to idle left animation
 }
 
-void Knight::SetPosition(Vec& position) {
-    double x = position.GetX();
-    double y = position.GetY();
+void Knight::Collision(GameObject* gameObject) {
+    if (gameObject->GetTag() == Tag::WALL) {
+        // Vec collision = Vec(0.01, 0.01);
+        // speed = speed + collision;
+
+
+        SetPosition(speed);
+    }
+}
+
+
+
+void Knight::SetBeforePosition(Vec a) {
+    speed = a;
+}
+
+void Knight::SetPosition(Vec& newPosition) {
+    position = newPosition;
+    double x = newPosition.GetX();
+    double y = newPosition.GetY();
     sf::Vector2f web_position(x, y);
     
     // Ensure weapon1 is valid and of the correct type

@@ -18,7 +18,7 @@ public:
     virtual void Attack();
     void Poisoned(double poisonDamage);
     void Collision(GameObject* gameObject) override;
-    
+    void setSpeed(Vec newSpeed);
 
     enum Face { RIGHT, LEFT } face;
     enum State { IDLE, RUN, DEAD, READY } state;
@@ -28,6 +28,7 @@ protected:
     
     double hp;
     double maxHp;       
+    Vec speed;
     AnimationManager animationManager;
     double weaponOffsetX;
     double weaponOffsetY;

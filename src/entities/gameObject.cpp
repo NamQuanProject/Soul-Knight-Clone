@@ -1,6 +1,7 @@
 #include "gameObject.h"
 
 GameObject::GameObject() : position(0.0, 0.0), active(true) {
+    tag = Tag::NONE;
     position = Vec(0.0, 0.0);
 }
 
@@ -28,6 +29,12 @@ void GameObject::Collision(GameObject* other) {
     return;
 }
 
+void GameObject::SetTag(Tag newTag) {
+    tag = newTag;
+}
+Tag GameObject::GetTag()  {
+    return tag;
+}
 
 HitBox* GameObject::GetHitBox() {
     return hitbox;

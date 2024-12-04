@@ -39,7 +39,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/main.cpp" "CMakeFiles/soulknight.dir/src/main.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/main.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/animationManager.cpp" "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/camera.cpp" "CMakeFiles/soulknight.dir/src/manager/camera.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/camera.cpp.o.d"
-  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/collisionManager.cpp" "CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/eventManager.cpp" "CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/eventManager.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/gameManager.cpp" "CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/gameManager.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/manager/keyboardManager.cpp" "CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/manager/keyboardManager.cpp.o.d"
@@ -50,6 +49,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/room/room.cpp" "CMakeFiles/soulknight.dir/src/map/room/room.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/map/room/room.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/room/treasureRoom.cpp" "CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/map/room/treasureRoom.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stage.cpp" "CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.o.d"
+  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stageFactory.cpp" "CMakeFiles/soulknight.dir/src/map/stage/stageFactory.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/map/stage/stageFactory.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/stage/stage_1_1.cpp" "CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/door.cpp" "CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/map/wall/door.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/map/wall/horizontalDoor1.cpp" "CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/map/wall/horizontalDoor1.cpp.o.d"
@@ -68,6 +68,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/point.cpp" "CMakeFiles/soulknight.dir/src/utils/point.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/point.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/random.cpp" "CMakeFiles/soulknight.dir/src/utils/random.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/random.cpp.o.d"
   "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/vec.cpp" "CMakeFiles/soulknight.dir/src/utils/vec.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/vec.cpp.o.d"
+  "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/src/utils/wallet.cpp" "CMakeFiles/soulknight.dir/src/utils/wallet.cpp.o" "gcc" "CMakeFiles/soulknight.dir/src/utils/wallet.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -873,30 +873,6 @@ src/manager/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/camera.cpp.s
 .PHONY : src/manager/camera.cpp.s
 
-src/manager/collisionManager.o: src/manager/collisionManager.cpp.o
-.PHONY : src/manager/collisionManager.o
-
-# target to build an object file
-src/manager/collisionManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.o
-.PHONY : src/manager/collisionManager.cpp.o
-
-src/manager/collisionManager.i: src/manager/collisionManager.cpp.i
-.PHONY : src/manager/collisionManager.i
-
-# target to preprocess a source file
-src/manager/collisionManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.i
-.PHONY : src/manager/collisionManager.cpp.i
-
-src/manager/collisionManager.s: src/manager/collisionManager.cpp.s
-.PHONY : src/manager/collisionManager.s
-
-# target to generate assembly for a file
-src/manager/collisionManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/collisionManager.cpp.s
-.PHONY : src/manager/collisionManager.cpp.s
-
 src/manager/eventManager.o: src/manager/eventManager.cpp.o
 .PHONY : src/manager/eventManager.o
 
@@ -1136,6 +1112,30 @@ src/map/stage/stage.s: src/map/stage/stage.cpp.s
 src/map/stage/stage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage.cpp.s
 .PHONY : src/map/stage/stage.cpp.s
+
+src/map/stage/stageFactory.o: src/map/stage/stageFactory.cpp.o
+.PHONY : src/map/stage/stageFactory.o
+
+# target to build an object file
+src/map/stage/stageFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageFactory.cpp.o
+.PHONY : src/map/stage/stageFactory.cpp.o
+
+src/map/stage/stageFactory.i: src/map/stage/stageFactory.cpp.i
+.PHONY : src/map/stage/stageFactory.i
+
+# target to preprocess a source file
+src/map/stage/stageFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageFactory.cpp.i
+.PHONY : src/map/stage/stageFactory.cpp.i
+
+src/map/stage/stageFactory.s: src/map/stage/stageFactory.cpp.s
+.PHONY : src/map/stage/stageFactory.s
+
+# target to generate assembly for a file
+src/map/stage/stageFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stageFactory.cpp.s
+.PHONY : src/map/stage/stageFactory.cpp.s
 
 src/map/stage/stage_1_1.o: src/map/stage/stage_1_1.cpp.o
 .PHONY : src/map/stage/stage_1_1.o
@@ -1569,6 +1569,30 @@ src/utils/vec.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/vec.cpp.s
 .PHONY : src/utils/vec.cpp.s
 
+src/utils/wallet.o: src/utils/wallet.cpp.o
+.PHONY : src/utils/wallet.o
+
+# target to build an object file
+src/utils/wallet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/wallet.cpp.o
+.PHONY : src/utils/wallet.cpp.o
+
+src/utils/wallet.i: src/utils/wallet.cpp.i
+.PHONY : src/utils/wallet.i
+
+# target to preprocess a source file
+src/utils/wallet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/wallet.cpp.i
+.PHONY : src/utils/wallet.cpp.i
+
+src/utils/wallet.s: src/utils/wallet.cpp.s
+.PHONY : src/utils/wallet.s
+
+# target to generate assembly for a file
+src/utils/wallet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/wallet.cpp.s
+.PHONY : src/utils/wallet.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1671,9 +1695,6 @@ help:
 	@echo "... src/manager/camera.o"
 	@echo "... src/manager/camera.i"
 	@echo "... src/manager/camera.s"
-	@echo "... src/manager/collisionManager.o"
-	@echo "... src/manager/collisionManager.i"
-	@echo "... src/manager/collisionManager.s"
 	@echo "... src/manager/eventManager.o"
 	@echo "... src/manager/eventManager.i"
 	@echo "... src/manager/eventManager.s"
@@ -1704,6 +1725,9 @@ help:
 	@echo "... src/map/stage/stage.o"
 	@echo "... src/map/stage/stage.i"
 	@echo "... src/map/stage/stage.s"
+	@echo "... src/map/stage/stageFactory.o"
+	@echo "... src/map/stage/stageFactory.i"
+	@echo "... src/map/stage/stageFactory.s"
 	@echo "... src/map/stage/stage_1_1.o"
 	@echo "... src/map/stage/stage_1_1.i"
 	@echo "... src/map/stage/stage_1_1.s"
@@ -1758,6 +1782,9 @@ help:
 	@echo "... src/utils/vec.o"
 	@echo "... src/utils/vec.i"
 	@echo "... src/utils/vec.s"
+	@echo "... src/utils/wallet.o"
+	@echo "... src/utils/wallet.i"
+	@echo "... src/utils/wallet.s"
 .PHONY : help
 
 

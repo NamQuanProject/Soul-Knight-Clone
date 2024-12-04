@@ -13,12 +13,11 @@ Wall::Wall(Point start, Point end)
     wallShape.setSize(sf::Vector2f(width, height));
     wallShape.setPosition(static_cast<float>(start.GetX()), static_cast<float>(start.GetY()));
 
-    // Set the hitbox width and height
     wallShape.setFillColor(sf::Color::Green);
     wallShape.setOutlineThickness(2);
     hitbox.SetWidth(width);
     hitbox.SetHeight(height);
-    
+    tag = Tag::WALL;
 }
 
 
@@ -35,17 +34,14 @@ bool Wall::CheckCollision(GameObject* gameObject) {
 // Collision handling (Just turn the wall red)
 void Wall::Collision(GameObject* gameObject) {
 
-    if (gameObject == nullptr) return;
-    Player* player = dynamic_cast<Player*>(gameObject);
+
     // Check for a collision with the wall using the CheckCollision method
-    if (player) {
         // Check for a collision with the wall using the CheckCollision method
-        if (CheckCollision(gameObject)) {
-            std::cout << "Collision Detected!" << std::endl;
-            wallShape.setFillColor(sf::Color::Red);
-        } else {
-            wallShape.setFillColor(sf::Color::Green);
-        }
+    if (CheckCollision(gameObject)) {
+        gameObject->Collision(this);
+        wallShape.setFillColor(sf::Color::Red);
+    } else {
+        wallShape.setFillColor(sf::Color::Green);
     }
 }
 

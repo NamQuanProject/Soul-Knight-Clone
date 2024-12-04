@@ -13,9 +13,14 @@ void Animation::setSpeed(float time) {
 }
 
 void Animation::update(float deltaTime) {
-    currentFrame = (currentFrame + 1) % frames.size(); 
-   
-    currentTexture = frames[currentFrame];  // Set the current texture/frame
+ // Accumulate time passed
+
+    if (deltaTime >= frameTime) {
+        // Update the current frame and reset elapsedTime
+        currentFrame = (currentFrame + 1) % frames.size();
+        currentTexture = frames[currentFrame];  // Set the current texture/frame
+
+    }
 }
 
 void Animation::reset() {
