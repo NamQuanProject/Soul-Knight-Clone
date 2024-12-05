@@ -7,7 +7,15 @@
 #include "../wall/door.h"
 #include "../../entities/monster/monster.h"
 #include "../../entities/monster/monsterType.h"
+#include "../../entities/monster/monsterFactory.h"
+
+#include "../../pool/monsterPool.h"
 #include "../../utils/point.h"
+#include "../../utils/vec.h"
+#include "../../utils/random.h"
+#include "../../utils/tag.h"
+
+#include "../../manager/objectManager.h"
 
 
 
