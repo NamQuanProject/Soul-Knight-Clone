@@ -465,78 +465,6 @@ src/entities/collectable/potionFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/potionFactory.cpp.s
 .PHONY : src/entities/collectable/potionFactory.cpp.s
 
-src/entities/collectables/collectableItem.o: src/entities/collectables/collectableItem.cpp.o
-.PHONY : src/entities/collectables/collectableItem.o
-
-# target to build an object file
-src/entities/collectables/collectableItem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/collectableItem.cpp.o
-.PHONY : src/entities/collectables/collectableItem.cpp.o
-
-src/entities/collectables/collectableItem.i: src/entities/collectables/collectableItem.cpp.i
-.PHONY : src/entities/collectables/collectableItem.i
-
-# target to preprocess a source file
-src/entities/collectables/collectableItem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/collectableItem.cpp.i
-.PHONY : src/entities/collectables/collectableItem.cpp.i
-
-src/entities/collectables/collectableItem.s: src/entities/collectables/collectableItem.cpp.s
-.PHONY : src/entities/collectables/collectableItem.s
-
-# target to generate assembly for a file
-src/entities/collectables/collectableItem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/collectableItem.cpp.s
-.PHONY : src/entities/collectables/collectableItem.cpp.s
-
-src/entities/collectables/healthPack.o: src/entities/collectables/healthPack.cpp.o
-.PHONY : src/entities/collectables/healthPack.o
-
-# target to build an object file
-src/entities/collectables/healthPack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/healthPack.cpp.o
-.PHONY : src/entities/collectables/healthPack.cpp.o
-
-src/entities/collectables/healthPack.i: src/entities/collectables/healthPack.cpp.i
-.PHONY : src/entities/collectables/healthPack.i
-
-# target to preprocess a source file
-src/entities/collectables/healthPack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/healthPack.cpp.i
-.PHONY : src/entities/collectables/healthPack.cpp.i
-
-src/entities/collectables/healthPack.s: src/entities/collectables/healthPack.cpp.s
-.PHONY : src/entities/collectables/healthPack.s
-
-# target to generate assembly for a file
-src/entities/collectables/healthPack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/healthPack.cpp.s
-.PHONY : src/entities/collectables/healthPack.cpp.s
-
-src/entities/collectables/manaPack.o: src/entities/collectables/manaPack.cpp.o
-.PHONY : src/entities/collectables/manaPack.o
-
-# target to build an object file
-src/entities/collectables/manaPack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.o
-.PHONY : src/entities/collectables/manaPack.cpp.o
-
-src/entities/collectables/manaPack.i: src/entities/collectables/manaPack.cpp.i
-.PHONY : src/entities/collectables/manaPack.i
-
-# target to preprocess a source file
-src/entities/collectables/manaPack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.i
-.PHONY : src/entities/collectables/manaPack.cpp.i
-
-src/entities/collectables/manaPack.s: src/entities/collectables/manaPack.cpp.s
-.PHONY : src/entities/collectables/manaPack.s
-
-# target to generate assembly for a file
-src/entities/collectables/manaPack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectables/manaPack.cpp.s
-.PHONY : src/entities/collectables/manaPack.cpp.s
-
 src/entities/gameObject.o: src/entities/gameObject.cpp.o
 .PHONY : src/entities/gameObject.o
 
@@ -1836,15 +1764,6 @@ help:
 	@echo "... src/entities/collectable/potionFactory.o"
 	@echo "... src/entities/collectable/potionFactory.i"
 	@echo "... src/entities/collectable/potionFactory.s"
-	@echo "... src/entities/collectables/collectableItem.o"
-	@echo "... src/entities/collectables/collectableItem.i"
-	@echo "... src/entities/collectables/collectableItem.s"
-	@echo "... src/entities/collectables/healthPack.o"
-	@echo "... src/entities/collectables/healthPack.i"
-	@echo "... src/entities/collectables/healthPack.s"
-	@echo "... src/entities/collectables/manaPack.o"
-	@echo "... src/entities/collectables/manaPack.i"
-	@echo "... src/entities/collectables/manaPack.s"
 	@echo "... src/entities/gameObject.o"
 	@echo "... src/entities/gameObject.i"
 	@echo "... src/entities/gameObject.s"
