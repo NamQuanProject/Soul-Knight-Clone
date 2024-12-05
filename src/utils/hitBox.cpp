@@ -59,7 +59,6 @@ bool HitBox::IsCollision(HitBox* otherHitBox) {
 
 
 void HitBox::Render(sf::RenderWindow& window) {
-    // Update hitbox position and dimensions
     hitboxRect.setPosition(authorPoint.GetX() - halfWidth,
                            authorPoint.GetY() - halfHeight);
 

@@ -9,8 +9,8 @@ public:
     void update() override;
     void render(sf::RenderWindow& window) override;
 
-private:
-    // Gameplay elements (e.g., player, enemies)
+private:    
+    
 };
 
 #endif // PLAYSTATE_H

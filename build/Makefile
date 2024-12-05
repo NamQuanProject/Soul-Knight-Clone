@@ -273,6 +273,198 @@ src/core/playState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/playState.cpp.s
 .PHONY : src/core/playState.cpp.s
 
+src/entities/collectable/bigCompositePotion.o: src/entities/collectable/bigCompositePotion.cpp.o
+.PHONY : src/entities/collectable/bigCompositePotion.o
+
+# target to build an object file
+src/entities/collectable/bigCompositePotion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigCompositePotion.cpp.o
+.PHONY : src/entities/collectable/bigCompositePotion.cpp.o
+
+src/entities/collectable/bigCompositePotion.i: src/entities/collectable/bigCompositePotion.cpp.i
+.PHONY : src/entities/collectable/bigCompositePotion.i
+
+# target to preprocess a source file
+src/entities/collectable/bigCompositePotion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigCompositePotion.cpp.i
+.PHONY : src/entities/collectable/bigCompositePotion.cpp.i
+
+src/entities/collectable/bigCompositePotion.s: src/entities/collectable/bigCompositePotion.cpp.s
+.PHONY : src/entities/collectable/bigCompositePotion.s
+
+# target to generate assembly for a file
+src/entities/collectable/bigCompositePotion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigCompositePotion.cpp.s
+.PHONY : src/entities/collectable/bigCompositePotion.cpp.s
+
+src/entities/collectable/bigHealingPotion.o: src/entities/collectable/bigHealingPotion.cpp.o
+.PHONY : src/entities/collectable/bigHealingPotion.o
+
+# target to build an object file
+src/entities/collectable/bigHealingPotion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigHealingPotion.cpp.o
+.PHONY : src/entities/collectable/bigHealingPotion.cpp.o
+
+src/entities/collectable/bigHealingPotion.i: src/entities/collectable/bigHealingPotion.cpp.i
+.PHONY : src/entities/collectable/bigHealingPotion.i
+
+# target to preprocess a source file
+src/entities/collectable/bigHealingPotion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigHealingPotion.cpp.i
+.PHONY : src/entities/collectable/bigHealingPotion.cpp.i
+
+src/entities/collectable/bigHealingPotion.s: src/entities/collectable/bigHealingPotion.cpp.s
+.PHONY : src/entities/collectable/bigHealingPotion.s
+
+# target to generate assembly for a file
+src/entities/collectable/bigHealingPotion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigHealingPotion.cpp.s
+.PHONY : src/entities/collectable/bigHealingPotion.cpp.s
+
+src/entities/collectable/bigMpPotion.o: src/entities/collectable/bigMpPotion.cpp.o
+.PHONY : src/entities/collectable/bigMpPotion.o
+
+# target to build an object file
+src/entities/collectable/bigMpPotion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigMpPotion.cpp.o
+.PHONY : src/entities/collectable/bigMpPotion.cpp.o
+
+src/entities/collectable/bigMpPotion.i: src/entities/collectable/bigMpPotion.cpp.i
+.PHONY : src/entities/collectable/bigMpPotion.i
+
+# target to preprocess a source file
+src/entities/collectable/bigMpPotion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigMpPotion.cpp.i
+.PHONY : src/entities/collectable/bigMpPotion.cpp.i
+
+src/entities/collectable/bigMpPotion.s: src/entities/collectable/bigMpPotion.cpp.s
+.PHONY : src/entities/collectable/bigMpPotion.s
+
+# target to generate assembly for a file
+src/entities/collectable/bigMpPotion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/bigMpPotion.cpp.s
+.PHONY : src/entities/collectable/bigMpPotion.cpp.s
+
+src/entities/collectable/collectable.o: src/entities/collectable/collectable.cpp.o
+.PHONY : src/entities/collectable/collectable.o
+
+# target to build an object file
+src/entities/collectable/collectable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/collectable.cpp.o
+.PHONY : src/entities/collectable/collectable.cpp.o
+
+src/entities/collectable/collectable.i: src/entities/collectable/collectable.cpp.i
+.PHONY : src/entities/collectable/collectable.i
+
+# target to preprocess a source file
+src/entities/collectable/collectable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/collectable.cpp.i
+.PHONY : src/entities/collectable/collectable.cpp.i
+
+src/entities/collectable/collectable.s: src/entities/collectable/collectable.cpp.s
+.PHONY : src/entities/collectable/collectable.s
+
+# target to generate assembly for a file
+src/entities/collectable/collectable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/collectable.cpp.s
+.PHONY : src/entities/collectable/collectable.cpp.s
+
+src/entities/collectable/compositePotion.o: src/entities/collectable/compositePotion.cpp.o
+.PHONY : src/entities/collectable/compositePotion.o
+
+# target to build an object file
+src/entities/collectable/compositePotion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/compositePotion.cpp.o
+.PHONY : src/entities/collectable/compositePotion.cpp.o
+
+src/entities/collectable/compositePotion.i: src/entities/collectable/compositePotion.cpp.i
+.PHONY : src/entities/collectable/compositePotion.i
+
+# target to preprocess a source file
+src/entities/collectable/compositePotion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/compositePotion.cpp.i
+.PHONY : src/entities/collectable/compositePotion.cpp.i
+
+src/entities/collectable/compositePotion.s: src/entities/collectable/compositePotion.cpp.s
+.PHONY : src/entities/collectable/compositePotion.s
+
+# target to generate assembly for a file
+src/entities/collectable/compositePotion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/compositePotion.cpp.s
+.PHONY : src/entities/collectable/compositePotion.cpp.s
+
+src/entities/collectable/healingPotion.o: src/entities/collectable/healingPotion.cpp.o
+.PHONY : src/entities/collectable/healingPotion.o
+
+# target to build an object file
+src/entities/collectable/healingPotion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/healingPotion.cpp.o
+.PHONY : src/entities/collectable/healingPotion.cpp.o
+
+src/entities/collectable/healingPotion.i: src/entities/collectable/healingPotion.cpp.i
+.PHONY : src/entities/collectable/healingPotion.i
+
+# target to preprocess a source file
+src/entities/collectable/healingPotion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/healingPotion.cpp.i
+.PHONY : src/entities/collectable/healingPotion.cpp.i
+
+src/entities/collectable/healingPotion.s: src/entities/collectable/healingPotion.cpp.s
+.PHONY : src/entities/collectable/healingPotion.s
+
+# target to generate assembly for a file
+src/entities/collectable/healingPotion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/healingPotion.cpp.s
+.PHONY : src/entities/collectable/healingPotion.cpp.s
+
+src/entities/collectable/mpPotion.o: src/entities/collectable/mpPotion.cpp.o
+.PHONY : src/entities/collectable/mpPotion.o
+
+# target to build an object file
+src/entities/collectable/mpPotion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/mpPotion.cpp.o
+.PHONY : src/entities/collectable/mpPotion.cpp.o
+
+src/entities/collectable/mpPotion.i: src/entities/collectable/mpPotion.cpp.i
+.PHONY : src/entities/collectable/mpPotion.i
+
+# target to preprocess a source file
+src/entities/collectable/mpPotion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/mpPotion.cpp.i
+.PHONY : src/entities/collectable/mpPotion.cpp.i
+
+src/entities/collectable/mpPotion.s: src/entities/collectable/mpPotion.cpp.s
+.PHONY : src/entities/collectable/mpPotion.s
+
+# target to generate assembly for a file
+src/entities/collectable/mpPotion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/mpPotion.cpp.s
+.PHONY : src/entities/collectable/mpPotion.cpp.s
+
+src/entities/collectable/potionFactory.o: src/entities/collectable/potionFactory.cpp.o
+.PHONY : src/entities/collectable/potionFactory.o
+
+# target to build an object file
+src/entities/collectable/potionFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/potionFactory.cpp.o
+.PHONY : src/entities/collectable/potionFactory.cpp.o
+
+src/entities/collectable/potionFactory.i: src/entities/collectable/potionFactory.cpp.i
+.PHONY : src/entities/collectable/potionFactory.i
+
+# target to preprocess a source file
+src/entities/collectable/potionFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/potionFactory.cpp.i
+.PHONY : src/entities/collectable/potionFactory.cpp.i
+
+src/entities/collectable/potionFactory.s: src/entities/collectable/potionFactory.cpp.s
+.PHONY : src/entities/collectable/potionFactory.s
+
+# target to generate assembly for a file
+src/entities/collectable/potionFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/potionFactory.cpp.s
+.PHONY : src/entities/collectable/potionFactory.cpp.s
+
 src/entities/collectables/collectableItem.o: src/entities/collectables/collectableItem.cpp.o
 .PHONY : src/entities/collectables/collectableItem.o
 
@@ -1620,6 +1812,30 @@ help:
 	@echo "... src/core/playState.o"
 	@echo "... src/core/playState.i"
 	@echo "... src/core/playState.s"
+	@echo "... src/entities/collectable/bigCompositePotion.o"
+	@echo "... src/entities/collectable/bigCompositePotion.i"
+	@echo "... src/entities/collectable/bigCompositePotion.s"
+	@echo "... src/entities/collectable/bigHealingPotion.o"
+	@echo "... src/entities/collectable/bigHealingPotion.i"
+	@echo "... src/entities/collectable/bigHealingPotion.s"
+	@echo "... src/entities/collectable/bigMpPotion.o"
+	@echo "... src/entities/collectable/bigMpPotion.i"
+	@echo "... src/entities/collectable/bigMpPotion.s"
+	@echo "... src/entities/collectable/collectable.o"
+	@echo "... src/entities/collectable/collectable.i"
+	@echo "... src/entities/collectable/collectable.s"
+	@echo "... src/entities/collectable/compositePotion.o"
+	@echo "... src/entities/collectable/compositePotion.i"
+	@echo "... src/entities/collectable/compositePotion.s"
+	@echo "... src/entities/collectable/healingPotion.o"
+	@echo "... src/entities/collectable/healingPotion.i"
+	@echo "... src/entities/collectable/healingPotion.s"
+	@echo "... src/entities/collectable/mpPotion.o"
+	@echo "... src/entities/collectable/mpPotion.i"
+	@echo "... src/entities/collectable/mpPotion.s"
+	@echo "... src/entities/collectable/potionFactory.o"
+	@echo "... src/entities/collectable/potionFactory.i"
+	@echo "... src/entities/collectable/potionFactory.s"
 	@echo "... src/entities/collectables/collectableItem.o"
 	@echo "... src/entities/collectables/collectableItem.i"
 	@echo "... src/entities/collectables/collectableItem.s"

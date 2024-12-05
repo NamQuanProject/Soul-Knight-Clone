@@ -7,20 +7,10 @@ RangeWeapon::RangeWeapon()
 }
 
 void RangeWeapon::Use() {
-    // Check if enough time has passed to fire again (fireRate)
     if (timeSinceLastFire >= fireRate && ammo > 0) {
-        // Get the bullet's initial position slightly ahead of the gun's position
         Vec bulletPosition = GetBulletPosition();
-
-        // Create a bullet with the current weapon direction
-
-        // Decrease ammo after firing
         ammo--;
-
-        // Reset fire timer
         timeSinceLastFire = 0;
-
-        // Add the bullet to the game or bullet manager for updates/rendering
     }
 }
 
@@ -54,7 +44,7 @@ void RangeWeapon::SetAmmo(int ammoCount) {
 
 
 void RangeWeapon::SetWeaponDirection(Vec& direction) {
-    weaponDirection = direction;  // Set the new direction for the weapon
+    weaponDirection = direction;  
 }
 
 void RangeWeapon::Update(float deltaTime) {

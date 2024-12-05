@@ -31,7 +31,17 @@ Knight::~Knight() {
 void Knight::Update(float deltaTime) {
     animationManager.update(deltaTime); 
 
-
+    
+    if (face == Knight::RIGHT) {
+        // weapon1->setRight();
+        weapon1->setOffset(5 , 2);
+    }
+    else if (face == Knight::LEFT){
+        // weapon1->SetLeft();
+        weapon1->setOffset(-15, 2);
+    }
+    weapon1->Update(deltaTime);
+    
 
     sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
     sf::Sprite sprite = animationManager.getCurrentSprite();
@@ -40,7 +50,6 @@ void Knight::Update(float deltaTime) {
     hitbox->SetWidth(bounds.width - 9.f);
     hitbox->SetHeight(bounds.height - 1.f);
 
-    // Update the hitbox position to match the sprite
     sf::Vector2f hitboxPosition = sprite.getPosition();
     hitbox->SetPosition(Point(hitboxPosition.x, hitboxPosition.y));
 }
@@ -94,13 +103,10 @@ void Knight::Render(sf::RenderWindow& window) {
     sf::Sprite sprite = animationManager.getCurrentSprite();
     
 
-    // Update weapon rendering
     weapon1->Render(window);
 
-    // Draw the knight's sprite
     window.draw(sprite);
 
-    // Render the hitbox (red rectangle)
     if (hitbox) {
         hitbox->Render(window); // Render the hitbox
     }
@@ -149,9 +155,8 @@ void Knight::SetPosition(Vec& newPosition) {
     double y = newPosition.GetY();
     sf::Vector2f web_position(x, y);
     
-    // Ensure weapon1 is valid and of the correct type
     if (weapon1) {
-        weapon1->setPlayerPosition(web_position);  // Update weapon position
+        weapon1->setPlayerPosition(web_position); 
     } else {
         std::cout << "Weapon is not initialized!" << std::endl;
     }
