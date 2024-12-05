@@ -152,6 +152,7 @@ int main() {
         
         float deltaTime = clock.getElapsedTime().asSeconds();
         if (bulletActive) {
+
             bullet.Update(deltaTime);
             
             sf::Vector2f bulletPos = bullet.GetPosition();
@@ -162,6 +163,11 @@ int main() {
             if (distanceTraveled > bulletMaxDistance) {
                 bulletActive = false;
             }
+            if (bullet.GetHitBox()->IsCollision(goblin_shaman1.GetHitBox())) {
+                bulletActive = false;
+            }
+
+
         }
 
         

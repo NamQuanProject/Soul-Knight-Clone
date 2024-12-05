@@ -5,12 +5,11 @@
 class BadPistolBullet : public Bullet {
 public:
     BadPistolBullet();
-
-    void Start() override;   // Initialize bullet behavior
+    ~BadPistolBullet();
     void Update(float deltaTime) override;  // Update bullet position and state
     void LoadResources() override;    
     void SetSpeed(const sf::Vector2f& newSpeed) override; // Add this method
-    void Render(sf::RenderWindow& window); // Render bullet to the window
+    void Render(sf::RenderWindow& window) override; // Render bullet to the window
     void SetPosition(const sf::Vector2f& position); // Set bullet position
     sf::Vector2f GetPosition() override;
     
