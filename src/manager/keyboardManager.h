@@ -4,7 +4,6 @@
 
 class KeyboardManager {
 public:
-    // Enum to represent the key state
     enum class KeyState {
         PRESSED,
         RELEASED,

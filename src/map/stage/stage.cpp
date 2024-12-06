@@ -51,14 +51,14 @@ void Stage::AddWall(Point point1, Point point2) {
     walls.push_back(wall);
 }
 
-// void Stage::IsInsideRoom() {
-//     // for (auto room : monsterRooms) {
-//     //     room->IsInside();
-//     // }
-// }
+void Stage::IsInsideRoom() {
+    for (auto room : monsterRooms) {
+        room->IsInside();
+    }
+}
 
-// void Stage::IsRoomCleared() {
-//     // for (auto room : monsterRooms) {
-//     //     room->IsCleared();
-//     // }
-// }
+void Stage::IsRoomCleared() {
+    for (auto room : monsterRooms) {
+        room->IsCleared();
+    }
+}

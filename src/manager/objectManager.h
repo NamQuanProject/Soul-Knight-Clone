@@ -24,13 +24,23 @@ public:
     void Render(sf::RenderWindow& window);
     void SetPlayerPosition(Vec& playerposition);
     void DeleteObsoleteElements();
+
+
+    void KeyDown(char key);
+    void KeyUp(char key);
+    void SetKButtonPress(bool isPress);
+    
+
+
+    void PushNewObjectsToList();
 private:
     int screenX = 0;
     int screenY = 0;
     static ObjectManager* instance;
     Player* player;
     vector<GameObject*> objects;
-
+    vector<GameObject*> newObjects;
     void CollisionDetection();
     void DeleteAllObjects();
+    
 };

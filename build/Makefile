@@ -177,29 +177,29 @@ src/core/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/application.cpp.s
 .PHONY : src/core/application.cpp.s
 
-src/core/game.o: src/core/game.cpp.o
-.PHONY : src/core/game.o
+src/core/gameState.o: src/core/gameState.cpp.o
+.PHONY : src/core/gameState.o
 
 # target to build an object file
-src/core/game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/game.cpp.o
-.PHONY : src/core/game.cpp.o
+src/core/gameState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/gameState.cpp.o
+.PHONY : src/core/gameState.cpp.o
 
-src/core/game.i: src/core/game.cpp.i
-.PHONY : src/core/game.i
+src/core/gameState.i: src/core/gameState.cpp.i
+.PHONY : src/core/gameState.i
 
 # target to preprocess a source file
-src/core/game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/game.cpp.i
-.PHONY : src/core/game.cpp.i
+src/core/gameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/gameState.cpp.i
+.PHONY : src/core/gameState.cpp.i
 
-src/core/game.s: src/core/game.cpp.s
-.PHONY : src/core/game.s
+src/core/gameState.s: src/core/gameState.cpp.s
+.PHONY : src/core/gameState.s
 
 # target to generate assembly for a file
-src/core/game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/game.cpp.s
-.PHONY : src/core/game.cpp.s
+src/core/gameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/gameState.cpp.s
+.PHONY : src/core/gameState.cpp.s
 
 src/core/menuState.o: src/core/menuState.cpp.o
 .PHONY : src/core/menuState.o
@@ -248,30 +248,6 @@ src/core/pauseState.s: src/core/pauseState.cpp.s
 src/core/pauseState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/pauseState.cpp.s
 .PHONY : src/core/pauseState.cpp.s
-
-src/core/playState.o: src/core/playState.cpp.o
-.PHONY : src/core/playState.o
-
-# target to build an object file
-src/core/playState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/playState.cpp.o
-.PHONY : src/core/playState.cpp.o
-
-src/core/playState.i: src/core/playState.cpp.i
-.PHONY : src/core/playState.i
-
-# target to preprocess a source file
-src/core/playState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/playState.cpp.i
-.PHONY : src/core/playState.cpp.i
-
-src/core/playState.s: src/core/playState.cpp.s
-.PHONY : src/core/playState.s
-
-# target to generate assembly for a file
-src/core/playState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/playState.cpp.s
-.PHONY : src/core/playState.cpp.s
 
 src/entities/collectable/bigCompositePotion.o: src/entities/collectable/bigCompositePotion.cpp.o
 .PHONY : src/entities/collectable/bigCompositePotion.o
@@ -1113,6 +1089,30 @@ src/manager/soundManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/soundManager.cpp.s
 .PHONY : src/manager/soundManager.cpp.s
 
+src/manager/stageManager.o: src/manager/stageManager.cpp.o
+.PHONY : src/manager/stageManager.o
+
+# target to build an object file
+src/manager/stageManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/stageManager.cpp.o
+.PHONY : src/manager/stageManager.cpp.o
+
+src/manager/stageManager.i: src/manager/stageManager.cpp.i
+.PHONY : src/manager/stageManager.i
+
+# target to preprocess a source file
+src/manager/stageManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/stageManager.cpp.i
+.PHONY : src/manager/stageManager.cpp.i
+
+src/manager/stageManager.s: src/manager/stageManager.cpp.s
+.PHONY : src/manager/stageManager.s
+
+# target to generate assembly for a file
+src/manager/stageManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/stageManager.cpp.s
+.PHONY : src/manager/stageManager.cpp.s
+
 src/map/map.o: src/map/map.cpp.o
 .PHONY : src/map/map.o
 
@@ -1280,6 +1280,30 @@ src/map/stage/stage_1_1.s: src/map/stage/stage_1_1.cpp.s
 src/map/stage/stage_1_1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.s
 .PHONY : src/map/stage/stage_1_1.cpp.s
+
+src/map/stage/transferGate.o: src/map/stage/transferGate.cpp.o
+.PHONY : src/map/stage/transferGate.o
+
+# target to build an object file
+src/map/stage/transferGate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/transferGate.cpp.o
+.PHONY : src/map/stage/transferGate.cpp.o
+
+src/map/stage/transferGate.i: src/map/stage/transferGate.cpp.i
+.PHONY : src/map/stage/transferGate.i
+
+# target to preprocess a source file
+src/map/stage/transferGate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/transferGate.cpp.i
+.PHONY : src/map/stage/transferGate.cpp.i
+
+src/map/stage/transferGate.s: src/map/stage/transferGate.cpp.s
+.PHONY : src/map/stage/transferGate.s
+
+# target to generate assembly for a file
+src/map/stage/transferGate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/transferGate.cpp.s
+.PHONY : src/map/stage/transferGate.cpp.s
 
 src/map/wall/door.o: src/map/wall/door.cpp.o
 .PHONY : src/map/wall/door.o
@@ -1728,18 +1752,15 @@ help:
 	@echo "... src/core/application.o"
 	@echo "... src/core/application.i"
 	@echo "... src/core/application.s"
-	@echo "... src/core/game.o"
-	@echo "... src/core/game.i"
-	@echo "... src/core/game.s"
+	@echo "... src/core/gameState.o"
+	@echo "... src/core/gameState.i"
+	@echo "... src/core/gameState.s"
 	@echo "... src/core/menuState.o"
 	@echo "... src/core/menuState.i"
 	@echo "... src/core/menuState.s"
 	@echo "... src/core/pauseState.o"
 	@echo "... src/core/pauseState.i"
 	@echo "... src/core/pauseState.s"
-	@echo "... src/core/playState.o"
-	@echo "... src/core/playState.i"
-	@echo "... src/core/playState.s"
 	@echo "... src/entities/collectable/bigCompositePotion.o"
 	@echo "... src/entities/collectable/bigCompositePotion.i"
 	@echo "... src/entities/collectable/bigCompositePotion.s"
@@ -1845,6 +1866,9 @@ help:
 	@echo "... src/manager/soundManager.o"
 	@echo "... src/manager/soundManager.i"
 	@echo "... src/manager/soundManager.s"
+	@echo "... src/manager/stageManager.o"
+	@echo "... src/manager/stageManager.i"
+	@echo "... src/manager/stageManager.s"
 	@echo "... src/map/map.o"
 	@echo "... src/map/map.i"
 	@echo "... src/map/map.s"
@@ -1866,6 +1890,9 @@ help:
 	@echo "... src/map/stage/stage_1_1.o"
 	@echo "... src/map/stage/stage_1_1.i"
 	@echo "... src/map/stage/stage_1_1.s"
+	@echo "... src/map/stage/transferGate.o"
+	@echo "... src/map/stage/transferGate.i"
+	@echo "... src/map/stage/transferGate.s"
 	@echo "... src/map/wall/door.o"
 	@echo "... src/map/wall/door.i"
 	@echo "... src/map/wall/door.s"

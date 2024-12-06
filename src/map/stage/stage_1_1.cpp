@@ -109,14 +109,20 @@ void Stage_1_1::Collision(GameObject* gameObject) {
     }
     
 }
-// void Stage_1_1::SetPlayerPosition() {
-//     // ObjectManager::Instance()->SetPlayerPosition(Point(345, 300));
-// }
 
-// void Stage_1_1::SetTransferGate() {
-//     // StageManager::Instance()->SetTransferGatePosition(Point(-900, -300));
-// }
 
-// void Stage_1_1::GenerateObstacle() {
-//     // Implementation for obstacles if needed
-// }
+void Stage_1_1::SetPlayerPosition() {
+    // objectManager->SetPlayerPosition(Point(345, 300));
+}
+
+void Stage_1_1::SetTransferGate() {
+    // stageManager->SetTransferGatePosition(Point(-900, -300));
+}
+
+void Stage_1_1::GenerateObstacle() {
+    
+}
+
+void Stage_1_1::GenerateWall() {
+
+}

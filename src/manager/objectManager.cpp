@@ -89,3 +89,108 @@ void ObjectManager::DeleteAllObjects() {
     }
     objects.clear();
 }
+
+void ObjectManager::PushNewObjectsToList() {
+    objects.insert(objects.end(), newObjects.begin(), newObjects.end());
+    newObjects.clear();
+}
+
+
+void ObjectManager::KeyDown(char key) {
+//     if (player->GetHP() <= 0) {
+//         return;
+//     }
+//     switch (key) {
+//     case 'A':
+//         player->SetSpeedX(player->GetSpeed().GetX() - 5);
+//         break;
+//     case 'D':
+//         player->SetSpeedX(player->GetSpeed().GetX() + 5);
+//         break;
+//     case 'W':
+//         player->SetSpeedY(player->GetSpeed().GetY() - 5);
+//         break;
+//     case 'S':
+//         player->SetSpeedY(player->GetSpeed().GetY() + 5);
+//         break;
+//     case 'E':
+//         player->SwitchWeapon();
+//         break;
+//     case 'F':
+//         player->SetInteractive(true);
+//         break;
+//     case 'Q':
+//         player->UseSkill();
+//         break;
+//     case '1':
+//         isDisplayHitBox = !isDisplayHitBox;
+//         break;
+//     case '2': {
+//         player->RecoverMP(100);
+//         break;
+//     }
+//     case '3': {
+//         player->Healing(1);
+//         break;
+//     }
+//     case '4': {
+//         MakeMoney(100);
+//         break;
+//     }
+//     case '5': {
+//         player->SwitchInvincibleMode();
+//         break;
+//     }
+//     case '6': {
+//         player->SwitchThroughWallMode();
+//         break;
+//     }
+//     case '7': {
+//         InvisibleShockWave* shockWave = dynamic_cast<InvisibleShockWave*>(ProjectilePool::Instance()->Acquire(ProjectileType::INVISIBLE_SHOCK_WAVE));
+//         shockWave->SetPosition(player->GetPosition());
+//         shockWave->SetDamage(50);
+//         shockWave->SetSize(1000);
+        
+//         shockWave->AddTag(Tag::PLAYER_ATTACK);
+//         shockWave->RemoveTag(Tag::MONSTER_ATTACK);
+//         AddObject(shockWave);
+//         break;
+//     }
+//     case '8': {
+//         GameObject* box = new TreasureChest(TreasureChest::BOSS_ROOM);
+//         box->SetPosition(player->GetPosition());
+//         AddObject(box);
+//         break;
+//     }
+//     }
+// }
+
+// void ObjectManager::KeyUp(char key) {
+//     if (player->GetHP() <= 0) {
+//         return;
+//     }
+//     switch (key) {
+//     case 'A':
+//         player->SetSpeedX(player->GetSpeed().GetX() + 5);
+//         break;
+//     case 'D':
+//         player->SetSpeedX(player->GetSpeed().GetX() - 5);
+//         break;
+//     case 'W':
+//         player->SetSpeedY(player->GetSpeed().GetY() + 5);
+//         break;
+//     case 'S':
+//         player->SetSpeedY(player->GetSpeed().GetY() - 5);
+//         break;
+//     case 'F':
+//         player->SetInteractive(false);
+//         break;
+//     }
+}
+
+void ObjectManager::SetKButtonPress(bool isPress) {
+    // if (player->GetHP() <= 0) {
+    //     return;
+    // }
+    // LButtonPressed = isPress;
+}

@@ -13,10 +13,10 @@ protected:
     void setBackground() override;
     void AddWallsToMap();
     
-    // void GenerateWall() override;
-    // void SetPlayerPosition() override;
-    // void SetTransferGate() override;
-    // void GenerateObstacle() override;
+    void GenerateWall() override;
+    void SetPlayerPosition() override;
+    void SetTransferGate() override;
+    void GenerateObstacle() override;
 
     MonsterRoom* room1;
 
