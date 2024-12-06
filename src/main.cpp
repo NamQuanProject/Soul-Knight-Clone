@@ -175,8 +175,7 @@ int main() {
         goblin_shaman1.Update(deltaTime);
         
         stage.Collision(knight1);
-
-
+        stage.Update(deltaTime);
         knightPosition = knight1->GetPosition();
 
         knight1->SetPosition(knightPosition);

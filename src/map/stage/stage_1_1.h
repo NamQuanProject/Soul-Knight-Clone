@@ -6,7 +6,7 @@ public:
     Stage_1_1();
     ~Stage_1_1();
 
-
+    void Update(float deltaTime);
     void Render(sf::RenderWindow& window);
     void Collision(GameObject* gameObject);
 protected:
@@ -17,6 +17,8 @@ protected:
     // void SetPlayerPosition() override;
     // void SetTransferGate() override;
     // void GenerateObstacle() override;
+
+    MonsterRoom* room1;
 
 
 

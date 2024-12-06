@@ -29,6 +29,11 @@ void ObjectManager::Update(float deltaTime) {
     CollisionDetection();
 }
 
+Player* ObjectManager::GetPlayer() {
+    return player;
+}
+
+
 void ObjectManager::Render(sf::RenderWindow& window) {
     // Sort objects by Y-coordinate for proper rendering order
     for (auto object : objects) {
@@ -52,6 +57,31 @@ void ObjectManager::CollisionDetection() {
         }
     }
 }
+void ObjectManager::DeleteObsoleteElements() {
+    for (vector<GameObject*>::iterator object = objects.begin(); object != objects.end();) {
+        if ((*object)->HasTag(Tag::REMOVE_ON_NEXT_FRAME)) {
+            (*object)->RemoveTag(Tag::REMOVE_ON_NEXT_FRAME);
+            // (*object)->OnRemove();
+            // if ((*object)->HasTag(Tag::PROJECTILE)) {
+            //     ProjectilePool::Instance()->Release(dynamic_cast<Projectile*>(*object));
+            // // }
+            // if ((*object)->HasTag(Tag::MONSTER)) {
+            //     MonsterPool::Instance()->Release(dynamic_cast<Monster*>(*object));
+            // }
+            
+            delete *object;
+            *object = nullptr;
+            
+            object = objects.erase(object);
+        }
+        else { ++object; }
+    }
+}
+
+
+
+
+
 
 void ObjectManager::DeleteAllObjects() {
     for (auto object : objects) {

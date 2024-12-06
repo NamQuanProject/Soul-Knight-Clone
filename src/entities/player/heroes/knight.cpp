@@ -116,21 +116,21 @@ void Knight::Render(sf::RenderWindow& window) {
 void Knight::runRight() {
     state = RUN;
     face = RIGHT;
-    animationManager.setAnimation("run_right");  // Switch to running right animation
+    animationManager.setAnimation("run_right"); 
 }
 
 void Knight::runLeft() {
     state = RUN;
     face = LEFT;
-    animationManager.setAnimation("run_left");  // Switch to running left animation
+    animationManager.setAnimation("run_left");  
 }
 
 void Knight::standRight() {
-    animationManager.setAnimation("idle_right");  // Switch to idle right animation
+    animationManager.setAnimation("idle_right");  
 }
  
 void Knight::standLeft() {
-    animationManager.setAnimation("idle_left");  // Switch to idle left animation
+    animationManager.setAnimation("idle_left"); 
 }
 
 void Knight::Collision(GameObject* gameObject) {

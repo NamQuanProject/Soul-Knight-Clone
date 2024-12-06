@@ -1,8 +1,7 @@
 
 #include "room.h"
 
-Room::Room(Point leftTop, RoomSize size, Vec centerOffset):
-    topLeft(leftTop),
-    size(static_cast<int>(size)),
-    centerOffset(centerOffset) {
+Room::Room(Point leftTop, Point rightBot, int size)
+    : leftTop(leftTop), rightBot(rightBot), size(size) {
+    // Additional initialization or logic (if needed)
 }

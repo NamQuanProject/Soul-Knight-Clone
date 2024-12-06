@@ -1,10 +1,19 @@
 #include "stage_1_1.h"
 #include "../../manager/objectManager.h"
 #include "../room/roomSize.h"
+#include "../room/monsterRoom.h"
 
 Stage_1_1::Stage_1_1() {
     setBackground();
     AddWallsToMap();
+
+
+    room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 2, 1, 1);
+    
+
+
+
+
 }
 
 
@@ -60,6 +69,11 @@ void Stage_1_1::AddWallsToMap() {
     AddWall(Point(1215, 898), Point(1487, 912));
 }
 
+void Stage_1_1::Update(float deltaTime) {
+    room1->Update(deltaTime);
+}
+
+
 void Stage_1_1::setBackground() {
     sf::Image image;
     if (!image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/map/1-1.bmp")) {
@@ -84,6 +98,7 @@ void Stage_1_1::Render(sf::RenderWindow& window) {
     for (Wall* wall : walls) {
         wall->Draw(window); 
     }
+    room1->Show(window);
 
 }
 
@@ -92,6 +107,7 @@ void Stage_1_1::Collision(GameObject* gameObject) {
     for (Wall* wall : walls) {
         wall->Collision(gameObject);  // Check if the player collides with each wall
     }
+    
 }
 // void Stage_1_1::SetPlayerPosition() {
 //     // ObjectManager::Instance()->SetPlayerPosition(Point(345, 300));

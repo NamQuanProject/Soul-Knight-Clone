@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <map>
-
+#include <SFML/Graphics.hpp>
 #include "room.h"
 #include "../wall/wall.h"
 #include "../wall/door.h"
@@ -21,12 +21,16 @@
 
 class MonsterRoom : public Room {
 public:
-    MonsterRoom(Point leftTop, Point rightBot, int level, std::map<MonsterType, int> monsterMap,
+    MonsterRoom(Point leftTop, Point rightBot, int size, int level, std::map<MonsterType, int> monsterMap,
                 bool isBossRoom = false);
-    MonsterRoom(Point leftTop, Point rightBot, int level, int stage, bool isBossRoom = false);
+    MonsterRoom(Point leftTop, Point rightBot, int size, int level, int stage, bool isBossRoom = false);
     ~MonsterRoom();
     void IsInside();
     void IsCleared();
+
+    
+    void Show(sf::RenderWindow& window);
+    void Update(float deltaTime);
 
 private:
     int level;
@@ -40,6 +44,8 @@ private:
     void SetMonsters();
     void PlacedMonster();
     void SetDoors();
-    void RelocatePlayerToNearestEdge();
+    void RelocatePlayerToCenter();
     void GenerateMonsterMapRandomly(int stage);
+    
+    ObjectManager objectManager;
 };

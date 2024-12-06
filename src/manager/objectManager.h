@@ -23,7 +23,7 @@ public:
     void Update(float deltaTime);
     void Render(sf::RenderWindow& window);
     void SetPlayerPosition(Vec& playerposition);
-
+    void DeleteObsoleteElements();
 private:
     int screenX = 0;
     int screenY = 0;

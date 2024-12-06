@@ -874,11 +874,6 @@ CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/room.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/roomSize.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../wall/wall.h \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System.hpp \
@@ -958,6 +953,11 @@ CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/room.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/roomSize.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../wall/wall.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../wall/../../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../wall/../../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../wall/../../entities/invinsibleObject.h \
