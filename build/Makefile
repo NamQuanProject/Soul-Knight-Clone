@@ -441,6 +441,78 @@ src/entities/collectable/potionFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/collectable/potionFactory.cpp.s
 .PHONY : src/entities/collectable/potionFactory.cpp.s
 
+src/entities/drop/coin.o: src/entities/drop/coin.cpp.o
+.PHONY : src/entities/drop/coin.o
+
+# target to build an object file
+src/entities/drop/coin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/coin.cpp.o
+.PHONY : src/entities/drop/coin.cpp.o
+
+src/entities/drop/coin.i: src/entities/drop/coin.cpp.i
+.PHONY : src/entities/drop/coin.i
+
+# target to preprocess a source file
+src/entities/drop/coin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/coin.cpp.i
+.PHONY : src/entities/drop/coin.cpp.i
+
+src/entities/drop/coin.s: src/entities/drop/coin.cpp.s
+.PHONY : src/entities/drop/coin.s
+
+# target to generate assembly for a file
+src/entities/drop/coin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/coin.cpp.s
+.PHONY : src/entities/drop/coin.cpp.s
+
+src/entities/drop/drop.o: src/entities/drop/drop.cpp.o
+.PHONY : src/entities/drop/drop.o
+
+# target to build an object file
+src/entities/drop/drop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/drop.cpp.o
+.PHONY : src/entities/drop/drop.cpp.o
+
+src/entities/drop/drop.i: src/entities/drop/drop.cpp.i
+.PHONY : src/entities/drop/drop.i
+
+# target to preprocess a source file
+src/entities/drop/drop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/drop.cpp.i
+.PHONY : src/entities/drop/drop.cpp.i
+
+src/entities/drop/drop.s: src/entities/drop/drop.cpp.s
+.PHONY : src/entities/drop/drop.s
+
+# target to generate assembly for a file
+src/entities/drop/drop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/drop.cpp.s
+.PHONY : src/entities/drop/drop.cpp.s
+
+src/entities/drop/dropFactory.o: src/entities/drop/dropFactory.cpp.o
+.PHONY : src/entities/drop/dropFactory.o
+
+# target to build an object file
+src/entities/drop/dropFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/dropFactory.cpp.o
+.PHONY : src/entities/drop/dropFactory.cpp.o
+
+src/entities/drop/dropFactory.i: src/entities/drop/dropFactory.cpp.i
+.PHONY : src/entities/drop/dropFactory.i
+
+# target to preprocess a source file
+src/entities/drop/dropFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/dropFactory.cpp.i
+.PHONY : src/entities/drop/dropFactory.cpp.i
+
+src/entities/drop/dropFactory.s: src/entities/drop/dropFactory.cpp.s
+.PHONY : src/entities/drop/dropFactory.s
+
+# target to generate assembly for a file
+src/entities/drop/dropFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/drop/dropFactory.cpp.s
+.PHONY : src/entities/drop/dropFactory.cpp.s
+
 src/entities/gameObject.o: src/entities/gameObject.cpp.o
 .PHONY : src/entities/gameObject.o
 
@@ -1545,6 +1617,30 @@ src/map/wall/wall.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/wall/wall.cpp.s
 .PHONY : src/map/wall/wall.cpp.s
 
+src/pool/dropPool.o: src/pool/dropPool.cpp.o
+.PHONY : src/pool/dropPool.o
+
+# target to build an object file
+src/pool/dropPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/dropPool.cpp.o
+.PHONY : src/pool/dropPool.cpp.o
+
+src/pool/dropPool.i: src/pool/dropPool.cpp.i
+.PHONY : src/pool/dropPool.i
+
+# target to preprocess a source file
+src/pool/dropPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/dropPool.cpp.i
+.PHONY : src/pool/dropPool.cpp.i
+
+src/pool/dropPool.s: src/pool/dropPool.cpp.s
+.PHONY : src/pool/dropPool.s
+
+# target to generate assembly for a file
+src/pool/dropPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/dropPool.cpp.s
+.PHONY : src/pool/dropPool.cpp.s
+
 src/pool/monsterPool.o: src/pool/monsterPool.cpp.o
 .PHONY : src/pool/monsterPool.o
 
@@ -1568,6 +1664,30 @@ src/pool/monsterPool.s: src/pool/monsterPool.cpp.s
 src/pool/monsterPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.s
 .PHONY : src/pool/monsterPool.cpp.s
+
+src/pool/projectilePool.o: src/pool/projectilePool.cpp.o
+.PHONY : src/pool/projectilePool.o
+
+# target to build an object file
+src/pool/projectilePool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/projectilePool.cpp.o
+.PHONY : src/pool/projectilePool.cpp.o
+
+src/pool/projectilePool.i: src/pool/projectilePool.cpp.i
+.PHONY : src/pool/projectilePool.i
+
+# target to preprocess a source file
+src/pool/projectilePool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/projectilePool.cpp.i
+.PHONY : src/pool/projectilePool.cpp.i
+
+src/pool/projectilePool.s: src/pool/projectilePool.cpp.s
+.PHONY : src/pool/projectilePool.s
+
+# target to generate assembly for a file
+src/pool/projectilePool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/pool/projectilePool.cpp.s
+.PHONY : src/pool/projectilePool.cpp.s
 
 src/utils/config.o: src/utils/config.cpp.o
 .PHONY : src/utils/config.o
@@ -1785,6 +1905,15 @@ help:
 	@echo "... src/entities/collectable/potionFactory.o"
 	@echo "... src/entities/collectable/potionFactory.i"
 	@echo "... src/entities/collectable/potionFactory.s"
+	@echo "... src/entities/drop/coin.o"
+	@echo "... src/entities/drop/coin.i"
+	@echo "... src/entities/drop/coin.s"
+	@echo "... src/entities/drop/drop.o"
+	@echo "... src/entities/drop/drop.i"
+	@echo "... src/entities/drop/drop.s"
+	@echo "... src/entities/drop/dropFactory.o"
+	@echo "... src/entities/drop/dropFactory.i"
+	@echo "... src/entities/drop/dropFactory.s"
 	@echo "... src/entities/gameObject.o"
 	@echo "... src/entities/gameObject.i"
 	@echo "... src/entities/gameObject.s"
@@ -1923,9 +2052,15 @@ help:
 	@echo "... src/map/wall/wall.o"
 	@echo "... src/map/wall/wall.i"
 	@echo "... src/map/wall/wall.s"
+	@echo "... src/pool/dropPool.o"
+	@echo "... src/pool/dropPool.i"
+	@echo "... src/pool/dropPool.s"
 	@echo "... src/pool/monsterPool.o"
 	@echo "... src/pool/monsterPool.i"
 	@echo "... src/pool/monsterPool.s"
+	@echo "... src/pool/projectilePool.o"
+	@echo "... src/pool/projectilePool.i"
+	@echo "... src/pool/projectilePool.s"
 	@echo "... src/utils/config.o"
 	@echo "... src/utils/config.i"
 	@echo "... src/utils/config.s"
