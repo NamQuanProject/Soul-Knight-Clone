@@ -11,7 +11,7 @@ GoblinGiant::GoblinGiant(double level)
     Point author = Point(position.x, position.y);
     
     hitbox = new HitBox(author); 
-    tag = Tag::MONSTER;
+    AddTag(Tag::MONSTER);
 }
 
 

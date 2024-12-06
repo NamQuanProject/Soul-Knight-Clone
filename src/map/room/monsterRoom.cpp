@@ -43,7 +43,7 @@ void MonsterRoom::IsCleared() {
         return;
     }
     for (auto monster : monsters) {
-        if (monster->GetTag() != Tag::DEAD) {
+        if (!monster->HasTag(Tag::DEAD)) {
             return;
         }
     }

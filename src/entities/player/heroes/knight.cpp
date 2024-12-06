@@ -11,7 +11,7 @@ Knight::Knight() : Player() {
     
     Point author = Point(position.x, position.y);
     hitbox = new HitBox(author); 
-    tag = Tag::PLAYER;
+    AddTag(Tag::PLAYER);
     
 }
 
@@ -134,7 +134,7 @@ void Knight::standLeft() {
 }
 
 void Knight::Collision(GameObject* gameObject) {
-    if (gameObject->GetTag() == Tag::WALL) {
+    if (gameObject->HasTag(Tag::WALL)) {
         Vec current = GetPosition();
         current = current - speed;
 

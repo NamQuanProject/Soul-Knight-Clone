@@ -21,9 +21,9 @@
 
 class MonsterRoom : public Room {
 public:
-    MonsterRoom(Point leftTop, Vec centerOffset, RoomSize size, int level, std::map<MonsterType, int> monsterMap,
+    MonsterRoom(Point leftTop, Point rightBot, int level, std::map<MonsterType, int> monsterMap,
                 bool isBossRoom = false);
-    MonsterRoom(Point leftTop, Vec centerOffset, RoomSize size, int level, int stage, bool isBossRoom = false);
+    MonsterRoom(Point leftTop, Point rightBot, int level, int stage, bool isBossRoom = false);
     ~MonsterRoom();
     void IsInside();
     void IsCleared();

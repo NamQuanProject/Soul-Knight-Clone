@@ -24,7 +24,7 @@ Wall::Wall(Point start, Point end)
 
 
 
-    tag = Tag::WALL;
+    AddTag(Tag::WALL);
 }
 
 
@@ -40,10 +40,6 @@ bool Wall::CheckCollision(GameObject* gameObject) {
 
 // Collision handling (Just turn the wall red)
 void Wall::Collision(GameObject* gameObject) {
-
-
-    // Check for a collision with the wall using the CheckCollision method
-        // Check for a collision with the wall using the CheckCollision method
     if (CheckCollision(gameObject)) {
         gameObject->Collision(this);
         wallShape.setFillColor(sf::Color::Red);

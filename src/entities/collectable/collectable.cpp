@@ -1,7 +1,7 @@
 #include "collectable.h"
 #include <iostream>
 Collectable::Collectable() {
-   tag = Tag::COLLECTABLE;
+   AddTag(Tag::COLLECTABLE);
 }
 
 void Collectable::Start() {

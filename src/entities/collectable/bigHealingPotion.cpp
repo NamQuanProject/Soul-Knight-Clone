@@ -20,5 +20,5 @@ void BigHealingPotion::LoadResources() {
 
 void BigHealingPotion::Interactive(Player* player) {
     // player->Healing(4);
-    tag = Tag::REMOVE_ON_NEXT_FRAME;
+   AddTag(Tag::REMOVE_ON_NEXT_FRAME);
 }

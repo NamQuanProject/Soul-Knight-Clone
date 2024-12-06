@@ -1,7 +1,6 @@
 #include "gameObject.h"
 
 GameObject::GameObject() : position(0.0, 0.0), active(true) {
-    tag = Tag::NONE;
     position = Vec(0.0, 0.0);
 }
 
@@ -28,17 +27,24 @@ void GameObject::SetActive(bool active) {
 void GameObject::Collision(GameObject* other) {
     return;
 }
-
-void GameObject::SetTag(Tag newTag) {
-    tag = newTag;
-}
-Tag GameObject::GetTag()  {
-    return tag;
-}
-
 HitBox* GameObject::GetHitBox() {
     return hitbox;
 }
+
+
+void GameObject::AddTag(Tag tag) {
+    tags[static_cast<int>(tag)] = true;
+}
+
+void GameObject::RemoveTag(Tag tag) {
+    tags[static_cast<int>(tag)] = false;
+}
+
+bool GameObject::HasTag(Tag tag) {
+    return tags[static_cast<int>(tag)];
+}
+
+
 // void GameObject::Debug() const {
 //     std::cout << "Position: (" << position.x << ", " << position.y << "), Active: " << active << "\n";
 // }

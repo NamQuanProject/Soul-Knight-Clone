@@ -16,21 +16,21 @@ void Bullet::Update(float deltaTime) {
 }
 
 void Bullet::Collision(GameObject* gameObject) {
-    // if ((gameObject->HasTag(Tag::PLAYER) && this->HasTag(Tag::MONSTER_ATTACK)) ||
-    //     (gameObject->HasTag(Tag::MONSTER) && !gameObject->HasTag(Tag::DEAD) && this->HasTag(Tag::PLAYER_ATTACK)) ||
-    //     gameObject->HasTag(Tag::OBSTACLE)) {
-    //     this->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+    if ((gameObject->HasTag(Tag::PLAYER) && this->HasTag(Tag::MONSTER_ATTACK)) ||
+        (gameObject->HasTag(Tag::MONSTER) && !gameObject->HasTag(Tag::DEAD) && this->HasTag(Tag::PLAYER_ATTACK)) ||
+        gameObject->HasTag(Tag::OBSTACLE)) {
+        this->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
         
-    // }
+    }
 }
 
-// void Bullet::UpdateTag(GameObject* gameObject) {
-//     // if (HasTag(Tag::PLAYER_ATTACK)) {
-//     //     gameObject->AddTag(Tag::PLAYER_ATTACK);
-//     //     gameObject->RemoveTag(Tag::MONSTER_ATTACK);
-//     // }
-//     // else if (HasTag(Tag::MONSTER_ATTACK)) {
-//     //     gameObject->AddTag(Tag::MONSTER_ATTACK);
-//     //     gameObject->RemoveTag(Tag::PLAYER_ATTACK);
-//     // }
-// }
+void Bullet::UpdateTag(GameObject* gameObject) {
+    if (HasTag(Tag::PLAYER_ATTACK)) {
+        gameObject->AddTag(Tag::PLAYER_ATTACK);
+        gameObject->RemoveTag(Tag::MONSTER_ATTACK);
+    }
+    else if (HasTag(Tag::MONSTER_ATTACK)) {
+        gameObject->AddTag(Tag::MONSTER_ATTACK);
+        gameObject->RemoveTag(Tag::PLAYER_ATTACK);
+    }
+}

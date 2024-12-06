@@ -19,5 +19,5 @@ void BigCompositePotion::LoadResources() {
 void BigCompositePotion::Interactive(Player* player) {
     // player->Healing(2);
     // player->RecoverMP(75);
-    tag = Tag::REMOVE_ON_NEXT_FRAME;
+    AddTag(Tag::REMOVE_ON_NEXT_FRAME);
 }

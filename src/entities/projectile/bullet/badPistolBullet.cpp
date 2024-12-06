@@ -1,5 +1,6 @@
 #include "badPistolBullet.h"
 #include "../../../utils/point.h"
+#include "../../../utils/tag.h"
 #include <cmath>
 #include <iostream>
 
@@ -14,8 +15,10 @@ BadPistolBullet::BadPistolBullet() {
     if (bulletTexture.getSize().x > 0 && bulletTexture.getSize().y > 0) {
         hitbox->SetWidth(bulletTexture.getSize().x);
         hitbox->SetHeight(bulletTexture.getSize().y);
-        
     }
+
+    AddTag(Tag::PLAYER_ATTACK);
+
 }
 
 BadPistolBullet::~BadPistolBullet() {
