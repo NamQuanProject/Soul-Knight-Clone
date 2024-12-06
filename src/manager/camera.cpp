@@ -32,7 +32,6 @@ void Camera::setWorldBounds(const sf::FloatRect& bounds) {
     worldBounds = bounds;
 }
 
-// Adjust zoom level of the view
 void Camera::setZoom(float zoomLevel) {
     view.zoom(zoomLevel);
 }
