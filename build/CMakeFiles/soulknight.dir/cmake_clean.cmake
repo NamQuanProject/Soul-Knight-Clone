@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/soulknight.dir/src/entities/projectile/bullet.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/projectile/bullet/badPistolBullet.cpp.o"
   "CMakeFiles/soulknight.dir/src/entities/projectile/bullet/badPistolBullet.cpp.o.d"
+  "CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redCircleBullet.cpp.o"
+  "CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redCircleBullet.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/projectile/projectile.cpp.o"
   "CMakeFiles/soulknight.dir/src/entities/projectile/projectile.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.o"

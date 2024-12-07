@@ -961,4 +961,5 @@ CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/tag.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/tag.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/redCircleBullet.h

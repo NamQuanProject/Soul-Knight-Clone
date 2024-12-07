@@ -3,6 +3,7 @@
 #include "projectileType.h"
 // #include "bullet/Arrow.h"
 #include "bullet/badPistolBullet.h"
+#include "bullet/redCircleBullet.h"
 // #include "bullet/BigRedCircleBullet.h"
 // #include "bullet/BigYellowCircleBullet.h"
 // #include "bullet/GasBlasterBullet.h"

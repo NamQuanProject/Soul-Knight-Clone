@@ -5,6 +5,7 @@
 #include "manager/camera.h"
 #include <SFML/Graphics.hpp>
 #include "entities/projectile/bullet/badPistolBullet.h"
+#include "entities/projectile/bullet/redCircleBullet.h"
 #include "entities/monster/floor_1/goblin_shaman/goblinShaman.h"
 #include "entities/monster/floor_1/goblin_giant/goblinGiant.h"
 #include "map/stage/stage_1_1.h"
@@ -55,7 +56,7 @@ int main() {
     float roomRight = 192;
     float roomBottom = 273;
 
-    BadPistolBullet bullet;
+    RedCircleBullet bullet;
     bullet.LoadResources();
 
     bool bulletActive = false;

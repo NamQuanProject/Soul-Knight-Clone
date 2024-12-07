@@ -801,6 +801,30 @@ src/entities/projectile/bullet/badPistolBullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/badPistolBullet.cpp.s
 .PHONY : src/entities/projectile/bullet/badPistolBullet.cpp.s
 
+src/entities/projectile/bullet/redCircleBullet.o: src/entities/projectile/bullet/redCircleBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/redCircleBullet.o
+
+# target to build an object file
+src/entities/projectile/bullet/redCircleBullet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redCircleBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/redCircleBullet.cpp.o
+
+src/entities/projectile/bullet/redCircleBullet.i: src/entities/projectile/bullet/redCircleBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/redCircleBullet.i
+
+# target to preprocess a source file
+src/entities/projectile/bullet/redCircleBullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redCircleBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/redCircleBullet.cpp.i
+
+src/entities/projectile/bullet/redCircleBullet.s: src/entities/projectile/bullet/redCircleBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/redCircleBullet.s
+
+# target to generate assembly for a file
+src/entities/projectile/bullet/redCircleBullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redCircleBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/redCircleBullet.cpp.s
+
 src/entities/projectile/projectile.o: src/entities/projectile/projectile.cpp.o
 .PHONY : src/entities/projectile/projectile.o
 
@@ -1950,6 +1974,9 @@ help:
 	@echo "... src/entities/projectile/bullet/badPistolBullet.o"
 	@echo "... src/entities/projectile/bullet/badPistolBullet.i"
 	@echo "... src/entities/projectile/bullet/badPistolBullet.s"
+	@echo "... src/entities/projectile/bullet/redCircleBullet.o"
+	@echo "... src/entities/projectile/bullet/redCircleBullet.i"
+	@echo "... src/entities/projectile/bullet/redCircleBullet.s"
 	@echo "... src/entities/projectile/projectile.o"
 	@echo "... src/entities/projectile/projectile.i"
 	@echo "... src/entities/projectile/projectile.s"

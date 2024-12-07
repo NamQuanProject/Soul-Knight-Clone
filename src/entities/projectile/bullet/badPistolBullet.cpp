@@ -36,7 +36,6 @@ void BadPistolBullet::Update(float deltaTime) {
 
     Point point = Point(position.x, position.y);
     hitbox->SetPosition(point);
-    // Update hitbox position
     
 
     // Set rotation based on direction of movement
@@ -62,9 +61,9 @@ void BadPistolBullet::Render(sf::RenderWindow& window) {
     window.draw(bulletSprite);
 
     // Render the hitbox for debugging (if needed)
-    if (hitbox) {
-        hitbox->Render(window);
-    }
+    // if (hitbox) {
+    //     hitbox->Render(window);
+    // }
 }
 
 void BadPistolBullet::SetPosition(const sf::Vector2f& pos) {

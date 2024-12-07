@@ -3,7 +3,7 @@
 
 
 Bullet::Bullet() {
-    // AddTag(Tag::PROJECTILE);
+    AddTag(Tag::PROJECTILE);
 }
 
 // void Bullet::Start() {
@@ -20,7 +20,6 @@ void Bullet::Collision(GameObject* gameObject) {
         (gameObject->HasTag(Tag::MONSTER) && !gameObject->HasTag(Tag::DEAD) && this->HasTag(Tag::PLAYER_ATTACK)) ||
         gameObject->HasTag(Tag::OBSTACLE)) {
         this->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
-        
     }
 }
 
