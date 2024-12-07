@@ -1,5 +1,6 @@
 #include "stage_1_1.h"
 #include "../../manager/objectManager.h"
+#include "../../manager/stageManager.h"
 #include "../room/roomSize.h"
 #include "../room/monsterRoom.h"
 
@@ -11,7 +12,9 @@ Stage_1_1::Stage_1_1() {
     room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 2, 1, 1);
     
 
-
+    monsterRooms.push_back(room1);
+    // monsterRooms.push_back(room2);
+    // monsterRooms.push_back(room4);
 
 
 }
@@ -112,11 +115,13 @@ void Stage_1_1::Collision(GameObject* gameObject) {
 
 
 void Stage_1_1::SetPlayerPosition() {
-    // objectManager->SetPlayerPosition(Point(345, 300));
+    Vec temp = Vec(345, 300);
+    ObjectManager::Instance()->SetPlayerPosition(temp);
 }
 
+
 void Stage_1_1::SetTransferGate() {
-    // stageManager->SetTransferGatePosition(Point(-900, -300));
+   StageManager::Instance()->SetTransferGatePosition(Vec(-900, -300));
 }
 
 void Stage_1_1::GenerateObstacle() {

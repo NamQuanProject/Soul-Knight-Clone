@@ -3,11 +3,18 @@
 
 #include <SFML/Graphics.hpp>
 
+enum class StateType {
+    MENU_STATE,
+    GAME_STATE,
+    PAUSE_STATE,
+};
+
+
 class State {
 public:
     virtual ~State() {}
     virtual void handleEvent(const sf::Event& event, sf::RenderWindow& window) = 0;
-    virtual void update() = 0;
+    virtual void update(float deltaTime) = 0;
     virtual void render(sf::RenderWindow& window) = 0;
 };
 

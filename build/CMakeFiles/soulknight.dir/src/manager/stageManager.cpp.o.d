@@ -995,6 +995,7 @@ CMakeFiles/soulknight.dir/src/manager/stageManager.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../wall/../../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../wall/../../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../wall/../../entities/invinsibleObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../../manager/objectManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../room/monsterRoom.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../room/room.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../room/roomSize.h \

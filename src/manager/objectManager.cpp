@@ -12,6 +12,10 @@ ObjectManager* ObjectManager::Instance() {
     return instance;
 }
 
+
+
+
+
 ObjectManager::ObjectManager() : screenX(0), screenY(0), player(nullptr) {}
 
 ObjectManager::~ObjectManager() {
@@ -95,6 +99,9 @@ void ObjectManager::PushNewObjectsToList() {
     newObjects.clear();
 }
 
+void ObjectManager::AddObject(GameObject* gameObject) {
+    objects.push_back(gameObject);
+}
 
 void ObjectManager::KeyDown(char key) {
 //     if (player->GetHP() <= 0) {

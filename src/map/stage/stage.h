@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "../../utils/point.h"
 #include "../wall/wall.h"
+#include "../../manager/objectManager.h"
 #include "../room/monsterRoom.h"
 
 

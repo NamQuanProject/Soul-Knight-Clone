@@ -43,8 +43,8 @@ void MonsterRoom::Show(sf::RenderWindow& window) {
 }
 
 void MonsterRoom::IsInside() {
-    double playerX = objectManager.GetPlayer()->GetPosition().GetX();
-    double playerY = objectManager.GetPlayer()->GetPosition().GetY();
+    double playerX = ObjectManager::Instance()->GetPlayer()->GetPosition().GetX();
+    double playerY = ObjectManager::Instance()->GetPlayer()->GetPosition().GetY();
 
     // Check if the player is inside the room boundaries
     if (!isInside && !isCleared &&
@@ -202,8 +202,6 @@ void MonsterRoom::RelocatePlayerToCenter() {
     Vec centerPosition(centerX, centerY);
 
     ObjectManager::Instance()->GetPlayer()->SetPosition(centerPosition);
-
-
 }
 
 void MonsterRoom::GenerateMonsterMapRandomly(int stage) {

@@ -12,12 +12,15 @@ public:
 
 private:
     void processEvents();
-    void update();
+    void update(float deltaTime);
     void render();
-    void changeState(std::unique_ptr<State> newState); 
+    void changeState(StateType type);
 
     sf::RenderWindow window;
     std::unique_ptr<State> currentState;
+    float deltaTime;
+    sf::Clock clock;
+
 };
 
 #endif

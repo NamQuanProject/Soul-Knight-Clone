@@ -49,6 +49,7 @@ Stage::~Stage() {
 void Stage::AddWall(Point point1, Point point2) {
     Wall* wall = new Wall(point1, point2);
     walls.push_back(wall);
+    ObjectManager::Instance()->AddObject(wall);
 }
 
 void Stage::IsInsideRoom() {

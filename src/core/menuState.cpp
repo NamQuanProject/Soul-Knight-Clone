@@ -71,7 +71,7 @@ void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     }
 }
 
-void MenuState::update() {
+void MenuState::update(float deltaTime) {
     
 }
 

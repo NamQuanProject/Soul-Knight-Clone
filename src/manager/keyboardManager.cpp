@@ -8,6 +8,13 @@ KeyboardManager::~KeyboardManager() {
 
 void KeyboardManager::Update() {
     prevKeyStates = keyStates;
+    for (auto& [key, state] : keyStates) {
+        if (state == KeyState::PRESSED) {
+            keyStates[key] = KeyState::HELD;
+        } else if (state == KeyState::RELEASED) {
+            keyStates.erase(key); // Remove key from active state tracking
+        }
+    }
 }
 
 bool KeyboardManager::IsKeyPressed(int key) const {

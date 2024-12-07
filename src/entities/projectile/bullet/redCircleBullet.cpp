@@ -14,7 +14,6 @@ RedCircleBullet::RedCircleBullet() {
         hitbox->SetWidth(bulletTexture.getSize().x);
         hitbox->SetHeight(bulletTexture.getSize().y);
     }
-
     AddTag(Tag::MONSTER_ATTACK);
 }
 

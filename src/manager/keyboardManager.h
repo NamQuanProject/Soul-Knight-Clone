@@ -2,13 +2,16 @@
 
 #include <unordered_map>
 
+
+enum class KeyState {
+    PRESSED,
+    RELEASED,
+    HELD
+};
+
 class KeyboardManager {
 public:
-    enum class KeyState {
-        PRESSED,
-        RELEASED,
-        HELD
-    };
+    
 
     KeyboardManager();
     ~KeyboardManager();

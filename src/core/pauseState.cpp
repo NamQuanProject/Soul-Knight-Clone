@@ -4,7 +4,7 @@ void PauseState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     // Handle pause events (e.g., resume or quit)
 }
 
-void PauseState::update() {
+void PauseState::update(float deltaTime) {
     // Update pause logic
 }
 

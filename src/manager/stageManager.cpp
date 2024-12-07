@@ -2,6 +2,16 @@
 
 
 
+
+StageManager* StageManager::instance = nullptr;
+
+StageManager* StageManager::Instance() {
+    if (instance == nullptr) {
+        instance = new StageManager();
+    }
+    return instance;
+}
+
 StageManager::StageManager(): level(0), stage(5), success(false) {
 
 }
