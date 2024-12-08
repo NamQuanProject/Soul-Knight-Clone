@@ -21,3 +21,7 @@ void HealingPotion::Interactive(Player* player) {
     // player->Healing(2);
     // AddTag(Tag::REMOVE_ON_NEXT_FRAME);
 }
+
+void HealingPotion::Initialize() {
+    return;
+}

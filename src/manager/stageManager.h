@@ -19,7 +19,7 @@ public:
     Stage* GetStage();
     int GetStageNumber();
     int GetLevelNumber();
-    void Initiliaze();
+    void Initialize();
     void NextStage();
     void SetTransferGatePosition(Vec position);
     bool GetSuccess();

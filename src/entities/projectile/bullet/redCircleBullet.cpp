@@ -17,6 +17,10 @@ RedCircleBullet::RedCircleBullet() {
     AddTag(Tag::MONSTER_ATTACK);
 }
 
+void RedCircleBullet::Initialize() {
+
+}
+
 RedCircleBullet::~RedCircleBullet() {
     if (hitbox) {
         delete hitbox;

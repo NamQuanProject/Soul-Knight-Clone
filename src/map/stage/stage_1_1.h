@@ -5,9 +5,9 @@ class Stage_1_1 : public Stage {
 public:
     Stage_1_1();
     ~Stage_1_1();
-
-    void Update(float deltaTime);
-    void Render(sf::RenderWindow& window);
+    void Initialize() override;
+    void Update(float deltaTime) override;
+    void Render(sf::RenderWindow& window) override;
     void Collision(GameObject* gameObject);
 protected:
     void setBackground() override;
@@ -17,9 +17,4 @@ protected:
     void SetPlayerPosition() override;
     void SetTransferGate() override;
     void GenerateObstacle() override;
-
-    MonsterRoom* room1;
-
-
-
 };

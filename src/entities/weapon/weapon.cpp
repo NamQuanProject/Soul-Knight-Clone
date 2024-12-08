@@ -18,3 +18,9 @@ Vec Weapon::GetPosition() {
     return Vec(0.0, 0.0);
 }
 
+
+void Weapon::Initialize() {
+    return ;
+}
+
+

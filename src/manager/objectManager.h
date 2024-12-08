@@ -16,8 +16,11 @@ class ObjectManager {
 public:
     static ObjectManager* Instance();
     ObjectManager();
-    ~ObjectManager();
+    ~ObjectManager();  
 
+    void Initialize();
+
+    
     Player* GetPlayer();
     void AddObject(GameObject* object);
     void Update(float deltaTime);
@@ -29,15 +32,21 @@ public:
     void KeyDown(char key);
     void KeyUp(char key);
     void SetKButtonPress(bool isPress);
-    
+    void Clear();
 
+    PlayerType GetPlayerType();
+    void SetPlayerType(PlayerType playerType);
 
     void PushNewObjectsToList();
 private:
+    static ObjectManager* instance;
     int screenX = 0;
     int screenY = 0;
-    static ObjectManager* instance;
+    
+
+
     Player* player;
+    PlayerType playerType;
     vector<GameObject*> objects;
     vector<GameObject*> newObjects;
     void CollisionDetection();

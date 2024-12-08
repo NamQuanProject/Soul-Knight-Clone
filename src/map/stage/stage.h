@@ -12,9 +12,10 @@ class Stage {
 public:
     Stage();
     virtual ~Stage();
-
+    virtual void Update(float deltaTime) = 0;
     virtual void setBackground() = 0;
-    void Initialize();
+    virtual void Render(sf::RenderWindow& window) = 0;
+    virtual void Initialize();
     void Show(Point screenPositoin);
     void AddWall(Point point1, Point point2);
     void IsInsideRoom();
@@ -31,6 +32,9 @@ protected:
     virtual void SetPlayerPosition() = 0;
     virtual void SetTransferGate() = 0;
     virtual void GenerateObstacle() = 0;
+
+private:
+    
     // std::vector<MonsterRoom*> monsterRooms;
     // TreasureRoom* treasureRoom;
     

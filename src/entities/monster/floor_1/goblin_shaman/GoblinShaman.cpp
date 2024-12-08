@@ -11,6 +11,9 @@ void GoblinShaman::Update(float deltaTime) {
     animationManager.update(deltaTime); 
     AutoMation();
 }
+void GoblinShaman::Initialize() {
+    return ;
+}
 
 void GoblinShaman::LoadResources() {
      Animation rightStandAnimation;

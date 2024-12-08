@@ -8,6 +8,7 @@ public:
     GoblinGiant(double level = 1);
     ~GoblinGiant();
     void Start();
+    void Initialize() override;
     void Update(float deltaTime) override;
     void LoadResources();
     void AutoMation() override;

@@ -15,10 +15,15 @@ void Application::run() {
         processEvents();
 
         // Update deltaTime
-        deltaTime = clock.restart().asSeconds();
+        deltaTime = clock.getElapsedTime().asSeconds();
 
         update(deltaTime);
+
+        
         render();
+        if (deltaTime >= 0.1f) {
+            clock.restart();
+        }
     }
 }
 
@@ -35,6 +40,8 @@ void Application::processEvents() {
 
 void Application::update(float deltaTime) {
     // Delegate update logic to the current state
+
+
     currentState->update(deltaTime);
 }
 

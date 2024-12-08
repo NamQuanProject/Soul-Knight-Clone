@@ -37,8 +37,9 @@ void MonsterRoom::Update(float deltaTime) {
 }
 
 void MonsterRoom::Show(sf::RenderWindow& window) {
+    // std::cout << monsters.size() << std::endl;
     for (auto monster : monsters) {
-        monster->Render(window); // Render each monster on the provided window
+        monster->Render(window);
     }
 }
 
@@ -113,7 +114,7 @@ void MonsterRoom::SetMonsters() {
     }
     PlacedMonster();
     for (auto monster : monsters) {
-        std::cout << "YES" << std::endl;
+        std::cout << "MONSTER CREATE" << std::endl;
     }
 }
 

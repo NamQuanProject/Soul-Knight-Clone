@@ -7,6 +7,7 @@
 class Wall: public InvisibleObject{
 public:
     Wall(Point start, Point end);
+    void Initialize() override;
     void Draw(sf::RenderWindow& window);
     void Collision(GameObject* gameObject) override;
     bool CheckCollision(GameObject* gameObject);

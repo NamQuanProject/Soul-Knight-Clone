@@ -5,14 +5,31 @@
 Knight::Knight() : Player() {
     loadKnightAnimations();
     weapon1 = new BadPistol();
+    
     animationManager.setAnimation("idle_right"); 
     animationManager.setOrigin();
     sf::Vector2f position = animationManager.getCurrentSprite().getPosition();
     
     Point author = Point(position.x, position.y);
+    Vec weapon_pos = Vec(position.x, position.y);
     hitbox = new HitBox(author); 
     AddTag(Tag::PLAYER);
+    weapon1->SetPosition(weapon_pos);
+}
+
+void Knight::Initialize() {
+    loadKnightAnimations();
+    weapon1 = new BadPistol();
     
+    animationManager.setAnimation("idle_right"); 
+    animationManager.setOrigin();
+    sf::Vector2f position = animationManager.getCurrentSprite().getPosition();
+    
+    Point author = Point(position.x, position.y);
+    Vec weapon_pos = Vec(position.x, position.y);
+    hitbox = new HitBox(author); 
+    AddTag(Tag::PLAYER);
+    weapon1->SetPosition(weapon_pos);
 }
 
 Knight::~Knight() {

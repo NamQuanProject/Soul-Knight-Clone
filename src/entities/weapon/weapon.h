@@ -7,7 +7,7 @@ class Weapon : public GameObject {
 public:
     Weapon();
     virtual ~Weapon() = default;
-
+    void Initialize() override;
     virtual void Use() = 0;  
     virtual double GetDamage() = 0; 
     void SetOwner(GameObject* owner); 

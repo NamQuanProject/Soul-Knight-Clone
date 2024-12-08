@@ -28,6 +28,28 @@ Wall::Wall(Point start, Point end)
 }
 
 
+void Wall::Initialize() {
+    // // Set up the wall's rectangle shape
+    // float width = static_cast<float>(end.GetX() - start.GetX());
+    // float height = static_cast<float>(end.GetY() - start.GetY());
+
+    // wallShape.setSize(sf::Vector2f(width, height));
+    // wallShape.setPosition(static_cast<float>(start.GetX()), static_cast<float>(start.GetY()));
+    // wallShape.setFillColor(sf::Color::Green);
+    // // wallShape.setOutlineThickness(2);
+
+    // float hitboxCenterX = start.GetX() + width / 2;
+    // float hitboxCenterY = start.GetY() + height / 2;
+    
+    // hitbox.SetWidth(width);
+    // hitbox.SetHeight(height);
+    // hitbox.SetPosition(Point(hitboxCenterX, hitboxCenterY));
+
+
+
+    // AddTag(Tag::WALL);
+}
+
 
 bool Wall::CheckCollision(GameObject* gameObject) {
     if (!gameObject) return false;

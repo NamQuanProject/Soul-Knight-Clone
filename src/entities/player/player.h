@@ -20,14 +20,20 @@ public:
     void Collision(GameObject* gameObject) override;
     void setSpeed(Vec newSpeed);
 
+
+    
+
+
     enum Face { RIGHT, LEFT } face;
     enum State { IDLE, RUN, DEAD, READY } state;
     State CheckState();
     Face CheckFace();
 protected:
-    
-    double hp;
-    double maxHp;       
+    int hp;
+    int maxHp;
+    int shield;
+    int maxShield;
+    int mana;
     Vec speed;
     AnimationManager animationManager;
     double weaponOffsetX;

@@ -5,6 +5,7 @@ class RedCircleBullet : public Bullet {
 public:
     RedCircleBullet();
     ~RedCircleBullet();
+    void Initialize() override;
     void Update(float deltaTime) override;  
     void LoadResources() override;    
     void SetSpeed(const sf::Vector2f& newSpeed) override; 

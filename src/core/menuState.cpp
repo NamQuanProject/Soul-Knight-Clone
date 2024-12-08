@@ -6,7 +6,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-// Create a static instance of SoundManager
 static SoundManager soundManager;
 
 MenuState::MenuState() {
@@ -47,9 +46,9 @@ MenuState::MenuState() {
     exitButton.setTexture(&exitButtonTexture); // Apply the texture
     exitButton.setPosition(300, 700); // Position the button
     
-    Knight knight;
-    Vec player_pos = Vec(100.0, 200.0);
-    knight.SetPosition(player_pos);
+    // Knight knight;
+    // Vec player_pos = Vec(100.0, 200.0);
+    // knight.SetPosition(player_pos);
 }
 
 MenuState::~MenuState() {
@@ -81,4 +80,9 @@ void MenuState::render(sf::RenderWindow& window) {
     window.draw(playButton);
     window.draw(exitButton);
 
+}
+
+
+void MenuState::Initialize() {
+    return;
 }

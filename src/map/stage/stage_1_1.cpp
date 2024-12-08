@@ -5,21 +5,26 @@
 #include "../room/monsterRoom.h"
 
 Stage_1_1::Stage_1_1() {
-    setBackground();
-    AddWallsToMap();
+    // setBackground();
+    // AddWallsToMap();
+    // SetPlayerPosition();
+    // MonsterRoom* room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 1, 1, 1);
+    // monsterRooms.push_back(room1);
 
-
-    room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 2, 1, 1);
     
-
-    monsterRooms.push_back(room1);
-    // monsterRooms.push_back(room2);
-    // monsterRooms.push_back(room4);
+    
 
 
 }
 
+void Stage_1_1::Initialize() {
+    setBackground();
+    AddWallsToMap();
+    SetPlayerPosition();
+    MonsterRoom* room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 1, 1, 1);
+    monsterRooms.push_back(room1);
 
+}
 
 Stage_1_1::~Stage_1_1() {
     
@@ -73,7 +78,10 @@ void Stage_1_1::AddWallsToMap() {
 }
 
 void Stage_1_1::Update(float deltaTime) {
-    room1->Update(deltaTime);
+    for (auto room : monsterRooms) {
+        room->Update(deltaTime);
+    }
+    
 }
 
 
@@ -97,26 +105,29 @@ void Stage_1_1::setBackground() {
 }
 
 void Stage_1_1::Render(sf::RenderWindow& window) {
-
+    window.draw(backgroundSprite);
     for (Wall* wall : walls) {
         wall->Draw(window); 
     }
-    room1->Show(window);
-
+    for (auto room : monsterRooms) {
+        room->Show(window);
+    }
+    
+    
 }
 
 
 void Stage_1_1::Collision(GameObject* gameObject) {
     for (Wall* wall : walls) {
-        wall->Collision(gameObject);  // Check if the player collides with each wall
+        wall->Collision(gameObject);
     }
-    
 }
 
 
+
 void Stage_1_1::SetPlayerPosition() {
-    Vec temp = Vec(345, 300);
-    ObjectManager::Instance()->SetPlayerPosition(temp);
+    Vec knightPosition(105, 183);
+    ObjectManager::Instance()->SetPlayerPosition(knightPosition);
 }
 
 

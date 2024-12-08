@@ -33,12 +33,12 @@ Stage::~Stage() {
 //     return background;
 // }
 
-// void Stage::Initialize() {
-//     GenerateWall();
-//     SetPlayerPosition();
-//     SetTransferGate();
-//     GenerateObstacle();
-// }
+void Stage::Initialize() {
+    // GenerateWall();
+    // SetPlayerPosition();
+    // SetTransferGate();
+    // GenerateObstacle();
+}
 
 // void Stage::Show(Point screenPositoin) {
 //     // background.SetTopLeft(static_cast<int>(-screenPositoin.GetX() - static_cast<double>(background.GetWidth()) / 2),
@@ -49,6 +49,7 @@ Stage::~Stage() {
 void Stage::AddWall(Point point1, Point point2) {
     Wall* wall = new Wall(point1, point2);
     walls.push_back(wall);
+    std::cout << "Wall Add YES" << std::endl;
     ObjectManager::Instance()->AddObject(wall);
 }
 

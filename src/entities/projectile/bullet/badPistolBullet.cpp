@@ -80,3 +80,6 @@ sf::Vector2f BadPistolBullet::GetPosition() {
     return position;
 }
 
+void BadPistolBullet::Initialize() {
+    return ;
+}

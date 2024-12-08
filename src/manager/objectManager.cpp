@@ -16,6 +16,11 @@ ObjectManager* ObjectManager::Instance() {
 
 
 
+
+
+
+
+
 ObjectManager::ObjectManager() : screenX(0), screenY(0), player(nullptr) {}
 
 ObjectManager::~ObjectManager() {
@@ -26,11 +31,23 @@ ObjectManager::~ObjectManager() {
 }
 
 
+void ObjectManager::Initialize() {
+    this->player = new Knight();
+
+    
+    this->objects.emplace_back(this->player);
+
+
+
+    std::cout << "PLAYER CREATE" << std::endl;
+}
+
+
 void ObjectManager::Update(float deltaTime) {
     for (auto object : objects) {
         object->Update(deltaTime);
     }
-    CollisionDetection();
+    // CollisionDetection();
 }
 
 Player* ObjectManager::GetPlayer() {
@@ -39,8 +56,10 @@ Player* ObjectManager::GetPlayer() {
 
 
 void ObjectManager::Render(sf::RenderWindow& window) {
-    // Sort objects by Y-coordinate for proper rendering order
     for (auto object : objects) {
+        if (object->HasTag(Tag::MONSTER)) {
+            std::cout << "THERE IS MONSTER" << std::endl;
+        }
         object->Render(window);
     }
 }
@@ -65,13 +84,7 @@ void ObjectManager::DeleteObsoleteElements() {
     for (vector<GameObject*>::iterator object = objects.begin(); object != objects.end();) {
         if ((*object)->HasTag(Tag::REMOVE_ON_NEXT_FRAME)) {
             (*object)->RemoveTag(Tag::REMOVE_ON_NEXT_FRAME);
-            // (*object)->OnRemove();
-            // if ((*object)->HasTag(Tag::PROJECTILE)) {
-            //     ProjectilePool::Instance()->Release(dynamic_cast<Projectile*>(*object));
-            // // }
-            // if ((*object)->HasTag(Tag::MONSTER)) {
-            //     MonsterPool::Instance()->Release(dynamic_cast<Monster*>(*object));
-            // }
+
             
             delete *object;
             *object = nullptr;
@@ -83,6 +96,14 @@ void ObjectManager::DeleteObsoleteElements() {
 }
 
 
+void ObjectManager::Clear() {
+    for (auto object : objects) {
+        if (object->HasTag(Tag::PLAYER) || object->HasTag(Tag::TRANSFER_GATE)) {
+            continue;
+        }
+        object->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+    }
+}
 
 
 

@@ -20,3 +20,7 @@ void BigMpPotion::Interactive(Player* player) {
     // player->RecoverMP(150);
     // AddTag(Tag::REMOVE_ON_NEXT_FRAME);
 }
+
+void BigMpPotion::Initialize() {
+    return ;
+}

@@ -33,7 +33,6 @@ void MonsterPool::Initialize() {
         std::vector<Monster*> monsters;
         for (int j = 0; j < PREALLOCATIONS; j++) {
             Monster *monster = MonsterFactory::Create(static_cast<MonsterType>(i));
-            // monster->Start();
             monsters.push_back(monster);
         }
         pool.push_back(monsters);

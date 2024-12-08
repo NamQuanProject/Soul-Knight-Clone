@@ -10,7 +10,7 @@ class GameObject {
 public:
     GameObject();
     virtual ~GameObject() = default;
-
+    virtual void Initialize() = 0;
     virtual void Update(float deltaTime) = 0;
     virtual void Collision(GameObject* gameObject);
     virtual void Render(sf::RenderWindow& window) = 0;

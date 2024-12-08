@@ -19,6 +19,9 @@ void BadPistol::setOffset(double x, double y) {
     offset = sf::Vector2f(static_cast<float>(x), static_cast<float>(y));
 }
 
+void BadPistol::Initialize() {
+    return ;
+}
 void BadPistol::Render(sf::RenderWindow& window) {
 
     window.draw(pistolSprite);

@@ -12,7 +12,8 @@
 class Knight : public Player {
 public:
     Knight();  
-    ~Knight();                  // Constructor
+    ~Knight();     
+    void Initialize() override;             // Constructor
     void Update(float deltaTime) override;  // Update method
     void Render(sf::RenderWindow& window) override;  // Render method
     void runRight();            

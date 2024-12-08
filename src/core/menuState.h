@@ -14,6 +14,7 @@ public:
     void handleEvent(const sf::Event& event, sf::RenderWindow& window) override;
     void update(float deltaTime) override;
     void render(sf::RenderWindow& window) override;
+    void Initialize() override;
 
 private:
     sf::Font font;

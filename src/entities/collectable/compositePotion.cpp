@@ -21,3 +21,7 @@ void CompositePotion::Interactive(Player* player) {
     // player->RecoverMP(40);
     // AddTag(Tag::REMOVE_ON_NEXT_FRAME);
 }
+
+void CompositePotion::Initialize() {
+    return;
+}

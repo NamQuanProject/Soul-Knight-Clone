@@ -2,7 +2,19 @@
 #include <iostream>
 
 GoblinGiant::GoblinGiant(double level)
-    : Monster(level, false) { // Passes level and isMeleeAttackMonster = false to the base class
+    : Monster(level, false) {
+    LoadResources();
+    animationManager.setAnimation("idle_right");  // Default animation
+    animationManager.setOrigin();
+    sf::Vector2f position = animationManager.getCurrentSprite().getPosition();
+    
+    Point author = Point(position.x, position.y);
+    
+    hitbox = new HitBox(author); 
+    AddTag(Tag::MONSTER);
+}
+
+void GoblinGiant::Initialize() {
     LoadResources();
     animationManager.setAnimation("idle_right");  // Default animation
     animationManager.setOrigin();
@@ -156,7 +168,7 @@ void GoblinGiant::Render(sf::RenderWindow& window) {
 
 
     if (hitbox) {
-        hitbox->Render(window); // Render the hitbox
+        hitbox->Render(window);
     }
     
 }

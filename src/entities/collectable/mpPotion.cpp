@@ -21,3 +21,7 @@ void MpPotion::Interactive(Player* player) {
     // player->RecoverMP(80);
     // AddTag(Tag::REMOVE_ON_NEXT_FRAME);
 }
+
+void MpPotion::Initialize() {
+    return;
+}

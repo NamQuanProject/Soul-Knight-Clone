@@ -6,6 +6,7 @@
 class GoblinShaman : public Monster {
 public:
     GoblinShaman(double level = 1);
+    void Initialize() override;
     void Update(float deltaTime) override;
     void LoadResources();
     void AutoMation() override;

@@ -11,3 +11,7 @@ void PauseState::update(float deltaTime) {
 void PauseState::render(sf::RenderWindow& window) {
     // Render pause menu elements
 }
+
+void PauseState::Initialize() {
+    return;
+}
