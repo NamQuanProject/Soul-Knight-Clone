@@ -109,9 +109,9 @@ void Stage_1_1::Render(sf::RenderWindow& window) {
     for (Wall* wall : walls) {
         wall->Draw(window); 
     }
-    for (auto room : monsterRooms) {
-        room->Show(window);
-    }
+    // for (auto room : monsterRooms) {
+    //     room->Show(window);
+    // }
     
     
 }

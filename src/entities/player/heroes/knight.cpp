@@ -15,6 +15,15 @@ Knight::Knight() : Player() {
     hitbox = new HitBox(author); 
     AddTag(Tag::PLAYER);
     weapon1->SetPosition(weapon_pos);
+    
+
+
+    maxHp = 7;
+    hp = maxHp;
+    maxMp = 200;
+    mp = maxMp;
+    maxShild = 6;
+    shield = maxShild;
 }
 
 void Knight::Initialize() {

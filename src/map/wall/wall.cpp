@@ -4,8 +4,7 @@
 
 
 
-Wall::Wall(Point start, Point end)
-    : hitbox(start) {  // Initialize hitbox with the start point
+Wall::Wall(Point start, Point end) {  // Initialize hitbox with the start point
     // Set up the wall's rectangle shape
     float width = static_cast<float>(end.GetX() - start.GetX());
     float height = static_cast<float>(end.GetY() - start.GetY());
@@ -15,16 +14,26 @@ Wall::Wall(Point start, Point end)
     wallShape.setFillColor(sf::Color::Green);
     wallShape.setOutlineThickness(2);
 
+
     float hitboxCenterX = start.GetX() + width / 2;
     float hitboxCenterY = start.GetY() + height / 2;
-    
-    hitbox.SetWidth(width);
-    hitbox.SetHeight(height);
-    hitbox.SetPosition(Point(hitboxCenterX, hitboxCenterY));
+
+
+    Point authorPoint = Point(hitboxCenterX, hitboxCenterY);
+    hitbox = new HitBox(authorPoint);
+    hitbox->SetWidth(width);
+    hitbox->SetHeight(height);
 
 
 
     AddTag(Tag::WALL);
+}
+
+Wall::~Wall() {
+    if (hitbox) {
+        delete hitbox;
+    }
+    
 }
 
 
@@ -57,16 +66,15 @@ bool Wall::CheckCollision(GameObject* gameObject) {
     HitBox* objectHitbox = gameObject->GetHitBox();
     if (!objectHitbox) return false;
     
-    return hitbox.IsCollision(objectHitbox);
+    return hitbox->IsCollision(objectHitbox);
 }
 
-// Collision handling (Just turn the wall red)
 void Wall::Collision(GameObject* gameObject) {
-    if (CheckCollision(gameObject)) {
+    if (gameObject->HasTag(Tag::PLAYER)) {
         gameObject->Collision(this);
         wallShape.setFillColor(sf::Color::Red);
     } else {
-        wallShape.setFillColor(sf::Color::Green);
+        std::cout << "NO COLLISION" << std::endl;
     }
 }
 

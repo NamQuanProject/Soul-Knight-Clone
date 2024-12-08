@@ -9,7 +9,7 @@ void Player::Update(float deltaTime) {
 }
 
 void Player::Collision(GameObject* gameObject) {
-    
+    std::cout << "CoLLISON" << std::endl;
 }
 
 void Player::setSpeed(Vec newSpeed) {

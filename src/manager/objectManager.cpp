@@ -34,7 +34,7 @@ ObjectManager::~ObjectManager() {
 void ObjectManager::Initialize() {
     this->player = new Knight();
 
-    
+
     this->objects.emplace_back(this->player);
 
 
@@ -47,7 +47,7 @@ void ObjectManager::Update(float deltaTime) {
     for (auto object : objects) {
         object->Update(deltaTime);
     }
-    // CollisionDetection();
+    CollisionDetection();
 }
 
 Player* ObjectManager::GetPlayer() {
@@ -57,9 +57,6 @@ Player* ObjectManager::GetPlayer() {
 
 void ObjectManager::Render(sf::RenderWindow& window) {
     for (auto object : objects) {
-        if (object->HasTag(Tag::MONSTER)) {
-            std::cout << "THERE IS MONSTER" << std::endl;
-        }
         object->Render(window);
     }
 }
@@ -71,8 +68,9 @@ void ObjectManager::SetPlayerPosition(Vec& position) {
 }
 
 void ObjectManager::CollisionDetection() {
-    for (size_t i = 0; i < objects.size(); i++) {
-        for (size_t j = i + 1; j < objects.size(); j++) {
+    
+    for (int i = 0; i < objects.size(); i++) {
+        for (int j = i + 1; j < objects.size(); j++) {
             if (objects[i]->GetHitBox()->IsCollision(objects[j]->GetHitBox())) {
                 objects[i]->Collision(objects[j]);
                 objects[j]->Collision(objects[i]);

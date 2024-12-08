@@ -114,7 +114,7 @@ void MonsterRoom::SetMonsters() {
     }
     PlacedMonster();
     for (auto monster : monsters) {
-        std::cout << "MONSTER CREATE" << std::endl;
+        ObjectManager::Instance()->AddObject(monster);
     }
 }
 

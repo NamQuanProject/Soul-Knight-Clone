@@ -6,7 +6,7 @@
 
 Application::Application()
     : window(sf::VideoMode(1024, 1024), "Soul Knight"), 
-      currentState(std::make_unique<GameState>()), // Initialize with MenuState
+      currentState(std::make_unique<GameState>()),
       deltaTime(0.0f) { // Initialize deltaTime
 }
 
