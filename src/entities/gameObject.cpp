@@ -44,3 +44,7 @@ bool GameObject::HasTag(Tag tag) {
     return tags[static_cast<int>(tag)];
 }
 
+
+// void GameObject::Debug() const {
+//     std::cout << "Position: (" << position.x << ", " << position.y << "), Active: " << active << "\n";
+// }

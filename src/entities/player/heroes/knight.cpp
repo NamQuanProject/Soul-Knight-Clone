@@ -15,15 +15,14 @@ Knight::Knight() : Player() {
     hitbox = new HitBox(author); 
     AddTag(Tag::PLAYER);
     weapon1->SetPosition(weapon_pos);
-    
 
 
     maxHp = 7;
     hp = maxHp;
-    maxMp = 200;
-    mp = maxMp;
-    maxShild = 6;
-    shield = maxShild;
+    maxMana = 200;
+    mana = maxHp;
+    maxShield = 6;
+    shield = maxShield;
 }
 
 void Knight::Initialize() {
@@ -55,9 +54,12 @@ Knight::~Knight() {
 
 // Update the knight animation
 void Knight::Update(float deltaTime) {
-    animationManager.update(deltaTime); 
+   
+    Vec currentPos = GetPosition();
+    Vec new_pos = currentPos + speed;
+    SetPosition(new_pos);
 
-    
+    animationManager.update(deltaTime); 
     if (face == Knight::RIGHT) {
         // weapon1->setRight();
         weapon1->setOffset(5 , 2);
@@ -126,6 +128,7 @@ void Knight::loadKnightAnimations() {
 
 // Render the knight (called every frame)
 void Knight::Render(sf::RenderWindow& window) {
+    
     sf::Sprite sprite = animationManager.getCurrentSprite();
     
 
@@ -133,9 +136,14 @@ void Knight::Render(sf::RenderWindow& window) {
 
     window.draw(sprite);
 
-    if (hitbox) {
-        hitbox->Render(window); // Render the hitbox
-    }
+    // if (hitbox) {
+    //     hitbox->Render(window); // Render the hitbox
+    // }
+}
+
+
+void Knight::Attack() {
+    weapon1->Attack();
 }
 
 
@@ -160,7 +168,7 @@ void Knight::standLeft() {
 }
 
 void Knight::Collision(GameObject* gameObject) {
-    if (gameObject->HasTag(Tag::WALL)) {
+    if (gameObject->HasTag(Tag::WALL) ||gameObject->HasTag(Tag::MONSTER) ) {
         Vec current = GetPosition();
         current = current - speed;
 

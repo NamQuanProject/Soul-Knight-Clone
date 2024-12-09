@@ -10,11 +10,12 @@ public:
     void Initialize() override;
     virtual void Use() = 0;  
     virtual double GetDamage() = 0; 
+    virtual void Attack() = 0;
     void SetOwner(GameObject* owner); 
     virtual Vec GetPosition();
     virtual void setPlayerPosition(sf::Vector2f position) = 0;
     virtual void setOffset(double x , double y) = 0 ;
-
+    
 protected:
     double damage;              
     double range;               

@@ -19,6 +19,21 @@ void BadPistol::setOffset(double x, double y) {
     offset = sf::Vector2f(static_cast<float>(x), static_cast<float>(y));
 }
 
+void BadPistol::Attack() {
+    std::cout << "Attack" << std::endl;
+    Bullet* bullet = static_cast<BadPistolBullet*>((ProjectilePool::Instance()->Acquire(
+        ProjectileType::BAD_PISTOL_BULLET)));
+    
+    bullet->SetSpeed(Vec(270, 0));
+    
+    bullet->SetDamage(this->GetDamage());
+    // UpdateTag(bullet);
+    ObjectManager::Instance()->AddObject(bullet);
+
+}
+
+
+
 void BadPistol::Initialize() {
     return ;
 }

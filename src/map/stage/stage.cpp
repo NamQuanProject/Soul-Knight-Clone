@@ -63,4 +63,5 @@ void Stage::IsRoomCleared() {
     for (auto room : monsterRooms) {
         room->IsCleared();
     }
+
 }

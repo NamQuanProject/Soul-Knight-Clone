@@ -17,7 +17,7 @@ MonsterRoom::MonsterRoom(Point leftTop, Point rightBot, int size, int level, std
 MonsterRoom::MonsterRoom(Point leftTop, Point rightBot, int size, int level, int stage, bool isBossRoom):
     Room(leftTop, rightBot, size), level(level), isBossRoom(isBossRoom) {
     GenerateMonsterMapRandomly(stage);
-    SetMonsters();
+    // SetMonsters();
 }
 
 
@@ -53,7 +53,7 @@ void MonsterRoom::IsInside() {
         playerY >= leftTop.GetY() && playerY <= rightBot.GetY()) {
         
         isInside = true;
-        RelocatePlayerToCenter(); 
+        // RelocatePlayerToCenter(); 
         SetDoors();   
         SetMonsters();               
     }
@@ -68,6 +68,7 @@ void MonsterRoom::IsCleared() {
             return;
         }
     }
+    std::cout << "CLEAR NOW" << std::endl;
 
     isCleared = true;
 

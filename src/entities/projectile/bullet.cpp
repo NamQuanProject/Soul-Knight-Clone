@@ -18,7 +18,7 @@ void Bullet::Update(float deltaTime) {
 void Bullet::Collision(GameObject* gameObject) {
     if ((gameObject->HasTag(Tag::PLAYER) && this->HasTag(Tag::MONSTER_ATTACK)) ||
         (gameObject->HasTag(Tag::MONSTER) && !gameObject->HasTag(Tag::DEAD) && this->HasTag(Tag::PLAYER_ATTACK)) ||
-        gameObject->HasTag(Tag::OBSTACLE)) {
+        gameObject->HasTag(Tag::WALL)) {
         this->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
     }
 }

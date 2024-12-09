@@ -44,6 +44,13 @@ void ObjectManager::Initialize() {
 
 
 void ObjectManager::Update(float deltaTime) {
+    DeleteObsoleteElements();
+    if (KButtonPressed) {
+        player->Attack();
+    }
+
+
+
     for (auto object : objects) {
         object->Update(deltaTime);
     }
@@ -215,8 +222,8 @@ void ObjectManager::KeyDown(char key) {
 }
 
 void ObjectManager::SetKButtonPress(bool isPress) {
-    // if (player->GetHP() <= 0) {
-    //     return;
-    // }
-    // LButtonPressed = isPress;
+    if (player->GetHP() <= 0) {
+        return;
+    }
+    KButtonPressed = isPress;
 }

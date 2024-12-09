@@ -977,6 +977,15 @@ CMakeFiles/soulknight.dir/src/core/gameState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../../utils/point.h \
@@ -1061,6 +1070,4 @@ CMakeFiles/soulknight.dir/src/core/gameState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../manager/objectManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/keyboardManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/monsterPool.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/projectilePool.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../pool/../entities/projectile/projectileType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../pool/../entities/projectile/projectile.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/projectilePool.h

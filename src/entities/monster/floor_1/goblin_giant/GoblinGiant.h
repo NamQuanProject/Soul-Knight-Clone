@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include "../../monster.h"
 #include "../../../../manager/animationManager.h"
+#include "../../../../manager/objectManager.h"
 #include "../../../../utils/vec.h"
 
 class GoblinGiant : public Monster {
@@ -18,5 +19,5 @@ public:
 
 private:
     AnimationManager animationManager;
-
+    bool collideOnObstacle = false;
 };

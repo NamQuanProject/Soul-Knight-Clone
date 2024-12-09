@@ -16,12 +16,13 @@ public:
     void Initialize() override;             // Constructor
     void Update(float deltaTime) override;  // Update method
     void Render(sf::RenderWindow& window) override;  // Render method
-    void runRight();            
-    void runLeft();             
-    void standRight();           
-    void standLeft();     
+    void runRight() override;            
+    void runLeft() override;              
+    void standRight() override;           
+    void standLeft() override;     
     void SetPosition(Vec& position) override;      
     void Collision(GameObject* gameObject) override;
+    void Attack() override;
     void SetBeforePosition(Vec before);
 private:
     void loadKnightAnimations();       // Load knight-specific animations

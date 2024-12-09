@@ -19,8 +19,17 @@ public:
     void Poisoned(double poisonDamage);
     void Collision(GameObject* gameObject) override;
     void setSpeed(Vec newSpeed);
+    void setSpeedX(double x);
+    void setSpeedY(double y);
+    Vec getSpeed();
 
 
+    virtual void runLeft() = 0;
+    virtual void runRight() = 0;
+    virtual void standLeft() = 0;
+    virtual void standRight() = 0;
+
+    
     
 
 
@@ -31,9 +40,11 @@ public:
 protected:
     int hp;
     int maxHp;
+    int mana;
+    int maxMana;
     int shield;
     int maxShield;
-    int mana;
+    
     Vec speed;
     AnimationManager animationManager;
     double weaponOffsetX;

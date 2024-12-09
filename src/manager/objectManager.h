@@ -43,6 +43,8 @@ private:
     int screenX = 0;
     int screenY = 0;
     
+    bool KButtonPressed;
+    
 
 
     Player* player;

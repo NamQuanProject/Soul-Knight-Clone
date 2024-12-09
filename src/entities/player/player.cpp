@@ -2,20 +2,32 @@
 #include <iostream>
 
 Player::Player()
-    : hp(100), maxHp(100), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE) {
+    : hp(100), maxHp(100), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE), speed(Vec(0.0, 0.0)) {
 }
 void Player::Update(float deltaTime) {
     CheckState();
 }
 
 void Player::Collision(GameObject* gameObject) {
-    std::cout << "CoLLISON" << std::endl;
+    // std::cout << "CoLLISON" << std::endl;
 }
 
 void Player::setSpeed(Vec newSpeed) {
     speed = newSpeed;
 }
 
+Vec Player::getSpeed() {
+    return speed;
+}
+
+void Player::setSpeedX(double x) {
+    speed.SetX(x); // Set only the x-component of the velocity
+}
+
+
+void Player::setSpeedY(double y) {
+    speed.SetY(y);
+}
 
 void Player::Render(sf::RenderWindow& window) {
     
@@ -31,7 +43,7 @@ double Player::GetMaxHP() const {
 }
 
 void Player::Attack() {
-
+    
 }
 
 void Player::Poisoned(double poisonDamage) {

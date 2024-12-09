@@ -6,41 +6,45 @@
 
 BadPistolBullet::BadPistolBullet() {
     SetProjectileType(ProjectileType::BAD_PISTOL_BULLET); // Assign projectile type
-    position = sf::Vector2f(0.f, 0.f); // Initialize position
-    speed = sf::Vector2f(0.f, 0.f);   // Initialize speed
-    LoadResources();
+    position = ObjectManager::Instance()->GetPlayer()->GetPosition(); // Initialize position
+    speed = Vec(0.0, 0.0);     // Initialize speed
+    LoadResources();       // Load resources for the bullet
 
-    Point author = Point(0.0, 0.0);
-    hitbox = new HitBox(author);
+    // Initialize hitbox
+    Point author_pos = Point(position.GetX(), position.GetY());
+    hitbox = new HitBox(author_pos);
     if (bulletTexture.getSize().x > 0 && bulletTexture.getSize().y > 0) {
         hitbox->SetWidth(bulletTexture.getSize().x);
         hitbox->SetHeight(bulletTexture.getSize().y);
     }
 
-    AddTag(Tag::PLAYER_ATTACK);
+    AddTag(Tag::PLAYER_ATTACK); // Tag the bullet for gameplay logic
+}
 
+void BadPistolBullet::Initialize() {
+    return ;
 }
 
 BadPistolBullet::~BadPistolBullet() {
     if (hitbox) {
         delete hitbox;
+        hitbox = nullptr;
     }
 }
 
 void BadPistolBullet::Update(float deltaTime) {
     // Update position
-    sf::Vector2f movement = speed * deltaTime; // Scale speed with deltaTime
-    position += movement;                      // Update position
-    bulletSprite.setPosition(position);   
+    sf::Vector2f movement(speed.GetX() * deltaTime * 0.01, speed.GetY() * deltaTime * 0.01);
+    Vec temp = Vec(movement.x, movement.y);
+    position = position + temp;
+    bulletSprite.setPosition(position.GetX(), position.GetY());
 
 
-    Point point = Point(position.x, position.y);
+    Point point = Point(position.GetX(), position.GetY());
     hitbox->SetPosition(point);
-    
 
-    // Set rotation based on direction of movement
-    if (speed.x != 0.f || speed.y != 0.f) {
-        float angle = std::atan2(speed.y, speed.x) * 180.f / 3.14159f; 
+    if (speed.GetX() != 0.f || speed.GetY() != 0.f) {
+        float angle = std::atan2(speed.GetY(), speed.GetX()) * 180.f / 3.14159f;
         bulletSprite.setRotation(angle);
     }
 }
@@ -49,6 +53,7 @@ void BadPistolBullet::LoadResources() {
     sf::Image image;
     if (!image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/bullet/bad_bullet/template/bad_bullet.bmp")) {
         std::cerr << "Error: Could not load bullet image!" << std::endl;
+        return;
     }
 
     bulletTexture.loadFromImage(image);
@@ -60,26 +65,29 @@ void BadPistolBullet::Render(sf::RenderWindow& window) {
     // Render the bullet sprite
     window.draw(bulletSprite);
 
-    // Render the hitbox for debugging (if needed)
-    // if (hitbox) {
-    //     hitbox->Render(window);
-    // }
+    // Optional: Render the hitbox for debugging
+    if (hitbox) {
+        hitbox->Render(window);
+    }
 }
 
-void BadPistolBullet::SetPosition(const sf::Vector2f& pos) {
-    position = pos;
-    bulletSprite.setPosition(position);
-    hitbox->SetPosition(Point(position.x, position.y)); 
-}
-
-void BadPistolBullet::SetSpeed(const sf::Vector2f& newSpeed) {
-    speed = newSpeed;
+void BadPistolBullet::SetPosition(Vec& pos) {
+    position.SetX(pos.GetX());
+    position.SetY(pos.GetY());
+    sf::Vector2f bullet_pos(pos.GetX(), pos.GetY());
+    bulletSprite.setPosition(bullet_pos);
+    hitbox->SetPosition(Point(pos.GetX(), pos.GetY())); 
 }
 
 sf::Vector2f BadPistolBullet::GetPosition() {
-    return position;
+    return sf::Vector2f(position.GetX(), position.GetY());
 }
 
-void BadPistolBullet::Initialize() {
-    return ;
+void BadPistolBullet::SetSpeed(Vec newSpeed) {
+    speed = newSpeed;
+}
+
+void BadPistolBullet::Attack() {
+    // Implementation for the attack mechanism
+    // Define how the bullet behaves when "fired" or interacts with other objects
 }

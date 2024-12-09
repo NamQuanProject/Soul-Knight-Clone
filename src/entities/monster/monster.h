@@ -47,6 +47,6 @@ private:
     bool isInitializeWeapon;
     bool isOnDeadTrigger;
     
-    // Player reference
+
     GameObject* player;
 };

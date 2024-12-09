@@ -70,11 +70,11 @@ bool Wall::CheckCollision(GameObject* gameObject) {
 }
 
 void Wall::Collision(GameObject* gameObject) {
-    if (gameObject->HasTag(Tag::PLAYER)) {
+    if (gameObject->HasTag(Tag::PLAYER) || gameObject->HasTag(Tag::MONSTER) || gameObject->HasTag(Tag::PROJECTILE)) {
         gameObject->Collision(this);
         wallShape.setFillColor(sf::Color::Red);
     } else {
-        std::cout << "NO COLLISION" << std::endl;
+        // wallShape.setFillColor(sf::Color::Green);
     }
 }
 

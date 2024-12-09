@@ -15,6 +15,8 @@ void RangeWeapon::Use() {
 }
 
 
+
+
 int RangeWeapon::GetAmmo() {
     return ammo;
 }

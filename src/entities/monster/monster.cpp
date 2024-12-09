@@ -21,8 +21,9 @@ void Monster::Update(float deltaTime) {
 }
 
 void Monster::Collision(GameObject* gameObject) {
-    std::cout << "Monster collided with another object!" << std::endl;
-    SetActive(false);
+    if (gameObject->HasTag(Tag::PLAYER_ATTACK)) {
+        AddTag(Tag::DEAD);
+    }
 }
 
 void Monster::Render(sf::RenderWindow& window) {

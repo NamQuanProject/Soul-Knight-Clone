@@ -96,65 +96,52 @@ void GoblinGiant::LoadResources() {
 
 
 void GoblinGiant::AutoMation() {
-    // static sf::Vector2f targetPosition;  // Current target position
-    // static bool hasTarget = false;       // Whether a target is set
-    // static float speed = 2.f;            // Reduced movement speed in pixels per second
-    // static float tolerance = 5.f;        // Tolerance to consider the target reached
+    // Get the player's position
+    Vec playerPos = ObjectManager::Instance()->GetPlayer()->GetPosition();
 
-    // // Initialize random seed (one-time setup)
-    // static bool seeded = false;
-    // if (!seeded) {
-    //     std::srand(static_cast<unsigned>(std::time(nullptr)));
-    //     seeded = true;
-    // }
+    // Get the Goblin Giant's current position
+    Vec goblinPos = Vec(animationManager.getCurrentSprite().getPosition().x, 
+                        animationManager.getCurrentSprite().getPosition().y);
 
-    // // Define movement boundaries
-    // float minX = 0.f, maxX = 1024.f;  
-    // float minY = 0.f, maxY = 1024.f; 
+    // Calculate the direction vector from Goblin to Player
+    Vec direction = playerPos - goblinPos;
 
-    // sf::Vector2f currentPosition = animationManager.getCurrentSprite().getPosition();
+    // Calculate the distance between the Goblin and the Player
+    double distance = std::sqrt(direction.GetX() * direction.GetX() + 
+                                direction.GetY() * direction.GetY());
 
-    // // Check if the sprite hits a wall and reverse direction
-    // if (currentPosition.x <= minX || currentPosition.x >= maxX) {
-    //     targetPosition.x = currentPosition.x <= minX ? maxX : minX;  // Reverse direction
-    //     hasTarget = true;
-    //     animationManager.setAnimation(currentPosition.x <= minX ? "run_right" : "run_left");
-    // }
-    // if (currentPosition.y <= minY || currentPosition.y >= maxY) {
-    //     targetPosition.y = currentPosition.y <= minY ? maxY : minY;  // Reverse direction
-    //     hasTarget = true;
-    // }
+    // Check if the distance is greater than zero to avoid division by zero
+    if (distance > 0) {
+        // Normalize the direction vector manually by dividing each component by the distance
+        direction.SetX(direction.GetX() / distance);
+        direction.SetY(direction.GetY() / distance);
+    }
 
-    // // If no target or target reached, set a new random target
-    // if (!hasTarget || 
-    //     std::abs(currentPosition.x - targetPosition.x) < tolerance &&
-    //     std::abs(currentPosition.y - targetPosition.y) < tolerance) {
+    // Define the attack range and movement speed
+    double attackRange = 50.0;
+    double speed = 0.0015;
 
-    //     // Generate new target within bounds
-    //     targetPosition.x = minX + static_cast<float>(std::rand() % static_cast<int>(maxX - minX + 1));
-    //     targetPosition.y = minY + static_cast<float>(std::rand() % static_cast<int>(maxY - minY + 1));
-    //     hasTarget = true;
 
-    //     // Change animation based on target direction
-    //     if (targetPosition.x > currentPosition.x) {
-    //         animationManager.setAnimation("run_right");
-    //     } else {
-    //         animationManager.setAnimation("run_left");
-    //     }
-    // }
+    if (distance > attackRange) {
+        Vec movement = direction * speed;  
+        goblinPos = goblinPos + movement;             
+        SetPosition(goblinPos);           
 
-    // // Move towards the target
-    // sf::Vector2f direction = targetPosition - currentPosition;
-    // float length = std::sqrt(direction.x * direction.x + direction.y * direction.y);
-
-    // if (length > 0.f) {
-    //     sf::Vector2f normalizedDirection = direction / length;
-    //     currentPosition += normalizedDirection * speed * 0.016f;  // Assuming 60 FPS
-    // }
-
-    // // Update sprite position
-    // animationManager.getCurrentSprite().setPosition(currentPosition);
+        // Update animation based on movement direction
+        if (direction.GetX() > 0) {
+            animationManager.setAnimation("run_right");
+        } else {
+            animationManager.setAnimation("run_left");
+        }
+    } 
+    // If within attack range, stop and use idle/attack animation
+    else {
+        animationManager.setAnimation("idle_right");  // Replace with "attack" if needed
+    }
 }
+
+
+
 
 
 
