@@ -6,7 +6,7 @@
 #include "../../../pool/projectilePool.h"
 #include "../../projectile/bullet.h"
 #include "../../projectile/bullet/badPistolBullet.h"
-  // Include rangeWeapon.h because BadPistol inherits from it
+
 
 class BadPistol : public RangeWeapon {
 public:

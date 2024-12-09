@@ -2,6 +2,7 @@
 #define GAMESTATE_H
 
 #include "state.h"
+#include "../manager/camera.h"
 #include "../manager/objectManager.h"
 #include "../manager/stageManager.h"
 #include "../manager/keyboardManager.h"
@@ -10,6 +11,7 @@
 #include "../pool/monsterPool.h"
 #include "../pool/projectilePool.h"
 #include <cmath>
+
 
 
 
@@ -33,6 +35,7 @@ protected:
     MonsterPool* monsterPool = MonsterPool::Instance();
     
     int gameFinishCounter;
+    Camera camera;
 };
 
 #endif // GAMESTATE_H

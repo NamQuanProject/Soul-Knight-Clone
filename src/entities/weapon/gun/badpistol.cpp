@@ -10,7 +10,6 @@ BadPistol::BadPistol() {
     image.createMaskFromColor(transparentColor);
     pistolTexture.loadFromImage(image);
     pistolSprite.setTexture(pistolTexture);
-
     
     offset = sf::Vector2f(5.f, 2.f);
 }
@@ -25,9 +24,8 @@ void BadPistol::Attack() {
         ProjectileType::BAD_PISTOL_BULLET)));
     
     bullet->SetSpeed(Vec(270, 0));
-    
     bullet->SetDamage(this->GetDamage());
-    // UpdateTag(bullet);
+    bullet->UpdateTag(bullet);
     ObjectManager::Instance()->AddObject(bullet);
 
 }

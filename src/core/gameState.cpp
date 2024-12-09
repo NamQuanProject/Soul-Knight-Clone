@@ -1,7 +1,12 @@
 #include "gameState.h"
 
-GameState::GameState() {
+GameState::GameState(): camera(1000.f, 700.f) {
+    sf::FloatRect worldBounds(0, 0, 3000, 3000);
+
+    camera.setWorldBounds(worldBounds);
+
     Initialize();
+   
 }
 
 GameState::~GameState() {
@@ -91,11 +96,16 @@ void GameState::Initialize() {
 }
 
 void GameState::update(float deltaTime) {
+    
     stageManager->Update(deltaTime);
     objectManager->Update(deltaTime);
+    sf::Vector2f knightPos(objectManager->GetPlayer()->GetPosition().GetX(), objectManager->GetPlayer()->GetPosition().GetY());
+    camera.update(knightPos);
+    
 }
 
 void GameState::render(sf::RenderWindow& window) {
     stageManager->GetStage()->Render(window);
     objectManager->Render(window);
+    camera.applyView(window);
 }

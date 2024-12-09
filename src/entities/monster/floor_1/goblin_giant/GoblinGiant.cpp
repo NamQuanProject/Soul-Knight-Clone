@@ -36,8 +36,11 @@ GoblinGiant::~GoblinGiant() {
 }
 
 void GoblinGiant::Update(float deltaTime) {
+    
     animationManager.update(deltaTime); 
-
+    if (HasTag(Tag::DEAD)) {
+        animationManager.setAnimation("dead");
+    }
     sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
     sf::Sprite sprite = animationManager.getCurrentSprite();
     sf::FloatRect bounds = sprite.getLocalBounds();
@@ -92,52 +95,66 @@ void GoblinGiant::LoadResources() {
     };
     leftRunAnimation.loadAnimation(framePaths4); 
     animationManager.addAnimation("run_left", leftRunAnimation);  
+
+    Animation dead;
+    std::vector<std::string> framePaths5 = {
+        "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/monster/floor_1/goblin_giant/dead.bmp",
+        // "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/monster/floor_1/goblin_giant/run/flip_2.bmp",
+        // "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/monster/floor_1/goblin_giant/run/flip_3.bmp",
+        // "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/monster/floor_1/goblin_giant/run/flip_4.bmp"
+    };
+    dead.loadAnimation(framePaths5);
+    animationManager.addAnimation("dead", dead);  
 }
 
 
 void GoblinGiant::AutoMation() {
-    // Get the player's position
-    Vec playerPos = ObjectManager::Instance()->GetPlayer()->GetPosition();
+    if (!HasTag(Tag::DEAD)) {
+            // Get the player's position
+        Vec playerPos = ObjectManager::Instance()->GetPlayer()->GetPosition();
 
-    // Get the Goblin Giant's current position
-    Vec goblinPos = Vec(animationManager.getCurrentSprite().getPosition().x, 
-                        animationManager.getCurrentSprite().getPosition().y);
+        // Get the Goblin Giant's current position
+        Vec goblinPos = Vec(animationManager.getCurrentSprite().getPosition().x, 
+                            animationManager.getCurrentSprite().getPosition().y);
 
-    // Calculate the direction vector from Goblin to Player
-    Vec direction = playerPos - goblinPos;
+        // Calculate the direction vector from Goblin to Player
+        Vec direction = playerPos - goblinPos;
 
-    // Calculate the distance between the Goblin and the Player
-    double distance = std::sqrt(direction.GetX() * direction.GetX() + 
-                                direction.GetY() * direction.GetY());
+        // Calculate the distance between the Goblin and the Player
+        double distance = std::sqrt(direction.GetX() * direction.GetX() + 
+                                    direction.GetY() * direction.GetY());
 
-    // Check if the distance is greater than zero to avoid division by zero
-    if (distance > 0) {
-        // Normalize the direction vector manually by dividing each component by the distance
-        direction.SetX(direction.GetX() / distance);
-        direction.SetY(direction.GetY() / distance);
-    }
-
-    // Define the attack range and movement speed
-    double attackRange = 50.0;
-    double speed = 0.0015;
-
-
-    if (distance > attackRange) {
-        Vec movement = direction * speed;  
-        goblinPos = goblinPos + movement;             
-        SetPosition(goblinPos);           
-
-        // Update animation based on movement direction
-        if (direction.GetX() > 0) {
-            animationManager.setAnimation("run_right");
-        } else {
-            animationManager.setAnimation("run_left");
+        // Check if the distance is greater than zero to avoid division by zero
+        if (distance > 0) {
+            // Normalize the direction vector manually by dividing each component by the distance
+            direction.SetX(direction.GetX() / distance);
+            direction.SetY(direction.GetY() / distance);
         }
-    } 
-    // If within attack range, stop and use idle/attack animation
-    else {
-        animationManager.setAnimation("idle_right");  // Replace with "attack" if needed
+
+        // Define the attack range and movement speed
+        double attackRange = 50.0;
+        double speed = 0.0015;
+
+
+        if (distance > attackRange) {
+            Vec movement = direction * speed;  
+            goblinPos = goblinPos + movement;             
+            SetPosition(goblinPos);           
+
+            // Update animation based on movement direction
+            if (direction.GetX() > 0) {
+                animationManager.setAnimation("run_right");
+            } else {
+                animationManager.setAnimation("run_left");
+            }
+        } 
+        // If within attack range, stop and use idle/attack animation
+        else {
+            animationManager.setAnimation("idle_right");  // Replace with "attack" if needed
+        }
     }
+    
+    
 }
 
 
@@ -154,9 +171,9 @@ void GoblinGiant::Render(sf::RenderWindow& window) {
     window.draw(sprite);  
 
 
-    if (hitbox) {
-        hitbox->Render(window);
-    }
+    // if (hitbox) {
+    //     hitbox->Render(window);
+    // }
     
 }
 

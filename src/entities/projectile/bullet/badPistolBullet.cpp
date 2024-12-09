@@ -18,7 +18,7 @@ BadPistolBullet::BadPistolBullet() {
         hitbox->SetHeight(bulletTexture.getSize().y);
     }
 
-    AddTag(Tag::PLAYER_ATTACK); // Tag the bullet for gameplay logic
+    AddTag(Tag::PLAYER_ATTACK); 
 }
 
 void BadPistolBullet::Initialize() {
