@@ -3,6 +3,7 @@
 #include "../gameObject.h"
 #include "monsterType.h"
 #include "../weapon/weapon.h"
+#include "../projectile/projectile.h"
 
 class Monster : public GameObject {
 public:
@@ -10,7 +11,7 @@ public:
     void Update(float deltaTime) override;
     void Collision(GameObject* gameObject) override;
     void Render(sf::RenderWindow& window) override;
-
+    
     virtual void OnDead();
     virtual void AutoMationMove();
     virtual void AutoMation() = 0;

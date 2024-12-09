@@ -994,6 +994,7 @@ CMakeFiles/soulknight.dir/src/core/gameState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/monsterType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/stageManager.h \

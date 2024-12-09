@@ -979,13 +979,15 @@ CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../entities/monster/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../entities/monster/monsterType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../entities/monster/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../entities/monster/../projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../entities/monster/../projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../entities/monster/../projectile/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \

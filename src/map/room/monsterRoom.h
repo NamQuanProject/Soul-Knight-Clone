@@ -38,7 +38,7 @@ private:
     bool isInside = false;
     bool isCleared = false;
     std::vector<Wall*> walls;
-    std::vector<Door*> doors;
+    std::vector<Wall*> doors;
     std::map<MonsterType, int> monsterMap;
     std::vector<Monster*> monsters;
     void SetMonsters();

@@ -11,20 +11,19 @@ Monster::Monster(double level, bool isMeleeAttackMonster)
       collideOnObstacle(false),
        face(RIGHT), state(IDLE)
     {
-    
+    AddTag(Tag::MONSTER);
 }
 
 void Monster::Update(float deltaTime) {
+   
+
     if (!IsActive()) return;
+    
     AutoMationMove();
     std::cout << "Monster is updating..." << std::endl;
 }
 
-void Monster::Collision(GameObject* gameObject) {
-    if (gameObject->HasTag(Tag::PLAYER_ATTACK)) {
-        AddTag(Tag::DEAD);
-    }
-}
+
 
 void Monster::Render(sf::RenderWindow& window) {
     return ;
@@ -59,13 +58,11 @@ void Monster::SetOnDeadTrigger(bool isOnDeadTrigger) {
     this->isOnDeadTrigger = isOnDeadTrigger;
 }
 
-void Monster::Injuried(double damage) {
-    std::cout << "Monster took " << damage << " damage!" << std::endl;
-    if (damage >= level * 10) {
-        OnDead();
+void Monster::Collision(GameObject* gameObject) {
+    if (gameObject->HasTag(Tag::PLAYER_ATTACK)) {
+        Injuried(dynamic_cast<Projectile*>(gameObject)->GetDamage());
     }
 }
-
 void Monster::Reset() {
     SetActive(true);
     level = 1;
@@ -86,5 +83,25 @@ Monster::Face Monster::CheckFace() {
     return face;
 }
 
+void Monster::Injuried(double damage) {
+    if (this->HasTag(Tag::DEAD)) {
+        return;
+    }
+    this->hp -= damage;
+    std::cout << this->hp << std::endl;
+    if (this->hp < 0) {
+        this->hp = 0;
+    }
 
+    
 
+    // if (!damageText) {
+    //     CreateNewDamageText();
+    // }
+
+    // if (damageText->IsAlive() == false) {
+    //     CreateNewDamageText();
+    // }
+
+    // damageText->AddDamage(damage);
+}

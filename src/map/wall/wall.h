@@ -9,7 +9,7 @@ public:
     Wall(Point start, Point end);
     ~Wall();
     void Initialize() override;
-    void Draw(sf::RenderWindow& window);
+    void Render(sf::RenderWindow& window) override;
     void Collision(GameObject* gameObject) override;
     bool CheckCollision(GameObject* gameObject);
 private:

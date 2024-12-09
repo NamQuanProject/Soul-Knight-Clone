@@ -110,9 +110,9 @@ void Stage_1_1::setBackground() {
 
 void Stage_1_1::Render(sf::RenderWindow& window) {
     window.draw(backgroundSprite);
-    for (Wall* wall : walls) {
-        wall->Draw(window); 
-    }
+    // for (Wall* wall : walls) {
+    //     wall->Render(window); 
+    // }
     // for (auto room : monsterRooms) {
     //     room->Show(window);
     // }

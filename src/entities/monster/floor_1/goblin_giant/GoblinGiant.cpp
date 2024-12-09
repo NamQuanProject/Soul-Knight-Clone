@@ -12,6 +12,8 @@ GoblinGiant::GoblinGiant(double level)
     
     hitbox = new HitBox(author); 
     AddTag(Tag::MONSTER);
+
+    hp = 10;
 }
 
 void GoblinGiant::Initialize() {
@@ -38,8 +40,10 @@ GoblinGiant::~GoblinGiant() {
 void GoblinGiant::Update(float deltaTime) {
     
     animationManager.update(deltaTime); 
-    if (HasTag(Tag::DEAD)) {
+     if (hp == 0) {
+        AddTag(Tag::DEAD);
         animationManager.setAnimation("dead");
+
     }
     sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
     sf::Sprite sprite = animationManager.getCurrentSprite();

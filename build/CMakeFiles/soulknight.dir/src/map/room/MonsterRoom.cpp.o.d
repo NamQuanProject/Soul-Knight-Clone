@@ -972,6 +972,8 @@ CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/monsterFactory.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../pool/monsterPool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../utils/random.h \
@@ -1045,7 +1047,7 @@ CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../pool/../entities/projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../pool/../entities/projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../pool/../entities/projectile/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../projectile/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \

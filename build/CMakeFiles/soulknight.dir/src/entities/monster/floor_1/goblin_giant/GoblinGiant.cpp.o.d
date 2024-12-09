@@ -963,6 +963,8 @@ CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/goblinGiant.
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/objectManager.h \
@@ -986,7 +988,7 @@ CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/goblinGiant.
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../projectile/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_giant/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \

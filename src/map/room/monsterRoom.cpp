@@ -31,16 +31,22 @@ MonsterRoom::~MonsterRoom() {
 
 
 void MonsterRoom::Update(float deltaTime) {
-    for (auto monster : monsters) {
-        monster->Update(deltaTime); // Render each monster on the provided window
+    // for (auto monster : monsters) {
+    //     monster->Update(deltaTime); // Render each monster on the provided window
+    // }
+    for (auto door: doors) {
+        door->Update(deltaTime);
     }
 }
 
 void MonsterRoom::Show(sf::RenderWindow& window) {
-    // std::cout << monsters.size() << std::endl;
-    for (auto monster : monsters) {
-        monster->Render(window);
-    }
+    
+    // for (auto monster : monsters) {
+    //     monster->Render(window);
+    // }
+    // for (auto door: doors) {
+    //     door->Render(window);
+    // }
 }
 
 void MonsterRoom::IsInside() {
@@ -53,9 +59,10 @@ void MonsterRoom::IsInside() {
         playerY >= leftTop.GetY() && playerY <= rightBot.GetY()) {
         
         isInside = true;
-        // RelocatePlayerToCenter(); 
-        SetDoors();   
-        SetMonsters();               
+        
+        SetDoors();  
+        SetMonsters();  
+                    
     }
 }
 
@@ -82,14 +89,18 @@ void MonsterRoom::IsCleared() {
     //     treasureChest->SetPosition(topLeft + Point((size + 2) * 8, (size + 12) * 8) - centerOffset);
     // }
     // else {
-    //     treasureChest = new TreasureChest(TreasureChest::NORMAL_ROOM);
-    //     double minX = topLeft.GetX() + 16 - centerOffset.GetX();
-    //     double minY = topLeft.GetY() + 16 - centerOffset.GetY();
-    //     double maxX = topLeft.GetX() + 16 * (size + 1) - centerOffset.GetX();
-    //     double maxY = topLeft.GetY() + 16 * (size + 1) - centerOffset.GetY();
 
-    //     treasureChest->SetPosition(
-    //         Point(Rand::Instance()->Get(minX + 16, maxX - 16), Rand::Instance()->Get(minY + 16, maxY - 16)));
+
+
+
+    // treasureChest = new TreasureChest(TreasureChest::NORMAL_ROOM);
+    // double minX = topLeft.GetX() + 16 - centerOffset.GetX();
+    // double minY = topLeft.GetY() + 16 - centerOffset.GetY();
+    // double maxX = topLeft.GetX() + 16 * (size + 1) - centerOffset.GetX();
+    // double maxY = topLeft.GetY() + 16 * (size + 1) - centerOffset.GetY();
+
+    // treasureChest->SetPosition(
+    //     Point(Rand::Instance()->Get(minX + 16, maxX - 16), Rand::Instance()->Get(minY + 16, maxY - 16)));
     // }
     // ObjectManager::Instance()->AddObject(treasureChest);
 
@@ -137,64 +148,53 @@ void MonsterRoom::PlacedMonster() {
 }
 
 void MonsterRoom::SetDoors() {
-    // double leftTopX = leftTop.GetX();
-    // double leftTopY = leftTop.GetY();
-    // double rightBot
-    // Wall* leftInvisibleDoor = new Wall(Point(x, y), Point(x + 16, y + 16 * (size + 2)));
-    // Wall* rightInvisibleDoor = new Wall(Point(x + 16 * (size + 1), y), Point(x + 16 * (size + 2), y + 16 * (size + 2)));
-    // Wall* topInvisibleDoor = new Wall(Point(x, y), Point(x + 16 * (size + 2), y + 16));
-    // Wall* bottomInvisibleDoor = new Wall(Point(x, y + 16 * (size + 1)),
-    //                                      Point(x + 16 * (size + 2), y + 16 * (size + 2)));
-    // invisibleDoors.push_back(leftInvisibleDoor);
-    // invisibleDoors.push_back(rightInvisibleDoor);
-    // invisibleDoors.push_back(topInvisibleDoor);
-    // invisibleDoors.push_back(bottomInvisibleDoor);
+    
+    double wallThickness = 10;      // Thickness of the wall segments
+    double doorHeight = 70;         // Height of the gap for vertical gates
+    double doorWidth = 70;          // Width of the gap for horizontal gates
+    double offset = 10;
+
+
+    double midX = (leftTop.GetX() + rightBot.GetX()) / 2.0;
+    double midY = (leftTop.GetY() + rightBot.GetY()) / 2.0;
+
+    Wall* leftDoor = new Wall(
+        Point(leftTop.GetX() - offset, midY - doorHeight / 2), 
+        Point(leftTop.GetX() + wallThickness - offset, midY + doorHeight / 2)
+    );
+
+
+    Wall* rightDoor = new Wall(
+        Point(rightBot.GetX() - wallThickness + offset, midY - doorHeight / 2), 
+        Point(rightBot.GetX() + offset, midY + doorHeight / 2)
+    );
+
+    // Top door
+    Wall* topDoor = new Wall(
+        Point(midX - doorWidth / 2, leftTop.GetY() - offset), 
+        Point(midX + doorWidth / 2, leftTop.GetY() + wallThickness - offset)
+    );
+
+    // Bottom door
+    Wall* bottomDoor = new Wall(
+        Point(midX - doorWidth / 2, rightBot.GetY() - wallThickness + offset), 
+        Point(midX + doorWidth / 2, rightBot.GetY() + offset)
+    );
+
+    ObjectManager::Instance()->AddObject(leftDoor);
+    ObjectManager::Instance()->AddObject(rightDoor);
+    ObjectManager::Instance()->AddObject(topDoor);
+    ObjectManager::Instance()->AddObject(bottomDoor);
+
+    doors.push_back(leftDoor);
+    doors.push_back(rightDoor);
+    doors.push_back(topDoor);
+    doors.push_back(bottomDoor);
     // ObjectManager::Instance()->AddObject(leftInvisibleDoor);
     // ObjectManager::Instance()->AddObject(rightInvisibleDoor);
     // ObjectManager::Instance()->AddObject(topInvisibleDoor);
     // ObjectManager::Instance()->AddObject(bottomInvisibleDoor);
-
-    // Door* leftDoor;
-    // Door* rightDoor;
-    // Door* topDoor;
-    // Door* bottomDoor;
-
-    // switch (level) {
-    // case 1:
-    //     leftDoor = new VerticalDoor1();
-    //     rightDoor = new VerticalDoor1();
-    //     topDoor = new HorizontalDoor1();
-    //     bottomDoor = new HorizontalDoor1();
-    //     break;
-    // case 2:
-    //     leftDoor = new VerticalDoor2();
-    //     rightDoor = new VerticalDoor2();
-    //     topDoor = new HorizontalDoor2();
-    //     bottomDoor = new HorizontalDoor2();
-    //     break;
-    // case 3:
-    //     leftDoor = new VerticalDoor3();
-    //     rightDoor = new VerticalDoor3();
-    //     topDoor = new HorizontalDoor3();
-    //     bottomDoor = new HorizontalDoor3();
-    //     break;
-    // case 4:
-    //     leftDoor = new VerticalDoor4();
-    //     rightDoor = new VerticalDoor4();
-    //     topDoor = new HorizontalDoor4();
-    //     bottomDoor = new HorizontalDoor4();
-    // }
-
-
-
-    // doors.push_back(leftDoor);
-    // doors.push_back(rightDoor);
-    // doors.push_back(topDoor);
-    // doors.push_back(bottomDoor);
-    // // ObjectManager::Instance()->AddObject(leftDoor);
-    // // ObjectManager::Instance()->AddObject(rightDoor);
-    // // ObjectManager::Instance()->AddObject(topDoor);
-    // // ObjectManager::Instance()->AddObject(bottomDoor);
+    
 }
 
 void MonsterRoom::RelocatePlayerToCenter() {

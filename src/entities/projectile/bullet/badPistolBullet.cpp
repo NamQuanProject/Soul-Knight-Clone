@@ -17,7 +17,7 @@ BadPistolBullet::BadPistolBullet() {
         hitbox->SetWidth(bulletTexture.getSize().x);
         hitbox->SetHeight(bulletTexture.getSize().y);
     }
-
+    SetDamage(1.0);
     AddTag(Tag::PLAYER_ATTACK); 
 }
 

@@ -1000,6 +1000,7 @@ CMakeFiles/soulknight.dir/src/map/stage/stageFactory.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/monster/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/monster/monsterType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/monster/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/monster/../projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../room/monsterRoom.h \

@@ -63,7 +63,10 @@ Player* ObjectManager::GetPlayer() {
 
 
 void ObjectManager::Render(sf::RenderWindow& window) {
-    for (auto object : objects) {
+    std::sort(objects.begin(), objects.end(), [](GameObject* a, GameObject* b) {
+        return a->GetPosition().GetY() < b->GetPosition().GetY();
+    });
+    for (auto object : objects) {        
         object->Render(window);
     }
 }

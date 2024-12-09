@@ -23,8 +23,9 @@ void BadPistol::Attack() {
     Bullet* bullet = static_cast<BadPistolBullet*>((ProjectilePool::Instance()->Acquire(
         ProjectileType::BAD_PISTOL_BULLET)));
     
+
     bullet->SetSpeed(Vec(270, 0));
-    bullet->SetDamage(this->GetDamage());
+    // bullet->SetDamage(this->GetDamage());
     bullet->UpdateTag(bullet);
     ObjectManager::Instance()->AddObject(bullet);
 

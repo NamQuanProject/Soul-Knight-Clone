@@ -3,9 +3,10 @@
 enum class Tag {
     NONE,
     PLAYER,
+    PROJECTILE,
     MONSTER,
     WALL,
-    PROJECTILE,
+    
     DROP,
     
     PLAYER_ATTACK,

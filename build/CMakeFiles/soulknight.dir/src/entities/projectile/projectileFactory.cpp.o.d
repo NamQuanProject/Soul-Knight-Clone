@@ -994,6 +994,7 @@ CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../entities/monster/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../entities/monster/monsterType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../entities/monster/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../entities/monster/../projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/redCircleBullet.h

@@ -5,6 +5,11 @@ GoblinShaman::GoblinShaman(double level)
     : Monster(level, false) { // Passes level and isMeleeAttackMonster = false to the base class
     LoadResources();
     animationManager.setAnimation("idle_right");  // Default animation
+
+
+    hp = 10;
+    
+
 }
 
 void GoblinShaman::Update(float deltaTime) {

@@ -168,7 +168,7 @@ void Knight::standLeft() {
 }
 
 void Knight::Collision(GameObject* gameObject) {
-    if (gameObject->HasTag(Tag::WALL) ||gameObject->HasTag(Tag::MONSTER) ) {
+    if (gameObject->HasTag(Tag::WALL) || (gameObject->HasTag(Tag::MONSTER) && !gameObject->HasTag(Tag::DEAD))) {
         Vec current = GetPosition();
         current = current - speed;
 
