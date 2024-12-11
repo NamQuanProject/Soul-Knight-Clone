@@ -2,6 +2,7 @@
 
 // #include "boss/zulan_the_colossus/ZulanTheColossus.h"
 #include "floor_1/goblin_giant/goblinGiant.h"
+#include "floor_1/bear/bear.h"
 // #include "/floor_1/boar/DireBoar.h"
 // #include "/floor_1/boar/NormalBoar.h"
 // #include "/floor_1/devils_snare/DevilsSnare.h"
@@ -39,7 +40,8 @@ Monster* MonsterFactory::Create(MonsterType type, double level) {
     //     return new DevilsSnare(level);
     case MonsterType::GOBLIN_GIANT:
         return new GoblinGiant(level);
-
+    case MonsterType::NORMAL_BOAR:
+        return new Bear(level);
     // case Type::GOBLIN_GUARD_SPEAR:
     //     return new GoblinGuardSpear(level);
     // case Type::GOBLIN_GUARD_PISTOL:
@@ -57,8 +59,7 @@ Monster* MonsterFactory::Create(MonsterType type, double level) {
     case MonsterType::GOBLIN_SHAMAN:
         return new GoblinShaman(level);
 
-    // case Type::NORMAL_BOAR:
-    //     return new NormalBoar(level);
+    
     // case Type::DIRE_BOAR:
     //     return new DireBoar(level);
 

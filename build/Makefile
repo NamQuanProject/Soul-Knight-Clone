@@ -561,6 +561,30 @@ src/entities/invinsibleObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/invinsibleObject.cpp.s
 .PHONY : src/entities/invinsibleObject.cpp.s
 
+src/entities/monster/floor_1/bear/bear.o: src/entities/monster/floor_1/bear/bear.cpp.o
+.PHONY : src/entities/monster/floor_1/bear/bear.o
+
+# target to build an object file
+src/entities/monster/floor_1/bear/bear.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/bear/bear.cpp.o
+.PHONY : src/entities/monster/floor_1/bear/bear.cpp.o
+
+src/entities/monster/floor_1/bear/bear.i: src/entities/monster/floor_1/bear/bear.cpp.i
+.PHONY : src/entities/monster/floor_1/bear/bear.i
+
+# target to preprocess a source file
+src/entities/monster/floor_1/bear/bear.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/bear/bear.cpp.i
+.PHONY : src/entities/monster/floor_1/bear/bear.cpp.i
+
+src/entities/monster/floor_1/bear/bear.s: src/entities/monster/floor_1/bear/bear.cpp.s
+.PHONY : src/entities/monster/floor_1/bear/bear.s
+
+# target to generate assembly for a file
+src/entities/monster/floor_1/bear/bear.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/bear/bear.cpp.s
+.PHONY : src/entities/monster/floor_1/bear/bear.cpp.s
+
 src/entities/monster/floor_1/goblin_giant/goblinGiant.o: src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.o
 .PHONY : src/entities/monster/floor_1/goblin_giant/goblinGiant.o
 
@@ -824,6 +848,30 @@ src/entities/projectile/bullet/redCircleBullet.s: src/entities/projectile/bullet
 src/entities/projectile/bullet/redCircleBullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redCircleBullet.cpp.s
 .PHONY : src/entities/projectile/bullet/redCircleBullet.cpp.s
+
+src/entities/projectile/bullet/redRectangleBullet.o: src/entities/projectile/bullet/redRectangleBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/redRectangleBullet.o
+
+# target to build an object file
+src/entities/projectile/bullet/redRectangleBullet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redRectangleBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/redRectangleBullet.cpp.o
+
+src/entities/projectile/bullet/redRectangleBullet.i: src/entities/projectile/bullet/redRectangleBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/redRectangleBullet.i
+
+# target to preprocess a source file
+src/entities/projectile/bullet/redRectangleBullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redRectangleBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/redRectangleBullet.cpp.i
+
+src/entities/projectile/bullet/redRectangleBullet.s: src/entities/projectile/bullet/redRectangleBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/redRectangleBullet.s
+
+# target to generate assembly for a file
+src/entities/projectile/bullet/redRectangleBullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redRectangleBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/redRectangleBullet.cpp.s
 
 src/entities/projectile/projectile.o: src/entities/projectile/projectile.cpp.o
 .PHONY : src/entities/projectile/projectile.o
@@ -1833,6 +1881,30 @@ src/utils/hitBox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/hitBox.cpp.s
 .PHONY : src/utils/hitBox.cpp.s
 
+src/utils/interactiveText.o: src/utils/interactiveText.cpp.o
+.PHONY : src/utils/interactiveText.o
+
+# target to build an object file
+src/utils/interactiveText.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/interactiveText.cpp.o
+.PHONY : src/utils/interactiveText.cpp.o
+
+src/utils/interactiveText.i: src/utils/interactiveText.cpp.i
+.PHONY : src/utils/interactiveText.i
+
+# target to preprocess a source file
+src/utils/interactiveText.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/interactiveText.cpp.i
+.PHONY : src/utils/interactiveText.cpp.i
+
+src/utils/interactiveText.s: src/utils/interactiveText.cpp.s
+.PHONY : src/utils/interactiveText.s
+
+# target to generate assembly for a file
+src/utils/interactiveText.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/utils/interactiveText.cpp.s
+.PHONY : src/utils/interactiveText.cpp.s
+
 src/utils/point.o: src/utils/point.cpp.o
 .PHONY : src/utils/point.o
 
@@ -1992,6 +2064,9 @@ help:
 	@echo "... src/entities/invinsibleObject.o"
 	@echo "... src/entities/invinsibleObject.i"
 	@echo "... src/entities/invinsibleObject.s"
+	@echo "... src/entities/monster/floor_1/bear/bear.o"
+	@echo "... src/entities/monster/floor_1/bear/bear.i"
+	@echo "... src/entities/monster/floor_1/bear/bear.s"
 	@echo "... src/entities/monster/floor_1/goblin_giant/goblinGiant.o"
 	@echo "... src/entities/monster/floor_1/goblin_giant/goblinGiant.i"
 	@echo "... src/entities/monster/floor_1/goblin_giant/goblinGiant.s"
@@ -2025,6 +2100,9 @@ help:
 	@echo "... src/entities/projectile/bullet/redCircleBullet.o"
 	@echo "... src/entities/projectile/bullet/redCircleBullet.i"
 	@echo "... src/entities/projectile/bullet/redCircleBullet.s"
+	@echo "... src/entities/projectile/bullet/redRectangleBullet.o"
+	@echo "... src/entities/projectile/bullet/redRectangleBullet.i"
+	@echo "... src/entities/projectile/bullet/redRectangleBullet.s"
 	@echo "... src/entities/projectile/projectile.o"
 	@echo "... src/entities/projectile/projectile.i"
 	@echo "... src/entities/projectile/projectile.s"
@@ -2151,6 +2229,9 @@ help:
 	@echo "... src/utils/hitBox.o"
 	@echo "... src/utils/hitBox.i"
 	@echo "... src/utils/hitBox.s"
+	@echo "... src/utils/interactiveText.o"
+	@echo "... src/utils/interactiveText.i"
+	@echo "... src/utils/interactiveText.s"
 	@echo "... src/utils/point.o"
 	@echo "... src/utils/point.i"
 	@echo "... src/utils/point.s"

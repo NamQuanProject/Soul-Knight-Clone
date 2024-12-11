@@ -6,6 +6,8 @@
 
 TransferGate::TransferGate() {
     AddTag(Tag::TRANSFER_GATE);
+    // SetInteractiveText("Transfer ?", InteractiveText::COMMON, -80);
+
 }
 
 
@@ -18,6 +20,6 @@ void TransferGate::LoadResources() {
 }
 
 void TransferGate::Render(sf::RenderWindow& window) {
-    // window.draw();
+    
     
 }

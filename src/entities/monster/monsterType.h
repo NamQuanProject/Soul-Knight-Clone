@@ -4,7 +4,7 @@ enum class MonsterType {
     // floor 1: 0 ~ 10
     GOBLIN_SHAMAN,
     GOBLIN_GIANT,
-    
+    NORMAL_BOAR,
     DEVELS_SNARE,
 
     GOBLIN_GUARD_SPEAR,
@@ -17,7 +17,7 @@ enum class MonsterType {
 
     
 
-    NORMAL_BOAR,
+    
     DIRE_BOAR,
 
     // floor 2: 11 ~ 21

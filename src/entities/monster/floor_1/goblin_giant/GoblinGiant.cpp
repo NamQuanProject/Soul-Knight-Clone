@@ -39,7 +39,7 @@ GoblinGiant::~GoblinGiant() {
 }
 
 void GoblinGiant::Update(float deltaTime) {
-    attackTimer += deltaTime; // Increment the attack timer
+    attackTimer += deltaTime; 
     animationManager.update(deltaTime);
 
     if (hp == 0) {
@@ -165,7 +165,7 @@ void GoblinGiant::Attack() {
         else if (random_choice == 2) {
             std::cout << "Monster attack 2" << std::endl;
             const float radianConversion = 3.14159f / 180.0f;
-            int angle = Rand::Instance()->Get(1, 360);
+            int angle = 360 * attack_time_2 / 10;
             Bullet* bullet = static_cast<RedCircleBullet*>(
                 ProjectilePool::Instance()->Acquire(ProjectileType::RED_CIRCLE_BULLET)
             );
@@ -199,14 +199,13 @@ void GoblinGiant::Attack() {
 void GoblinGiant::AutoMation() {
 
     if (!HasTag(Tag::DEAD)) {
-            // Get the player's position
+
         Vec playerPos = ObjectManager::Instance()->GetPlayer()->GetPosition();
 
-        // Get the Goblin Giant's current position
         Vec goblinPos = Vec(animationManager.getCurrentSprite().getPosition().x, 
                             animationManager.getCurrentSprite().getPosition().y);
 
-        // Calculate the direction vector from Goblin to Player
+
         Vec direction = playerPos - goblinPos;
 
 
