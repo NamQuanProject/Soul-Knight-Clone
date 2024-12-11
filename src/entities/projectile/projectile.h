@@ -2,7 +2,7 @@
 #pragma once
 #include "projectileType.h"
 
-class Projectile {
+class Projectile{
 public:
     Projectile();
     virtual ~Projectile();

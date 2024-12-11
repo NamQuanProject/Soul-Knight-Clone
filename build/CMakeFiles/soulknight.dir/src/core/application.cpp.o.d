@@ -1092,6 +1092,7 @@ CMakeFiles/soulknight.dir/src/core/application.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../manager/objectManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/keyboardManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../utils/random.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/monsterPool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/projectilePool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/pauseState.h

@@ -873,29 +873,29 @@ src/entities/projectile/projectileFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.s
 .PHONY : src/entities/projectile/projectileFactory.cpp.s
 
-src/entities/weapon/gun/badPistol.o: src/entities/weapon/gun/badPistol.cpp.o
-.PHONY : src/entities/weapon/gun/badPistol.o
+src/entities/weapon/gun/badpistol.o: src/entities/weapon/gun/badpistol.cpp.o
+.PHONY : src/entities/weapon/gun/badpistol.o
 
 # target to build an object file
-src/entities/weapon/gun/badPistol.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/badPistol.cpp.o
-.PHONY : src/entities/weapon/gun/badPistol.cpp.o
+src/entities/weapon/gun/badpistol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.o
+.PHONY : src/entities/weapon/gun/badpistol.cpp.o
 
-src/entities/weapon/gun/badPistol.i: src/entities/weapon/gun/badPistol.cpp.i
-.PHONY : src/entities/weapon/gun/badPistol.i
+src/entities/weapon/gun/badpistol.i: src/entities/weapon/gun/badpistol.cpp.i
+.PHONY : src/entities/weapon/gun/badpistol.i
 
 # target to preprocess a source file
-src/entities/weapon/gun/badPistol.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/badPistol.cpp.i
-.PHONY : src/entities/weapon/gun/badPistol.cpp.i
+src/entities/weapon/gun/badpistol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.i
+.PHONY : src/entities/weapon/gun/badpistol.cpp.i
 
-src/entities/weapon/gun/badPistol.s: src/entities/weapon/gun/badPistol.cpp.s
-.PHONY : src/entities/weapon/gun/badPistol.s
+src/entities/weapon/gun/badpistol.s: src/entities/weapon/gun/badpistol.cpp.s
+.PHONY : src/entities/weapon/gun/badpistol.s
 
 # target to generate assembly for a file
-src/entities/weapon/gun/badPistol.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/badPistol.cpp.s
-.PHONY : src/entities/weapon/gun/badPistol.cpp.s
+src/entities/weapon/gun/badpistol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.s
+.PHONY : src/entities/weapon/gun/badpistol.cpp.s
 
 src/entities/weapon/melee/knife.o: src/entities/weapon/melee/knife.cpp.o
 .PHONY : src/entities/weapon/melee/knife.o
@@ -1376,6 +1376,54 @@ src/map/stage/stage_1_1.s: src/map/stage/stage_1_1.cpp.s
 src/map/stage/stage_1_1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.s
 .PHONY : src/map/stage/stage_1_1.cpp.s
+
+src/map/stage/stage_1_2.o: src/map/stage/stage_1_2.cpp.o
+.PHONY : src/map/stage/stage_1_2.o
+
+# target to build an object file
+src/map/stage/stage_1_2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_2.cpp.o
+.PHONY : src/map/stage/stage_1_2.cpp.o
+
+src/map/stage/stage_1_2.i: src/map/stage/stage_1_2.cpp.i
+.PHONY : src/map/stage/stage_1_2.i
+
+# target to preprocess a source file
+src/map/stage/stage_1_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_2.cpp.i
+.PHONY : src/map/stage/stage_1_2.cpp.i
+
+src/map/stage/stage_1_2.s: src/map/stage/stage_1_2.cpp.s
+.PHONY : src/map/stage/stage_1_2.s
+
+# target to generate assembly for a file
+src/map/stage/stage_1_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_2.cpp.s
+.PHONY : src/map/stage/stage_1_2.cpp.s
+
+src/map/stage/stage_1_3.o: src/map/stage/stage_1_3.cpp.o
+.PHONY : src/map/stage/stage_1_3.o
+
+# target to build an object file
+src/map/stage/stage_1_3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_3.cpp.o
+.PHONY : src/map/stage/stage_1_3.cpp.o
+
+src/map/stage/stage_1_3.i: src/map/stage/stage_1_3.cpp.i
+.PHONY : src/map/stage/stage_1_3.i
+
+# target to preprocess a source file
+src/map/stage/stage_1_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_3.cpp.i
+.PHONY : src/map/stage/stage_1_3.cpp.i
+
+src/map/stage/stage_1_3.s: src/map/stage/stage_1_3.cpp.s
+.PHONY : src/map/stage/stage_1_3.s
+
+# target to generate assembly for a file
+src/map/stage/stage_1_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/map/stage/stage_1_3.cpp.s
+.PHONY : src/map/stage/stage_1_3.cpp.s
 
 src/map/stage/transferGate.o: src/map/stage/transferGate.cpp.o
 .PHONY : src/map/stage/transferGate.o
@@ -1983,9 +2031,9 @@ help:
 	@echo "... src/entities/projectile/projectileFactory.o"
 	@echo "... src/entities/projectile/projectileFactory.i"
 	@echo "... src/entities/projectile/projectileFactory.s"
-	@echo "... src/entities/weapon/gun/badPistol.o"
-	@echo "... src/entities/weapon/gun/badPistol.i"
-	@echo "... src/entities/weapon/gun/badPistol.s"
+	@echo "... src/entities/weapon/gun/badpistol.o"
+	@echo "... src/entities/weapon/gun/badpistol.i"
+	@echo "... src/entities/weapon/gun/badpistol.s"
 	@echo "... src/entities/weapon/melee/knife.o"
 	@echo "... src/entities/weapon/melee/knife.i"
 	@echo "... src/entities/weapon/melee/knife.s"
@@ -2046,6 +2094,12 @@ help:
 	@echo "... src/map/stage/stage_1_1.o"
 	@echo "... src/map/stage/stage_1_1.i"
 	@echo "... src/map/stage/stage_1_1.s"
+	@echo "... src/map/stage/stage_1_2.o"
+	@echo "... src/map/stage/stage_1_2.i"
+	@echo "... src/map/stage/stage_1_2.s"
+	@echo "... src/map/stage/stage_1_3.o"
+	@echo "... src/map/stage/stage_1_3.i"
+	@echo "... src/map/stage/stage_1_3.s"
 	@echo "... src/map/stage/transferGate.o"
 	@echo "... src/map/stage/transferGate.i"
 	@echo "... src/map/stage/transferGate.s"

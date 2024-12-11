@@ -16,6 +16,7 @@ public:
     virtual void AutoMationMove();
     virtual void AutoMation() = 0;
     virtual void InitializeWeapon() = 0;
+    virtual void Attack();
 
     // Setter and getter methods
     void SetWeapon(Weapon* weapon);

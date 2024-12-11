@@ -1,6 +1,7 @@
 #include "projectileFactory.h"
 
 #include "projectileType.h"
+#include "projectile.h"
 // #include "bullet/Arrow.h"
 #include "bullet/badPistolBullet.h"
 #include "bullet/redCircleBullet.h"
@@ -33,16 +34,17 @@ Projectile* ProjectileFactory::Create(ProjectileType type) {
     //     return new Arrow();
     case ProjectileType::BAD_PISTOL_BULLET:
         return new BadPistolBullet();
-    case ProjectileType::RED_DIAMOND_BULLET:
-        return nullptr;
+    case ProjectileType::RED_CIRCLE_BULLET:
+        return new RedCircleBullet();
+    // case ProjectileType::RED_DIAMOND_BULLET:
+    //     // return new RedCircleBullet();
     
 
     // case ProjectileType::RED_DIAMOND_BULLET:
     //     return new RedDiamondBullet();
     // case ProjectileType::RED_RECTANGLE_BULLET:
     //     return new RedRectangleBullet();
-    // case ProjectileType::RED_CIRCLE_BULLET:
-    //     return new RedCircleBullet();
+    
     // case ProjectileType::RED_SPLINTER_BULLET:
     //     return new RedSplinterBullet();
     // case ProjectileType::GAS_BLASTER_BULLET:

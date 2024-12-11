@@ -63,12 +63,14 @@ Player* ObjectManager::GetPlayer() {
 
 
 void ObjectManager::Render(sf::RenderWindow& window) {
-    std::sort(objects.begin(), objects.end(), [](GameObject* a, GameObject* b) {
-        return a->GetPosition().GetY() < b->GetPosition().GetY();
-    });
+    
+    // std::sort(objects.begin(), objects.end(), [](GameObject* a, GameObject* b) {
+    //     return a->GetPosition().GetY() < b->GetPosition().GetY();
+    // });
     for (auto object : objects) {        
         object->Render(window);
     }
+    
 }
 
 void ObjectManager::SetPlayerPosition(Vec& position) {
@@ -78,9 +80,8 @@ void ObjectManager::SetPlayerPosition(Vec& position) {
 }
 
 void ObjectManager::CollisionDetection() {
-    
-    for (int i = 0; i < objects.size(); i++) {
-        for (int j = i + 1; j < objects.size(); j++) {
+    for (unsigned int i = 0; i < objects.size() - 1; i++) {
+        for (unsigned int j = i + 1; j < objects.size(); j++) {
             if (objects[i]->GetHitBox()->IsCollision(objects[j]->GetHitBox())) {
                 objects[i]->Collision(objects[j]);
                 objects[j]->Collision(objects[i]);
@@ -88,18 +89,21 @@ void ObjectManager::CollisionDetection() {
         }
     }
 }
+
+
+
+
 void ObjectManager::DeleteObsoleteElements() {
-    for (vector<GameObject*>::iterator object = objects.begin(); object != objects.end();) {
+    for (auto object = objects.begin(); object != objects.end();) {
         if ((*object)->HasTag(Tag::REMOVE_ON_NEXT_FRAME)) {
             (*object)->RemoveTag(Tag::REMOVE_ON_NEXT_FRAME);
 
-            
-            delete *object;
-            *object = nullptr;
-            
-            object = objects.erase(object);
+            delete *object;         // Free memory
+            *object = nullptr;      // Nullify pointer to prevent dangling
+            object = objects.erase(object); // Erase from vector and get the next iterator
+        } else {
+            ++object;
         }
-        else { ++object; }
     }
 }
 
@@ -129,6 +133,17 @@ void ObjectManager::PushNewObjectsToList() {
 }
 
 void ObjectManager::AddObject(GameObject* gameObject) {
+    if (!gameObject) {
+        std::cerr << "Error: Attempted to add a null object to the manager!" << std::endl;
+        return;
+    }
+
+    // Ensure no duplicates are added
+    if (std::find(objects.begin(), objects.end(), gameObject) != objects.end()) {
+        std::cerr << "Warning: Attempted to add a duplicate object to the manager!" << std::endl;
+        return;
+    }
+
     objects.push_back(gameObject);
 }
 

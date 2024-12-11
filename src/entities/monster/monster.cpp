@@ -14,6 +14,10 @@ Monster::Monster(double level, bool isMeleeAttackMonster)
     AddTag(Tag::MONSTER);
 }
 
+void Monster::Attack() {
+
+}
+
 void Monster::Update(float deltaTime) {
    
 

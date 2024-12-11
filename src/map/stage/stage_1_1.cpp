@@ -106,10 +106,38 @@ void Stage_1_1::setBackground() {
 
     backgroundSprite.setTexture(backgroundTexture);
     backgroundSprite.setPosition(0, 0);
+
+    sf::Image image2;
+    if (!image2.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/map_xml/AddBackground.png")) {
+        std::cerr << "Error: Could not load background image!" << std::endl;
+        return;
+    }
+
+    image2.createMaskFromColor(transparentColor);
+
+    if (!backgroundTexture2.loadFromImage(image2)) {
+        std::cerr << "Error: Could not load texture from image!" << std::endl;
+        return;
+    }
+
+    backgroundSprite2.setTexture(backgroundTexture2);
+    backgroundSprite2.setPosition(0, 0);
+
+    // Adjust the scale of the second background to match the bounds of the first
+    sf::FloatRect bounds1 = backgroundSprite.getGlobalBounds();
+    sf::FloatRect bounds2 = backgroundSprite2.getGlobalBounds();
+
+    float scaleX = bounds1.width / bounds2.width;
+    float scaleY = bounds1.height / bounds2.height;
+
+    backgroundSprite2.setScale(scaleX, scaleY);
 }
 
+
 void Stage_1_1::Render(sf::RenderWindow& window) {
+    window.draw(backgroundSprite2);
     window.draw(backgroundSprite);
+    
     // for (Wall* wall : walls) {
     //     wall->Render(window); 
     // }

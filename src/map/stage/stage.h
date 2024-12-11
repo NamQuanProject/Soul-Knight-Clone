@@ -24,6 +24,9 @@ public:
 protected:
     sf::Sprite backgroundSprite;
     sf::Texture backgroundTexture;
+
+    sf::Sprite backgroundSprite2;
+    sf::Texture backgroundTexture2;
     Vec centerOffset;
     std::vector<Wall*> walls;
     std::vector<MonsterRoom*> monsterRooms;

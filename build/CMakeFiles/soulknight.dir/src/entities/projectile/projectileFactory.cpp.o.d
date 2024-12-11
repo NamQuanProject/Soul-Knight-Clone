@@ -2,6 +2,7 @@ CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectileFactory.cpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectileFactory.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectileType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/badPistolBullet.h \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp \
@@ -956,7 +957,6 @@ CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/../../utils/hitBox.h \

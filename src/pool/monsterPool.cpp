@@ -3,7 +3,7 @@
 #include "../entities/monster/monster.h"
 #include "../entities/monster/monsterFactory.h"
 
-#define PREALLOCATIONS 10
+#define PREALLOCATIONS 50
 
 MonsterPool* MonsterPool::instance = nullptr;
 
@@ -52,6 +52,6 @@ Monster* MonsterPool::Acquire(MonsterType type, double level) {
 }
 
 void MonsterPool::Release(Monster* monster) {
-    // monster->RemoveTag(Tag::DEAD);
+    monster->RemoveTag(Tag::DEAD);
     pool[static_cast<int>(monster->GetMonsterType())].push_back(monster);
 }

@@ -82,7 +82,7 @@ void Wall::Collision(GameObject* gameObject) {
 
 
 void Wall::Render(sf::RenderWindow& window) {
-    window.draw(wallShape);
+    // window.draw(wallShape);
 }
 
 

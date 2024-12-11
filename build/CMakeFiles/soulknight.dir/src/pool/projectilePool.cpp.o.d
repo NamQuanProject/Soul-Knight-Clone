@@ -848,6 +848,10 @@ CMakeFiles/soulknight.dir/src/pool/projectilePool.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__split_buffer \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/projectile/projectile.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/bitset \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/projectile/projectileFactory.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/../utils/vec.h \
@@ -861,8 +865,6 @@ CMakeFiles/soulknight.dir/src/pool/projectilePool.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Export.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Time.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/Err.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/bitset \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/FileInputStream.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/InputStream.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/System/NonCopyable.hpp \

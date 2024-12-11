@@ -5,7 +5,7 @@
 
 
 // class Bullet : public RotatableObject, public Projectile {
-class Bullet : public Projectile, public GameObject {
+class Bullet : public GameObject, public Projectile {
 public:
     Bullet();
     void Update(float deltaTime) override;
@@ -13,6 +13,7 @@ public:
     virtual void UpdateTag(GameObject* gameObject);
     virtual void LoadResources() = 0;
     virtual void SetSpeed(Vec newSpeed) = 0; // Add this method
+
     
     virtual sf::Vector2f GetPosition() = 0;
 

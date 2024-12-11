@@ -2,6 +2,9 @@
 
 enum class MonsterType {
     // floor 1: 0 ~ 10
+    GOBLIN_SHAMAN,
+    GOBLIN_GIANT,
+    
     DEVELS_SNARE,
 
     GOBLIN_GUARD_SPEAR,
@@ -12,8 +15,7 @@ enum class MonsterType {
     ELITE_GOBLIN_GUARD_DART,
     ELITE_GOBLIN_GUARD_HOE,
 
-    GOBLIN_SHAMAN,
-    GOBLIN_GIANT,
+    
 
     NORMAL_BOAR,
     DIRE_BOAR,

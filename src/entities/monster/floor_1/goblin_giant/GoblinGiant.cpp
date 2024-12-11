@@ -1,5 +1,6 @@
 ﻿#include "goblinGiant.h"
 #include <iostream>
+#include <cmath> 
 
 GoblinGiant::GoblinGiant(double level)
     : Monster(level, false) {
@@ -38,14 +39,14 @@ GoblinGiant::~GoblinGiant() {
 }
 
 void GoblinGiant::Update(float deltaTime) {
-    
-    animationManager.update(deltaTime); 
-     if (hp == 0) {
+    attackTimer += deltaTime; // Increment the attack timer
+    animationManager.update(deltaTime);
+
+    if (hp == 0) {
         AddTag(Tag::DEAD);
         animationManager.setAnimation("dead");
-
     }
-    sf::Vector2f knightPosition = animationManager.getCurrentSprite().getPosition();
+
     sf::Sprite sprite = animationManager.getCurrentSprite();
     sf::FloatRect bounds = sprite.getLocalBounds();
 
@@ -55,9 +56,15 @@ void GoblinGiant::Update(float deltaTime) {
     // Update the hitbox position to match the sprite
     sf::Vector2f hitboxPosition = sprite.getPosition();
     hitbox->SetPosition(Point(hitboxPosition.x, hitboxPosition.y));
-    
+
+
+    Attack();
     AutoMation();
+     
+
+        
 }
+
 
 void GoblinGiant::LoadResources() {
      Animation rightStandAnimation;
@@ -111,8 +118,86 @@ void GoblinGiant::LoadResources() {
     animationManager.addAnimation("dead", dead);  
 }
 
+void GoblinGiant::Attack() {
+    if (!HasTag(Tag::DEAD))
+    if (attackTimer >= attackCooldown) {
+        if (attack_time_2 <= 0) {
+            random_choice = Rand::Instance()->Get(1, 3);
+        }
+        else {
+            random_choice = 2;
+        }
+        
+        if (random_choice == 1) {
+            std::cout << "Monster Attack 1" << std::endl;
+            
+            Bullet* bullet = static_cast<RedCircleBullet*>(
+                ProjectilePool::Instance()->Acquire(ProjectileType::RED_CIRCLE_BULLET)
+            );
+            if (bullet != nullptr) {
+                Vec monster_position = position; // Position of the monster
+            Vec player_position = ObjectManager::Instance()->GetPlayer()->GetPosition();
+
+            bullet->SetPosition(monster_position);
+
+            Vec direction = player_position - monster_position;
+
+            float magnitude = std::sqrt(direction.GetX() * direction.GetX() + direction.GetY() * direction.GetY());
+            if (magnitude != 0) {
+                double x = direction.GetX() / magnitude ;
+                double y = direction.GetY() / magnitude ;
+                direction.SetX(x);
+                direction.SetY(y);
+            }
+
+            float bullet_speed = 270.0f;
+            Vec velocity = Vec(direction.GetX() * bullet_speed, direction.GetY() * bullet_speed);
+
+            bullet->SetSpeed(velocity);
+
+            ObjectManager::Instance()->AddObject(bullet);
+            }
+            
+
+            attackTimer = 0.0f;
+            
+        }
+        else if (random_choice == 2) {
+            std::cout << "Monster attack 2" << std::endl;
+            const float radianConversion = 3.14159f / 180.0f;
+            int angle = Rand::Instance()->Get(1, 360);
+            Bullet* bullet = static_cast<RedCircleBullet*>(
+                ProjectilePool::Instance()->Acquire(ProjectileType::RED_CIRCLE_BULLET)
+            );
+
+
+
+            bullet->SetPosition(position);
+
+            float radianAngle = angle * radianConversion;
+            float speedX = 270 * std::cos(radianAngle);
+            float speedY = 270 * std::sin(radianAngle);
+            Vec speed = Vec(speedX, speedY);
+
+            bullet->SetSpeed(speed);
+
+            ObjectManager::Instance()->AddObject(bullet);
+
+            attackTimer = 490.f;
+            attack_time_2 = attack_time_2 - 1;
+            std::cout << attack_time_2 << std::endl;
+        }        
+        else if (random_choice == 3) {
+            std::cout << "Monster Attack 3" << std::endl;
+            attackTimer = 100.f;
+            attack_time_2 = Rand::Instance()->Get(1, 5);
+        }
+    }
+}
+
 
 void GoblinGiant::AutoMation() {
+
     if (!HasTag(Tag::DEAD)) {
             // Get the player's position
         Vec playerPos = ObjectManager::Instance()->GetPlayer()->GetPosition();
@@ -124,13 +209,11 @@ void GoblinGiant::AutoMation() {
         // Calculate the direction vector from Goblin to Player
         Vec direction = playerPos - goblinPos;
 
-        // Calculate the distance between the Goblin and the Player
+
         double distance = std::sqrt(direction.GetX() * direction.GetX() + 
                                     direction.GetY() * direction.GetY());
 
-        // Check if the distance is greater than zero to avoid division by zero
         if (distance > 0) {
-            // Normalize the direction vector manually by dividing each component by the distance
             direction.SetX(direction.GetX() / distance);
             direction.SetY(direction.GetY() / distance);
         }
@@ -156,6 +239,9 @@ void GoblinGiant::AutoMation() {
         else {
             animationManager.setAnimation("idle_right");  // Replace with "attack" if needed
         }
+
+        
+        
     }
     
     
@@ -181,9 +267,11 @@ void GoblinGiant::Render(sf::RenderWindow& window) {
     
 }
 
-void GoblinGiant::SetPosition(Vec& position) {
-    double x = position.GetX();
-    double y = position.GetY();
+void GoblinGiant::SetPosition(Vec& new_position) {
+    position = new_position;
+    double x = new_position.GetX();
+    double y = new_position.GetY();
     sf::Vector2f web_position(x, y);
-    animationManager.getCurrentSprite().setPosition(position.GetX(), position.GetY());
+    animationManager.getCurrentSprite().setPosition(new_position.GetX(), new_position.GetY());
+
 }

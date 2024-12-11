@@ -6,6 +6,7 @@
 #include "../manager/objectManager.h"
 #include "../manager/stageManager.h"
 #include "../manager/keyboardManager.h"
+#include "../utils/random.h"
 // #include "../manager/UIManager.h"
 // #include "../pool/dropPool.h"
 #include "../pool/monsterPool.h"
@@ -28,9 +29,10 @@ public:
     void Initialize() override;
     
 protected:
+    Rand* randGen = Rand::Instance();
     ObjectManager* objectManager = ObjectManager::Instance();
     StageManager* stageManager = StageManager::Instance();
-
+    
     ProjectilePool* projectilePool = ProjectilePool::Instance();
     MonsterPool* monsterPool = MonsterPool::Instance();
     

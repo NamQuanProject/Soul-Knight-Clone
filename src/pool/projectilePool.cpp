@@ -1,9 +1,11 @@
 
 #include "projectilePool.h"
-
+#include <iostream>
 #include "../entities/projectile/projectile.h"
 #include "../entities/projectile/projectileFactory.h"
 #include "../entities/gameObject.h"
+
+
 
 #define PREALLOCATIONS 50
 

@@ -59,7 +59,7 @@ void MonsterRoom::IsInside() {
         playerY >= leftTop.GetY() && playerY <= rightBot.GetY()) {
         
         isInside = true;
-        
+        RelocatePlayerToCenter();
         SetDoors();  
         SetMonsters();  
                     
@@ -132,16 +132,19 @@ void MonsterRoom::SetMonsters() {
 
 void MonsterRoom::PlacedMonster() {
     // Calculate the adjusted bounds of the room
-    double minX = leftTop.GetX() + 16;
-    double minY = leftTop.GetY() + 16;
-    double maxX = rightBot.GetX() - 16;
-    double maxY = rightBot.GetY() - 16;
+    double bufferZone = 32.0; // Adjust this value to increase/decrease the distance from the wall
 
-    // Iterate over each monster and place it within the bounds
+// Calculate the valid placement bounds, keeping the buffer zone in mind
+    double minX = leftTop.GetX() + bufferZone;
+    double minY = leftTop.GetY() + bufferZone;
+    double maxX = rightBot.GetX() - bufferZone;
+    double maxY = rightBot.GetY() - bufferZone;
+
+    // Iterate over each monster and place it within the new bounds
     for (auto monster : monsters) {
         Vec pos = Vec(
             Rand::Instance()->Get(minX, maxX), // Random X-coordinate within bounds
-            Rand::Instance()->Get(minY, maxY) // Random Y-coordinate within bounds
+            Rand::Instance()->Get(minY, maxY)  // Random Y-coordinate within bounds
         );
         monster->SetPosition(pos); // Set the monster's position
     }
@@ -202,22 +205,29 @@ void MonsterRoom::RelocatePlayerToCenter() {
     double centerY = (leftTop.GetY() + rightBot.GetY()) / 2.0;
 
     Vec centerPosition(centerX, centerY);
+    Vec cur_position = ObjectManager::Instance()->GetPlayer()->GetPosition();
+    Vec transferPlayerDistance = centerPosition - cur_position ;
+    
+    transferPlayerDistance.SetLength(25);
 
-    ObjectManager::Instance()->GetPlayer()->SetPosition(centerPosition);
+    Vec temp_position = cur_position + transferPlayerDistance;
+
+    ObjectManager::Instance()->GetPlayer()->SetPosition(temp_position);
 }
+
 
 void MonsterRoom::GenerateMonsterMapRandomly(int stage) {
     int monsterAmount;
     if (size == 1) {
-        monsterAmount = 8;
+        monsterAmount = 4;
     }
     if (size == 2) {
-        monsterAmount = 16;
+        monsterAmount = 8;
     }
     switch (stage) {
     case 1:
         for (int i = 0; i < monsterAmount; i++) {
-            monsterMap[MonsterType::GOBLIN_GIANT] += 1;
+            monsterMap[static_cast<MonsterType>(Rand::Instance()->Get(0, 1))] += 1;
         }
         break;
     case 2:

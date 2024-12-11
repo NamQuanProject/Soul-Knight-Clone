@@ -89,7 +89,14 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
 void GameState::Initialize() {
     std::cout << "INitialize object manager" << std::endl;
     objectManager->Initialize();
-    std::cout << "FINISH Initialize object manager" << std::endl;
+     std::cout << "FINISH Initialize object manager" << std::endl;
+
+    std::cout << "Pool initilize" << std::endl;
+    projectilePool->Initialize();
+    monsterPool->Initialize();
+    std::cout << "Pool initilize finish" << std::endl;
+    
+
     std::cout << "INitialize stage manager" << std::endl;
     stageManager->Initialize();
     std::cout << "Finish stage manager" << std::endl;

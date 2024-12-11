@@ -171,9 +171,15 @@ void Knight::Collision(GameObject* gameObject) {
     if (gameObject->HasTag(Tag::WALL) || (gameObject->HasTag(Tag::MONSTER) && !gameObject->HasTag(Tag::DEAD))) {
         Vec current = GetPosition();
         current = current - speed;
-
-
         SetPosition(current);
+    }
+
+    if (gameObject->HasTag(Tag::MONSTER_ATTACK)) {
+        hp = hp - 1;
+        if (hp < 0) {
+            std::cout << "DEAD" << std::endl;
+        }
+
     }
 }
 

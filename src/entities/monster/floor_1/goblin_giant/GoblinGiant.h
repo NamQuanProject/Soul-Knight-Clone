@@ -3,6 +3,8 @@
 #include "../../../../manager/animationManager.h"
 #include "../../../../manager/objectManager.h"
 #include "../../../../utils/vec.h"
+#include "../../../../entities/projectile/bullet/redCircleBullet.h"
+#include "../../../../utils/random.h"
 
 class GoblinGiant : public Monster {
 public:
@@ -16,8 +18,14 @@ public:
     void InitializeWeapon() override;
     void SetPosition(Vec& position) override;   
     void Render(sf::RenderWindow& window) override;
+    void Attack() override;
 
 private:
     AnimationManager animationManager;
     bool collideOnObstacle = false;
+    float attackCooldown = 500.0f;  // Cooldown time in seconds
+    float attackTimer = 0.0f;     // Time since last attack
+    float fireCooldown;
+    int attack_time_2;
+    int random_choice;
 };
