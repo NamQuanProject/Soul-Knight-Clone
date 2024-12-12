@@ -959,6 +959,8 @@ CMakeFiles/soulknight.dir/src/manager/stageManager.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../../entities/../utils/hitBox.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../../entities/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../../entities/../utils/tag.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../core/animation.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/objectManager.h \
@@ -971,7 +973,6 @@ CMakeFiles/soulknight.dir/src/manager/stageManager.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../entities/player/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../entities/player/../weapon/../../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../entities/player/../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../entities/player/heroes/knight.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../entities/player/heroes/../player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../entities/player/heroes/../../weapon/gun/badPistol.h \
@@ -1066,4 +1067,5 @@ CMakeFiles/soulknight.dir/src/manager/stageManager.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../room/../../utils/tag.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../room/../../manager/objectManager.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/../room/../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/manager/../map/stage/stage_1_2.h

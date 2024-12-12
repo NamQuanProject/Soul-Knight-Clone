@@ -32,12 +32,13 @@ ObjectManager::~ObjectManager() {
 
 
 void ObjectManager::Initialize() {
+    objects.reserve(1000);
     this->player = new Knight();
 
 
     this->objects.emplace_back(this->player);
 
-
+    
 
     std::cout << "PLAYER CREATE" << std::endl;
 }
@@ -86,6 +87,7 @@ void ObjectManager::CollisionDetection() {
                 objects[i]->Collision(objects[j]);
                 objects[j]->Collision(objects[i]);
             }
+            
         }
     }
 }
@@ -117,7 +119,10 @@ void ObjectManager::Clear() {
     }
 }
 
-
+void ObjectManager::getSize() {
+    size_t length = objects.size();
+    std::cout <<  length << std::endl;
+}
 
 
 void ObjectManager::DeleteAllObjects() {
@@ -138,11 +143,11 @@ void ObjectManager::AddObject(GameObject* gameObject) {
         return;
     }
 
-    // Ensure no duplicates are added
-    if (std::find(objects.begin(), objects.end(), gameObject) != objects.end()) {
-        std::cerr << "Warning: Attempted to add a duplicate object to the manager!" << std::endl;
-        return;
-    }
+    // // Ensure no duplicates are added
+    // if (std::find(objects.begin(), objects.end(), gameObject) != objects.end()) {
+    //     std::cerr << "Warning: Attempted to add a duplicate object to the manager!" << std::endl;
+    //     return;
+    // }
 
     objects.push_back(gameObject);
 }

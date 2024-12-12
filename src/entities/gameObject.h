@@ -3,7 +3,10 @@
 #include "../utils/vec.h"
 #include "../utils/hitBox.h"
 #include "../utils/tag.h"
+
+
 #include <bitset>
+
 #include <SFML/Graphics.hpp>
 
 class GameObject {
@@ -15,7 +18,7 @@ public:
     virtual void Collision(GameObject* gameObject);
     virtual void Render(sf::RenderWindow& window) = 0;
     virtual void SetPosition(Vec& position);
-    
+
     Vec GetPosition();
 
     void Translate(const Vec& delta);
@@ -35,7 +38,7 @@ public:
     void AddTag(Tag tag);
     void RemoveTag(Tag tag);
     bool HasTag(Tag tag);
-
+    
    
 
 protected:
@@ -45,5 +48,5 @@ protected:
     bool active = true; 
     HitBox* hitbox = nullptr; 
     std::bitset<static_cast<int>(Tag::Count)> tags;
-
+    
 };

@@ -27,7 +27,7 @@ public:
     void Render(sf::RenderWindow& window);
     void SetPlayerPosition(Vec& playerposition);
     void DeleteObsoleteElements();
-
+    void getSize();
 
     void KeyDown(char key);
     void KeyUp(char key);

@@ -1,3 +1,4 @@
+#pragma once 
 #include <SFML/Graphics.hpp>
 #include "../../utils/point.h"
 #include "../wall/wall.h"

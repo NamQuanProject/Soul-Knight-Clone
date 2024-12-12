@@ -5,6 +5,7 @@
 #include "objectManager.h"
 #include "../map/stage/stageFactory.h"
 #include "../map/stage/stage_1_1.h"
+#include "../map/stage/stage_1_2.h"
 #include "../entities/player/player.h"
 #include "../utils/point.h"
 #include "../utils/vec.h"

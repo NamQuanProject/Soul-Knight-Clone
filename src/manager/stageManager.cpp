@@ -38,10 +38,10 @@ int StageManager::GetLevelNumber() {
 }
 
 void StageManager::Initialize() {
-    // transferGate = new TransferGate();
-    // Vec vector = Vec(0.0, 0.0);
-    // transferGate->SetPosition(vector);
-    // ObjectManager::Instance()->AddObject(transferGate);
+    transferGate = new TransferGate();
+    Vec vector = Vec(0.0, 0.0);
+    transferGate->SetPosition(vector);
+    ObjectManager::Instance()->AddObject(transferGate);
     NextStage();
     
 }
@@ -62,6 +62,9 @@ void StageManager::NextStage() {
     //     if (!gameStage) {
             
     //     }
+    if (stage == 2) {
+        gameStage = new Stage_1_2();
+    }
     // }
     gameStage = new Stage_1_1();
     gameStage->Initialize();

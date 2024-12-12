@@ -1066,5 +1066,7 @@ CMakeFiles/soulknight.dir/src/map/stage/stage_1_1.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/stageManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../map/stage/transferGate.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../map/stage/stageFactory.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../map/stage/stage_1_1.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../map/stage/stage_1_1.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../map/stage/stage_1_2.h

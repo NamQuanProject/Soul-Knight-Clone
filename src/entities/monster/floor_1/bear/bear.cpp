@@ -218,7 +218,6 @@ void Bear::AutoMation() {
             direction.SetY(direction.GetY() / distance);
         }
 
-        // Define the attack range and movement speed
         double attackRange = 50.0;
         double speed = 0.0015;
 
@@ -228,16 +227,14 @@ void Bear::AutoMation() {
             goblinPos = goblinPos + movement;             
             SetPosition(goblinPos);           
 
-            // Update animation based on movement direction
             if (direction.GetX() > 0) {
                 animationManager.setAnimation("run_right");
             } else {
                 animationManager.setAnimation("run_left");
             }
         } 
-        // If within attack range, stop and use idle/attack animation
         else {
-            animationManager.setAnimation("idle_right");  // Replace with "attack" if needed
+            animationManager.setAnimation("idle_right");  
         }
 
         
