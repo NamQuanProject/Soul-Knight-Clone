@@ -100,9 +100,9 @@ void ObjectManager::DeleteObsoleteElements() {
         if ((*object)->HasTag(Tag::REMOVE_ON_NEXT_FRAME)) {
             (*object)->RemoveTag(Tag::REMOVE_ON_NEXT_FRAME);
 
-            delete *object;         // Free memory
-            *object = nullptr;      // Nullify pointer to prevent dangling
-            object = objects.erase(object); // Erase from vector and get the next iterator
+            delete *object;        
+            *object = nullptr;      
+            object = objects.erase(object);
         } else {
             ++object;
         }
@@ -116,6 +116,7 @@ void ObjectManager::Clear() {
             continue;
         }
         object->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+        
     }
 }
 
@@ -135,6 +136,7 @@ void ObjectManager::DeleteAllObjects() {
 void ObjectManager::PushNewObjectsToList() {
     objects.insert(objects.end(), newObjects.begin(), newObjects.end());
     newObjects.clear();
+    
 }
 
 void ObjectManager::AddObject(GameObject* gameObject) {
@@ -142,6 +144,7 @@ void ObjectManager::AddObject(GameObject* gameObject) {
         std::cerr << "Error: Attempted to add a null object to the manager!" << std::endl;
         return;
     }
+    
 
     // // Ensure no duplicates are added
     // if (std::find(objects.begin(), objects.end(), gameObject) != objects.end()) {

@@ -8,6 +8,7 @@
 class Bullet : public GameObject, public Projectile {
 public:
     Bullet();
+    virtual ~Bullet();
     void Update(float deltaTime) override;
     void Collision(GameObject* gameObject) override;
     virtual void UpdateTag(GameObject* gameObject);

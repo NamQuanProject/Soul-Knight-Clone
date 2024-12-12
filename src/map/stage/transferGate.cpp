@@ -20,6 +20,7 @@ TransferGate::TransferGate() {
 void TransferGate::Initialize() {
     AddTag(Tag::TRANSFER_GATE);
     LoadResources();
+    
     animationManager.setAnimation("door_animation");
     animationManager.setOrigin();
     
@@ -28,8 +29,6 @@ void TransferGate::Initialize() {
     Point author = Point(position.x, position.y);
     Vec weapon_pos = Vec(position.x, position.y);
     hitbox = new HitBox(author); 
-    
-    
 }
 
 void TransferGate::Render(sf::RenderWindow& window) {
@@ -39,7 +38,6 @@ void TransferGate::Render(sf::RenderWindow& window) {
     if (hitbox) {
         hitbox->Render(window);
     }
-
 }
 
 void TransferGate::Update(float deltaTime) {
@@ -49,8 +47,9 @@ void TransferGate::Update(float deltaTime) {
 
     sf::FloatRect bounds = sprite.getLocalBounds();
 
-    hitbox->SetWidth(bounds.width);
-    hitbox->SetHeight(bounds.height);
+
+    hitbox->SetWidth(bounds.width - 25.f);
+    hitbox->SetHeight(bounds.height - 25.f);
 
     sf::Vector2f hitboxPosition = sprite.getPosition();
     hitbox->SetPosition(Point(hitboxPosition.x, hitboxPosition.y));
@@ -61,6 +60,7 @@ void TransferGate::Update(float deltaTime) {
 void TransferGate::LoadResources() {
     Animation doorAnimation;
     std::vector<std::string> framePaths1 = {
+        "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/object/transfer_gate/transfergate.bmp",
         "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/object/transfer_gate/transfergate.bmp",
     };
     doorAnimation.loadAnimation(framePaths1); 

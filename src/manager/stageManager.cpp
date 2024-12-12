@@ -12,7 +12,7 @@ StageManager* StageManager::Instance() {
     return instance;
 }
 
-StageManager::StageManager(): level(0), stage(1), success(false) {
+StageManager::StageManager(): level(0), stage(0), success(false) {
 
 }
 
@@ -39,6 +39,7 @@ int StageManager::GetLevelNumber() {
 
 void StageManager::Initialize() {
     transferGate = new TransferGate();
+    transferGate->Initialize();
     Vec vector = Vec(0.0, 0.0);
     transferGate->SetPosition(vector);
     ObjectManager::Instance()->AddObject(transferGate);
@@ -48,26 +49,24 @@ void StageManager::Initialize() {
 
 void StageManager::NextStage() {
     ObjectManager::Instance()->Clear();
-    // stage++;
-    // if (stage > 5 && level != 3) {
-    //     stage = 1;
-    //     level++;
-    // }
-    // if (level == 3 && stage == 7) {
-    //     success = true;
-    // }
-    // else {
-    //     delete gameStage;
-    //     
-    //     if (!gameStage) {
-            
-    //     }
-    if (stage == 2) {
-        gameStage = new Stage_1_2();
+    stage++;
+    
+    if (gameStage != nullptr) {
+        delete gameStage;
+        gameStage = nullptr;  
     }
-    // }
-    gameStage = new Stage_1_1();
-    gameStage->Initialize();
+
+
+    if (stage == 2) {
+        std::cout << "STAGE 2" << std::endl;
+        gameStage = new Stage_1_2();
+        gameStage->Initialize();
+    }
+    else {
+        gameStage = new Stage_1_1();
+        gameStage->Initialize();
+    }
+    
 }
 
 void StageManager::SetTransferGatePosition(Vec position) {

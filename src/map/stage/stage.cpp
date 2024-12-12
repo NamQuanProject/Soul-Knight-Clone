@@ -22,11 +22,18 @@ Stage::Stage() {
 }
 
 Stage::~Stage() {
-    for (auto wall : walls) {
-        if (wall) {
-            delete wall;
-        }
+    for (auto room : monsterRooms) {
+        delete room;
     }
+    // if (treasureRoom) {
+    //     delete treasureRoom;   
+    // }
+    for (auto wall : walls) {
+        wall->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+    }
+    // if (vendingMachine) {
+    //     vendingMachine->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+    // }
 }
 
 // sf::Sprite Stage::GetBackground() {
@@ -48,6 +55,7 @@ void Stage::Initialize() {
 
 void Stage::AddWall(Point point1, Point point2) {
     Wall* wall = new Wall(point1, point2);
+    wall->Initialize();
     walls.push_back(wall);
     std::cout << "Wall Add YES" << std::endl;
     ObjectManager::Instance()->AddObject(wall);

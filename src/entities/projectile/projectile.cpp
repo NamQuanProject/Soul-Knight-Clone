@@ -4,6 +4,7 @@ Projectile::Projectile(): isPoison(false), damage(0) {
 }
 
 Projectile::~Projectile() {
+    
 }
 
 void Projectile::SetDamage(double damage) {
@@ -13,6 +14,8 @@ void Projectile::SetDamage(double damage) {
 double Projectile::GetDamage() {
     return damage;
 }
+
+
 
 ProjectileType Projectile::GetProjectileType() {
     return static_cast<ProjectileType>(projectileType);

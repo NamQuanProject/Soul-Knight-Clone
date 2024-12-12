@@ -5,11 +5,15 @@
 #include "../room/monsterRoom.h"
 
 Stage_1_2::Stage_1_2() {
-    // setBackground();
-    // AddWallsToMap();
-    // SetPlayerPosition();
+    setBackground();
+    SetPlayerPosition();
+    AddWallsToMap();
+    SetTransferGate();
     // MonsterRoom* room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 1, 1, 1);
+    // MonsterRoom* room2 = new MonsterRoom(Point(1229, 655), Point(1473, 896), 1, 1, 1);
     // monsterRooms.push_back(room1);
+    // monsterRooms.push_back(room2);
+
 
     
     
@@ -19,15 +23,15 @@ Stage_1_2::Stage_1_2() {
 
 void Stage_1_2::Initialize() {
     setBackground();
-    AddWallsToMap();
     SetPlayerPosition();
+    AddWallsToMap();
     SetTransferGate();
-    MonsterRoom* room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 1, 1, 1);
-    MonsterRoom* room2 = new MonsterRoom(Point(1229, 655), Point(1473, 896), 1, 1, 1);
+
+
+    MonsterRoom* room1 = new MonsterRoom(Point(622, 541), Point(961, 882), 1, 1, 1);
+    MonsterRoom* room2 = new MonsterRoom(Point(1311, 588), Point(1552, 834), 1, 1, 1);
     monsterRooms.push_back(room1);
     monsterRooms.push_back(room2);
-
-
 }
 
 Stage_1_2::~Stage_1_2() {
@@ -35,50 +39,50 @@ Stage_1_2::~Stage_1_2() {
 }
 
 void Stage_1_2::AddWallsToMap() {
-    AddWall(Point(4, 82), Point(207, 97));
-    AddWall(Point(0, 97), Point(16, 272));
-    AddWall(Point(0, 273), Point(207, 286));
-    AddWall(Point(192, 96), Point(207, 142));
-    AddWall(Point(191, 224), Point(208, 273));
-    AddWall(Point(210, 128), Point(525, 142));
-    AddWall(Point(210, 225), Point(527, 238));
-    AddWall(Point(529, 16), Point(545, 142));
-    AddWall(Point(529, 225), Point(543, 352));
-    AddWall(Point(529, 2), Point(894, 16));
-    AddWall(Point(527, 351), Point(671, 369));
-    AddWall(Point(753, 353), Point(894, 367));
-    AddWall(Point(882, 16), Point(894, 142));
-    AddWall(Point(878, 225), Point(896, 350));
-    AddWall(Point(898, 129), Point(1215, 142));
-    AddWall(Point(898, 225), Point(1215, 241));
-    AddWall(Point(1218, 66), Point(1231, 139));
-    AddWall(Point(1216, 228), Point(1231, 305));
-    AddWall(Point(1216, 46), Point(1487, 64));
-    AddWall(Point(1216, 305), Point(1311, 319));
-    AddWall(Point(1393, 304), Point(1487, 317));
-    AddWall(Point(1469, 66), Point(1487, 142));
-    AddWall(Point(1473, 226), Point(1487, 303));
-    AddWall(Point(1491, 128), Point(1808, 144));
-    AddWall(Point(1491, 224), Point(1806, 239));
-    AddWall(Point(1809, 96), Point(1824, 144));
-    AddWall(Point(1809, 224), Point(1824, 271));
-    AddWall(Point(1808, 82), Point(2014, 96));
-    AddWall(Point(1809, 273), Point(2014, 287));
-    AddWall(Point(2000, 96), Point(2014, 271));
-    AddWall(Point(655, 370), Point(671, 687));
-    AddWall(Point(753, 371), Point(768, 687));
-    AddWall(Point(595, 687), Point(671, 706));
-    AddWall(Point(753, 689), Point(830, 704));
-    AddWall(Point(579, 689), Point(591, 942));
-    AddWall(Point(832, 687), Point(848, 944));
-    AddWall(Point(579, 942), Point(846, 958));
-    AddWall(Point(1297, 319), Point(1313, 636));
-    AddWall(Point(1393, 317), Point(1407, 639));
-    AddWall(Point(1215, 641), Point(1311, 655));
-    AddWall(Point(1393, 639), Point(1487, 656));
-    AddWall(Point(1215, 652), Point(1232, 896));
-    AddWall(Point(1471, 656), Point(1487, 897));
-    AddWall(Point(1215, 898), Point(1487, 912));
+    AddWall(Point(17, 576), Point(31, 848));
+    AddWall(Point(31, 575), Point(287, 591));
+    AddWall(Point(270, 589), Point(287, 672));
+    AddWall(Point(30, 830), Point(287, 847));
+    AddWall(Point(272, 751), Point(287, 833));
+    AddWall(Point(287, 656), Point(607, 670));
+    AddWall(Point(287, 751), Point(609, 768));
+    AddWall(Point(607, 528), Point(624, 671));
+    AddWall(Point(609, 750), Point(624, 895));
+    AddWall(Point(622, 527), Point(752, 543));
+    AddWall(Point(831, 528), Point(976, 543));
+    AddWall(Point(626, 879), Point(750, 895));
+    AddWall(Point(831, 880), Point(976, 895));
+    AddWall(Point(959, 751), Point(976, 881));
+    AddWall(Point(959, 540), Point(976, 672));
+    AddWall(Point(974, 656), Point(1311, 671));
+    AddWall(Point(976, 750), Point(1313, 768));
+    AddWall(Point(1296, 575), Point(1311, 656));
+    AddWall(Point(1311, 575), Point(1568, 591));
+    AddWall(Point(1296, 766), Point(1311, 848));
+    AddWall(Point(1552, 591), Point(1568, 671));
+    AddWall(Point(1311, 832), Point(1566, 847));
+    AddWall(Point(1552, 752), Point(1568, 832));
+    AddWall(Point(1568, 655), Point(1903, 672));
+    AddWall(Point(1568, 752), Point(1903, 767));
+    AddWall(Point(1889, 607), Point(1903, 657));
+    AddWall(Point(1903, 608), Point(2094, 623));
+    AddWall(Point(2079, 622), Point(2094, 814));
+    AddWall(Point(1889, 764), Point(1903, 816));
+    AddWall(Point(1900, 799), Point(2081, 817));
+    AddWall(Point(687, 0), Point(896, 15));
+    AddWall(Point(689, 12), Point(702, 208));
+    AddWall(Point(700, 192), Point(752, 208));
+    AddWall(Point(880, 14), Point(896, 208));
+    AddWall(Point(831, 191), Point(881, 207));
+    AddWall(Point(735, 205), Point(752, 529));
+    AddWall(Point(831, 207), Point(848, 529));
+    AddWall(Point(735, 894), Point(754, 1216));
+    AddWall(Point(830, 894), Point(848, 1216));
+    AddWall(Point(655, 1214), Point(754, 1231));
+    AddWall(Point(833, 1216), Point(928, 1231));
+    AddWall(Point(655, 1227), Point(670, 1486));
+    AddWall(Point(911, 1231), Point(928, 1486));
+    AddWall(Point(668, 1470), Point(913, 1487));
 }
 
 void Stage_1_2::Update(float deltaTime) {
@@ -91,14 +95,13 @@ void Stage_1_2::Update(float deltaTime) {
 
 void Stage_1_2::setBackground() {
     sf::Image image;
-    if (!image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/map/1-1.bmp")) {
+    if (!image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/new_map/map2.bmp")) {
         std::cerr << "Error: Could not load background image!" << std::endl;
         return;
     }
 
     sf::Color transparentColor(255, 255, 255);
     image.createMaskFromColor(transparentColor);
-
     if (!backgroundTexture.loadFromImage(image)) {
         std::cerr << "Error: Could not load texture from image!" << std::endl;
         return;
@@ -106,36 +109,10 @@ void Stage_1_2::setBackground() {
 
     backgroundSprite.setTexture(backgroundTexture);
     backgroundSprite.setPosition(0, 0);
-
-    sf::Image image2;
-    if (!image2.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/map_xml/AddBackground.png")) {
-        std::cerr << "Error: Could not load background image!" << std::endl;
-        return;
-    }
-
-    image2.createMaskFromColor(transparentColor);
-
-    if (!backgroundTexture2.loadFromImage(image2)) {
-        std::cerr << "Error: Could not load texture from image!" << std::endl;
-        return;
-    }
-
-    backgroundSprite2.setTexture(backgroundTexture2);
-    backgroundSprite2.setPosition(0, 0);
-
-    // Adjust the scale of the second background to match the bounds of the first
-    sf::FloatRect bounds1 = backgroundSprite.getGlobalBounds();
-    sf::FloatRect bounds2 = backgroundSprite2.getGlobalBounds();
-
-    float scaleX = bounds1.width / bounds2.width;
-    float scaleY = bounds1.height / bounds2.height;
-
-    backgroundSprite2.setScale(scaleX, scaleY);
 }
 
 
 void Stage_1_2::Render(sf::RenderWindow& window) {
-    window.draw(backgroundSprite2);
     window.draw(backgroundSprite);
     
     // for (Wall* wall : walls) {
@@ -158,7 +135,7 @@ void Stage_1_2::Collision(GameObject* gameObject) {
 
 
 void Stage_1_2::SetPlayerPosition() {
-    Vec knightPosition(105, 183);
+    Vec knightPosition(792,91);
     ObjectManager::Instance()->SetPlayerPosition(knightPosition);
 }
 

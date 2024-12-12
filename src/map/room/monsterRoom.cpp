@@ -219,10 +219,10 @@ void MonsterRoom::RelocatePlayerToCenter() {
 void MonsterRoom::GenerateMonsterMapRandomly(int stage) {
     int monsterAmount;
     if (size == 1) {
-        monsterAmount = 4;
+        monsterAmount = 8;
     }
     if (size == 2) {
-        monsterAmount = 8;
+        monsterAmount = 16;
     }
     switch (stage) {
     case 1:

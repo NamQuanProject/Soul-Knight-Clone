@@ -1,7 +1,10 @@
 #include "gameState.h"
 
 GameState::GameState(): camera(1000.f, 700.f) {
-    sf::FloatRect worldBounds(0, 0, 3000, 3000);
+
+
+
+    sf::FloatRect worldBounds(0, 0, 2016, 960);
 
     camera.setWorldBounds(worldBounds);
 
