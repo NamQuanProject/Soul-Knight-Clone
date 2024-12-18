@@ -657,6 +657,54 @@ src/entities/monster/floor_2/skeleton/skeleton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_2/skeleton/skeleton.cpp.s
 .PHONY : src/entities/monster/floor_2/skeleton/skeleton.cpp.s
 
+src/entities/monster/floor_2/spider/spider.o: src/entities/monster/floor_2/spider/spider.cpp.o
+.PHONY : src/entities/monster/floor_2/spider/spider.o
+
+# target to build an object file
+src/entities/monster/floor_2/spider/spider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_2/spider/spider.cpp.o
+.PHONY : src/entities/monster/floor_2/spider/spider.cpp.o
+
+src/entities/monster/floor_2/spider/spider.i: src/entities/monster/floor_2/spider/spider.cpp.i
+.PHONY : src/entities/monster/floor_2/spider/spider.i
+
+# target to preprocess a source file
+src/entities/monster/floor_2/spider/spider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_2/spider/spider.cpp.i
+.PHONY : src/entities/monster/floor_2/spider/spider.cpp.i
+
+src/entities/monster/floor_2/spider/spider.s: src/entities/monster/floor_2/spider/spider.cpp.s
+.PHONY : src/entities/monster/floor_2/spider/spider.s
+
+# target to generate assembly for a file
+src/entities/monster/floor_2/spider/spider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_2/spider/spider.cpp.s
+.PHONY : src/entities/monster/floor_2/spider/spider.cpp.s
+
+src/entities/monster/floor_3/valkoryn/valkoryn.o: src/entities/monster/floor_3/valkoryn/valkoryn.cpp.o
+.PHONY : src/entities/monster/floor_3/valkoryn/valkoryn.o
+
+# target to build an object file
+src/entities/monster/floor_3/valkoryn/valkoryn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_3/valkoryn/valkoryn.cpp.o
+.PHONY : src/entities/monster/floor_3/valkoryn/valkoryn.cpp.o
+
+src/entities/monster/floor_3/valkoryn/valkoryn.i: src/entities/monster/floor_3/valkoryn/valkoryn.cpp.i
+.PHONY : src/entities/monster/floor_3/valkoryn/valkoryn.i
+
+# target to preprocess a source file
+src/entities/monster/floor_3/valkoryn/valkoryn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_3/valkoryn/valkoryn.cpp.i
+.PHONY : src/entities/monster/floor_3/valkoryn/valkoryn.cpp.i
+
+src/entities/monster/floor_3/valkoryn/valkoryn.s: src/entities/monster/floor_3/valkoryn/valkoryn.cpp.s
+.PHONY : src/entities/monster/floor_3/valkoryn/valkoryn.s
+
+# target to generate assembly for a file
+src/entities/monster/floor_3/valkoryn/valkoryn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_3/valkoryn/valkoryn.cpp.s
+.PHONY : src/entities/monster/floor_3/valkoryn/valkoryn.cpp.s
+
 src/entities/monster/monster.o: src/entities/monster/monster.cpp.o
 .PHONY : src/entities/monster/monster.o
 
@@ -2172,6 +2220,12 @@ help:
 	@echo "... src/entities/monster/floor_2/skeleton/skeleton.o"
 	@echo "... src/entities/monster/floor_2/skeleton/skeleton.i"
 	@echo "... src/entities/monster/floor_2/skeleton/skeleton.s"
+	@echo "... src/entities/monster/floor_2/spider/spider.o"
+	@echo "... src/entities/monster/floor_2/spider/spider.i"
+	@echo "... src/entities/monster/floor_2/spider/spider.s"
+	@echo "... src/entities/monster/floor_3/valkoryn/valkoryn.o"
+	@echo "... src/entities/monster/floor_3/valkoryn/valkoryn.i"
+	@echo "... src/entities/monster/floor_3/valkoryn/valkoryn.s"
 	@echo "... src/entities/monster/monster.o"
 	@echo "... src/entities/monster/monster.i"
 	@echo "... src/entities/monster/monster.s"

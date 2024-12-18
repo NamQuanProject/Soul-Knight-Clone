@@ -232,12 +232,12 @@ void MonsterRoom::GenerateMonsterMapRandomly(int stage) {
         break;
     case 2:
         for (int i = 0; i < monsterAmount; i++) {
-            monsterMap[static_cast<MonsterType>(Rand::Instance()->Get(11, 11))] += 1;
+            monsterMap[static_cast<MonsterType>(Rand::Instance()->Get(11, 12))] += 1;
         }
         break;
     case 3:
         for (int i = 0; i < monsterAmount; i++) {
-            monsterMap[static_cast<MonsterType>(Rand::Instance()->Get(0, 2))] += 1;
+            monsterMap[static_cast<MonsterType>(Rand::Instance()->Get(22, 22))] += 1;
         }
         break;
     }

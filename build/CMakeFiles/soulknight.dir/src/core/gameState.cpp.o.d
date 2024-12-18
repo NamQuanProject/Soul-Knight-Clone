@@ -1078,5 +1078,24 @@ CMakeFiles/soulknight.dir/src/core/gameState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/keyboardManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/UIManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../utils/random.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/soundManager.h \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/InputSoundFile.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Export.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Listener.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Music.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundStream.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundSource.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/AlResource.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/OutputSoundFile.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/Sound.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundBuffer.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/set \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundBufferRecorder.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundRecorder.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileFactory.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileFactory.inl \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileReader.hpp \
+  /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio/SoundFileWriter.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/monsterPool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/projectilePool.h

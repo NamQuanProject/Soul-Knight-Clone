@@ -8,6 +8,7 @@
 #include "../manager/keyboardManager.h"
 #include "../manager/UIManager.h"
 #include "../utils/random.h"
+#include "../manager/soundManager.h"
 // #include "../manager/UIManager.h"
 // #include "../pool/dropPool.h"
 #include "../pool/monsterPool.h"
@@ -36,7 +37,7 @@ protected:
     UIManager* uiManager = UIManager::Instance();
     ProjectilePool* projectilePool = ProjectilePool::Instance();
     MonsterPool* monsterPool = MonsterPool::Instance();
-    
+    SoundManager soundManager;
     int gameFinishCounter;
     
 };

@@ -14,6 +14,8 @@
 // #include "/floor_1/goblin_guard/GoblinGuardSpear.h"
 #include "floor_1/goblin_shaman/goblinShaman.h"
 #include "floor_2/skeleton/skeleton.h"
+#include "floor_2/spider/spider.h"
+#include "floor_3/valkoryn/valkoryn.h"
 // #include "/floor_2/battery/Battery.h"
 // #include "/floor_2/big_skeleton/BigSkeleton.h"
 // #include "/floor_2/elite_skeleton/EliteSkeletonCurvedSword.h"
@@ -30,7 +32,7 @@
 // #include "/floor_3/goblin/Goblin.h"
 // #include "/floor_3/goblin_fly/GoblinFly.h"
 // #include "/floor_3/ufo/UFO.h"
-// #include "/floor_3/varkolyn/Varkolyn.h"
+
 // #include "/floor_3/varkolyn_guard/VarkolynGuardAxe.h"
 // #include "/floor_3/varkolyn_guard/VarkolynGuardMachinGun.h"
 
@@ -84,12 +86,13 @@ Monster* MonsterFactory::Create(MonsterType type, double level) {
     //     return new BigSkeleton(level);
     // case Type::SKELETON_SHAMAN:
     //     return new SkeletonShaman(level);
-    // case Type::SPIDER:
-    //     return new Spider(level);
+    case MonsterType::SPIDER:
+        return new Spider(level);
     // case Type::POISON_SPIDER:
     //     return new PoisonSpider(level);
     // case Type::BATTERY:
     //     return new Battery(level);
+
     // case Type::ZULAN:
     //     return new ZulanTheColossus();
     // case Type::ALIEN_MACHINE_GUN:
@@ -102,8 +105,8 @@ Monster* MonsterFactory::Create(MonsterType type, double level) {
     //     return new VarkolynGuardAxe(level);
     // case Type::VARKOLYN_GUARD_MACHINE_GUN:
     //     return new VarkolynGuardMachinGun(level);
-    // case Type::VARKOLYN:
-    //     return new Varkolyn(level);
+    case MonsterType::VARKOLYN:
+        return new Valkoryn(level);
     // case Type::GOBLIN:
     //     return new Goblin(level);
     // case Type::GOBLIN_FLY:

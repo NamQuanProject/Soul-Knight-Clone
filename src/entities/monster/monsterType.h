@@ -22,6 +22,8 @@ enum class MonsterType {
 
     // floor 2: 11 ~ 21
     SKELETON_BOW,
+    SPIDER,
+
 
     SKELETON_CURVED_SWORD,
     SKELETON_SHOTGUN,
@@ -33,11 +35,12 @@ enum class MonsterType {
     SKELETON_SHAMAN,
     BIG_SKELETON,
 
-    SPIDER,
+    
     POISON_SPIDER,
     BATTERY,
 
     // floor 3: 22 ~ 30
+    VARKOLYN,
     ZULAN,
 
     ALIEN_MACHINE_GUN,
@@ -49,7 +52,7 @@ enum class MonsterType {
 
     VARKOLYN_GUARD_AXE,
     VARKOLYN_GUARD_MACHINE_GUN,
-    VARKOLYN,
+    
 
     COUNT
 };

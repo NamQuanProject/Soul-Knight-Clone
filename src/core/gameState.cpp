@@ -2,6 +2,7 @@
 
 GameState::GameState() {
     Initialize();
+    soundManager.playMusic("background");
    
 }
 
@@ -14,7 +15,7 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     if (event.type == sf::Event::Closed) {
         window.close();
     }
-
+    
     Vec newSpeed(0.0, 0.0);
     double speed = 0.05;
     double diagSpeed = speed / std::sqrt(2);
