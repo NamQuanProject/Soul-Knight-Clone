@@ -41,6 +41,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_giant/goblinGiant.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.o"
   "CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.o.d"
+  "CMakeFiles/soulknight.dir/src/entities/monster/floor_2/skeleton/skeleton.cpp.o"
+  "CMakeFiles/soulknight.dir/src/entities/monster/floor_2/skeleton/skeleton.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/monster/monster.cpp.o"
   "CMakeFiles/soulknight.dir/src/entities/monster/monster.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/entities/monster/monsterFactory.cpp.o"

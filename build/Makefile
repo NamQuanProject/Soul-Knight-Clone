@@ -633,6 +633,30 @@ src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.s
 .PHONY : src/entities/monster/floor_1/goblin_shaman/goblinShaman.cpp.s
 
+src/entities/monster/floor_2/skeleton/skeleton.o: src/entities/monster/floor_2/skeleton/skeleton.cpp.o
+.PHONY : src/entities/monster/floor_2/skeleton/skeleton.o
+
+# target to build an object file
+src/entities/monster/floor_2/skeleton/skeleton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_2/skeleton/skeleton.cpp.o
+.PHONY : src/entities/monster/floor_2/skeleton/skeleton.cpp.o
+
+src/entities/monster/floor_2/skeleton/skeleton.i: src/entities/monster/floor_2/skeleton/skeleton.cpp.i
+.PHONY : src/entities/monster/floor_2/skeleton/skeleton.i
+
+# target to preprocess a source file
+src/entities/monster/floor_2/skeleton/skeleton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_2/skeleton/skeleton.cpp.i
+.PHONY : src/entities/monster/floor_2/skeleton/skeleton.cpp.i
+
+src/entities/monster/floor_2/skeleton/skeleton.s: src/entities/monster/floor_2/skeleton/skeleton.cpp.s
+.PHONY : src/entities/monster/floor_2/skeleton/skeleton.s
+
+# target to generate assembly for a file
+src/entities/monster/floor_2/skeleton/skeleton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/floor_2/skeleton/skeleton.cpp.s
+.PHONY : src/entities/monster/floor_2/skeleton/skeleton.cpp.s
+
 src/entities/monster/monster.o: src/entities/monster/monster.cpp.o
 .PHONY : src/entities/monster/monster.o
 
@@ -2145,6 +2169,9 @@ help:
 	@echo "... src/entities/monster/floor_1/goblin_shaman/goblinShaman.o"
 	@echo "... src/entities/monster/floor_1/goblin_shaman/goblinShaman.i"
 	@echo "... src/entities/monster/floor_1/goblin_shaman/goblinShaman.s"
+	@echo "... src/entities/monster/floor_2/skeleton/skeleton.o"
+	@echo "... src/entities/monster/floor_2/skeleton/skeleton.i"
+	@echo "... src/entities/monster/floor_2/skeleton/skeleton.s"
 	@echo "... src/entities/monster/monster.o"
 	@echo "... src/entities/monster/monster.i"
 	@echo "... src/entities/monster/monster.s"
