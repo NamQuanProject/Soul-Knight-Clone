@@ -13,6 +13,7 @@
 // #include "/floor_1/goblin_guard/GoblinGuardPistol.h"
 // #include "/floor_1/goblin_guard/GoblinGuardSpear.h"
 #include "floor_1/goblin_shaman/goblinShaman.h"
+#include "floor_2/skeleton/skeleton.h"
 // #include "/floor_2/battery/Battery.h"
 // #include "/floor_2/big_skeleton/BigSkeleton.h"
 // #include "/floor_2/elite_skeleton/EliteSkeletonCurvedSword.h"
@@ -42,6 +43,9 @@ Monster* MonsterFactory::Create(MonsterType type, double level) {
         return new GoblinGiant(level);
     case MonsterType::NORMAL_BOAR:
         return new Bear(level);
+    case MonsterType::GOBLIN_SHAMAN:
+        return new GoblinShaman(level);
+    
     // case Type::GOBLIN_GUARD_SPEAR:
     //     return new GoblinGuardSpear(level);
     // case Type::GOBLIN_GUARD_PISTOL:
@@ -56,16 +60,16 @@ Monster* MonsterFactory::Create(MonsterType type, double level) {
     // case Type::ELITE_GOBLIN_GUARD_HOE:
     //     return new EliteGoblinGuardHoe(level);
 
-    case MonsterType::GOBLIN_SHAMAN:
-        return new GoblinShaman(level);
+    
 
     
     // case Type::DIRE_BOAR:
     //     return new DireBoar(level);
 
     // level 2
-    // case Type::SKELETON_BOW:
-    //     return new SkeletonBow(level);
+    case MonsterType::SKELETON_BOW:
+        return new Skeleton(level);
+    
     // case Type::SKELETON_CURVED_SWORD:
     //     return new SkeletonCurvedSword(level);
     // case Type::SKELETON_SHOTGUN:

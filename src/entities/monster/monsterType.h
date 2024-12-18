@@ -22,6 +22,7 @@ enum class MonsterType {
 
     // floor 2: 11 ~ 21
     SKELETON_BOW,
+
     SKELETON_CURVED_SWORD,
     SKELETON_SHOTGUN,
 

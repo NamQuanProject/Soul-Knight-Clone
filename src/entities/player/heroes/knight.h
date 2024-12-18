@@ -33,7 +33,7 @@ private:
     float hitTimer = 0.f;
     const float hitDuration = 10.f; 
 
-    float skill_time = 30.f
+    float skill_time = 30.f;
 
 };
 

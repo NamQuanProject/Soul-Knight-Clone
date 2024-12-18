@@ -84,7 +84,7 @@ void Knight::Update(float deltaTime) {
     sf::Sprite sprite = animationManager.getCurrentSprite();
     sf::FloatRect bounds = sprite.getLocalBounds();
 
-    hitbox->SetWidth(bounds.width - 9.f);
+    hitbox->SetWidth(bounds.width - 17.f);
     hitbox->SetHeight(bounds.height - 1.f);
 
     sf::Vector2f hitboxPosition = sprite.getPosition();
@@ -145,9 +145,9 @@ void Knight::Render(sf::RenderWindow& window) {
 
     window.draw(sprite);
 
-    // if (hitbox) {
-    //     hitbox->Render(window); // Render the hitbox
-    // }
+    if (hitbox) {
+        hitbox->Render(window); // Render the hitbox
+    }
 }
 
 

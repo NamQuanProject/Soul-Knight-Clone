@@ -29,8 +29,8 @@ void Stage_1_2::Initialize() {
     SetTransferGate();
 
 
-    MonsterRoom* room1 = new MonsterRoom(Point(622, 541), Point(961, 882), 1, 1, 1);
-    MonsterRoom* room2 = new MonsterRoom(Point(1311, 588), Point(1552, 834), 1, 1, 1);
+    MonsterRoom* room1 = new MonsterRoom(Point(622, 541), Point(961, 882), 1, 2, 2);
+    MonsterRoom* room2 = new MonsterRoom(Point(1311, 588), Point(1552, 834), 1, 2, 2);
     monsterRooms.push_back(room1);
     monsterRooms.push_back(room2);
 }
