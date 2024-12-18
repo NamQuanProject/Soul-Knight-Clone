@@ -8,7 +8,7 @@ enum class Tag {
     WALL,
     
     DROP,
-    
+    TREASURE_CHEST,
     PLAYER_ATTACK,
     MONSTER_ATTACK,
     

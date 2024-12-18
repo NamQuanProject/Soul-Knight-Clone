@@ -74,3 +74,8 @@ Player::State Player::CheckState() {
 Player::Face Player::CheckFace() {
     return face;
 }
+
+
+void Player::Healing(int health) {
+    hp = hp + health;
+}

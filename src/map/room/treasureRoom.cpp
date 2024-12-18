@@ -38,3 +38,4 @@ TreasureRoom::TreasureRoom(Point leftTop, Point rightBot, int size)
 TreasureRoom::~TreasureRoom() {
     treasure->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
 }
+

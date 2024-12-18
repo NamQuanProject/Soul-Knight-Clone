@@ -4,6 +4,8 @@
 #include "../../manager/UIManager.h"
 #include "../room/roomSize.h"
 #include "../room/monsterRoom.h"
+#include "../shopping/treasureChest.h"
+
 
 Stage_1_1::Stage_1_1() {
     // setBackground();
@@ -30,10 +32,19 @@ void Stage_1_1::Initialize() {
     monsterRooms.push_back(room2);
 
 
+    Vec position = Vec(112,119);
+    TreasureChest* treasure = new TreasureChest();
+    treasure->Initialize();
+    treasure->SetPosition(position);
+    treasure->AddTag(Tag::TREASURE_CHEST);
+    ObjectManager::Instance()->AddObject(treasure);
 }
 
 Stage_1_1::~Stage_1_1() {
-    
+    if (treasure) {
+        delete treasure;
+        treasure = nullptr;
+    }
 }
 
 void Stage_1_1::AddWallsToMap() {

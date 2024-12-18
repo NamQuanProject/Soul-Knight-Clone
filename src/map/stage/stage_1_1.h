@@ -17,4 +17,5 @@ protected:
     void SetPlayerPosition() override;
     void SetTransferGate() override;
     void GenerateObstacle() override;
+
 };

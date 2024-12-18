@@ -27,11 +27,28 @@ void AnimationManager::setAnimation(const std::string& name) {
 
 void AnimationManager::update(float deltaTime) {
     if (!currentAnimationName.empty()) {
-        // Update the current animation's state (frames, timing)
         animations[currentAnimationName].update(deltaTime);
         currentSprite.setTexture(animations[currentAnimationName].getTexture());
     }
+    
 }
+
+bool AnimationManager::isFinished(const std::string& name) {
+    auto it = animations.find(name);
+    return it->second.isFinished();
+}
+
+void AnimationManager::pauseAnimation(const std::string& name) {
+    auto it = animations.find(name);
+    it->second.pause();
+}
+
+void AnimationManager::playAnimation(const std::string& name) {
+    auto it = animations.find(name);
+    it->second.resume();
+}
+
+
 
 sf::Sprite& AnimationManager::getCurrentSprite() {
     return currentSprite; 

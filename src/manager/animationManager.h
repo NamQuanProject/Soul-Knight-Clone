@@ -15,6 +15,10 @@ public:
     sf::Sprite& getCurrentSprite();  
     std::string getCurrentAnimationName() const;
     void setOrigin();
+    void playAnimation(const std::string& name);
+    void pauseAnimation(const std::string& name); 
+    bool isFinished(const std::string& name);
+
 
 private:
     std::unordered_map<std::string, Animation> animations;

@@ -151,6 +151,7 @@ void Knight::Render(sf::RenderWindow& window) {
 }
 
 
+
 void Knight::Attack() {
     weapon1->Attack();
 }

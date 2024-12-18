@@ -1094,6 +1094,10 @@ CMakeFiles/soulknight.dir/src/core/application.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/treasureChest.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/../../entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/../../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/stage_1_2.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/stage_1_3.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/keyboardManager.h \

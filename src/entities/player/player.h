@@ -23,8 +23,16 @@ public:
     void setSpeedY(double y);
     bool GetInteract();
     void SetInteractive(bool new_isInteract);
+
+
+    // STATE RELATED
+    void Healing(int health);
     Vec getSpeed();
 
+
+
+
+    
 
     virtual void runLeft() = 0;
     virtual void runRight() = 0;

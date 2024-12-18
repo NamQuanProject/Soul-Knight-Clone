@@ -5,9 +5,9 @@
 
 TransferGate::TransferGate() {
     AddTag(Tag::TRANSFER_GATE);
-    animationManager.setAnimation("door_animation");
-    LoadResources();
     
+    LoadResources();
+    animationManager.setAnimation("door_animation");
 
    
     if (!font.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/ARIAL.TTF")) {

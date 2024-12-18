@@ -17,3 +17,6 @@ for tag in area_tags:
     alt = tag.get('alt')
     title = tag.get('title')
     print(f"AddWall(Point({x1}, {y1}), Point({x2}, {y2}));")
+
+
+

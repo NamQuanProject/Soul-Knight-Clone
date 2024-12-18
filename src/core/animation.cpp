@@ -13,7 +13,9 @@ void Animation::setSpeed(float time) {
 }
 
 void Animation::update(float deltaTime) {
- // Accumulate time passed
+    if (isPaused) {
+        return;
+    }
 
     if (deltaTime >= frameTime) {
         // Update the current frame and reset elapsedTime
@@ -26,6 +28,7 @@ void Animation::update(float deltaTime) {
 void Animation::reset() {
     currentFrame = 0;  // Reset animation to the first frame
     elapsedTime = 0.f;  // Reset elapsed time
+    isPaused = false;
 }
 
 bool Animation::isLooping() const {
@@ -33,8 +36,17 @@ bool Animation::isLooping() const {
 }
 
 bool Animation::isFinished() const {
-    return !loop && currentFrame == frames.size() - 1;  // Check if the animation has finished (non-looping)
+    return currentFrame == frames.size() - 1;  // Check if the animation has finished (non-looping)
 }
+
+void Animation::pause() {
+    isPaused = true;  // Set the paused state to true
+}
+
+void Animation::resume() {
+    isPaused = false;  // Set the paused state to true
+}
+
 
 void Animation::setLooping(bool shouldLoop) {
     loop = shouldLoop;  // Set whether the animation should loop
