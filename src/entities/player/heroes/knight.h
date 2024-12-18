@@ -27,10 +27,14 @@ public:
 private:
     void loadKnightAnimations();       
     Weapon* weapon1;
+    Weapon* weapon2;
     AnimationManager animationManager;  
     bool isHit = false; 
     float hitTimer = 0.f;
     const float hitDuration = 10.f; 
+
+    float skill_time = 30.f
+
 };
 
 #endif // KNIGHT_H
