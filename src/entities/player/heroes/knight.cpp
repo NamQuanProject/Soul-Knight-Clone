@@ -59,6 +59,15 @@ void Knight::Update(float deltaTime) {
     Vec new_pos = currentPos + speed;
     SetPosition(new_pos);
 
+
+    if (isHit) {
+        hitTimer -= deltaTime;
+        if (hitTimer <= 0.0f) {
+            isHit = false;
+            animationManager.getCurrentSprite().setColor(sf::Color::White); // Reset color
+        }
+    }
+
     animationManager.update(deltaTime); 
     if (face == Knight::RIGHT) {
         // weapon1->setRight();
@@ -180,6 +189,10 @@ void Knight::Collision(GameObject* gameObject) {
             std::cout << "DEAD" << std::endl;
         }
 
+        // Trigger the red blink effect
+        isHit = true;
+        hitTimer = hitDuration;
+        animationManager.getCurrentSprite().setColor(sf::Color::Red);
     }
 }
 

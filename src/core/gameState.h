@@ -6,6 +6,7 @@
 #include "../manager/objectManager.h"
 #include "../manager/stageManager.h"
 #include "../manager/keyboardManager.h"
+#include "../manager/UIManager.h"
 #include "../utils/random.h"
 // #include "../manager/UIManager.h"
 // #include "../pool/dropPool.h"
@@ -32,12 +33,12 @@ protected:
     Rand* randGen = Rand::Instance();
     ObjectManager* objectManager = ObjectManager::Instance();
     StageManager* stageManager = StageManager::Instance();
-    
+    UIManager* uiManager = UIManager::Instance();
     ProjectilePool* projectilePool = ProjectilePool::Instance();
     MonsterPool* monsterPool = MonsterPool::Instance();
     
     int gameFinishCounter;
-    Camera camera;
+    
 };
 
 #endif // GAMESTATE_H

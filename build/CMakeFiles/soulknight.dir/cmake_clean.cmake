@@ -77,6 +77,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/soulknight.dir/src/entities/weapon/weapon.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/main.cpp.o"
   "CMakeFiles/soulknight.dir/src/main.cpp.o.d"
+  "CMakeFiles/soulknight.dir/src/manager/UIManager.cpp.o"
+  "CMakeFiles/soulknight.dir/src/manager/UIManager.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o"
   "CMakeFiles/soulknight.dir/src/manager/animationManager.cpp.o.d"
   "CMakeFiles/soulknight.dir/src/manager/camera.cpp.o"

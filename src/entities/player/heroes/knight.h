@@ -28,6 +28,9 @@ private:
     void loadKnightAnimations();       // Load knight-specific animations
     Weapon* weapon1;
     AnimationManager animationManager;  // Animation manager for handling animations
+    bool isHit = false; // Tracks if the knight is hit
+    float hitTimer = 5.f; // Timer for how long the red effect lasts
+    const float hitDuration = 5.f; 
 };
 
 #endif // KNIGHT_H

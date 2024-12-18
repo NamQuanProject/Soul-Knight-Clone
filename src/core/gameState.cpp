@@ -1,13 +1,6 @@
 #include "gameState.h"
 
-GameState::GameState(): camera(1000.f, 700.f) {
-
-
-
-    sf::FloatRect worldBounds(0, 0, 2016, 960);
-
-    camera.setWorldBounds(worldBounds);
-
+GameState::GameState() {
     Initialize();
    
 }
@@ -22,11 +15,9 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
         window.close();
     }
 
-    Vec newSpeed(0.0, 0.0); // Initialize new speed as stationary (0, 0)
+    Vec newSpeed(0.0, 0.0);
     double speed = 0.05;
-    double diagSpeed = speed / std::sqrt(2); // Adjusted speed for diagonal movement
-
-    // Handle diagonal movement
+    double diagSpeed = speed / std::sqrt(2);
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
         newSpeed.SetX(+diagSpeed);
         newSpeed.SetY(-diagSpeed);
@@ -103,19 +94,21 @@ void GameState::Initialize() {
     std::cout << "INitialize stage manager" << std::endl;
     stageManager->Initialize();
     std::cout << "Finish stage manager" << std::endl;
+
+    uiManager->Initialize();
+
 }
 
 void GameState::update(float deltaTime) {
     
     stageManager->Update(deltaTime);
     objectManager->Update(deltaTime);
-    sf::Vector2f knightPos(objectManager->GetPlayer()->GetPosition().GetX(), objectManager->GetPlayer()->GetPosition().GetY());
-    camera.update(knightPos);
+    uiManager->Update(deltaTime);
     
 }
 
 void GameState::render(sf::RenderWindow& window) {
     stageManager->GetStage()->Render(window);
     objectManager->Render(window);
-    camera.applyView(window);
+    uiManager->Render(window);
 }

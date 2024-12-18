@@ -4,8 +4,7 @@
 
 
 
-Wall::Wall(Point start, Point end) {  // Initialize hitbox with the start point
-    // Set up the wall's rectangle shape
+Wall::Wall(Point start, Point end) {  
     float width = static_cast<float>(end.GetX() - start.GetX());
     float height = static_cast<float>(end.GetY() - start.GetY());
 
@@ -23,8 +22,6 @@ Wall::Wall(Point start, Point end) {  // Initialize hitbox with the start point
     hitbox = new HitBox(authorPoint);
     hitbox->SetWidth(width);
     hitbox->SetHeight(height);
-
-
 
     AddTag(Tag::WALL);
 }
@@ -74,7 +71,7 @@ void Wall::Collision(GameObject* gameObject) {
         gameObject->Collision(this);
         wallShape.setFillColor(sf::Color::Red);
     } else {
-        // wallShape.setFillColor(sf::Color::Green);
+
     }
 }
 
@@ -82,7 +79,9 @@ void Wall::Collision(GameObject* gameObject) {
 
 
 void Wall::Render(sf::RenderWindow& window) {
-    // window.draw(wallShape);
+    // if (hitbox) {
+    //     hitbox->Render(window);
+    // }
 }
 
 

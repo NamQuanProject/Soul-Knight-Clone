@@ -2,7 +2,7 @@
 
 #include "stage_1_1.h"
 #include "stage_1_2.h"
-// #include "Stage_1_3.h"
+#include "stage_1_3.h"
 // #include "Stage_1_4.h"
 // #include "Stage_1_5.h"
 // #include "Stage_2_1.h"
@@ -21,7 +21,7 @@ Stage* StageFactory::Create(int level, int stage) {
     switch (level * 10 + stage) {
     case 11: return new Stage_1_1();
     case 12: return new Stage_1_2();
-    // case 13: return new Stage_1_3();
+    case 13: return new Stage_1_3();
     // case 14: return new Stage_1_4();
     // case 15: return new Stage_1_5();
     // case 21: return new Stage_2_1();

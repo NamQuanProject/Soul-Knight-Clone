@@ -1065,6 +1065,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/manager/UIManager.o: src/manager/UIManager.cpp.o
+.PHONY : src/manager/UIManager.o
+
+# target to build an object file
+src/manager/UIManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/UIManager.cpp.o
+.PHONY : src/manager/UIManager.cpp.o
+
+src/manager/UIManager.i: src/manager/UIManager.cpp.i
+.PHONY : src/manager/UIManager.i
+
+# target to preprocess a source file
+src/manager/UIManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/UIManager.cpp.i
+.PHONY : src/manager/UIManager.cpp.i
+
+src/manager/UIManager.s: src/manager/UIManager.cpp.s
+.PHONY : src/manager/UIManager.s
+
+# target to generate assembly for a file
+src/manager/UIManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/manager/UIManager.cpp.s
+.PHONY : src/manager/UIManager.cpp.s
+
 src/manager/animationManager.o: src/manager/animationManager.cpp.o
 .PHONY : src/manager/animationManager.o
 
@@ -2127,6 +2151,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/manager/UIManager.o"
+	@echo "... src/manager/UIManager.i"
+	@echo "... src/manager/UIManager.s"
 	@echo "... src/manager/animationManager.o"
 	@echo "... src/manager/animationManager.i"
 	@echo "... src/manager/animationManager.s"

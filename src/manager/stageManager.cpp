@@ -62,6 +62,11 @@ void StageManager::NextStage() {
         gameStage = new Stage_1_2();
         gameStage->Initialize();
     }
+    else if (stage == 3) {
+        std::cout << "STAGE 2" << std::endl;
+        gameStage = new Stage_1_3();
+        gameStage->Initialize();
+    }
     else {
         gameStage = new Stage_1_1();
         gameStage->Initialize();

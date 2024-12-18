@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 # Read the content from the file
-with open('map_xml/2.1.xml', 'r') as file:
+with open('map_xml/3.1.xml', 'r') as file:
     html_content = file.read()
 
 # Parse the HTML content

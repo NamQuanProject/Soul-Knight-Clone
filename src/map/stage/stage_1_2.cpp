@@ -1,6 +1,7 @@
 #include "stage_1_2.h"
 #include "../../manager/objectManager.h"
 #include "../../manager/stageManager.h"
+#include "../../manager/UIManager.h"
 #include "../room/roomSize.h"
 #include "../room/monsterRoom.h"
 
@@ -23,8 +24,8 @@ Stage_1_2::Stage_1_2() {
 
 void Stage_1_2::Initialize() {
     setBackground();
-    SetPlayerPosition();
     AddWallsToMap();
+    SetPlayerPosition();
     SetTransferGate();
 
 
@@ -100,17 +101,25 @@ void Stage_1_2::setBackground() {
         return;
     }
 
+    // Set transparent color mask
     sf::Color transparentColor(255, 255, 255);
     image.createMaskFromColor(transparentColor);
+
+    // Load texture from the image
     if (!backgroundTexture.loadFromImage(image)) {
         std::cerr << "Error: Could not load texture from image!" << std::endl;
         return;
     }
 
+    // Set the background sprite
     backgroundSprite.setTexture(backgroundTexture);
     backgroundSprite.setPosition(0, 0);
-}
 
+    // Get the size of the image and set the world bounds
+    sf::Vector2u imageSize = image.getSize(); // Get width and height of the image
+    sf::FloatRect worldBounds(0, 0, static_cast<float>(imageSize.x), static_cast<float>(imageSize.y));
+    UIManager::Instance()->setWorldBounds(worldBounds); // Set the world bounds for the camera
+}
 
 void Stage_1_2::Render(sf::RenderWindow& window) {
     window.draw(backgroundSprite);
@@ -141,7 +150,7 @@ void Stage_1_2::SetPlayerPosition() {
 
 
 void Stage_1_2::SetTransferGate() {
-   StageManager::Instance()->SetTransferGatePosition(Vec(1913, 184));
+   StageManager::Instance()->SetTransferGatePosition(Vec(1998, 714));
 }
 
 void Stage_1_2::GenerateObstacle() {

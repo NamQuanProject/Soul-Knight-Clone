@@ -3,8 +3,8 @@ import numpy as np
 import os
 
 # Define the file paths
-content_path = os.path.join('resources', 'map', '1-1.bmp')  # Image with the subject
-background_path = os.path.join('map_xml', 'AddBackground.png')  # Image with the background
+content_path = os.path.join('resources', 'map', '3-1.bmp')  # Image with the subject
+background_path = os.path.join('map_xml', 'AddBackground2.png')  # Image with the background
 
 # Load the images
 content_image = cv2.imread(content_path)  
