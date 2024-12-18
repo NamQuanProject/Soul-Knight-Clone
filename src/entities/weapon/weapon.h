@@ -2,6 +2,7 @@
 
 #include "../gameObject.h"
 #include "../../utils/vec.h"
+#include "../player/player.h"
 
 class Weapon : public GameObject {
 public:

@@ -958,4 +958,10 @@ CMakeFiles/soulknight.dir/src/entities/weapon/rangeWeapon.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../../utils/tag.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../../utils/tag.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../player/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../player/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../player/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../player/../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/weapon/../player/../../manager/../core/animation.h

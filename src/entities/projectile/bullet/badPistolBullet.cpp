@@ -66,9 +66,9 @@ void BadPistolBullet::Render(sf::RenderWindow& window) {
     window.draw(bulletSprite);
 
     // Optional: Render the hitbox for debugging
-    if (hitbox) {
-        hitbox->Render(window);
-    }
+    // if (hitbox) {
+    //     hitbox->Render(window);
+    // }
 }
 
 void BadPistolBullet::SetPosition(Vec& pos) {

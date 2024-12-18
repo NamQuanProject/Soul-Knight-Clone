@@ -962,6 +962,7 @@ CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/../player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/badPistol.h \
@@ -991,4 +992,5 @@ CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../core/animation.h

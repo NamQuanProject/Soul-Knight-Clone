@@ -36,7 +36,8 @@ public:
 
     PlayerType GetPlayerType();
     void SetPlayerType(PlayerType playerType);
-
+    vector<GameObject*> getAllCurrentMonster();
+    vector<Vec> getAllCurrentMonsterPosition();
     void PushNewObjectsToList();
 private:
     static ObjectManager* instance;
@@ -50,8 +51,10 @@ private:
     Player* player;
     PlayerType playerType;
     vector<GameObject*> objects;
+    vector<GameObject*> currentMonsters;
     vector<GameObject*> newObjects;
     void CollisionDetection();
     void DeleteAllObjects();
     
+
 };

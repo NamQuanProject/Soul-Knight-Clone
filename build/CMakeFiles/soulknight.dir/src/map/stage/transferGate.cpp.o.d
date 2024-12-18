@@ -971,6 +971,7 @@ CMakeFiles/soulknight.dir/src/map/stage/transferGate.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/../weapon/../player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/knight.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../player.h \
@@ -987,6 +988,7 @@ CMakeFiles/soulknight.dir/src/map/stage/transferGate.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../../../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/stage/../../manager/../entities/player/heroes/../../../utils/point.h \

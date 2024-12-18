@@ -1,4 +1,5 @@
 #include "badPistol.h"
+
 #include <iostream>
 
 BadPistol::BadPistol() {
@@ -20,16 +21,68 @@ void BadPistol::setOffset(double x, double y) {
 
 void BadPistol::Attack() {
     std::cout << "Attack" << std::endl;
-    Bullet* bullet = static_cast<BadPistolBullet*>((ProjectilePool::Instance()->Acquire(
-        ProjectileType::BAD_PISTOL_BULLET)));
-    
 
-    bullet->SetSpeed(Vec(270, 0));
-    // bullet->SetDamage(this->GetDamage());
-    bullet->UpdateTag(bullet);
-    ObjectManager::Instance()->AddObject(bullet);
+    // Get all current monster positions
+    std::vector<Vec> all_position = ObjectManager::Instance()->getAllCurrentMonsterPosition();
 
+    if (all_position.empty()) {
+        if (ObjectManager::Instance()->GetPlayer()->CheckFace() == Knight::RIGHT) {
+            Bullet* bullet = static_cast<BadPistolBullet*>(
+                ProjectilePool::Instance()->Acquire(ProjectileType::BAD_PISTOL_BULLET)
+            );
+            bullet->SetSpeed(Vec(270, 0));  
+            bullet->UpdateTag(bullet);
+            ObjectManager::Instance()->AddObject(bullet);
+        }
+        else {
+            Bullet* bullet = static_cast<BadPistolBullet*>(
+                ProjectilePool::Instance()->Acquire(ProjectileType::BAD_PISTOL_BULLET)
+            );
+            bullet->SetSpeed(Vec(-270, 0));  
+            bullet->UpdateTag(bullet);
+            ObjectManager::Instance()->AddObject(bullet);
+        }
+
+
+        
+    } else {
+        
+        Vec playerPosition = ObjectManager::Instance()->GetPlayer()->GetPosition();
+        Vec nearestMonsterPosition;
+        double nearestDistance = std::numeric_limits<double>::max();  // Start with a very large distance
+
+        // Find the nearest monster by comparing distances
+        for (Vec& monsterPosition : all_position) {
+            Vec difference = playerPosition - monsterPosition;
+            double distance = difference.GetLength();  // Calculate distance to the monster
+            if (distance < nearestDistance) {
+                nearestDistance = distance;
+                nearestMonsterPosition = monsterPosition;
+            }
+        }
+
+        // Shoot towards the nearest monster
+        Bullet* bullet = static_cast<BadPistolBullet*>(
+            ProjectilePool::Instance()->Acquire(ProjectileType::BAD_PISTOL_BULLET)
+        );
+
+        // Calculate direction vector to the nearest monster
+        Vec direction = nearestMonsterPosition - playerPosition;
+
+        // Normalize the direction vector
+        double length = direction.GetLength();
+        if (length > 0) {
+            direction.SetVec(direction.GetX() / length, direction.GetY() / length);
+        }
+
+        // Set bullet speed in the direction of the nearest monster
+        bullet->SetSpeed(direction * 360);  // Adjust speed to match the desired bullet speed
+
+        bullet->UpdateTag(bullet);
+        ObjectManager::Instance()->AddObject(bullet);
+    }
 }
+
 
 
 

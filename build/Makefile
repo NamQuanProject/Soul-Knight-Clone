@@ -921,6 +921,54 @@ src/entities/projectile/projectileFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.s
 .PHONY : src/entities/projectile/projectileFactory.cpp.s
 
+src/entities/shopping/trading.o: src/entities/shopping/trading.cpp.o
+.PHONY : src/entities/shopping/trading.o
+
+# target to build an object file
+src/entities/shopping/trading.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/shopping/trading.cpp.o
+.PHONY : src/entities/shopping/trading.cpp.o
+
+src/entities/shopping/trading.i: src/entities/shopping/trading.cpp.i
+.PHONY : src/entities/shopping/trading.i
+
+# target to preprocess a source file
+src/entities/shopping/trading.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/shopping/trading.cpp.i
+.PHONY : src/entities/shopping/trading.cpp.i
+
+src/entities/shopping/trading.s: src/entities/shopping/trading.cpp.s
+.PHONY : src/entities/shopping/trading.s
+
+# target to generate assembly for a file
+src/entities/shopping/trading.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/shopping/trading.cpp.s
+.PHONY : src/entities/shopping/trading.cpp.s
+
+src/entities/shopping/treasureChest.o: src/entities/shopping/treasureChest.cpp.o
+.PHONY : src/entities/shopping/treasureChest.o
+
+# target to build an object file
+src/entities/shopping/treasureChest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/shopping/treasureChest.cpp.o
+.PHONY : src/entities/shopping/treasureChest.cpp.o
+
+src/entities/shopping/treasureChest.i: src/entities/shopping/treasureChest.cpp.i
+.PHONY : src/entities/shopping/treasureChest.i
+
+# target to preprocess a source file
+src/entities/shopping/treasureChest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/shopping/treasureChest.cpp.i
+.PHONY : src/entities/shopping/treasureChest.cpp.i
+
+src/entities/shopping/treasureChest.s: src/entities/shopping/treasureChest.cpp.s
+.PHONY : src/entities/shopping/treasureChest.s
+
+# target to generate assembly for a file
+src/entities/shopping/treasureChest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/shopping/treasureChest.cpp.s
+.PHONY : src/entities/shopping/treasureChest.cpp.s
+
 src/entities/weapon/gun/badpistol.o: src/entities/weapon/gun/badpistol.cpp.o
 .PHONY : src/entities/weapon/gun/badpistol.o
 
@@ -2133,6 +2181,12 @@ help:
 	@echo "... src/entities/projectile/projectileFactory.o"
 	@echo "... src/entities/projectile/projectileFactory.i"
 	@echo "... src/entities/projectile/projectileFactory.s"
+	@echo "... src/entities/shopping/trading.o"
+	@echo "... src/entities/shopping/trading.i"
+	@echo "... src/entities/shopping/trading.s"
+	@echo "... src/entities/shopping/treasureChest.o"
+	@echo "... src/entities/shopping/treasureChest.i"
+	@echo "... src/entities/shopping/treasureChest.s"
 	@echo "... src/entities/weapon/gun/badpistol.o"
 	@echo "... src/entities/weapon/gun/badpistol.i"
 	@echo "... src/entities/weapon/gun/badpistol.s"

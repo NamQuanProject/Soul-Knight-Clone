@@ -1,9 +1,7 @@
 #include "weapon.h"
 
-// Default constructor: Initializes damage, range, and owner to default values
 Weapon::Weapon() : damage(0.0), range(0.0), owner(nullptr) {}
 
-// SetOwner: Assigns an owner to the weapon
 void Weapon::SetOwner(GameObject* newOwner) {
     owner = newOwner;
 }

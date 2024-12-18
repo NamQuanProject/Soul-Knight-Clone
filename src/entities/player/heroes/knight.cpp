@@ -64,7 +64,7 @@ void Knight::Update(float deltaTime) {
         hitTimer -= deltaTime;
         if (hitTimer <= 0.0f) {
             isHit = false;
-            animationManager.getCurrentSprite().setColor(sf::Color::White); // Reset color
+            animationManager.getCurrentSprite().setColor(sf::Color::White); 
         }
     }
 
@@ -185,17 +185,14 @@ void Knight::Collision(GameObject* gameObject) {
 
     if (gameObject->HasTag(Tag::MONSTER_ATTACK)) {
         hp = hp - 1;
-        if (hp < 0) {
-            std::cout << "DEAD" << std::endl;
+        if (hp <= 0) {
+            hp = 0;
         }
-
-        // Trigger the red blink effect
         isHit = true;
         hitTimer = hitDuration;
         animationManager.getCurrentSprite().setColor(sf::Color::Red);
     }
 }
-
 
 
 void Knight::SetBeforePosition(Vec a) {

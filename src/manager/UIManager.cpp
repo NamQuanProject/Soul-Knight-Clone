@@ -11,7 +11,7 @@ UIManager * UIManager ::Instance() {
     return instance;
 }
 
-UIManager::UIManager() : camera(1000, 1000) {}
+UIManager::UIManager() : camera(500, 500) {}
 
 UIManager::~UIManager() {}
 
@@ -35,23 +35,34 @@ void UIManager::applyView(sf::RenderWindow& window) {
 }
 
 void UIManager::Render(sf::RenderWindow& window) {
-    // Apply the camera's view to render the game world
     applyView(window);
 
-    // Render game objects here (e.g., background, player, enemies, etc.)
-    // Example: window.draw(gameObjects);
 
-    // Switch back to the default view for UI renderin
+    sf::Vector2f cameraCenter = camera.getView().getCenter(); 
+    sf::Vector2f cameraSize = camera.getView().getSize();
 
-    // Render UI elements (HP, Mana, etc.) here
+    
+    sf::Vector2f hpBarPosition(cameraCenter.x - cameraSize.x / 2 + 20, 
+                               cameraCenter.y - cameraSize.y / 2 + 20);
+    // HP bar fill
+    float playerHP = ObjectManager::Instance()->GetPlayer()->GetHP();
+    float playerMaxHP = ObjectManager::Instance()->GetPlayer()->GetMaxHP();
 
-    sf::Text hpText;
-    hpText.setString("HP: " + std::to_string(ObjectManager::Instance()->GetPlayer()->GetHP()));
-    hpText.setCharacterSize(30); // Set text size
-    hpText.setFillColor(sf::Color::Red); // Set text color
-    hpText.setPosition(183, 183); // Fixed position on the screen
 
-    window.draw(hpText);
+    float hpPercentage = playerHP / playerMaxHP;
 
-    // You can render other UI elements (like Mana) similarly
+    // Create the HP bar with a width proportional to the HP percentage
+    sf::RectangleShape hpBar(sf::Vector2f(200 * hpPercentage, 20)); // 200 is the full width of the HP bar
+    hpBar.setFillColor(sf::Color::Red);
+    hpBar.setPosition(hpBarPosition);
+
+    // Draw the HP bar background
+    sf::RectangleShape hpBarBackground(sf::Vector2f(200, 20)); // Full width of the HP bar background
+    hpBarBackground.setFillColor(sf::Color(50, 50, 50)); // Dark gray for background
+    hpBarBackground.setPosition(hpBarPosition);
+
+    // Draw the HP bar and background
+    window.draw(hpBarBackground);
+    window.draw(hpBar);
 }
+

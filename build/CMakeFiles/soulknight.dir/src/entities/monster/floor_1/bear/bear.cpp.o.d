@@ -963,41 +963,43 @@ CMakeFiles/soulknight.dir/src/entities/monster/floor_1/bear/bear.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/objectManager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/playerType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/../weapon/weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/badPistol.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/playerType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/badPistol.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../projectile/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../../core/animation.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/player/heroes/../../../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../entities/monster/monster.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../manager/../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../../core/animation.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/player/heroes/../../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../entities/monster/monster.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../weapon/../player/../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../entities/projectile/bullet/redCircleBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/bear/../../../../utils/random.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/random \

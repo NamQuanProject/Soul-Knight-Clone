@@ -55,9 +55,9 @@ bool Animation::loadAnimation(const std::vector<std::string>& framePaths) {
         sf::Texture texture;
         if (!texture.loadFromFile(path)) {
             std::cout << "Failed to load texture from " << path << std::endl;
-            return false;  // If a texture fails to load, return false
+            return false;  
         }
-        addFrame(makeTransparent(texture, sf::Color::White));  // Make transparent and add to frames
+        addFrame(makeTransparent(texture, sf::Color::White));  
     }
 
     return true;  // Return true if all frames are successfully loaded

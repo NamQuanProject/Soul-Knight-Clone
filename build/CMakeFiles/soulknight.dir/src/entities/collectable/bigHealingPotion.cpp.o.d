@@ -965,5 +965,6 @@ CMakeFiles/soulknight.dir/src/entities/collectable/bigHealingPotion.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/../player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../../manager/../core/animation.h

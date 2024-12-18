@@ -19,4 +19,7 @@ public:
     void Collision(GameObject* gameObject) override; 
 private:
     AnimationManager animationManager;
+    sf::Text interactiveText;
+    bool showingText;
+    sf::Font font;
 };

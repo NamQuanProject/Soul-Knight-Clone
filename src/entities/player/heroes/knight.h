@@ -13,9 +13,9 @@ class Knight : public Player {
 public:
     Knight();  
     ~Knight();     
-    void Initialize() override;             // Constructor
-    void Update(float deltaTime) override;  // Update method
-    void Render(sf::RenderWindow& window) override;  // Render method
+    void Initialize() override;           
+    void Update(float deltaTime) override;  
+    void Render(sf::RenderWindow& window) override;  
     void runRight() override;            
     void runLeft() override;              
     void standRight() override;           
@@ -25,12 +25,12 @@ public:
     void Attack() override;
     void SetBeforePosition(Vec before);
 private:
-    void loadKnightAnimations();       // Load knight-specific animations
+    void loadKnightAnimations();       
     Weapon* weapon1;
-    AnimationManager animationManager;  // Animation manager for handling animations
-    bool isHit = false; // Tracks if the knight is hit
-    float hitTimer = 5.f; // Timer for how long the red effect lasts
-    const float hitDuration = 5.f; 
+    AnimationManager animationManager;  
+    bool isHit = false; 
+    float hitTimer = 0.f;
+    const float hitDuration = 10.f; 
 };
 
 #endif // KNIGHT_H

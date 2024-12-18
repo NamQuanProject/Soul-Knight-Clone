@@ -963,6 +963,12 @@ CMakeFiles/soulknight.dir/src/pool/monsterPool.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../player/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../player/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../player/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../player/../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../weapon/../player/../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/../projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/pool/../entities/monster/monsterFactory.h

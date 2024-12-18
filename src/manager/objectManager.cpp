@@ -65,14 +65,28 @@ Player* ObjectManager::GetPlayer() {
 
 void ObjectManager::Render(sf::RenderWindow& window) {
     
-    // std::sort(objects.begin(), objects.end(), [](GameObject* a, GameObject* b) {
-    //     return a->GetPosition().GetY() < b->GetPosition().GetY();
-    // });
+    std::sort(objects.begin(), objects.end(), [](GameObject* a, GameObject* b) {
+        return a->GetPosition().GetY() < b->GetPosition().GetY();
+    });
     for (auto object : objects) {        
         object->Render(window);
     }
-    
 }
+
+vector<GameObject*> ObjectManager::getAllCurrentMonster() {
+    return currentMonsters;
+}
+
+vector<Vec> ObjectManager::getAllCurrentMonsterPosition() {
+    vector<Vec> position;
+
+    for (auto monster : currentMonsters) {
+        position.push_back(monster->GetPosition());
+    }
+    return position;
+
+}
+
 
 void ObjectManager::SetPlayerPosition(Vec& position) {
     if (player) {
@@ -97,9 +111,18 @@ void ObjectManager::CollisionDetection() {
 
 void ObjectManager::DeleteObsoleteElements() {
     for (auto object = objects.begin(); object != objects.end();) {
+        if ((*object)->HasTag(Tag::MONSTER) && (*object)->HasTag(Tag::DEAD)) {
+            // Find and remove the object from currentMonsters
+            auto it = std::find(currentMonsters.begin(), currentMonsters.end(), *object);
+            if (it != currentMonsters.end()) {
+                currentMonsters.erase(it);  // Remove the object from the vector
+            }
+        }
+
+
         if ((*object)->HasTag(Tag::REMOVE_ON_NEXT_FRAME)) {
             (*object)->RemoveTag(Tag::REMOVE_ON_NEXT_FRAME);
-
+            
             delete *object;        
             *object = nullptr;      
             object = objects.erase(object);
@@ -144,13 +167,13 @@ void ObjectManager::AddObject(GameObject* gameObject) {
         std::cerr << "Error: Attempted to add a null object to the manager!" << std::endl;
         return;
     }
-    
+    if (gameObject->HasTag(Tag::MONSTER)) {
+        // Check if the monster is already in the list
+        if (std::find(currentMonsters.begin(), currentMonsters.end(), gameObject) == currentMonsters.end()) {
+            currentMonsters.push_back(gameObject);
+        }
+    }
 
-    // // Ensure no duplicates are added
-    // if (std::find(objects.begin(), objects.end(), gameObject) != objects.end()) {
-    //     std::cerr << "Warning: Attempted to add a duplicate object to the manager!" << std::endl;
-    //     return;
-    // }
 
     objects.push_back(gameObject);
 }

@@ -72,7 +72,10 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
         objectManager->GetPlayer()->Attack(); 
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::L)) {
-        std::cout << "L" << std::endl;
+        objectManager->GetPlayer()->SetInteractive(true); 
+    }
+    else {
+        objectManager->GetPlayer()->SetInteractive(false); 
     }
 
     // Update player speed

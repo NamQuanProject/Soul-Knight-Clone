@@ -21,6 +21,8 @@ public:
     void setSpeed(Vec newSpeed);
     void setSpeedX(double x);
     void setSpeedY(double y);
+    bool GetInteract();
+    void SetInteractive(bool new_isInteract);
     Vec getSpeed();
 
 
@@ -29,8 +31,6 @@ public:
     virtual void standLeft() = 0;
     virtual void standRight() = 0;
 
-    
-    
 
 
     enum Face { RIGHT, LEFT } face;
@@ -44,16 +44,10 @@ protected:
     int maxMana;
     int shield;
     int maxShield;
-    
+    bool isInteract = false;
     Vec speed;
     AnimationManager animationManager;
     double weaponOffsetX;
     double weaponOffsetY;
-
-
-    
-
-    
-
 
 };

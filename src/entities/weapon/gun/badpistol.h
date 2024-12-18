@@ -6,6 +6,7 @@
 #include "../../../pool/projectilePool.h"
 #include "../../projectile/bullet.h"
 #include "../../projectile/bullet/badPistolBullet.h"
+#include "../../player/heroes/knight.h"
 
 
 class BadPistol : public RangeWeapon {

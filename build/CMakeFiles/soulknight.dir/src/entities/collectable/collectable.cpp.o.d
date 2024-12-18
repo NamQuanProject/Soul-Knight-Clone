@@ -964,6 +964,7 @@ CMakeFiles/soulknight.dir/src/entities/collectable/collectable.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../weapon/../player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/../player/../../manager/../core/animation.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \

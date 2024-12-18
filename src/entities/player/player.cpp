@@ -16,12 +16,24 @@ void Player::setSpeed(Vec newSpeed) {
     speed = newSpeed;
 }
 
+
+
+void Player::SetInteractive(bool new_isInteract) {
+    isInteract = new_isInteract;
+}
+
+
+
 Vec Player::getSpeed() {
     return speed;
 }
 
 void Player::setSpeedX(double x) {
     speed.SetX(x); // Set only the x-component of the velocity
+}
+
+bool Player::GetInteract() {
+    return isInteract;
 }
 
 

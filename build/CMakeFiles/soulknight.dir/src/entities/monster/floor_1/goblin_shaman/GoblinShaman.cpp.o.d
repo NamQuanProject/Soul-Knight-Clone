@@ -963,41 +963,43 @@ CMakeFiles/soulknight.dir/src/entities/monster/floor_1/goblin_shaman/goblinShama
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/objectManager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/playerType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/../weapon/weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/badPistol.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/playerType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/badPistol.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../projectile/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../../core/animation.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/player/heroes/../../../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../entities/monster/monster.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../manager/../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../../core/animation.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/player/heroes/../../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../entities/monster/monster.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../weapon/../player/../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../entities/projectile/bullet/redCircleBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_1/goblin_shaman/../../../../utils/random.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/random \

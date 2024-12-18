@@ -972,6 +972,12 @@ CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/weapon.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../weapon/weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../core/animation.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../projectile/projectile.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/monsterFactory.h \
@@ -1028,35 +1034,31 @@ CMakeFiles/soulknight.dir/src/map/room/monsterRoom.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/objectManager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/playerType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/../../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/../weapon/weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../core/animation.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/badPistol.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/playerType.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../player.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/badPistol.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../pool/../entities/projectile/projectileType.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../pool/../entities/projectile/projectile.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../projectile/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../../core/animation.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/player/heroes/../../../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../entities/monster/monster.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../manager/../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../../core/animation.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/player/heroes/../../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../entities/monster/monster.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../entities/monster/../weapon/../player/../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../../map/wall/horizontalDoor1.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../wall/../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/room/../wall/../../core/animation.h \
