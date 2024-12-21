@@ -48,5 +48,4 @@ protected:
     bool active = true; 
     HitBox* hitbox = nullptr; 
     std::bitset<static_cast<int>(Tag::Count)> tags;
-    
 };

@@ -4,7 +4,7 @@
 #include "../../manager/objectManager.h"
 #include "../../pool/dropPool.h"
 #include "../../utils/random.h"
-// #include "../weapon/weaponFactory.h"
+// #include "../../weapon/weaponFactory.h"
 
 
 
@@ -12,6 +12,7 @@
 
 TreasureChest::TreasureChest() {
     std::cout << "INitialize" << std::endl;
+    Initialize();
    
 }
 
@@ -51,7 +52,7 @@ void TreasureChest::Update(float deltaTime) {
     animationManager.update(deltaTime); 
     sf::Sprite sprite = animationManager.getCurrentSprite();
     sf::Vector2f gatePosition = sprite.getPosition();
-    interactiveText.setPosition(gatePosition.x - 45.f, gatePosition.y + 50.f);  
+    interactiveText.setPosition(gatePosition.x - 30.f, gatePosition.y + 35.f);  
     
     sf::FloatRect bounds = sprite.getLocalBounds();
     hitbox->SetWidth(bounds.width - 45.f);
@@ -131,7 +132,7 @@ void TreasureChest::CreateContents() {
 }
 
 void TreasureChest::CreateContentsNormalRoom() {
-    // int rand = Rand::Instance()->Get(1, 10);
+    int rand = Rand::Instance()->Get(1, 10);
     // if (rand <= 7) {
     //     GameObject* contents;
     //     for (int i = 0; i < Rand::Instance()->Get(3, 9); i++) {

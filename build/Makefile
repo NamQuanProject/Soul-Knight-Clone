@@ -249,6 +249,30 @@ src/core/pauseState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/pauseState.cpp.s
 .PHONY : src/core/pauseState.cpp.s
 
+src/core/stateManager.o: src/core/stateManager.cpp.o
+.PHONY : src/core/stateManager.o
+
+# target to build an object file
+src/core/stateManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/stateManager.cpp.o
+.PHONY : src/core/stateManager.cpp.o
+
+src/core/stateManager.i: src/core/stateManager.cpp.i
+.PHONY : src/core/stateManager.i
+
+# target to preprocess a source file
+src/core/stateManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/stateManager.cpp.i
+.PHONY : src/core/stateManager.cpp.i
+
+src/core/stateManager.s: src/core/stateManager.cpp.s
+.PHONY : src/core/stateManager.s
+
+# target to generate assembly for a file
+src/core/stateManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/stateManager.cpp.s
+.PHONY : src/core/stateManager.cpp.s
+
 src/entities/collectable/bigCompositePotion.o: src/entities/collectable/bigCompositePotion.cpp.o
 .PHONY : src/entities/collectable/bigCompositePotion.o
 
@@ -944,6 +968,30 @@ src/entities/projectile/bullet/redRectangleBullet.s: src/entities/projectile/bul
 src/entities/projectile/bullet/redRectangleBullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/redRectangleBullet.cpp.s
 .PHONY : src/entities/projectile/bullet/redRectangleBullet.cpp.s
+
+src/entities/projectile/bullet/spearWave.o: src/entities/projectile/bullet/spearWave.cpp.o
+.PHONY : src/entities/projectile/bullet/spearWave.o
+
+# target to build an object file
+src/entities/projectile/bullet/spearWave.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/spearWave.cpp.o
+.PHONY : src/entities/projectile/bullet/spearWave.cpp.o
+
+src/entities/projectile/bullet/spearWave.i: src/entities/projectile/bullet/spearWave.cpp.i
+.PHONY : src/entities/projectile/bullet/spearWave.i
+
+# target to preprocess a source file
+src/entities/projectile/bullet/spearWave.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/spearWave.cpp.i
+.PHONY : src/entities/projectile/bullet/spearWave.cpp.i
+
+src/entities/projectile/bullet/spearWave.s: src/entities/projectile/bullet/spearWave.cpp.s
+.PHONY : src/entities/projectile/bullet/spearWave.s
+
+# target to generate assembly for a file
+src/entities/projectile/bullet/spearWave.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/spearWave.cpp.s
+.PHONY : src/entities/projectile/bullet/spearWave.cpp.s
 
 src/entities/projectile/projectile.o: src/entities/projectile/projectile.cpp.o
 .PHONY : src/entities/projectile/projectile.o
@@ -2169,6 +2217,9 @@ help:
 	@echo "... src/core/pauseState.o"
 	@echo "... src/core/pauseState.i"
 	@echo "... src/core/pauseState.s"
+	@echo "... src/core/stateManager.o"
+	@echo "... src/core/stateManager.i"
+	@echo "... src/core/stateManager.s"
 	@echo "... src/entities/collectable/bigCompositePotion.o"
 	@echo "... src/entities/collectable/bigCompositePotion.i"
 	@echo "... src/entities/collectable/bigCompositePotion.s"
@@ -2256,6 +2307,9 @@ help:
 	@echo "... src/entities/projectile/bullet/redRectangleBullet.o"
 	@echo "... src/entities/projectile/bullet/redRectangleBullet.i"
 	@echo "... src/entities/projectile/bullet/redRectangleBullet.s"
+	@echo "... src/entities/projectile/bullet/spearWave.o"
+	@echo "... src/entities/projectile/bullet/spearWave.i"
+	@echo "... src/entities/projectile/bullet/spearWave.s"
 	@echo "... src/entities/projectile/projectile.o"
 	@echo "... src/entities/projectile/projectile.i"
 	@echo "... src/entities/projectile/projectile.s"

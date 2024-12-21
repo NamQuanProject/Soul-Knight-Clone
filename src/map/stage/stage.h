@@ -4,7 +4,7 @@
 #include "../wall/wall.h"
 #include "../../manager/objectManager.h"
 #include "../room/monsterRoom.h"
-#include "../shopping/treasureChest.h"
+#include "../room/treasureRoom.h"
 
 
 
@@ -34,12 +34,9 @@ protected:
     virtual void SetPlayerPosition() = 0;
     virtual void SetTransferGate() = 0;
     virtual void GenerateObstacle() = 0;
-    TreasureChest* treasure;
-
+    
+    TreasureRoom* treasureRoom;
 private:
     
-    // std::vector<MonsterRoom*> monsterRooms;
     
-    
-    // VendingMachine* vendingMachine;
 };

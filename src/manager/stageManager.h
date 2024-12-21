@@ -25,6 +25,9 @@ public:
     void NextStage();
     void SetTransferGatePosition(Vec position);
     bool GetSuccess();
+    void setFail();
+    bool getFail();
+
 
 private:
     static StageManager* instance;
@@ -33,4 +36,6 @@ private:
     Stage* gameStage = nullptr;
     TransferGate* transferGate = nullptr;
     bool success;
+
+    bool fail;
 };

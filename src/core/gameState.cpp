@@ -1,5 +1,5 @@
 #include "gameState.h"
-
+#include "stateManager.h"
 GameState::GameState() {
     Initialize();
     soundManager.playMusic("background");
@@ -9,7 +9,6 @@ GameState::GameState() {
 GameState::~GameState() {
     
 }
-
 
 void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     if (event.type == sf::Event::Closed) {
@@ -104,10 +103,21 @@ void GameState::Initialize() {
 }
 
 void GameState::update(float deltaTime) {
-    
+    if (objectManager->GetPlayer()->GetHP() <= 0) {
+        stageManager->setFail();
+    }
     stageManager->Update(deltaTime);
     objectManager->Update(deltaTime);
-    uiManager->Update(deltaTime);
+    
+    if (stageManager->GetSuccess() == false) {
+        uiManager->Update(deltaTime);
+    }
+    
+    
+    if (stageManager->GetSuccess() == true || stageManager->getFail() == true) {
+        StateManager::Instance()->SwitchState(StateType::MENU_STATE);
+    }
+    
     
 }
 

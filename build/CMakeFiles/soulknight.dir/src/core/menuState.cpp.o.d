@@ -985,38 +985,7 @@ CMakeFiles/soulknight.dir/src/core/menuState.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../weapon/../player/player.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../core/animation.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/stateManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/badPistol.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../rangeWeapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../../manager/objectManager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/playerType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/player.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/monster.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/monsterType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../weapon/weapon.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../projectile/projectile.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../projectile/projectileType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../utils/point.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../utils/vec.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../../pool/projectilePool.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectileType.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../../pool/../entities/projectile/projectile.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../projectile/bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../projectile/../gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/badPistolBullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../core/animation.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../entities/player/heroes/../../../utils/point.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream

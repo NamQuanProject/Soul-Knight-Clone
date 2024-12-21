@@ -9,6 +9,7 @@ public:
     void Update(float deltaTime) override;
     void Render(sf::RenderWindow& window) override;
     void Collision(GameObject* gameObject);
+
 protected:
     void setBackground() override;
     void AddWallsToMap();

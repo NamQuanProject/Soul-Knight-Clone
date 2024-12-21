@@ -30,21 +30,14 @@ void Stage_1_1::Initialize() {
     MonsterRoom* room2 = new MonsterRoom(Point(1229, 655), Point(1473, 896), 1, 1, 1);
     monsterRooms.push_back(room1);
     monsterRooms.push_back(room2);
+    
+    treasureRoom = new TreasureRoom(Point(593, 704), Point(830, 944), 1);
 
 
-    Vec position = Vec(112,119);
-    TreasureChest* treasure = new TreasureChest();
-    treasure->Initialize();
-    treasure->SetPosition(position);
-    treasure->AddTag(Tag::TREASURE_CHEST);
-    ObjectManager::Instance()->AddObject(treasure);
 }
 
 Stage_1_1::~Stage_1_1() {
-    if (treasure) {
-        delete treasure;
-        treasure = nullptr;
-    }
+
 }
 
 void Stage_1_1::AddWallsToMap() {

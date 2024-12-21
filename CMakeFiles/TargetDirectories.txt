@@ -1,0 +1,3 @@
+/Users/quannguyennam/Documents/Projects/Soul Knight Clone/CMakeFiles/soulknight.dir
+/Users/quannguyennam/Documents/Projects/Soul Knight Clone/CMakeFiles/edit_cache.dir
+/Users/quannguyennam/Documents/Projects/Soul Knight Clone/CMakeFiles/rebuild_cache.dir

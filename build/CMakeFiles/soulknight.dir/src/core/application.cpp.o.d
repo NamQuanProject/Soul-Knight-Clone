@@ -954,6 +954,7 @@ CMakeFiles/soulknight.dir/src/core/application.cpp.o: \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/state.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/stateManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/menuState.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/soundManager.h \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Audio.hpp \
@@ -1094,10 +1095,8 @@ CMakeFiles/soulknight.dir/src/core/application.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../utils/tag.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../manager/objectManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/treasureChest.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/../../entities/gameObject.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/../../manager/animationManager.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../shopping/../../utils/vec.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/treasureRoom.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/../room/../../entities/gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/stage_1_2.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../map/stage/stage_1_3.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/keyboardManager.h \

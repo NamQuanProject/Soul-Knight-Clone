@@ -16,11 +16,11 @@ Knight::Knight() : Player() {
     AddTag(Tag::PLAYER);
     weapon1->SetPosition(weapon_pos);
 
-
+    
     maxHp = 7;
     hp = maxHp;
     maxMana = 200;
-    mana = maxHp;
+    mana = maxMana;
     maxShield = 6;
     shield = maxShield;
 }
@@ -153,7 +153,17 @@ void Knight::Render(sf::RenderWindow& window) {
 
 
 void Knight::Attack() {
+    // if (mana <= 0) {
+    //     return;
+    // }
+    // else {
     weapon1->Attack();
+    mana-=1;
+    if (mana <= 0) {
+        mana = 0;
+    }
+    // }
+    
 }
 
 

@@ -6,21 +6,24 @@
 
 Application::Application()
     : window(sf::VideoMode(1024, 1024), "Soul Knight"), 
-      currentState(std::make_unique<GameState>()),
-      deltaTime(0.0f) { // Initialize deltaTime
-    window.setFramerateLimit(2500);
+      deltaTime(0.0f) { 
+    window.setFramerateLimit(2500);  // Set a reasonable framerate limit, 2500 might be too high
+    stateManager = StateManager::Instance();
+ 
+}
+
+Application::~Application() {
+    // No need to delete stateManager if it's a Singleton
+    // stateManager will be cleaned up automatically when the application ends
 }
 
 void Application::run() {
     while (window.isOpen()) {
         processEvents();
 
-        // Update deltaTime
-        deltaTime = clock.getElapsedTime().asSeconds();
+        deltaTime = clock.getElapsedTime().asSeconds(); // Restart clock every frame to get accurate deltaTime
 
         update(deltaTime);
-
-        
         render();
         if (deltaTime >= 0.1f) {
             clock.restart();
@@ -33,41 +36,22 @@ void Application::processEvents() {
     while (window.pollEvent(event)) {
         if (event.type == sf::Event::Closed)
             window.close();
-
-        // Delegate event handling to the current state
-        currentState->handleEvent(event, window);
+        stateManager->HandleEvent(event, window);
     }
 }
 
 void Application::update(float deltaTime) {
-    // Delegate update logic to the current state
-
-
-    currentState->update(deltaTime);
+    stateManager->Update(deltaTime);
 }
 
 void Application::render() {
-    window.clear();
+    window.clear();  // Clear the window
 
-    // Delegate rendering logic to the current state
-    currentState->render(window);
+    stateManager->Render(window);  // Render the current state
 
-    window.display();
+    window.display();  // Display the rendered frame
 }
 
 void Application::changeState(StateType type) {
-    // Switch to the appropriate state
-    switch (type) {
-        case StateType::MENU_STATE:
-            currentState = std::make_unique<MenuState>();
-            break;
-        case StateType::GAME_STATE:
-            currentState = std::make_unique<GameState>();
-            break;
-        case StateType::PAUSE_STATE:
-            currentState = std::make_unique<PauseState>();
-            break;
-        default:
-            throw std::runtime_error("Unknown state type!"); // Error handling for invalid state types
-    }
+    stateManager->SwitchState(type);  // Switch to the requested state
 }

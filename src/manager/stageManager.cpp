@@ -1,5 +1,5 @@
 #include "stageManager.h"
-
+#include "../core/stateManager.h"
 
 
 
@@ -17,7 +17,7 @@ StageManager::StageManager(): level(0), stage(0), success(false) {
 }
 
 StageManager::~StageManager() {
-    delete gameStage;
+    
 }
 
 void StageManager::Update(float deltaTime) {
@@ -48,6 +48,10 @@ void StageManager::Initialize() {
 }
 
 void StageManager::NextStage() {
+    if (success || fail) {
+        ObjectManager::Instance()->GetPlayer()->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+        transferGate->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+    }
     ObjectManager::Instance()->Clear();
     stage++;
     
@@ -56,8 +60,11 @@ void StageManager::NextStage() {
         gameStage = nullptr;  
     }
 
-
-    if (stage == 2) {
+    if (stage ==1) {
+        gameStage = new Stage_1_1();
+        gameStage->Initialize();
+    }
+    else if (stage == 2) {
         std::cout << "STAGE 2" << std::endl;
         gameStage = new Stage_1_2();
         gameStage->Initialize();
@@ -67,9 +74,8 @@ void StageManager::NextStage() {
         gameStage = new Stage_1_3();
         gameStage->Initialize();
     }
-    else {
-        gameStage = new Stage_1_1();
-        gameStage->Initialize();
+    else if (stage == 4) {
+        success = true;
     }
     
 }
@@ -80,4 +86,12 @@ void StageManager::SetTransferGatePosition(Vec position) {
 
 bool StageManager::GetSuccess() {
     return success;
+}
+
+void StageManager::setFail() {
+    fail = true; 
+}
+
+bool StageManager::getFail() {
+    return fail;
 }

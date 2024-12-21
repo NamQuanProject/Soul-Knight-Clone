@@ -7,7 +7,6 @@ public:
     static UIManager* Instance();
     UIManager();  
     ~UIManager(); 
-
     void Initialize();             
     void Update(float deltaTime);  
     void applyView(sf::RenderWindow& window); 

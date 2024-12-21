@@ -1,12 +1,9 @@
 #include "menuState.h"
 #include "../utils/vec.h"
-#include "../manager/soundManager.h" // Include the SoundManager
-#include "../manager/animationManager.h"
-#include "../entities/player/heroes/knight.h"
+#include "../manager/soundManager.h" 
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-static SoundManager soundManager;
 
 MenuState::MenuState() {
     if (!font.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/arial/ARIAL.TTF")) {
@@ -41,18 +38,14 @@ MenuState::MenuState() {
     playButton.setTexture(&playButtonTexture); 
     playButton.setPosition(50, 700);
 
-    // Set up exit button rectangle
     exitButton.setSize(sf::Vector2f(150, 50)); // Set the size of the exit button
     exitButton.setTexture(&exitButtonTexture); // Apply the texture
     exitButton.setPosition(300, 700); // Position the button
-    
-    // Knight knight;
-    // Vec player_pos = Vec(100.0, 200.0);
-    // knight.SetPosition(player_pos);
+    std::cout << "MENU SETUP"  << std::endl;
 }
 
 MenuState::~MenuState() {
-    soundManager.stopMusic(); // Ensure music stops when exiting
+    // soundManager.stopMusic(); // Ensure music stops when exiting
 }
 
 void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
@@ -61,6 +54,7 @@ void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             if (playButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y)) {
                 std::cout << "Play button clicked." << std::endl;
+                StateManager::Instance()->SwitchState(StateType::GAME_STATE);
             }
             else if (exitButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y)) {
                 std::cout << "Exit button clicked. Exiting the program." << std::endl;
@@ -71,10 +65,12 @@ void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
 }
 
 void MenuState::update(float deltaTime) {
-    
+    std::cout << "MENU UPDATE" << std::endl;
 }
 
 void MenuState::render(sf::RenderWindow& window) {
+    window.setView(window.getDefaultView());
+    std::cout << "MENU RENDER" << std::endl;
     window.draw(backgroundSprite);
     window.draw(title);
     window.draw(playButton);
@@ -84,5 +80,5 @@ void MenuState::render(sf::RenderWindow& window) {
 
 
 void MenuState::Initialize() {
-    return;
+    
 }

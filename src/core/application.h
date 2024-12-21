@@ -4,23 +4,25 @@
 #include <SFML/Graphics.hpp>
 #include <memory>  
 #include "state.h"
+#include "stateManager.h"
 
 class Application {
 public:
-    Application();
-    void run();
+    Application();  
+    ~Application(); 
+
+    void run();  
+    void Initialize();
+    void processEvents();  
+    void update(float deltaTime);  
+    void render();  
+    void changeState(StateType type);  
 
 private:
-    void processEvents();
-    void update(float deltaTime);
-    void render();
-    void changeState(StateType type);
-
-    sf::RenderWindow window;
-    std::unique_ptr<State> currentState;
-    float deltaTime;
-    sf::Clock clock;
-
+    sf::RenderWindow window; 
+    float deltaTime; 
+    sf::Clock clock;  
+    StateManager* stateManager;  
 };
 
-#endif
+#endif // APPLICATION_H

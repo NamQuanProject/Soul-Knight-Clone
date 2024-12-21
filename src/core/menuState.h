@@ -5,6 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include "../manager/soundManager.h" 
 #include "../entities/player/player.h" 
+#include "stateManager.h"
 
 class MenuState : public State {
 public:
@@ -30,7 +31,6 @@ private:
 
     SoundManager soundManager; 
 
-    Player* player;
     sf::Clock animationClock;  
 };
 

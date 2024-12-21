@@ -13,6 +13,7 @@
 #include "room.h"
 #include "../wall/wall.h"
 #include "../wall/door.h"
+#include "../shopping/treasureChest.h"
 #include "../../utils/point.h"
 #include "../../utils/vec.h"
 #include "../../utils/random.h"
@@ -23,13 +24,14 @@
 TreasureRoom::TreasureRoom(Point leftTop, Point rightBot, int size)
     : Room(leftTop, rightBot, size) {
     // Calculate the center of the room
-    Point center(
+    Vec center(
         (leftTop.GetX() + rightBot.GetX()) / 2,
         (leftTop.GetY() + rightBot.GetY()) / 2
     );
 
     // Set the treasure position to the center of the room
-    // treasure->SetPosition(center);
+    treasure = new TreasureChest();
+    treasure->SetPosition(center);
     
     // Add the treasure to the object manager
     ObjectManager::Instance()->AddObject(treasure);

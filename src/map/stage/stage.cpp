@@ -25,9 +25,10 @@ Stage::~Stage() {
     for (auto room : monsterRooms) {
         delete room;
     }
-    // if (treasureRoom) {
-    //     delete treasureRoom;   
-    // }
+    if (treasureRoom) {
+        delete treasureRoom;   
+        treasureRoom = nullptr;
+    }
     for (auto wall : walls) {
         wall->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
     }

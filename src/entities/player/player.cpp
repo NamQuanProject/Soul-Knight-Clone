@@ -2,7 +2,7 @@
 #include <iostream>
 
 Player::Player()
-    : hp(100), maxHp(100), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE), speed(Vec(0.0, 0.0)) {
+    : hp(0), maxHp(0), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE), speed(Vec(0.0, 0.0)) {
 }
 void Player::Update(float deltaTime) {
     CheckState();
@@ -46,12 +46,28 @@ void Player::Render(sf::RenderWindow& window) {
 }
 
 
-double Player::GetHP() const {
+int Player::GetHP() const {
     return hp;
 }
 
-double Player::GetMaxHP() const {
+int Player::GetMaxHP() const {
     return maxHp;
+}
+
+int Player::GetMana() const {
+    return mana;
+}
+
+int Player::GetMaxMana() const {
+    return maxMana;
+}
+
+int Player::GetShield() const {
+    return shield;
+}
+
+int Player::GetMaxShield() const {
+    return maxShield;
 }
 
 void Player::Attack() {
@@ -65,6 +81,7 @@ void Player::Poisoned(double poisonDamage) {
 Player::State Player::CheckState() {
     if (hp <= 0) {
         state = DEAD;
+        
     } else if (state == DEAD && hp > 0) {
         state = IDLE;
     }

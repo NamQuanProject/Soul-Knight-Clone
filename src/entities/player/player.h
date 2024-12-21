@@ -13,8 +13,7 @@ public:
     virtual ~Player() = default;
     virtual void Render(sf::RenderWindow& window) override;
     void Update(float deltaTime) override;
-    double GetHP() const;
-    double GetMaxHP() const;
+    
     virtual void Attack();
     void Poisoned(double poisonDamage);
     void Collision(GameObject* gameObject) override;
@@ -25,7 +24,17 @@ public:
     void SetInteractive(bool new_isInteract);
 
 
+
     // STATE RELATED
+    int GetHP() const;
+    int GetMaxHP() const;
+
+    int GetMana() const;
+    int GetMaxMana() const;
+    
+    int GetShield() const;
+    int GetMaxShield() const;
+
     void Healing(int health);
     Vec getSpeed();
 
@@ -48,10 +57,14 @@ public:
 protected:
     int hp;
     int maxHp;
+
     int mana;
     int maxMana;
+
     int shield;
     int maxShield;
+
+
     bool isInteract = false;
     Vec speed;
     AnimationManager animationManager;
