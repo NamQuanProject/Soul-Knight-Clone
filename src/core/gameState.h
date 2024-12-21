@@ -39,6 +39,8 @@ protected:
     MonsterPool* monsterPool = MonsterPool::Instance();
     SoundManager soundManager;
     int gameFinishCounter;
+    float successTimer;
+    float failTimer;
     
 };
 

@@ -104,21 +104,32 @@ void GameState::Initialize() {
 
 void GameState::update(float deltaTime) {
     if (objectManager->GetPlayer()->GetHP() <= 0) {
-        stageManager->setFail();
+        soundManager.stopMusic();
+        failTimer += deltaTime;
+        if (failTimer >= 600.f) { // 2 seconds delay before setting fail
+            stageManager->setFail();
+        }
+    } 
+
+    if (stageManager->GetSuccess()) {
+        successTimer += deltaTime;
+        if (successTimer >= 2.0f) { // 2 seconds delay before switching state
+            StateManager::Instance()->SwitchState(StateType::MENU_STATE);
+        }
+    } else {
+        successTimer = 0.0f; // Reset the timer if the stage is not successful
     }
+
     stageManager->Update(deltaTime);
     objectManager->Update(deltaTime);
     
-    if (stageManager->GetSuccess() == false) {
+    if (!stageManager->GetSuccess()) {
         uiManager->Update(deltaTime);
     }
     
-    
-    if (stageManager->GetSuccess() == true || stageManager->getFail() == true) {
+    if (stageManager->getFail()) {
         StateManager::Instance()->SwitchState(StateType::MENU_STATE);
     }
-    
-    
 }
 
 void GameState::render(sf::RenderWindow& window) {

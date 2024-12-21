@@ -81,7 +81,6 @@ void Player::Poisoned(double poisonDamage) {
 Player::State Player::CheckState() {
     if (hp <= 0) {
         state = DEAD;
-        
     } else if (state == DEAD && hp > 0) {
         state = IDLE;
     }

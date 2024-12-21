@@ -1,7 +1,7 @@
 #include "knight.h"
 #include <iostream>
 
-// Constructor
+
 Knight::Knight() : Player() {
     loadKnightAnimations();
     weapon1 = new BadPistol();
@@ -52,9 +52,11 @@ Knight::~Knight() {
     
 }
 
-// Update the knight animation
 void Knight::Update(float deltaTime) {
-   
+    if (hp <= 0) {
+        animationManager.setAnimation("dead");
+        return;
+    }
     Vec currentPos = GetPosition();
     Vec new_pos = currentPos + speed;
     SetPosition(new_pos);
@@ -133,6 +135,12 @@ void Knight::loadKnightAnimations() {
     };
     leftRunAnimation.loadAnimation(framePaths4);  // Load the flipped running animation
     animationManager.addAnimation("run_left", leftRunAnimation);  // Add to animation manager
+    Animation deadAnimation;
+    std::vector<std::string> framePaths5 = {
+        "/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/player/knight/dead.bmp",
+    };
+    deadAnimation.loadAnimation(framePaths5);  // Load the flipped running animation
+    animationManager.addAnimation("dead", deadAnimation);  // Add to animation manager
 }
 
 // Render the knight (called every frame)
