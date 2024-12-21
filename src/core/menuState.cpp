@@ -65,12 +65,10 @@ void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
 }
 
 void MenuState::update(float deltaTime) {
-    std::cout << "MENU UPDATE" << std::endl;
 }
 
 void MenuState::render(sf::RenderWindow& window) {
     window.setView(window.getDefaultView());
-    std::cout << "MENU RENDER" << std::endl;
     window.draw(backgroundSprite);
     window.draw(title);
     window.draw(playButton);

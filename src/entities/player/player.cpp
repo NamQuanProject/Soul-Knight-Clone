@@ -2,7 +2,7 @@
 #include <iostream>
 
 Player::Player()
-    : hp(0), maxHp(0), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE), speed(Vec(0.0, 0.0)) {
+    : hp(100), maxHp(100), weaponOffsetX(0), weaponOffsetY(0), face(RIGHT), state(IDLE), speed(Vec(0.0, 0.0)) {
 }
 void Player::Update(float deltaTime) {
     CheckState();

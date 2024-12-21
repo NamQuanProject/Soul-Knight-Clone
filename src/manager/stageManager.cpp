@@ -12,15 +12,23 @@ StageManager* StageManager::Instance() {
     return instance;
 }
 
-StageManager::StageManager(): level(0), stage(0), success(false) {
+StageManager::StageManager(): level(0), stage(0), success(false), fail(false) {
 
 }
 
 StageManager::~StageManager() {
-    
+    stage = 0;
+    level = 0;
+    success = false;
+    fail = false;
 }
 
 void StageManager::Update(float deltaTime) {
+    if (success || fail) {
+        ObjectManager::Instance()->GetPlayer()->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+        transferGate->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
+        
+    }
     gameStage->IsInsideRoom();
     gameStage->IsRoomCleared();
 }
@@ -38,20 +46,22 @@ int StageManager::GetLevelNumber() {
 }
 
 void StageManager::Initialize() {
+    stage = 0;
+    fail = false;
+    success = false;
+    level = 0;
     transferGate = new TransferGate();
     transferGate->Initialize();
     Vec vector = Vec(0.0, 0.0);
     transferGate->SetPosition(vector);
     ObjectManager::Instance()->AddObject(transferGate);
+    
     NextStage();
+    
     
 }
 
 void StageManager::NextStage() {
-    if (success || fail) {
-        ObjectManager::Instance()->GetPlayer()->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
-        transferGate->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
-    }
     ObjectManager::Instance()->Clear();
     stage++;
     

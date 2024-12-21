@@ -7,7 +7,11 @@ GameState::GameState() {
 }
 
 GameState::~GameState() {
-    
+    // delete objectManager;
+    // delete stageManager;
+    // delete monsterPool;
+    // delete projectilePool;
+    // delete uiManager;
 }
 
 void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
@@ -36,7 +40,6 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
         objectManager->GetPlayer()->runLeft();
     }
 
-    // Handle single-direction movement
     else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
         
         newSpeed.SetY(-speed);
@@ -103,22 +106,17 @@ void GameState::Initialize() {
 }
 
 void GameState::update(float deltaTime) {
+    if (objectManager->GetPlayer() == nullptr) {
+
+    }
     if (objectManager->GetPlayer()->GetHP() <= 0) {
         soundManager.stopMusic();
         failTimer += deltaTime;
-        if (failTimer >= 600.f) { // 2 seconds delay before setting fail
+        if (failTimer >= 600.f) { 
             stageManager->setFail();
+            failTimer = 0.0f;
         }
     } 
-
-    if (stageManager->GetSuccess()) {
-        successTimer += deltaTime;
-        if (successTimer >= 2.0f) { // 2 seconds delay before switching state
-            StateManager::Instance()->SwitchState(StateType::MENU_STATE);
-        }
-    } else {
-        successTimer = 0.0f; // Reset the timer if the stage is not successful
-    }
 
     stageManager->Update(deltaTime);
     objectManager->Update(deltaTime);

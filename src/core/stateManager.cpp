@@ -30,7 +30,6 @@ void StateManager::Initialize() {
 }
 
 void StateManager::Update(float deltaTime) {
-    std::cout << "somehti" << std::endl;
     currentState->update(deltaTime);
 }
 

@@ -35,7 +35,6 @@ private:
     int stage;
     Stage* gameStage = nullptr;
     TransferGate* transferGate = nullptr;
-    bool success;
-
-    bool fail;
+    bool success = false;
+    bool fail = false;
 };

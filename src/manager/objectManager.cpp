@@ -38,8 +38,6 @@ void ObjectManager::Initialize() {
 
     this->objects.emplace_back(this->player);
 
-    
-
     std::cout << "PLAYER CREATE" << std::endl;
 }
 
@@ -112,7 +110,6 @@ void ObjectManager::CollisionDetection() {
 void ObjectManager::DeleteObsoleteElements() {
     for (auto object = objects.begin(); object != objects.end();) {
         if ((*object)->HasTag(Tag::MONSTER) && (*object)->HasTag(Tag::DEAD)) {
-            // Find and remove the object from currentMonsters
             auto it = std::find(currentMonsters.begin(), currentMonsters.end(), *object);
             if (it != currentMonsters.end()) {
                 currentMonsters.erase(it);  // Remove the object from the vector
@@ -139,8 +136,9 @@ void ObjectManager::Clear() {
             continue;
         }
         object->AddTag(Tag::REMOVE_ON_NEXT_FRAME);
-        
     }
+    currentMonsters.clear();
+
 }
 
 void ObjectManager::getSize() {
