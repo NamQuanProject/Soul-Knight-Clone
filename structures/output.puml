@@ -1,0 +1,552 @@
+@startuml
+Here is the PlantUML code for the diagram:
+
+```plantuml
+@startuml
+
+package animation.h {
+    class Animation {
+        +Animation()
+    }
+}
+
+package gameState.h {
+    class GameState {
+        +GameState()
+    }
+}
+
+package stateManager.h {
+    class StateManager {
+        +StateManager()
+    }
+}
+
+package application.h {
+    class Application {
+        +Application()
+    }
+}
+
+package pauseState.h {
+    class PauseState {
+        +PauseState()
+    }
+}
+
+package menuState.h {
+    class MenuState {
+        +MenuState()
+    }
+}
+
+package state.h {
+    class StateType {}
+    class State {}
+}
+
+package tag.h {
+    class Tag {}
+}
+
+package point.h {
+    class Point {
+        +Point()
+    }
+}
+
+package vec.h {
+    class Vec {
+        +Vec()
+    }
+}
+
+package wallet.h {
+    class Wallet {
+        +Wallet()
+    }
+}
+
+package hitBox.h {
+    class HitBox {
+        +HitBox()
+    }
+}
+
+package interactiveText.h {
+    class InteractiveText {}
+}
+
+package random.h {
+    class Rand {
+        +static Rand* Instance()
+    }
+}
+
+package stageManager.h {
+    class StageManager {
+        +static StageManager* Instance()
+    }
+}
+
+package camera.h {
+    class Camera {
+        +Camera()
+    }
+}
+
+package soundManager.h {
+    class SoundManager {
+        +SoundManager()
+    }
+}
+
+package animationManager.h {
+    class AnimationManager {
+        +AnimationManager()
+    }
+}
+
+package objectManager.h {
+    class ObjectManager {
+        +static ObjectManager* Instance()
+    }
+}
+
+package UIManager.h {
+    class UIManager {
+        +static UIManager* Instance()
+    }
+}
+
+package keyboardManager.h {
+    class KeyState {
+        +KeyboardManager()
+    }
+    class KeyboardManager {
+        +KeyboardManager()
+    }
+}
+
+package map.h {
+    class if {
+        +Map()
+    }
+    class Map {
+        +Map()
+    }
+}
+
+package horizontalDoor1.h {
+    class HorizontalDoor1 {
+        +void LoadResources()
+    }
+}
+
+package verticalDoor1.h {
+    class VerticalDoor1 {
+        +void LoadResources()
+    }
+}
+
+package wall.h {
+    class Wall {
+        +Wall()
+    }
+}
+
+package horizontalDoor2.h {
+    class HorizontalDoor2 {
+        +void LoadResources()
+    }
+}
+
+package verticalDoor2.h {
+    class VerticalDoor2 {
+        +void LoadResources()
+    }
+}
+
+package horizontalDoor3.h {
+    class HorizontalDoor3 {
+        +void LoadResources()
+    }
+}
+
+package verticalDoor3.h {
+    class VerticalDoor3 {
+        +void LoadResources()
+    }
+}
+
+package door.h {
+    class Door {
+        +virtual void LoadResources()
+    }
+}
+
+package horizontalDoor4.h {
+    class HorizontalDoor4 {
+        +void LoadResources()
+    }
+}
+
+package verticalDoor4.h {
+    class VerticalDoor4 {
+        +void LoadResources()
+    }
+}
+
+package roomSize.h {
+    class RoomSize {}
+}
+
+package room.h {
+    class Room {
+        +Room()
+    }
+}
+
+package monsterRoom.h {
+    class MonsterRoom {
+        +MonsterRoom()
+    }
+}
+
+package treasureRoom.h {
+    class TreasureRoom {
+        +TreasureRoom()
+    }
+}
+
+package treasureChest.h {
+    class TreasureChest {}
+}
+
+package player.h {
+    class Player {
+        +Player()
+    }
+}
+
+package transferGate.h {
+    class TransferGate {
+        +TransferGate()
+    }
+}
+
+package stage_1_3.h {
+    class Stage_1_3 {
+        +Stage_1_3()
+        +void setBackground()
+    }
+}
+
+package stage_1_2.h {
+    class Stage_1_2 {
+        +Stage_1_2()
+        +void setBackground()
+    }
+}
+
+package stageFactory.h {
+    class Stage {
+        +static Stage* Create()
+    }
+    class StageFactory {
+        +static Stage* Create()
+    }
+}
+
+package stage_1_1.h {
+    class Stage_1_1 {
+        +Stage_1_1()
+        +void setBackground()
+    }
+}
+
+package monsterType.h {
+    class MonsterType {}
+}
+
+package monster.h {
+    class Monster {
+        +Monster()
+    }
+}
+
+package monsterPool.h {
+    class MonsterPool {
+        +static MonsterPool* Instance()
+    }
+}
+
+package projectilePool.h {
+    class ProjectilePool {
+        +static ProjectilePool* Instance()
+        +void Refresh()
+    }
+}
+
+package dropType.h {
+    class DropType {}
+}
+
+package dropPool.h {
+    class Drop {
+        +static DropPool* Instance()
+    }
+    class DropPool {
+        +static DropPool* Instance()
+    }
+}
+
+package gameObject.h {
+    class GameObject {
+        +GameObject()
+    }
+}
+
+package invinsibleObject.h {
+    class InvisibleObject {
+        +void Update()
+    }
+}
+
+package rangeWeapon.h {
+    class RangeWeapon {
+        +RangeWeapon()
+    }
+}
+
+package weaponType.h {
+    class WeaponType {}
+}
+
+package meleeWeapon.h {
+    class MeleeWeapon {
+        +MeleeWeapon()
+    }
+}
+
+package weaponFactory.h {
+    class Weapon {
+        +static Weapon* Create()
+    }
+    class WeaponFactory {
+        +static Weapon* Create()
+    }
+}
+
+package knife.h {
+    class Knife {
+        +Knife()
+    }
+}
+
+package badPistol.h {
+    class BadPistol {
+        +BadPistol()
+    }
+}
+
+package staff.h {
+    class Staff {}
+}
+
+package projectileFactory.h {
+    class Projectile {
+        +static Projectile* Create()
+    }
+    class ProjectileFactory {
+        +static Projectile* Create()
+    }
+}
+
+package projectileType.h {
+    class ProjectileType {}
+}
+
+package bullet.h {
+    class Bullet {
+        +Bullet()
+    }
+}
+
+package badPistolBullet.h {
+    class BadPistolBullet {
+        +BadPistolBullet()
+    }
+}
+
+package redCircleBullet.h {
+    class RedCircleBullet {
+        +RedCircleBullet()
+    }
+}
+
+package redRectangleBullet.h {
+    class RedRectangleBullet {
+        +RedRectangleBullet()
+    }
+}
+
+package spearWave.h {
+    class SpearWave {
+        +SpearWave()
+    }
+}
+
+package bigMpPotion.h {
+    class BigMpPotion {
+        +BigMpPotion()
+    }
+}
+
+package bigHealingPotion.h {
+    class BigHealingPotion {
+        +BigHealingPotion()
+    }
+}
+
+package healingPotion.h {
+    class HealingPotion {
+        +HealingPotion()
+    }
+}
+
+package collectable.h {
+    class Collectable {
+        +Collectable()
+    }
+}
+
+package compositePotion.h {
+    class CompositePotion {
+        +CompositePotion()
+    }
+}
+
+package mpPotion.h {
+    class MpPotion {
+        +MpPotion()
+    }
+}
+
+package potionFactory.h {
+    class PotionFactory {}
+}
+
+package bigCompositePotion.h {
+    class BigCompositePotion {
+        +BigCompositePotion()
+    }
+}
+
+package monsterFactory.h {
+    class MonsterFactory {
+        +static Monster* Create()
+    }
+}
+
+package skeleton.h {
+    class Skeleton {
+        +Skeleton()
+    }
+}
+
+package spider.h {
+    class Spider {
+        +Spider()
+    }
+}
+
+package valkoryn.h {
+    class Valkoryn {
+        +Valkoryn()
+    }
+}
+
+package goblinGiant.h {
+    class GoblinGiant {
+        +GoblinGiant()
+    }
+}
+
+package bear.h {
+    class Bear {
+        +Bear()
+    }
+}
+
+package goblinShaman.h {
+    class GoblinShaman {
+        +GoblinShaman()
+    }
+}
+
+package playerType.h {
+    class PlayerType {}
+}
+
+package knight.h {
+    class Knight {
+        +Knight()
+        +void loadKnightAnimations()
+    }
+}
+
+GameState -up-|> State
+PauseState -up-|> State
+MenuState -up-|> State
+HorizontalDoor1 -up-|> Door
+VerticalDoor1 -up-|> Door
+Wall -up-|> InvisibleObject
+HorizontalDoor2 -up-|> Door
+VerticalDoor2 -up-|> Door
+HorizontalDoor3 -up-|> Door
+VerticalDoor3 -up-|> Door
+Door -up-|> InvisibleObject
+HorizontalDoor4 -up-|> Door
+VerticalDoor4 -up-|> Door
+MonsterRoom -up-|> Room
+TreasureRoom -up-|> Room
+TreasureChest -up-|> GameObject
+TransferGate -up-|> GameObject
+Stage_1_3 -up-|> Stage
+Stage_1_2 -up-|> Stage
+Stage_1_1 -up-|> Stage
+InvisibleObject -up-|> GameObject
+RangeWeapon -up-|> Weapon
+MeleeWeapon -up-|> Weapon
+Weapon -up-|> GameObject
+Knife -up-|> MeleeWeapon
+BadPistol -up-|> RangeWeapon
+Staff -up-|> RangeWeapon
+Bullet -up-|> RotatableObject
+Bullet -up-|> GameObject
+BadPistolBullet -up-|> Bullet
+RedCircleBullet -up-|> Bullet
+RedRectangleBullet -up-|> Bullet
+SpearWave -up-|> Bullet
+BigMpPotion -up-|> Collectable
+BigHealingPotion -up-|> Collectable
+HealingPotion -up-|> Collectable
+Collectable -up-|> GameObject
+CompositePotion -up-|> Collectable
+MpPotion -up-|> Collectable
+BigCompositePotion -up-|> Collectable
+Monster -up-|> GameObject
+Skeleton -up-|> Monster
+Spider -up-|> Monster
+Valkoryn -up-|> Monster
+GoblinGiant -up-|> Monster
+Bear -up-|> Monster
+GoblinShaman -up-|> Monster
+Player -up-|> GameObject
+Knight -up-|> Player
+
+@enduml
+```
+This diagram shows all the classes with their methods, their inheritance relationships, and their packaging based on the files they belong to. Note that due to the large number of classes, the diagram might look cluttered and complex.
+@enduml

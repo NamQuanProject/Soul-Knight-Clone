@@ -3,18 +3,18 @@
 #include <vector>
 
 sf::Texture makeTransparent(const sf::Texture& texture, const sf::Color& transparentColor) {
-    // Convert texture to image
+
     sf::Image image = texture.copyToImage();
 
-    // Get dimensions of the image
+
     unsigned int width = image.getSize().x;
     unsigned int height = image.getSize().y;
 
-    // Loop through each pixel and change the transparentColor to transparent
+    
     for (unsigned int x = 0; x < width; ++x) {
         for (unsigned int y = 0; y < height; ++y) {
             if (image.getPixel(x, y) == transparentColor) {
-                image.setPixel(x, y, sf::Color(0, 0, 0, 0)); // Set pixel to transparent
+                image.setPixel(x, y, sf::Color(0, 0, 0, 0)); 
             }
         }
     }
