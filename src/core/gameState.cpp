@@ -80,8 +80,6 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     else {
         objectManager->GetPlayer()->SetInteractive(false); 
     }
-
-    // Update player speed
     objectManager->GetPlayer()->setSpeed(newSpeed);
 }
 

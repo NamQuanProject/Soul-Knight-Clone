@@ -109,14 +109,12 @@ void ZulanTheColossus::LoadResources() {
 }
 void ZulanTheColossus::Attack() {
     if (!HasTag(Tag::DEAD) && attackTimer >= attackCooldown) {
-        // Randomly select the attack type
         if (attack_time_2 <= 0) {
-            random_choice = Rand::Instance()->Get(1, 5);  // Increased the number of attack choices
+            random_choice = Rand::Instance()->Get(1, 5);  
         } else {
-            random_choice = Rand::Instance()->Get(1, 5);  // More dynamic attacks
+            random_choice = Rand::Instance()->Get(1, 5);
         }
 
-        // Define a pool of all available bullet types
         std::vector<ProjectileType> bulletTypes = {
             ProjectileType::RED_RECTANGLE_BULLET,
             ProjectileType::SPEAR_WAVE,
@@ -214,11 +212,11 @@ void ZulanTheColossus::Attack() {
                     direction.SetY(direction.GetY() / magnitude);
                 }
 
-                float bullet_speed = Rand::Instance()->Get(250.0f, 400.0f);  // Randomized speed
+                float bullet_speed = Rand::Instance()->Get(250.0f, 300.0f);  
                 Vec velocity = Vec(direction.GetX() * bullet_speed, direction.GetY() * bullet_speed);
                 bullet->SetSpeed(velocity);
 
-                bullet->SetDamage(40);  // Higher damage for homing missile
+                bullet->SetDamage(40); 
 
                 ObjectManager::Instance()->AddObject(bullet);
             }
