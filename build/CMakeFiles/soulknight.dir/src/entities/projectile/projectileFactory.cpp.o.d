@@ -1000,4 +1000,6 @@ CMakeFiles/soulknight.dir/src/entities/projectile/projectileFactory.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/../../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/redCircleBullet.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/redRectangleBullet.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/redRectangleBullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/spearWave.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/projectile/bullet/redConicalBullet.h

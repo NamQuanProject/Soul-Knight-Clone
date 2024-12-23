@@ -4,6 +4,9 @@
 #include "../../../../manager/objectManager.h"
 #include "../../../../utils/vec.h"
 #include "../../../../entities/projectile/bullet/redRectangleBullet.h"
+#include "../../../../entities/projectile/bullet/spearWave.h"
+#include "../../../../entities/projectile/bullet/redCircleBullet.h"
+#include "../../../../entities/projectile/bullet/redConicalBullet.h"
 #include "../../../../utils/random.h"
 #include <iostream>
 
@@ -104,7 +107,6 @@ void ZulanTheColossus::LoadResources() {
     dead.loadAnimation(framePaths5);
     animationManager.addAnimation("dead", dead);  
 }
-
 void ZulanTheColossus::Attack() {
     if (!HasTag(Tag::DEAD) && attackTimer >= attackCooldown) {
         // Randomly select the attack type
@@ -114,12 +116,21 @@ void ZulanTheColossus::Attack() {
             random_choice = Rand::Instance()->Get(1, 5);  // More dynamic attacks
         }
 
-        if (random_choice == 1) {
-            std::cout << "Monster Attack 1: Single Target" << std::endl;
+        // Define a pool of all available bullet types
+        std::vector<ProjectileType> bulletTypes = {
+            ProjectileType::RED_RECTANGLE_BULLET,
+            ProjectileType::SPEAR_WAVE,
+            ProjectileType::RED_CIRCLE_BULLET,
+            ProjectileType::RED_CONICAL_BULLET
+        };
 
-            // Attack 1: Single bullet towards the player
-            Bullet* bullet = static_cast<RedRectangleBullet*>(
-                ProjectilePool::Instance()->Acquire(ProjectileType::RED_RECTANGLE_BULLET)
+        if (random_choice == 1) {
+            std::cout << "Monster Attack 1: Single Target (Random Bullet)" << std::endl;
+
+            // Attack 1: Single random bullet towards the player
+            ProjectileType chosenType = bulletTypes[Rand::Instance()->Get(0, bulletTypes.size() - 1)];
+            Bullet* bullet = static_cast<Bullet*>(
+                ProjectilePool::Instance()->Acquire(chosenType)
             );
             if (bullet != nullptr) {
                 Vec monster_position = position;
@@ -134,46 +145,54 @@ void ZulanTheColossus::Attack() {
                     direction.SetY(direction.GetY() / magnitude);
                 }
 
-                float bullet_speed = 270.0f;
+                float bullet_speed = Rand::Instance()->Get(200.0f, 350.0f);  // Randomized speed
                 Vec velocity = Vec(direction.GetX() * bullet_speed, direction.GetY() * bullet_speed);
                 bullet->SetSpeed(velocity);
+
+                bullet->SetDamage(30);  // Standardized damage for simplicity
 
                 ObjectManager::Instance()->AddObject(bullet);
             }
 
             attackTimer = 0.0f;
         } else if (random_choice == 2) {
-            std::cout << "Monster Attack 2: Circular Barrage" << std::endl;
+            std::cout << "Monster Attack 2: Circular Barrage (Random Bullets)" << std::endl;
 
-            // Attack 2: Circular barrage of bullets
+            // Attack 2: Circular barrage of random bullets
             const float radianConversion = 3.14159f / 180.0f;
-            for (int i = 0; i < 16; ++i) {
-                Bullet* bullet = static_cast<RedRectangleBullet*>(
-                    ProjectilePool::Instance()->Acquire(ProjectileType::RED_RECTANGLE_BULLET)
+            for (int i = 0; i < 24; ++i) {  // Increased number of bullets
+                ProjectileType chosenType = bulletTypes[Rand::Instance()->Get(0, bulletTypes.size() - 1)];
+                Bullet* bullet = static_cast<Bullet*>(
+                    ProjectilePool::Instance()->Acquire(chosenType)
                 );
 
-                bullet->SetPosition(position);
+                if (bullet != nullptr) {
+                    bullet->SetPosition(position);
 
-                float angle = i * 45;  // Spread bullets every 45 degrees
-                float radianAngle = angle * radianConversion;
-                float speedX = 270 * std::cos(radianAngle);
-                float speedY = 270 * std::sin(radianAngle);
-                Vec speed = Vec(speedX, speedY);
+                    float angle = i * 15; 
+                    float radianAngle = angle * radianConversion;
+                    float speedX = Rand::Instance()->Get(200.0f, 300.0f) * std::cos(radianAngle);  // Randomized speed
+                    float speedY = Rand::Instance()->Get(200.0f, 300.0f) * std::sin(radianAngle);
+                    Vec speed = Vec(speedX, speedY);
 
-                bullet->SetSpeed(speed);
+                    bullet->SetSpeed(speed);
 
-                ObjectManager::Instance()->AddObject(bullet);
+                    bullet->SetDamage(20);  // Lower damage for barrage
+
+                    ObjectManager::Instance()->AddObject(bullet);
+                }
             }
 
-            attackTimer = 450.f;
+            attackTimer = 300.f;
             attack_time_2 -= 1;
             std::cout << attack_time_2 << std::endl;
         } else if (random_choice == 3) {
-            std::cout << "Monster Attack 3: Homing Missile" << std::endl;
+            std::cout << "Monster Attack 3: Homing Missile (Random Bullet)" << std::endl;
 
-            // Attack 3: Homing missile that targets the player
-            Bullet* bullet = static_cast<RedRectangleBullet*>(
-                ProjectilePool::Instance()->Acquire(ProjectileType::RED_RECTANGLE_BULLET)
+            // Attack 3: Homing missile with random bullet type
+            ProjectileType chosenType = bulletTypes[Rand::Instance()->Get(0, bulletTypes.size() - 1)];
+            Bullet* bullet = static_cast<Bullet*>(
+                ProjectilePool::Instance()->Acquire(chosenType)
             );
             if (bullet != nullptr) {
                 Vec monster_position = position;
@@ -181,7 +200,6 @@ void ZulanTheColossus::Attack() {
 
                 bullet->SetPosition(monster_position);
 
-                // Homing logic: move towards the player
                 Vec direction = player_position - monster_position;
                 float magnitude = std::sqrt(direction.GetX() * direction.GetX() + direction.GetY() * direction.GetY());
                 if (magnitude != 0) {
@@ -189,9 +207,11 @@ void ZulanTheColossus::Attack() {
                     direction.SetY(direction.GetY() / magnitude);
                 }
 
-                float bullet_speed = 270.0f;
+                float bullet_speed = Rand::Instance()->Get(250.0f, 400.0f);  // Randomized speed
                 Vec velocity = Vec(direction.GetX() * bullet_speed, direction.GetY() * bullet_speed);
                 bullet->SetSpeed(velocity);
+
+                bullet->SetDamage(40);  // Higher damage for homing missile
 
                 ObjectManager::Instance()->AddObject(bullet);
             }
@@ -199,35 +219,34 @@ void ZulanTheColossus::Attack() {
             attackTimer = 100.f;
             attack_time_2 = Rand::Instance()->Get(1, 5);
         } else if (random_choice == 4) {
-            std::cout << "Monster Attack 4: Explosive Bullet" << std::endl;
+            std::cout << "Monster Attack 4: Explosive Bullet (Random Bullet)" << std::endl;
 
-            // Attack 4: Explosive bullet that deals area damage
-            Bullet* bullet = static_cast<RedRectangleBullet*>(
-                ProjectilePool::Instance()->Acquire(ProjectileType::RED_RECTANGLE_BULLET)
+            // Attack 4: Explosive bullet with random type
+            ProjectileType chosenType = bulletTypes[Rand::Instance()->Get(0, bulletTypes.size() - 1)];
+            Bullet* bullet = static_cast<Bullet*>(
+                ProjectilePool::Instance()->Acquire(chosenType)
             );
             if (bullet != nullptr) {
                 Vec monster_position = position;
                 bullet->SetPosition(monster_position);
 
-                // Explosive logic: increase speed for a larger explosion radius
-                float bullet_speed = 350.0f;  // Faster for more explosive damage
+                float bullet_speed = Rand::Instance()->Get(250.0f, 400.0f);  // Randomized speed
                 Vec direction = Vec(1, 0);  // Shoot straight for simplicity
                 bullet->SetSpeed(direction * bullet_speed);
+
+                bullet->SetDamage(70);  // Higher damage for explosive bullet
 
                 ObjectManager::Instance()->AddObject(bullet);
             }
 
             attackTimer = 200.f;
         } else if (random_choice == 5) {
-            std::cout << "Monster Attack 5: Ground Slam" << std::endl;
+            std::cout << "Monster Attack 5: Ground Slam (Randomized Effects)" << std::endl;
 
-            // Attack 5: Ground slam that creates shockwaves
-            // You could implement an area effect here, damaging all nearby enemies
-            // For simplicity, just log the action for now
+            // Ground slam with random effects
             std::cout << "Ground slam attack: Creating shockwaves!" << std::endl;
 
-            // Apply damage or effects to nearby objects here
-            attackTimer = 500.f;
+            attackTimer = 400.f;
         }
     }
 }

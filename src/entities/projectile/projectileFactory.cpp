@@ -6,6 +6,8 @@
 #include "bullet/badPistolBullet.h"
 #include "bullet/redCircleBullet.h"
 #include "bullet/redRectangleBullet.h"
+#include "bullet/spearWave.h"
+#include "bullet/redConicalBullet.h"
 // #include "bullet/BigRedCircleBullet.h"
 // #include "bullet/BigYellowCircleBullet.h"
 // #include "bullet/GasBlasterBullet.h"
@@ -40,9 +42,12 @@ Projectile* ProjectileFactory::Create(ProjectileType type) {
     // case ProjectileType::RED_DIAMOND_BULLET:
     //     // return new RedCircleBullet();
     
-
+    case ProjectileType::RED_CONICAL_BULLET:
+        return new RedConicalBullet();
     // case ProjectileType::RED_DIAMOND_BULLET:
     //     return new RedDiamondBullet();
+    case ProjectileType::SPEAR_WAVE:
+        return new SpearWave();
     case ProjectileType::RED_RECTANGLE_BULLET:
         return new RedRectangleBullet();
     
@@ -56,8 +61,7 @@ Projectile* ProjectileFactory::Create(ProjectileType type) {
     //     return new BigRedCircleBullet();
     // case ProjectileType::RED_HOLLOW_CIRCLE_BULLET:
     //     return new RedHollowCircleBullet();
-    // case ProjectileType::RED_CONICAL_BULLET:
-    //     return new RedConicalBullet();
+    
     // case ProjectileType::SPIRAL_BULLET:
     //     return new SpiralBullet();
     // case ProjectileType::ZULAN_ANGRY_BULLET:
