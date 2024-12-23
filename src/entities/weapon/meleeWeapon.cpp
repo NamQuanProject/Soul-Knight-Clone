@@ -1,24 +1,41 @@
 #include "meleeWeapon.h"
 #include <iostream>
 
-MeleeWeapon::MeleeWeapon() : durability(100) {
-    damage = 25;  
-    range = 1.5;
-}
-
-void MeleeWeapon::Use() {
-    // if (durability > 0) {
-    //     std::cout << "Swinging melee weapon for " << damage << " damage!" << std::endl;
-    //     durability--;
-    // } else {
-    //     std::cout << "Weapon is broken! Durability is zero." << std::endl;
-    // }
-}
-
-void MeleeWeapon::SetDurability(int durability) {
-    this->durability = durability;
-}
+MeleeWeapon::MeleeWeapon()
+    : durability(100) {}
 
 int MeleeWeapon::GetDurability() const {
     return durability;
+}
+
+void MeleeWeapon::SetDurability(int durabilityCount) {
+    durability = durabilityCount;
+}
+
+// double MeleeWeapon::GetDamage() const {
+//     return damage;
+// }
+
+// void MeleeWeapon::SetDamage(double damageValue) {
+//     damage = damageValue;
+// }
+
+// void MeleeWeapon::SetRange(double rangeValue) {
+//     range = rangeValue;
+// }
+
+// double MeleeWeapon::GetRange() const {
+//     return range;
+// }
+
+void MeleeWeapon::Update(float deltaTime) {
+    std::cout << "Updating melee weapon..." << std::endl;
+}
+
+bool MeleeWeapon::IsInRange() {
+    return true;
+}
+
+void MeleeWeapon::Attack() {
+    
 }

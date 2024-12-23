@@ -24,8 +24,9 @@ public:
     void Update(float deltaTime) override;   
     void Attack() override;         
 private:
-    sf::Texture pistolTexture; // Texture for the pistol
-    sf::Sprite pistolSprite;   // Sprite for the pistol
-    sf::Vector2f offset;       // Offset relative to the player position
+    sf::Texture pistolTextureRight;     
+    sf::Texture pistolTextureLeft;  
+    sf::Sprite pistolSprite;   
+    sf::Vector2f offset;      
     sf::Vector2f playerPosition;
 };

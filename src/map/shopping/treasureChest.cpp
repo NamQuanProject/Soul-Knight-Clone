@@ -111,9 +111,9 @@ void TreasureChest::Render(sf::RenderWindow& window) {
     if (showingText) {
         window.draw(interactiveText);
     }
-    if (hitbox) {
-        hitbox->Render(window);
-    }
+    // if (hitbox) {
+    //     hitbox->Render(window);
+    // }
 }
 
 
