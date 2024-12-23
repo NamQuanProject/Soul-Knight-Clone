@@ -217,6 +217,10 @@ void MonsterRoom::RelocatePlayerToCenter() {
 
 
 void MonsterRoom::GenerateMonsterMapRandomly(int stage) {
+    if (isBossRoom) {
+        monsterMap[MonsterType::ZULAN] = 1;
+        return;
+    }
     int monsterAmount;
     if (size == 1) {
         monsterAmount = 8;

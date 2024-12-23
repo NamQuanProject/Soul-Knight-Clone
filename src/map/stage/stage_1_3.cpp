@@ -32,7 +32,7 @@ void Stage_1_3::Initialize() {
 
     MonsterRoom* room1 = new MonsterRoom(Point(542, 608), Point(882, 947), 1, 1, 3);
     MonsterRoom* room2 = new MonsterRoom(Point(1824, 607), Point(2159, 947), 1, 1, 3);
-    MonsterRoom* room3 = new MonsterRoom(Point(1226, 652), Point(1474, 898), 1, 1, 3);
+    MonsterRoom* room3 = new MonsterRoom(Point(1226, 652), Point(1474, 898), 1, 1, 3, true);
     monsterRooms.push_back(room1);
     monsterRooms.push_back(room2);
     monsterRooms.push_back(room3);

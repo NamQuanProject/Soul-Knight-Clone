@@ -16,6 +16,7 @@
 #include "floor_2/skeleton/skeleton.h"
 #include "floor_2/spider/spider.h"
 #include "floor_3/valkoryn/valkoryn.h"
+#include "boss/zulan_the_colossus/ZulanTheColossus.h"
 // #include "/floor_2/battery/Battery.h"
 // #include "/floor_2/big_skeleton/BigSkeleton.h"
 // #include "/floor_2/elite_skeleton/EliteSkeletonCurvedSword.h"
@@ -93,8 +94,8 @@ Monster* MonsterFactory::Create(MonsterType type, double level) {
     // case Type::BATTERY:
     //     return new Battery(level);
 
-    // case Type::ZULAN:
-    //     return new ZulanTheColossus();
+    case MonsterType::ZULAN:
+        return new ZulanTheColossus(level);
     // case Type::ALIEN_MACHINE_GUN:
     //     return new AlienMachineGun(level);
     // case Type::ALIEN_RED_LIGHTSABER:

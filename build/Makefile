@@ -585,6 +585,30 @@ src/entities/invinsibleObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/invinsibleObject.cpp.s
 .PHONY : src/entities/invinsibleObject.cpp.s
 
+src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.o: src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.o
+.PHONY : src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.o
+
+# target to build an object file
+src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.o
+.PHONY : src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.o
+
+src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.i: src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.i
+.PHONY : src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.i
+
+# target to preprocess a source file
+src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.i
+.PHONY : src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.i
+
+src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.s: src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.s
+.PHONY : src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.s
+
+# target to generate assembly for a file
+src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.s
+.PHONY : src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.cpp.s
+
 src/entities/monster/floor_1/bear/bear.o: src/entities/monster/floor_1/bear/bear.cpp.o
 .PHONY : src/entities/monster/floor_1/bear/bear.o
 
@@ -1064,6 +1088,30 @@ src/entities/weapon/gun/badpistol.s: src/entities/weapon/gun/badpistol.cpp.s
 src/entities/weapon/gun/badpistol.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/badpistol.cpp.s
 .PHONY : src/entities/weapon/gun/badpistol.cpp.s
+
+src/entities/weapon/gun/staff.o: src/entities/weapon/gun/staff.cpp.o
+.PHONY : src/entities/weapon/gun/staff.o
+
+# target to build an object file
+src/entities/weapon/gun/staff.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/staff.cpp.o
+.PHONY : src/entities/weapon/gun/staff.cpp.o
+
+src/entities/weapon/gun/staff.i: src/entities/weapon/gun/staff.cpp.i
+.PHONY : src/entities/weapon/gun/staff.i
+
+# target to preprocess a source file
+src/entities/weapon/gun/staff.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/staff.cpp.i
+.PHONY : src/entities/weapon/gun/staff.cpp.i
+
+src/entities/weapon/gun/staff.s: src/entities/weapon/gun/staff.cpp.s
+.PHONY : src/entities/weapon/gun/staff.s
+
+# target to generate assembly for a file
+src/entities/weapon/gun/staff.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/staff.cpp.s
+.PHONY : src/entities/weapon/gun/staff.cpp.s
 
 src/entities/weapon/melee/knife.o: src/entities/weapon/melee/knife.cpp.o
 .PHONY : src/entities/weapon/melee/knife.o
@@ -2259,6 +2307,9 @@ help:
 	@echo "... src/entities/invinsibleObject.o"
 	@echo "... src/entities/invinsibleObject.i"
 	@echo "... src/entities/invinsibleObject.s"
+	@echo "... src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.o"
+	@echo "... src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.i"
+	@echo "... src/entities/monster/boss/zulan_the_colossus/ZulanTheColossus.s"
 	@echo "... src/entities/monster/floor_1/bear/bear.o"
 	@echo "... src/entities/monster/floor_1/bear/bear.i"
 	@echo "... src/entities/monster/floor_1/bear/bear.s"
@@ -2319,6 +2370,9 @@ help:
 	@echo "... src/entities/weapon/gun/badpistol.o"
 	@echo "... src/entities/weapon/gun/badpistol.i"
 	@echo "... src/entities/weapon/gun/badpistol.s"
+	@echo "... src/entities/weapon/gun/staff.o"
+	@echo "... src/entities/weapon/gun/staff.i"
+	@echo "... src/entities/weapon/gun/staff.s"
 	@echo "... src/entities/weapon/melee/knife.o"
 	@echo "... src/entities/weapon/melee/knife.i"
 	@echo "... src/entities/weapon/melee/knife.s"

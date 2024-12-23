@@ -26,7 +26,7 @@ void Stage_1_1::Initialize() {
     AddWallsToMap();
     SetPlayerPosition();
     SetTransferGate();
-    MonsterRoom* room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 1, 1, 1);
+    MonsterRoom* room1 = new MonsterRoom(Point(543, 14), Point(880, 353), 1, 1, 1, true);
     MonsterRoom* room2 = new MonsterRoom(Point(1229, 655), Point(1473, 896), 1, 1, 1);
     monsterRooms.push_back(room1);
     monsterRooms.push_back(room2);
