@@ -145,7 +145,14 @@ void ZulanTheColossus::Attack() {
                     direction.SetY(direction.GetY() / magnitude);
                 }
 
-                float bullet_speed = Rand::Instance()->Get(200.0f, 350.0f);  // Randomized speed
+                float bullet_speed;
+                if (chosenType == ProjectileType::RED_CONICAL_BULLET) {
+                    bullet_speed = Rand::Instance()->Get(50.0f, 100.0f);  // Super slow speed for RED_CONICAL_BULLET
+                } else {
+                    bullet_speed = Rand::Instance()->Get(200.0f, 350.0f);  // Standard speed range for other types
+                }
+
+                // Calculate velocity
                 Vec velocity = Vec(direction.GetX() * bullet_speed, direction.GetY() * bullet_speed);
                 bullet->SetSpeed(velocity);
 
@@ -168,7 +175,7 @@ void ZulanTheColossus::Attack() {
 
                 if (bullet != nullptr) {
                     bullet->SetPosition(position);
-
+                    
                     float angle = i * 15; 
                     float radianAngle = angle * radianConversion;
                     float speedX = Rand::Instance()->Get(200.0f, 300.0f) * std::cos(radianAngle);  // Randomized speed

@@ -193,10 +193,6 @@ void MonsterRoom::SetDoors() {
     doors.push_back(rightDoor);
     doors.push_back(topDoor);
     doors.push_back(bottomDoor);
-    // ObjectManager::Instance()->AddObject(leftInvisibleDoor);
-    // ObjectManager::Instance()->AddObject(rightInvisibleDoor);
-    // ObjectManager::Instance()->AddObject(topInvisibleDoor);
-    // ObjectManager::Instance()->AddObject(bottomInvisibleDoor);
     
 }
 

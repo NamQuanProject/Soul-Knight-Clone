@@ -19,4 +19,7 @@ private:
     sf::Sprite bulletSprite;   // Sprite for rendering     // Position of the bullet
     Vec speed;        // Speed of the bullet
     bool textureLoaded;
+    Vec initialPos;
+    float maxDistance;
+    float homingStrength;
 };
