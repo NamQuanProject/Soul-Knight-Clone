@@ -38,6 +38,7 @@ protected:
     ProjectilePool* projectilePool = ProjectilePool::Instance();
     MonsterPool* monsterPool = MonsterPool::Instance();
     SoundManager soundManager;
+    SoundManager soundManager2;
     int gameFinishCounter;
     float successTimer;
     float failTimer;

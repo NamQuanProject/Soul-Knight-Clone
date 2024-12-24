@@ -11,6 +11,7 @@ SoundManager::~SoundManager() {
 
 void SoundManager::loadAllMusic() {
     loadMusic("background", "../resources/sound/background.mp3");
+    loadMusic("bullet", "../resources/sound/bullet2.mp3");
 }
 
 void SoundManager::loadMusic(const std::string& name, const std::string& filename) {
