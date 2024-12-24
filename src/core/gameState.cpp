@@ -76,9 +76,9 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
         soundManager2.setVolume(100);
         soundManager2.playMusic("bullet");
     }
-    else {
-        soundManager2.stopMusic();
-    }
+    // else {
+    //     soundManager2.stopMusic();
+    // }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::L)) {
         objectManager->GetPlayer()->SetInteractive(true); 
     }

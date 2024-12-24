@@ -11,7 +11,7 @@ SoundManager::~SoundManager() {
 
 void SoundManager::loadAllMusic() {
     loadMusic("background", "../resources/sound/background.mp3");
-    loadMusic("bullet", "../resources/sound/bullet2.mp3");
+    loadMusic("bullet", "../resources/sound/bullet3.mp3");
 }
 
 void SoundManager::loadMusic(const std::string& name, const std::string& filename) {
@@ -29,8 +29,7 @@ void SoundManager::playMusic(const std::string& name) {
             currentMusic->stop(); 
         }
         currentMusic = musicTracks[name].get(); // Get the raw pointer to the music
-        currentMusic->setLoop(true); 
- 
+        currentMusic->setLoop(false); 
         currentMusic->play();
     } else {
         std::cerr << "Music not found: " << name << std::endl;
