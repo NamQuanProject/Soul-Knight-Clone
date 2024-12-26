@@ -993,4 +993,10 @@ CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../core/animation.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/melee/dragonSword.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/melee/../weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/melee/../meleeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/melee/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../weapon/melee/../../player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../../core/animation.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/player/heroes/../../projectile/bullet/superMoonBullet.h

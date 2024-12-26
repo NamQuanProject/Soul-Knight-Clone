@@ -16,6 +16,12 @@ void Player::setSpeed(Vec newSpeed) {
     speed = newSpeed;
 }
 
+void Player::SwitchWeapon() {
+    
+}
+void Player::UseSkill() {
+    
+}
 
 
 void Player::SetInteractive(bool new_isInteract) {

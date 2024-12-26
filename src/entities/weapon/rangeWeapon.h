@@ -16,8 +16,7 @@ public:
     void SetWeaponDirection(Vec& direction);
     Vec GetWeaponDirection();             
     Vec PointAtEnemy(Vec& enemyPosition); 
-    Vec GetBulletPosition();              
-    void Use() override;                       
+    Vec GetBulletPosition();                               
     void Update(float deltaTime) override;      
     
 protected:

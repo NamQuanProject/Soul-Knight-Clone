@@ -6,14 +6,6 @@ RangeWeapon::RangeWeapon()
     weaponDirection = Vec(1.0, 0.0);  
 }
 
-void RangeWeapon::Use() {
-    if (timeSinceLastFire >= fireRate && ammo > 0) {
-        Vec bulletPosition = GetBulletPosition();
-        ammo--;
-        timeSinceLastFire = 0;
-    }
-}
-
 
 
 

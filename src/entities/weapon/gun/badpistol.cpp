@@ -97,14 +97,6 @@ void BadPistol::Render(sf::RenderWindow& window) {
     window.draw(pistolSprite);
 }
 
-void BadPistol::Use() {
-    if (ammo > 0) {
-        std::cout << "BadPistol: Bang! Fired a shot.\n";
-        --ammo;
-    } else {
-        std::cout << "BadPistol: Out of ammo! Reload needed.\n";
-    }
-}
 
 void BadPistol::Update(float deltaTime) {
     sf::Vector2f pistolPosition = playerPosition + offset;

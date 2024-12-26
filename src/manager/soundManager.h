@@ -10,7 +10,7 @@ class SoundManager {
 public:
     SoundManager();
     ~SoundManager();
-
+    
     void loadMusic(const std::string& name, const std::string& filename);
     void loadAllMusic(); 
     void playMusic(const std::string& name);

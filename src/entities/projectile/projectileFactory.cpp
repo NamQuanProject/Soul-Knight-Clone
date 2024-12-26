@@ -8,6 +8,8 @@
 #include "bullet/redRectangleBullet.h"
 #include "bullet/spearWave.h"
 #include "bullet/redConicalBullet.h"
+#include "bullet/superMoonBullet.h"
+#include "bullet/superMoonBullet.h"
 // #include "bullet/BigRedCircleBullet.h"
 // #include "bullet/BigYellowCircleBullet.h"
 // #include "bullet/GasBlasterBullet.h"
@@ -41,7 +43,8 @@ Projectile* ProjectileFactory::Create(ProjectileType type) {
         return new RedCircleBullet();
     // case ProjectileType::RED_DIAMOND_BULLET:
     //     // return new RedCircleBullet();
-    
+    case ProjectileType::MOON: 
+        return new SuperMoonBullet();
     case ProjectileType::RED_CONICAL_BULLET:
         return new RedConicalBullet();
     // case ProjectileType::RED_DIAMOND_BULLET:

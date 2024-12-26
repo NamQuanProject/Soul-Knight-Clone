@@ -13,7 +13,6 @@ class BadPistol : public RangeWeapon {
 public:
     BadPistol();
     void Initialize() override;
-    void Use() override;
     void Render(sf::RenderWindow& window) override ; 
     void Collision(GameObject* gameObject) override; 
     double GetDamage() override;                    

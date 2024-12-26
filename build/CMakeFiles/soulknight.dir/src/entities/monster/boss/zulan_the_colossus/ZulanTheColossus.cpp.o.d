@@ -994,7 +994,13 @@ CMakeFiles/soulknight.dir/src/entities/monster/boss/zulan_the_colossus/ZulanTheC
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../bullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../projectile/bullet/../../../manager/objectManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/gun/../../player/heroes/knight.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/melee/dragonSword.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/melee/../weapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/melee/../meleeWeapon.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/melee/../../../manager/objectManager.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../weapon/melee/../../player/heroes/knight.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../../core/animation.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../projectile/bullet/superMoonBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/player/heroes/../../../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../weapon/../player/../../manager/../entities/monster/monster.h \
@@ -1051,4 +1057,5 @@ CMakeFiles/soulknight.dir/src/entities/monster/boss/zulan_the_colossus/ZulanTheC
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../../entities/projectile/bullet/redRectangleBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../../entities/projectile/bullet/spearWave.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../../entities/projectile/bullet/redConicalBullet.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../../entities/projectile/bullet/redConicalBullet.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/boss/zulan_the_colossus/../../../../entities/projectile/bullet/superMoonBullet.h

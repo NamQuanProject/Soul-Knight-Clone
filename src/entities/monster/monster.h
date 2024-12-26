@@ -25,7 +25,7 @@ public:
 
     void Injuried(double damage);
     void Reset();
-
+    virtual void takeDamage(double damage);
 
     enum Face { RIGHT, LEFT } face;
     enum State { IDLE, RUN, DEAD, READY } state;

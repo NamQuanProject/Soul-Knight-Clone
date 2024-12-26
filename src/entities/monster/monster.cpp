@@ -72,6 +72,12 @@ void Monster::Reset() {
     level = 1;
     isOnDeadTrigger = false;
 }
+void Monster::takeDamage(double damage) {
+    hp -= damage;
+    if (hp <= 0) {
+        hp = 0;
+    }
+}
 
 
 Monster::State Monster::CheckState() {

@@ -7,6 +7,7 @@
 #include "../../../../entities/projectile/bullet/spearWave.h"
 #include "../../../../entities/projectile/bullet/redCircleBullet.h"
 #include "../../../../entities/projectile/bullet/redConicalBullet.h"
+#include "../../../../entities/projectile/bullet/superMoonBullet.h"
 #include "../../../../utils/random.h"
 #include <iostream>
 
@@ -119,7 +120,7 @@ void ZulanTheColossus::Attack() {
             ProjectileType::RED_RECTANGLE_BULLET,
             ProjectileType::SPEAR_WAVE,
             ProjectileType::RED_CIRCLE_BULLET,
-            ProjectileType::RED_CONICAL_BULLET
+            ProjectileType::RED_CONICAL_BULLET,
         };
 
         if (random_choice == 1) {

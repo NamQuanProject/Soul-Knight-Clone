@@ -1,41 +1,33 @@
 #include "meleeWeapon.h"
-#include <iostream>
-
-MeleeWeapon::MeleeWeapon()
-    : durability(100) {}
-
-int MeleeWeapon::GetDurability() const {
-    return durability;
+MeleeWeapon::MeleeWeapon() : offset(0.f, 0.f) {
+    // Default constructor implementation
 }
 
-void MeleeWeapon::SetDurability(int durabilityCount) {
-    durability = durabilityCount;
+MeleeWeapon::~MeleeWeapon() {
+    // Cleanup logic, if needed
+}
+void MeleeWeapon::Render(sf::RenderWindow& window) {
+    window.draw(weaponSprite);
 }
 
-// double MeleeWeapon::GetDamage() const {
-//     return damage;
-// }
-
-// void MeleeWeapon::SetDamage(double damageValue) {
-//     damage = damageValue;
-// }
-
-// void MeleeWeapon::SetRange(double rangeValue) {
-//     range = rangeValue;
-// }
-
-// double MeleeWeapon::GetRange() const {
-//     return range;
-// }
+double MeleeWeapon::GetDamage() {
+    return 0;
+    // Default implementation, if necessary
+}
 
 void MeleeWeapon::Update(float deltaTime) {
-    std::cout << "Updating melee weapon..." << std::endl;
+    sf::Vector2f weaponPosition = playerPosition + offset;
+    weaponSprite.setPosition(weaponPosition);
 }
 
-bool MeleeWeapon::IsInRange() {
-    return true;
+void MeleeWeapon::setPlayerPosition(sf::Vector2f position) {
+    playerPosition = position;
+}
+
+void MeleeWeapon::Collision(GameObject* gameObject) {
+    std::cout << "MeleeWeapon collided with a game object!" << std::endl;
 }
 
 void MeleeWeapon::Attack() {
-    
+    // Default implementation, if necessary
 }

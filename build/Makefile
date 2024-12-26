@@ -1041,6 +1041,30 @@ src/entities/projectile/bullet/spearWave.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/spearWave.cpp.s
 .PHONY : src/entities/projectile/bullet/spearWave.cpp.s
 
+src/entities/projectile/bullet/superMoonBullet.o: src/entities/projectile/bullet/superMoonBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/superMoonBullet.o
+
+# target to build an object file
+src/entities/projectile/bullet/superMoonBullet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/superMoonBullet.cpp.o
+.PHONY : src/entities/projectile/bullet/superMoonBullet.cpp.o
+
+src/entities/projectile/bullet/superMoonBullet.i: src/entities/projectile/bullet/superMoonBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/superMoonBullet.i
+
+# target to preprocess a source file
+src/entities/projectile/bullet/superMoonBullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/superMoonBullet.cpp.i
+.PHONY : src/entities/projectile/bullet/superMoonBullet.cpp.i
+
+src/entities/projectile/bullet/superMoonBullet.s: src/entities/projectile/bullet/superMoonBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/superMoonBullet.s
+
+# target to generate assembly for a file
+src/entities/projectile/bullet/superMoonBullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/projectile/bullet/superMoonBullet.cpp.s
+.PHONY : src/entities/projectile/bullet/superMoonBullet.cpp.s
+
 src/entities/projectile/projectile.o: src/entities/projectile/projectile.cpp.o
 .PHONY : src/entities/projectile/projectile.o
 
@@ -1136,6 +1160,54 @@ src/entities/weapon/gun/staff.s: src/entities/weapon/gun/staff.cpp.s
 src/entities/weapon/gun/staff.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/staff.cpp.s
 .PHONY : src/entities/weapon/gun/staff.cpp.s
+
+src/entities/weapon/gun/superMoonPistol.o: src/entities/weapon/gun/superMoonPistol.cpp.o
+.PHONY : src/entities/weapon/gun/superMoonPistol.o
+
+# target to build an object file
+src/entities/weapon/gun/superMoonPistol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/superMoonPistol.cpp.o
+.PHONY : src/entities/weapon/gun/superMoonPistol.cpp.o
+
+src/entities/weapon/gun/superMoonPistol.i: src/entities/weapon/gun/superMoonPistol.cpp.i
+.PHONY : src/entities/weapon/gun/superMoonPistol.i
+
+# target to preprocess a source file
+src/entities/weapon/gun/superMoonPistol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/superMoonPistol.cpp.i
+.PHONY : src/entities/weapon/gun/superMoonPistol.cpp.i
+
+src/entities/weapon/gun/superMoonPistol.s: src/entities/weapon/gun/superMoonPistol.cpp.s
+.PHONY : src/entities/weapon/gun/superMoonPistol.s
+
+# target to generate assembly for a file
+src/entities/weapon/gun/superMoonPistol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/gun/superMoonPistol.cpp.s
+.PHONY : src/entities/weapon/gun/superMoonPistol.cpp.s
+
+src/entities/weapon/melee/dragonSword.o: src/entities/weapon/melee/dragonSword.cpp.o
+.PHONY : src/entities/weapon/melee/dragonSword.o
+
+# target to build an object file
+src/entities/weapon/melee/dragonSword.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/melee/dragonSword.cpp.o
+.PHONY : src/entities/weapon/melee/dragonSword.cpp.o
+
+src/entities/weapon/melee/dragonSword.i: src/entities/weapon/melee/dragonSword.cpp.i
+.PHONY : src/entities/weapon/melee/dragonSword.i
+
+# target to preprocess a source file
+src/entities/weapon/melee/dragonSword.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/melee/dragonSword.cpp.i
+.PHONY : src/entities/weapon/melee/dragonSword.cpp.i
+
+src/entities/weapon/melee/dragonSword.s: src/entities/weapon/melee/dragonSword.cpp.s
+.PHONY : src/entities/weapon/melee/dragonSword.s
+
+# target to generate assembly for a file
+src/entities/weapon/melee/dragonSword.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/weapon/melee/dragonSword.cpp.s
+.PHONY : src/entities/weapon/melee/dragonSword.cpp.s
 
 src/entities/weapon/melee/knife.o: src/entities/weapon/melee/knife.cpp.o
 .PHONY : src/entities/weapon/melee/knife.o
@@ -2388,6 +2460,9 @@ help:
 	@echo "... src/entities/projectile/bullet/spearWave.o"
 	@echo "... src/entities/projectile/bullet/spearWave.i"
 	@echo "... src/entities/projectile/bullet/spearWave.s"
+	@echo "... src/entities/projectile/bullet/superMoonBullet.o"
+	@echo "... src/entities/projectile/bullet/superMoonBullet.i"
+	@echo "... src/entities/projectile/bullet/superMoonBullet.s"
 	@echo "... src/entities/projectile/projectile.o"
 	@echo "... src/entities/projectile/projectile.i"
 	@echo "... src/entities/projectile/projectile.s"
@@ -2400,6 +2475,12 @@ help:
 	@echo "... src/entities/weapon/gun/staff.o"
 	@echo "... src/entities/weapon/gun/staff.i"
 	@echo "... src/entities/weapon/gun/staff.s"
+	@echo "... src/entities/weapon/gun/superMoonPistol.o"
+	@echo "... src/entities/weapon/gun/superMoonPistol.i"
+	@echo "... src/entities/weapon/gun/superMoonPistol.s"
+	@echo "... src/entities/weapon/melee/dragonSword.o"
+	@echo "... src/entities/weapon/melee/dragonSword.i"
+	@echo "... src/entities/weapon/melee/dragonSword.s"
 	@echo "... src/entities/weapon/melee/knife.o"
 	@echo "... src/entities/weapon/melee/knife.i"
 	@echo "... src/entities/weapon/melee/knife.s"

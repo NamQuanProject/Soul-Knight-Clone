@@ -22,7 +22,8 @@ public:
     void setSpeedY(double y);
     bool GetInteract();
     void SetInteractive(bool new_isInteract);
-
+    virtual void SwitchWeapon();
+    virtual void UseSkill();
 
 
     // STATE RELATED
@@ -37,6 +38,7 @@ public:
 
     void Healing(int health);
     Vec getSpeed();
+
 
 
 

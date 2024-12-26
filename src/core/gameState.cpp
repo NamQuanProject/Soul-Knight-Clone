@@ -18,6 +18,14 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     if (event.type == sf::Event::Closed) {
         window.close();
     }
+    if (event.type == sf::Event::KeyPressed) {
+        if (event.key.code == sf::Keyboard::O) {
+            objectManager->GetPlayer()->SwitchWeapon();
+        }
+        if (event.key.code == sf::Keyboard::P) {
+            objectManager->GetPlayer()->UseSkill();
+        }
+    }
     
     Vec newSpeed(0.0, 0.0);
     double speed = 0.05;
@@ -82,6 +90,7 @@ void GameState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::L)) {
         objectManager->GetPlayer()->SetInteractive(true); 
     }
+    
     else {
         objectManager->GetPlayer()->SetInteractive(false); 
     }

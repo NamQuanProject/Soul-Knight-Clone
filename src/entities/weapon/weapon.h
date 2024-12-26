@@ -9,7 +9,6 @@ public:
     Weapon();
     virtual ~Weapon() = default;
     void Initialize() override;
-    virtual void Use() = 0;  
     virtual double GetDamage() = 0; 
     virtual void Attack() = 0;
     void SetOwner(GameObject* owner); 
