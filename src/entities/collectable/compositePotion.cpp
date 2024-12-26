@@ -4,9 +4,6 @@ CompositePotion::CompositePotion() {
     // SetInteractiveText("Composite Potion", InteractiveText::EPIC);
 }
 
-void CompositePotion::Start() {
-    Collectable::Start();
-}
 
 void CompositePotion::Update(float deltaTime ) {
     Collectable::Update(deltaTime);

@@ -6,7 +6,7 @@
 class Collectable : public GameObject{
 public:
     Collectable();
-    virtual void Start() = 0;
+    virtual ~Collectable() = default;
     void Update(float deltaTime) override;
     void Render(sf::RenderWindow& window) override;
     virtual void Interactive(Player* player) = 0;

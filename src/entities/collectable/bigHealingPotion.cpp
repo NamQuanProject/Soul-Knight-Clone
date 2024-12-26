@@ -6,9 +6,6 @@ BigHealingPotion::BigHealingPotion() {
 }
 
 
-void BigHealingPotion::Start() {
-    Collectable::Start();
-}
 
 void BigHealingPotion::Update(float deltaTime) {
     Collectable::Update(deltaTime);

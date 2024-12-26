@@ -15,7 +15,7 @@ TransferGate::TransferGate() {
     }
     interactiveText.setFont(font);
     interactiveText.setString("Press L to interact");
-    interactiveText.setCharacterSize(9);  // Set text size
+    interactiveText.setCharacterSize(9);
 
     interactiveText.setFillColor(sf::Color::White);  
 // Make the text bold

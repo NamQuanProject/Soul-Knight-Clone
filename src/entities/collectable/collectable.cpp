@@ -4,10 +4,6 @@ Collectable::Collectable() {
    AddTag(Tag::COLLECTABLE);
 }
 
-void Collectable::Start() {
-    
-}
-
 void Collectable::Update(float deltaTime) {
     
 }

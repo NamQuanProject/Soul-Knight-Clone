@@ -3,6 +3,7 @@
 #include "../../entities/drop/coin.h"
 #include "../../manager/objectManager.h"
 #include "../../pool/dropPool.h"
+#include "../../entities/collectable/healingPotion.h"
 #include "../../utils/random.h"
 // #include "../../weapon/weaponFactory.h"
 
@@ -128,6 +129,11 @@ void TreasureChest::CreateContents() {
     // case BOSS_ROOM:
     //     CreateContentsBossRoom();
     // }
+
+    HealingPotion* contents;
+    contents = new HealingPotion();
+    contents->SetPosition(this->position);
+    ObjectManager::Instance()->AddObject(contents);
     ObjectManager::Instance()->GetPlayer()->Healing(1);
 }
 

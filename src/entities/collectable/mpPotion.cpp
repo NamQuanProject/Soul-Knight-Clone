@@ -5,9 +5,6 @@ MpPotion::MpPotion() {
     // SetInteractiveText("MP Potion", InteractiveText::RARE);
 }
 
-void MpPotion::Start() {
-    Collectable::Start();
-}
 
 void MpPotion::Update(float deltaTime) {
     Collectable::Update(deltaTime);

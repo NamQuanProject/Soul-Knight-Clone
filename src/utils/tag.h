@@ -21,7 +21,7 @@ enum class Tag {
     PLAYER_ALERTABLE,
     INTERACTABLE,
     COLLECTABLE,
-
+    POTION,
     DEAD,
 
     REMOVE_ON_NEXT_FRAME,

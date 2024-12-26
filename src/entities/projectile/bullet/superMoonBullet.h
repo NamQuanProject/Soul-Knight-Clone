@@ -19,4 +19,5 @@ private:
     sf::Sprite bulletSprite;  
     Vec speed;
     bool textureLoaded;
+    
 };

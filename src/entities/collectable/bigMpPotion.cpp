@@ -4,9 +4,7 @@ BigMpPotion::BigMpPotion() {
    
 }
 
-void BigMpPotion::Start() {
-    Collectable::Start();
-}
+
 
 void BigMpPotion::Update(float deltaTime) {
     Collectable::Update(deltaTime);
