@@ -80,6 +80,14 @@ void Player::Attack() {
     
 }
 
+void Player::ManaRegen(int add_mana) {
+    mana = mana + mana;
+}
+
+void Player::ShieldRegen(int add_shield) {
+    shield = shield + add_shield;
+}
+
 void Player::Poisoned(double poisonDamage) {
    
 }
@@ -100,4 +108,7 @@ Player::Face Player::CheckFace() {
 
 void Player::Healing(int health) {
     hp = hp + health;
+    if (hp > maxHp) {
+        hp = maxHp;
+    }
 }

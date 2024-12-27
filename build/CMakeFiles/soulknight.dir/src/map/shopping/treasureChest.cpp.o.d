@@ -1012,7 +1012,7 @@ CMakeFiles/soulknight.dir/src/map/shopping/treasureChest.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../pool/dropPool.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/healingPotion.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/bigHealingPotion.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../utils/random.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \

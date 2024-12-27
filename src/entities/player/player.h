@@ -37,6 +37,10 @@ public:
     int GetMaxShield() const;
 
     void Healing(int health);
+    void ManaRegen(int add_mana);
+    void ShieldRegen(int add_shield);
+
+
     Vec getSpeed();
 
 
