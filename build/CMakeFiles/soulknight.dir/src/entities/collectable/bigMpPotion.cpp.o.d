@@ -1,6 +1,6 @@
 CMakeFiles/soulknight.dir/src/entities/collectable/bigMpPotion.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/bigMpPotion.cpp \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/bigHealingPotion.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/bigMpPotion.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/collectable/collectable.h \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Graphics.hpp \
   /Users/quannguyennam/Documents/Projects/KANS/SFML-2.6.1/include/SFML/Window.hpp \

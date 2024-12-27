@@ -1,4 +1,4 @@
-#include "bigHealingPotion.h"
+#include "compositePotion.h"
 #include "../../manager/objectManager.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
