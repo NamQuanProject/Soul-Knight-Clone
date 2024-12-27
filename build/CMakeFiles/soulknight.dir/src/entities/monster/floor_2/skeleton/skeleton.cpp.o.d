@@ -1003,6 +1003,7 @@ CMakeFiles/soulknight.dir/src/entities/monster/floor_2/skeleton/skeleton.cpp.o: 
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_2/skeleton/../../../weapon/../player/../../manager/../entities/player/heroes/../../projectile/bullet/superMoonBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_2/skeleton/../../../weapon/../player/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_2/skeleton/../../../weapon/../player/../../manager/../entities/player/heroes/../../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_2/skeleton/../../../weapon/../player/../../manager/../entities/player/heroes/wukong.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_2/skeleton/../../../weapon/../player/../../manager/../entities/monster/monster.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_2/skeleton/../../../weapon/../player/../../manager/../utils/point.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/entities/monster/floor_2/skeleton/../../../weapon/../player/../../manager/../utils/vec.h \

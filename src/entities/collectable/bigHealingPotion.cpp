@@ -30,12 +30,6 @@ BigHealingPotion::BigHealingPotion() {
     sf::Vector2f position = sprite.getPosition();
     interactiveText.setPosition(position.x - 45.f, position.y + 50.f);  
     
-    // Initialize hitbox
-    
-    
-
-
-    
     Point author = Point(position.x, position.y);
     hitbox = new HitBox(author);
     showingText = false;

@@ -129,10 +129,10 @@ void Knight::Update(float deltaTime) {
     animationManager.update(deltaTime);
     
     if (face == Knight::RIGHT) {
-        weapon1->setOffset(5, 2);
+        weapon1->setOffset(0, -4);
         weapon2->setOffset(3, 2);  // Ensure both weapons have the correct offset
     } else if (face == Knight::LEFT) {
-        weapon1->setOffset(-15, 2);
+        weapon1->setOffset(-25, -4);
         weapon2->setOffset(-23, 2);  // Ensure both weapons have the correct offset
     }
 

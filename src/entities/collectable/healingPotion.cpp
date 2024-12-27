@@ -6,14 +6,14 @@
 HealingPotion::HealingPotion() {
     AddTag(Tag::POTION);
 
-    if (!texture.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/collectable/big_healing_potion.bmp")) {
+    if (!texture.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/collectable/healing_potion.bmp")) {
         std::cerr << "Error loading healing potion texture!" << std::endl;
     }
     texture.setSmooth(true); 
     sprite.setTexture(texture);
 
     sf::Image image;
-    if (image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/collectable/big_healing_potion.bmp")) {
+    if (image.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/collectable/healing_potion.bmp")) {
         image.createMaskFromColor(sf::Color(255, 255, 255));
         texture.loadFromImage(image);
     }

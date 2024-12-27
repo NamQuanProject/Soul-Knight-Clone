@@ -6,15 +6,15 @@ BadPistol::BadPistol() {
     sf::Image imageRight, imageLeft;
 
     // Load the right-facing image
-    if (!imageRight.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/weapon/bad_pistol/270.bmp")) {
+    if (!imageRight.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/weapon/bad_pistol/template/bad_pistol_2.bmp")) {
         std::cerr << "Error: Could not load right-facing image!" << std::endl;
     }
-    sf::Color transparentColor(255, 255, 255);
+    sf::Color transparentColor(0, 0, 0);
     imageRight.createMaskFromColor(transparentColor);
     pistolTextureRight.loadFromImage(imageRight);
 
     // Load the left-facing image
-    if (!imageLeft.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/weapon/bad_pistol/90.bmp")) {
+    if (!imageLeft.loadFromFile("/Users/quannguyennam/Documents/Projects/Soul Knight Clone/resources/weapon/bad_pistol/template/flip_bad_pistol_2.bmp")) {
         std::cerr << "Error: Could not load left-facing image!" << std::endl;
     }
     imageLeft.createMaskFromColor(transparentColor);
@@ -23,7 +23,7 @@ BadPistol::BadPistol() {
     // Set the initial texture (default to right-facing)
     pistolSprite.setTexture(pistolTextureRight);
 
-    offset = sf::Vector2f(5.f, 2.f);
+    offset = sf::Vector2f(1.f, 2.f);
 }
 
 void BadPistol::setOffset(double x, double y) {

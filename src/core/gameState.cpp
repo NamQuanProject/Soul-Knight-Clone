@@ -2,7 +2,7 @@
 #include "stateManager.h"
 GameState::GameState() {
     Initialize();
-    soundManager.playMusic("background");
+    soundManager.playMusic("wukong");
    
 }
 

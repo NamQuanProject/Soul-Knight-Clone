@@ -30,8 +30,8 @@ def resize_image(input_path, output_path, scale_factor):
         print(f"Error: {e}")
 
 # Example usage
-input_path = "Knight_25_dual_wield.png"
+input_path = "Knight_16_starter.png"
 output_path = "knight_skill.bmp"
-scale_factor = 0.3 # Resize to 50% of the original size
+scale_factor = 0.1 # Resize to 50% of the original size
 
 resize_image(input_path, output_path, scale_factor)

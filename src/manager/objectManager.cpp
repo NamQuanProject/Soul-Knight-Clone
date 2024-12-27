@@ -1,4 +1,5 @@
 #include "objectManager.h"
+#include "../core/selectionState.h"
 #include <SFML/Graphics.hpp>
 #include <algorithm>
 #include <vector>
@@ -33,7 +34,16 @@ ObjectManager::~ObjectManager() {
 
 void ObjectManager::Initialize() {
     objects.reserve(1000);
-    this->player = new Knight();
+    std::cout << "OBJECT MANAGER INITIALIZED" << std::endl;
+    if (SelectionState::playerSelect == 1) {
+        this->player = new Wukong();
+    }
+    else if (SelectionState::playerSelect == 2) {
+        this->player = new Knight();
+    }
+    std::cout << "PLAYER CREATE" << std::endl;
+    
+    
 
 
     this->objects.emplace_back(this->player);

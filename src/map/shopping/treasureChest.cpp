@@ -4,6 +4,11 @@
 #include "../../manager/objectManager.h"
 #include "../../pool/dropPool.h"
 #include "../../entities/collectable/bigHealingPotion.h"
+#include "../../entities/collectable/healingPotion.h"
+#include "../../entities/collectable/bigCompositePotion.h"
+#include "../../entities/collectable/compositePotion.h"
+#include "../../entities/collectable/bigMpPotion.h"
+#include "../../entities/collectable/mpPotion.h"
 #include "../../utils/random.h"
 // #include "../../weapon/weaponFactory.h"
 
@@ -129,12 +134,52 @@ void TreasureChest::CreateContents() {
     // case BOSS_ROOM:
     //     CreateContentsBossRoom();
     // }
+    int value = Rand::Instance()->Get(1, 10);
+    if (value >= 3) {
+        int another_random = Rand::Instance()->Get(1, 3);
 
-    BigHealingPotion* contents;
-    contents = new BigHealingPotion();
-    contents->SetPosition(this->position);
-    ObjectManager::Instance()->AddObject(contents);
-    ObjectManager::Instance()->GetPlayer()->Healing(1);
+        if (another_random == 1) {
+            HealingPotion* contents;
+            contents = new HealingPotion();
+            contents->SetPosition(this->position);
+            ObjectManager::Instance()->AddObject(contents);
+        }
+        else if (another_random == 2) {
+            MpPotion* contents;
+            contents = new MpPotion();
+            contents->SetPosition(this->position);
+            ObjectManager::Instance()->AddObject(contents);
+        }
+        else if (another_random == 3) {
+            CompositePotion* contents;
+            contents = new CompositePotion();
+            contents->SetPosition(this->position);
+            ObjectManager::Instance()->AddObject(contents); 
+        }
+    }
+    if (value < 3) {
+        int another_random = Rand::Instance()->Get(1, 3);
+
+        if (another_random == 1) {
+            BigHealingPotion* contents;
+            contents = new BigHealingPotion();
+            contents->SetPosition(this->position);
+            ObjectManager::Instance()->AddObject(contents);
+        }
+        else if (another_random == 2) {
+            BigMpPotion* contents;
+            contents = new BigMpPotion();
+            contents->SetPosition(this->position);
+            ObjectManager::Instance()->AddObject(contents);
+        }
+        else if (another_random == 3) {
+            BigCompositePotion* contents;
+            contents = new BigCompositePotion();
+            contents->SetPosition(this->position);
+            ObjectManager::Instance()->AddObject(contents); 
+        }
+    }
+    
 }
 
 void TreasureChest::CreateContentsNormalRoom() {

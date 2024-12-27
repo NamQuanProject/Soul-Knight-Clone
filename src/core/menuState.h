@@ -1,6 +1,4 @@
-#ifndef MENUSTATE_H
-#define MENUSTATE_H
-
+#pragma once
 #include "state.h"
 #include <SFML/Graphics.hpp>
 #include "../manager/soundManager.h" 
@@ -16,7 +14,7 @@ public:
     void update(float deltaTime) override;
     void render(sf::RenderWindow& window) override;
     
-
+    static const int playerSelect = 0;
 private:
     sf::Font font;
     sf::Text title;
@@ -34,4 +32,3 @@ private:
     sf::Clock animationClock;  
 };
 
-#endif // MENUSTATE_H

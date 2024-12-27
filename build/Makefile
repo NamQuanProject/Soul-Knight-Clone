@@ -249,6 +249,30 @@ src/core/pauseState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/pauseState.cpp.s
 .PHONY : src/core/pauseState.cpp.s
 
+src/core/selectionState.o: src/core/selectionState.cpp.o
+.PHONY : src/core/selectionState.o
+
+# target to build an object file
+src/core/selectionState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/selectionState.cpp.o
+.PHONY : src/core/selectionState.cpp.o
+
+src/core/selectionState.i: src/core/selectionState.cpp.i
+.PHONY : src/core/selectionState.i
+
+# target to preprocess a source file
+src/core/selectionState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/selectionState.cpp.i
+.PHONY : src/core/selectionState.cpp.i
+
+src/core/selectionState.s: src/core/selectionState.cpp.s
+.PHONY : src/core/selectionState.s
+
+# target to generate assembly for a file
+src/core/selectionState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/core/selectionState.cpp.s
+.PHONY : src/core/selectionState.cpp.s
+
 src/core/stateManager.o: src/core/stateManager.cpp.o
 .PHONY : src/core/stateManager.o
 
@@ -872,6 +896,30 @@ src/entities/player/heroes/knight.s: src/entities/player/heroes/knight.cpp.s
 src/entities/player/heroes/knight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/player/heroes/knight.cpp.s
 .PHONY : src/entities/player/heroes/knight.cpp.s
+
+src/entities/player/heroes/wukong.o: src/entities/player/heroes/wukong.cpp.o
+.PHONY : src/entities/player/heroes/wukong.o
+
+# target to build an object file
+src/entities/player/heroes/wukong.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/player/heroes/wukong.cpp.o
+.PHONY : src/entities/player/heroes/wukong.cpp.o
+
+src/entities/player/heroes/wukong.i: src/entities/player/heroes/wukong.cpp.i
+.PHONY : src/entities/player/heroes/wukong.i
+
+# target to preprocess a source file
+src/entities/player/heroes/wukong.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/player/heroes/wukong.cpp.i
+.PHONY : src/entities/player/heroes/wukong.cpp.i
+
+src/entities/player/heroes/wukong.s: src/entities/player/heroes/wukong.cpp.s
+.PHONY : src/entities/player/heroes/wukong.s
+
+# target to generate assembly for a file
+src/entities/player/heroes/wukong.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/soulknight.dir/build.make CMakeFiles/soulknight.dir/src/entities/player/heroes/wukong.cpp.s
+.PHONY : src/entities/player/heroes/wukong.cpp.s
 
 src/entities/player/player.o: src/entities/player/player.cpp.o
 .PHONY : src/entities/player/player.o
@@ -2361,6 +2409,9 @@ help:
 	@echo "... src/core/pauseState.o"
 	@echo "... src/core/pauseState.i"
 	@echo "... src/core/pauseState.s"
+	@echo "... src/core/selectionState.o"
+	@echo "... src/core/selectionState.i"
+	@echo "... src/core/selectionState.s"
 	@echo "... src/core/stateManager.o"
 	@echo "... src/core/stateManager.i"
 	@echo "... src/core/stateManager.s"
@@ -2439,6 +2490,9 @@ help:
 	@echo "... src/entities/player/heroes/knight.o"
 	@echo "... src/entities/player/heroes/knight.i"
 	@echo "... src/entities/player/heroes/knight.s"
+	@echo "... src/entities/player/heroes/wukong.o"
+	@echo "... src/entities/player/heroes/wukong.i"
+	@echo "... src/entities/player/heroes/wukong.s"
 	@echo "... src/entities/player/player.o"
 	@echo "... src/entities/player/player.i"
 	@echo "... src/entities/player/player.s"

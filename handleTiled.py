@@ -29,9 +29,10 @@ def split_png_to_bmp(png_path, points, output_prefix):
 
 # Path to the large PNG file
 png_path = "map.png"
-
+temp1 = 653 * 8
+temp2 = 526 * 8
 points = [
-    ((580, 600), (658, 679)),  # Region 1
+    ((temp2, 0), (temp1, 1024)),  # Region 1
     # ((50, 0), (80, 30)),  # Region 2
     # ((0, 40), (30, 70)),  # Region 3
     # ((50, 40), (80, 70)),  # Region 4

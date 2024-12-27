@@ -1019,6 +1019,7 @@ CMakeFiles/soulknight.dir/src/core/stateManager.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../projectile/bullet/superMoonBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/../../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/player/heroes/wukong.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/monster.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/../entities/monster/monsterType.h \
@@ -1109,4 +1110,6 @@ CMakeFiles/soulknight.dir/src/core/stateManager.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../utils/random.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/monsterPool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../pool/projectilePool.h \
-  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/pauseState.h
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/pauseState.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/selectionState.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/core/../manager/animationManager.h

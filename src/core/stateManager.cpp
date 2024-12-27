@@ -3,6 +3,7 @@
 #include "menuState.h"   
 #include "gameState.h"   
 #include "pauseState.h"  
+#include "selectionState.h"
 
 StateManager* StateManager::instance = nullptr;
 
@@ -50,6 +51,9 @@ void StateManager::SwitchState(StateType type) {
     switch (type) {
     case StateType::MENU_STATE:
         currentState = new MenuState();   
+        break;
+    case StateType::SELECTION_STATE:
+        currentState = new SelectionState();
         break;
     case StateType::GAME_STATE:
         currentState = new GameState();

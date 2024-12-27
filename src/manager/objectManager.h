@@ -6,6 +6,7 @@
 #include "../entities/gameObject.h"
 #include "../entities/player/player.h"
 #include "../entities/player/heroes/knight.h"
+#include "../entities/player/heroes/wukong.h"
 #include "../entities/monster/monster.h"
 #include "../utils/point.h"
 #include "../utils/vec.h"

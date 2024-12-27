@@ -54,7 +54,7 @@ void MenuState::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             if (playButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y)) {
                 std::cout << "Play button clicked." << std::endl;
-                StateManager::Instance()->SwitchState(StateType::GAME_STATE);
+                StateManager::Instance()->SwitchState(StateType::SELECTION_STATE);
             }
             else if (exitButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y)) {
                 std::cout << "Exit button clicked. Exiting the program." << std::endl;
@@ -78,5 +78,5 @@ void MenuState::render(sf::RenderWindow& window) {
 
 
 void MenuState::Initialize() {
-    
+    std::cout << "Initialize" << std::endl;
 }

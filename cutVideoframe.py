@@ -18,14 +18,18 @@ def read_gif_with_opencv(gif_path):
         frame_bgr = cv2.cvtColor(frame, cv2.COLOR_RGBA2BGRA)
         
         # Replace transparent pixels (alpha = 0) with white (255, 255, 255)
-        # frame_bgr[frame_bgr[:, :, 3] == 0] = [255, 255, 255, 255]
+        frame_bgr[frame_bgr[:, :, 3] == 0] = [255, 255, 255, 255]
         
         # Convert back to BGR
         frame_bgr = cv2.cvtColor(frame_bgr, cv2.COLOR_BGRA2BGR)
         
         # Resize the frame by dividing the dimensions by 8 with smooth interpolation
-        frame_resized = frame_bgr[::10, ::10]
+        scale_factor = 9 / 10
+        new_width = int(frame_bgr.shape[1] * scale_factor)
+        new_height = int(frame_bgr.shape[0] * scale_factor)
 
+        # Resize the frame
+        frame_resized = cv2.resize(frame_bgr, (new_width, new_height))
         
         # Append the resized frame to the list
         frames.append(frame_resized)
@@ -40,7 +44,7 @@ def read_gif_with_opencv(gif_path):
 
 
 
-gif_path = "Knight_25_dual_wield.png"
+gif_path = "Assassin_16.gif"
 
 frames = read_gif_with_opencv(gif_path)
 

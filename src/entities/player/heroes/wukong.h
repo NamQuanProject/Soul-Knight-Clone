@@ -1,6 +1,5 @@
-#ifndef KNIGHT_H
-#define KNIGHT_H
-
+#pragma once
+#include <SFML/Graphics.hpp>
 #include "../player.h"
 #include "../../weapon/gun/badPistol.h"
 #include "../../weapon/melee/dragonSword.h"
@@ -8,12 +7,12 @@
 #include "../../projectile/bullet/superMoonBullet.h"
 #include "../../../manager/animationManager.h"
 #include "../../../utils/point.h"
-#include <SFML/Graphics.hpp>
 
-class Knight : public Player {
+
+class Wukong : public Player {
 public:
-    Knight();  
-    ~Knight();     
+    Wukong();  
+    ~Wukong();     
     void Initialize() override;           
     void Update(float deltaTime) override;  
     void Render(sf::RenderWindow& window) override;  
@@ -49,5 +48,3 @@ private:
     sf::Sprite skillEffectSprite; // Special sprite for skill effect
     sf::Texture skillEffectTexture; // Texture for skill effect
 };
-
-#endif // KNIGHT_H

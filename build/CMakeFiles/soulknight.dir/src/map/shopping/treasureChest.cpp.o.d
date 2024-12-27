@@ -1004,6 +1004,7 @@ CMakeFiles/soulknight.dir/src/map/shopping/treasureChest.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../entities/player/heroes/../../projectile/bullet/superMoonBullet.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../entities/player/heroes/../../../manager/animationManager.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../entities/player/heroes/../../../utils/point.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../entities/player/heroes/wukong.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../entities/monster/monster.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../entities/monster/../gameObject.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../entities/monster/monsterType.h \
@@ -1013,6 +1014,11 @@ CMakeFiles/soulknight.dir/src/map/shopping/treasureChest.cpp.o: \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../manager/../utils/vec.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../pool/dropPool.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/bigHealingPotion.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/healingPotion.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/bigCompositePotion.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/compositePotion.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/bigMpPotion.h \
+  /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../entities/collectable/mpPotion.h \
   /Users/quannguyennam/Documents/Projects/Soul\ Knight\ Clone/src/map/shopping/../../utils/random.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
